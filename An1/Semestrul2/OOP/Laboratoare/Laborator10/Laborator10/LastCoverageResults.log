@@ -1,0 +1,21 @@
+[2024-05-14 08:20:38] [info] Start Program:
+Path:"C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator10\x64\Debug\Laborator10.exe"
+Arguments:
+Working directory: "C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator10\Laborator10\"
+Modules: Selected: C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator10\x64\Debug\Laborator10.exe Excluded: 
+Sources: Selected: C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator10\Laborator10 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\vladb\AppData\Local\Temp\nq4dyzwa.sh0 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-05-14 08:20:38] [info] Module: C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator10\x64\Debug\Laborator10.exe is selected because it matches selected pattern: C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator10\x64\Debug\Laborator10.exe
+[2024-05-14 08:20:39] [info] ----------------------------------------------------
+[2024-05-14 08:20:39] [info] Coverage binary generated in file: C:\Users\vladb\AppData\Local\Temp\nq4dyzwa.sh0
+[2024-05-14 08:20:39] [info] ----------------------------------------------------
