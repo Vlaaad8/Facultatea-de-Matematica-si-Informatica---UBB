@@ -1,0 +1,18 @@
+[2024-05-27 23:37:12] [info] Start Program:
+Path:"C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laboratorul13Bun\Laboratorul12\x64\Debug\Laboratorul2.exe"
+Arguments:
+Working directory: "C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laboratorul13Bun\Laboratorul12\Laboratorul2\"
+Modules: Selected: C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laboratorul13Bun\Laboratorul12\x64\Debug\Laboratorul2.exe Excluded: 
+Sources: Selected: C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laboratorul13Bun\Laboratorul12\Laboratorul2 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\vladb\AppData\Local\Temp\bqunixvn.kqb 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-05-27 23:37:12] [info] Module: C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laboratorul13Bun\Laboratorul12\x64\Debug\Laboratorul2.exe is selected because it matches selected pattern: C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laboratorul13Bun\Laboratorul12\x64\Debug\Laboratorul2.exe
