@@ -1,0 +1,43 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/locatar.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "c62e035d55d5cd13faf1a09a0aaffb1a859db5c20798abe9f5b45c1e04853eb5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/locatar.h"
+          },
+          "hashes": {
+            "sha-256": "7240974f70c6ba702314deddfa27407b69bb2d914383c8112b1060770995811d"
+          }
+        }
+      ]
+    }
+  ]
+}

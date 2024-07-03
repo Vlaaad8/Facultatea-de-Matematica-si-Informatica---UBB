@@ -1,0 +1,42 @@
+[
+  {
+    "directory": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP --target=amd64-pc-windows-msvc;  \"C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\Lab8.cpp\"",
+    "file": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\Lab8.cpp"
+  },
+  {
+    "directory": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP --target=amd64-pc-windows-msvc;  \"C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\locatar.cpp\"",
+    "file": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\locatar.cpp"
+  },
+  {
+    "directory": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP --target=amd64-pc-windows-msvc;  \"C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\locatar_repo.cpp\"",
+    "file": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\locatar_repo.cpp"
+  },
+  {
+    "directory": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP --target=amd64-pc-windows-msvc;  \"C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\locatar_service.cpp\"",
+    "file": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\locatar_service.cpp"
+  },
+  {
+    "directory": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP --target=amd64-pc-windows-msvc;  \"C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\teste.cpp\"",
+    "file": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\teste.cpp"
+  },
+  {
+    "directory": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP --target=amd64-pc-windows-msvc;  \"C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\ui.cpp\"",
+    "file": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\ui.cpp"
+  },
+  {
+    "directory": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP --target=amd64-pc-windows-msvc;  \"C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\undo.cpp\"",
+    "file": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\undo.cpp"
+  },
+  {
+    "directory": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/nologo \/W4 \/WX \/diagnostics:column \/Od \/D CODE_ANALYSIS \/D _DEBUG \/D _CONSOLE \/D _UNICODE \/D UNICODE \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP --target=amd64-pc-windows-msvc;  \"C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\validator.cpp\"",
+    "file": "C:\\Users\\vladb\\OneDrive\\Desktop\\OOP\\Laboratoare\\Lab8-9\\Lab8\\validator.cpp"
+  }
+]

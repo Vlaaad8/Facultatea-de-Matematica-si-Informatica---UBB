@@ -1,0 +1,83 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/locatar_service.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e7513806002cc07903329ebebeee8a40b5fc9688d9c38147160d5f25059286a8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/locatar_service.h"
+          },
+          "hashes": {
+            "sha-256": "a317f458fa16377bd035496242c796d73ac5edfe40919fe13a7784b4e5b31511"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/locatar.h"
+          },
+          "hashes": {
+            "sha-256": "7240974f70c6ba702314deddfa27407b69bb2d914383c8112b1060770995811d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/locatar_repo.h"
+          },
+          "hashes": {
+            "sha-256": "867e4f1a35f74ef64e2e5ba231914c3fb7203651ee36c39aba5b69124b27f358"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/exception.h"
+          },
+          "hashes": {
+            "sha-256": "14e5d6a0ada5310ee22b9612e2d88b7f48e712ee2b7fa190557bc16885e69e66"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/undo.h"
+          },
+          "hashes": {
+            "sha-256": "6a790409ca346b94ee7958e4c779ab86718c8ba9d68253706b4b0a587d7df989"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laboratoare/lab8-9/lab8/validator.h"
+          },
+          "hashes": {
+            "sha-256": "60ad3cf95c5e4e8f2509f1e23d964e9345290a8cb45702f4f3cd1d83ca292117"
+          }
+        }
+      ]
+    }
+  ]
+}

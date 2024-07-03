@@ -1,0 +1,20 @@
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Lab8-9\Lab8/locatar.h:24:5: warning: definition of implicit copy assignment operator for 'Locatar' is deprecated because it has a user-declared copy constructor [clang-diagnostic-deprecated-copy]
+   24 |     Locatar(const Locatar& locatar) = default;
+      |     ^
+Suppressed 12 warnings (12 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\xutility:4869:20: note: in implicit copy assignment operator for 'Locatar' first required here
+ 4869 |             *_Dest = _STD move(*_First);
+      |                    ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector:1737:14: note: in instantiation of function template specialization 'std::_Move_unchecked<Locatar *, Locatar *>' requested here
+ 1737 |         _STD _Move_unchecked(_Whereptr + 1, _Mylast, _Whereptr);
+      |              ^
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Lab8-9\Lab8\locatar_repo.cpp:27:18: note: in instantiation of member function 'std::vector<Locatar>::erase' requested here
+   27 |         locatari.erase(it);
+      |                  ^
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Lab8-9\Lab8\locatar_service.cpp:171:23: warning: comparison of integers of different signs: 'int' and 'size_type' (aka 'unsigned long long') [clang-diagnostic-sign-compare]
+  171 |     for (int i = 0; i < apartments.size() && added < count; ++i) {
+      |                     ~ ^ ~~~~~~~~~~~~~~~~~
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Lab8-9\Lab8\ui.cpp:270:1: warning: function declared 'noreturn' should not return [clang-diagnostic-invalid-noreturn]
+  270 | }
+      | ^
