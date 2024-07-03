@@ -1,0 +1,73 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6064",
+          "message": {
+            "text": "Missing integer argument to 'scanf_s' that corresponds to conversion specifier '2'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/vladb/OneDrive/Desktop/OOP/Laborator2-4/Laborator2-4/main.c"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 3,
+                  "endLine": 14,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "adaugareUI",
+                  "decoratedName": "adaugareUI",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33521.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/vladb/OneDrive/Desktop/OOP/Laborator2-4/Laborator2-4/main.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "f03c7dd108bc1c7c42ec19ed218b4542eb26d290662199dc3a00a84c381a23a1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/vladb/onedrive/desktop/oop/laborator2-4/laborator2-4/mylist.h"
+          },
+          "hashes": {
+            "sha-256": "7f1edf2c57847a7f2058666c65f75bf79a1fe52344b4b0a51e2e89f6a86196ee"
+          }
+        }
+      ]
+    }
+  ]
+}

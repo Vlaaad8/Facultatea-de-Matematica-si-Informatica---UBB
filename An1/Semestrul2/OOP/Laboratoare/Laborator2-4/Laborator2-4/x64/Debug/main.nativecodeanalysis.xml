@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\vladb\OneDrive\Desktop\OOP\Laborator2-4\Laborator2-4\</FILEPATH>
+      <FILENAME>main.c</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>2</COLUMN>
+    </SFA>
+    <DEFECTCODE>6064</DEFECTCODE>
+    <DESCRIPTION>Missing integer argument to 'scanf_s' that corresponds to conversion specifier '2'.</DESCRIPTION>
+    <FUNCTION>adaugareUI</FUNCTION>
+    <DECORATED>adaugareUI</DECORATED>
+    <FUNCLINE>6</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

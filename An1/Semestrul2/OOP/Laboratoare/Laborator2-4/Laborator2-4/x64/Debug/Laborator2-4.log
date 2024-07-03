@@ -1,0 +1,76 @@
+﻿  customSort.c
+  main.c
+  medicamente.c
+  medicamenteService.c
+  Generating Code...
+  MyList.c
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamente.h(12,18): error C2220: the following warning is treated as an error
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamente.h(12,18): warning C4820: '<unnamed-tag>': '2' bytes padding added after data member 'nume'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamente.h(18,23): warning C4255: 'testareValidare': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.h(15,19): warning C4255: 'emptylist': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.h(24,22): warning C4255: 'test_emptylist': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.h(25,20): warning C4255: 'testFiltrare': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.h(26,24): warning C4255: 'testareExistenta': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.h(27,19): warning C4255: 'testAddRepo': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(10,21): warning C4255: 'testSchimbare': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(12,22): warning C4255: 'testareCopiere': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(13,24): warning C4255: 'testareCantitate': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(16,28): warning C4255: 'testFiltrareCaracter': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(17,23): warning C4255: 'testareStergere': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(18,21): warning C4255: 'testareUpdate': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(19,21): warning C4255: 'testareDelete': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(28,20): warning C4255: 'testSortStoc': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(29,21): warning C4255: 'testSortStocD': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(30,20): warning C4255: 'testSortNume': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(31,21): warning C4255: 'testSortNumeD': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(32,20): warning C4255: 'testCmpNumeD': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(33,20): warning C4255: 'testCmpStocD': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\medicamenteService.h(34,19): warning C4255: 'testCmpNume': no function prototype given: converting '()' to '(void)'
+  (compiling source file 'MyList.c')
+  
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.c(10,20): warning C4255: 'emptylist': no function prototype given: converting '()' to '(void)'
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.c(100,23): warning C4255: 'test_emptylist': no function prototype given: converting '()' to '(void)'
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.c(107,25): warning C4255: 'testareExistenta': no function prototype given: converting '()' to '(void)'
+C:\Users\vladb\OneDrive\Desktop\OOP\Laboratoare\Laborator2-4\Laborator2-4\MyList.c(118,19): warning C4255: 'testAddRepo': no function prototype given: converting '()' to '(void)'
