@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RepositoryFlightTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-15T14:35:16" hostname="VLAD" time="0.03">
+  <properties/>
+  <testcase name="First Test" classname="RepositoryFlightTest" time="0.03"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

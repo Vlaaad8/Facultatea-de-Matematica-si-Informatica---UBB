@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema-4</title>
+</head>
+<style>
+
+    table, th, td {
+        border: 1px solid black;
+
+    }
+
+    th {
+        background-color: cadetblue;
+    }
+</style>
+<body>
+<table>
+    <th onclick="sortingColumn(0,this)">Country</th>
+    <th onclick="sortingColumn(1,this)">Population</th>
+    <th onclick="sortingColumn(2,this)">Capital</th>
+    <th onclick="sortingColumn(3,this)">Life Expectancy</th>
+    <th onclick="sortingColumn(4,this)">Area</th>
+    <tr>
+        <td>USA</td>
+        <td>331,002,651</td>
+        <td>Washington, D.C.</td>
+        <td>78.5</td>
+        <td>9,525,067 km²</td>
+    </tr>
+    <tr>
+        <td>Japan</td>
+        <td>126,476,461</td>
+        <td>Tokyo</td>
+        <td>84.6</td>
+        <td>377,975 km²</td>
+    </tr>
+    <tr>
+        <td>Germany</td>
+        <td>83,783,942</td>
+        <td>Berlin</td>
+        <td>81.0</td>
+        <td>357,022 km²</td>
+    </tr>
+    <tr>
+        <td>India</td>
+        <td>1,366,417,754</td>
+        <td>New Delhi</td>
+        <td>69.4</td>
+        <td>3,287,263 km²</td>
+    </tr>
+    <tr>
+        <td>Brazil</td>
+        <td>211,049,527</td>
+        <td>Brasília</td>
+        <td>75.0</td>
+        <td>8,515,767 km²</td>
+    </tr>
+</table>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th onclick="sortingColumn(0,this)">Language</th>
+        <th onclick="sortingColumn(1,this)">First Appeared</th>
+        <th onclick="sortingColumn(2,this)">Paradigm</th>
+        <th onclick="sortingColumn(3,this)">Developer</th>
+        <th onclick="sortingColumn(4,this)">Current Stable Version</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Python</td>
+        <td>1991</td>
+        <td>Multi-paradigm</td>
+        <td>Guido van Rossum</td>
+        <td>3.11.2</td>
+    </tr>
+    <tr>
+        <td>JavaScript</td>
+        <td>1995</td>
+        <td>Event-driven, Functional</td>
+        <td>Brendan Eich</td>
+        <td>4.13</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>1995</td>
+        <td>Object-oriented</td>
+        <td>James Gosling</td>
+        <td>2.1</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>1972</td>
+        <td>Procedural</td>
+        <td>Dennis Ritchie</td>
+        <td>1.8</td>
+    </tr>
+    <tr>
+        <td>Rust</td>
+        <td>2010</td>
+        <td>Multi-paradigm</td>
+        <td>Graydon Hoare</td>
+        <td>1.72.0</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    const sortDirection = {};
+
+    function sortingColumn(columnIndex, tableN) {
+        var table = tableN.closest("table");
+        var rows = Array.from(table.rows);
+        var header = rows[0];
+        var rowData = rows.slice(1);
+
+
+        if (!table.id) {
+            table.id = 'table-' + Math.random().toString(36).substring(2, 9);
+        }
+        const key = table.id + '-' + columnIndex;
+        const ascending = !sortDirection[key];
+        sortDirection[key] = ascending;
+
+        for (let i = 0; i < rowData.length - 1; i++) {
+            for (let j = 0; j < rowData.length - i - 1; j++) {
+                let cellOne = rowData[j].cells[columnIndex].textContent.trim();
+                let cellTwo = rowData[j + 1].cells[columnIndex].textContent.trim();
+
+                let numOne = parseFloat(cellOne.replace(/[^0-9.\-]/g, ""));
+                let numTwo = parseFloat(cellTwo.replace(/[^0-9.\-]/g, ""));
+                let isNumeric = !isNaN(numOne) && !isNaN(numTwo);
+
+                let shouldSwap = false;
+                if (isNumeric) {
+                    if ((ascending && numOne > numTwo) || (!ascending && numOne < numTwo)) {
+                        shouldSwap = true;
+                    }
+                } else {
+                    if ((ascending && cellOne.localeCompare(cellTwo) > 0) ||
+                        (!ascending && cellOne.localeCompare(cellTwo) < 0)) {
+                        shouldSwap = true;
+                    }
+                }
+
+                if (shouldSwap) {
+                    let temp = rowData[j];
+                    rowData[j] = rowData[j + 1];
+                    rowData[j + 1] = temp;
+                }
+            }
+        }
+
+        while (table.rows.length > 1) {
+            table.deleteRow(1);
+        }
+
+        rowData.forEach(row => table.appendChild(row));
+    }
+</script>
+</body>
+</html>

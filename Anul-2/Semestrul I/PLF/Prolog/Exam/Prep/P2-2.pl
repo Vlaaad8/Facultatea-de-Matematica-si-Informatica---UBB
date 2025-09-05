@@ -1,0 +1,9 @@
+min([X],X).
+min([H|T],N):-min(T,N1),(H<N1->N=H;N=N1).
+
+elimina(_,[],[]).
+elimina(X,[X|T],T).
+elimina(X,[H|T],[H|Rez]):-X\=H,elimina(X,T,Rez).
+
+sortare([],[]).
+sortare(L,[M|Rez]):-min(L,M),elimina(M,L,V),sortare(V,Rez).

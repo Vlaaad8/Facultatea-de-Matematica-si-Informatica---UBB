@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practic2.view.RegisterLogin">
+   <children>
+      <TextField fx:id="lastnameText" layoutX="52.0" layoutY="45.0" />
+      <TextField fx:id="firstnameText" layoutX="53.0" layoutY="86.0" />
+      <TextField fx:id="usernameText" layoutX="54.0" layoutY="128.0" />
+      <TextField fx:id="passwordText" layoutX="55.0" layoutY="175.0" />
+      <TextField fx:id="townText" layoutX="56.0" layoutY="224.0" />
+      <TextField fx:id="streetText" layoutX="57.0" layoutY="263.0" />
+      <TextField fx:id="streetNumberText" layoutX="56.0" layoutY="306.0" />
+      <TextField fx:id="telephoneText" layoutX="58.0" layoutY="347.0" />
+      <Button fx:id="registerButton" layoutX="258.0" layoutY="348.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" />
+      <Button fx:id="loginButton" layoutX="367.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+      <ComboBox fx:id="userBox" layoutX="393.0" layoutY="46.0" prefWidth="150.0" />
+      <Label layoutX="53.0" layoutY="29.0" text="Lastname:" />
+      <Label layoutX="53.0" layoutY="71.0" text="Firstname;:" />
+      <Label layoutX="58.0" layoutY="112.0" text="username" />
+      <Label layoutX="58.0" layoutY="154.0" text="password" />
+      <Label layoutX="58.0" layoutY="201.0" text="town" />
+      <Label layoutX="58.0" layoutY="250.0" text="street" />
+      <Label layoutX="58.0" layoutY="289.0" text="streetnumber" />
+      <Label layoutX="58.0" layoutY="332.0" text="telephone" />
+   </children>
+</AnchorPane>

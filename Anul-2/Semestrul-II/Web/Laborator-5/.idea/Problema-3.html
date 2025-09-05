@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 3A cu jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            background-color: #b0c4de;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px;
+            user-select: none;
+        }
+        td.revealed {
+            background-color: #fff;
+        }
+        td.matched {
+            background-color: #8fbc8f;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+<table id="myTable"></table>
+
+<script>
+    $(function(){
+        const rows        = 4;
+        const columns     = 4;
+        const totalCells  = rows * columns;
+        let matchedCount  = 0;
+        let firstCell     = null;
+        let secondCell    = null;
+        let lock          = false;
+
+        function generateData() {
+            const data = [];
+            for (let i = 1; i <= totalCells/2; i++) {
+                data.push(i, i);
+            }
+            return data.sort(() => Math.random() - 0.5);
+        }
+
+        function populateTable() {
+            const values = generateData();
+            const $table = $('#myTable').empty();
+            let idx = 0;
+
+            for (let r = 0; r < rows; r++) {
+                const $tr = $('<tr>');
+                for (let c = 0; c < columns; c++) {
+                    const $td = $('<td>')
+                        .data('value', values[idx])
+                        .text('')
+                    $tr.append($td);
+                    idx++;
+                }
+                $table.append($tr);
+            }
+        }
+
+
+        $('#myTable').on('click', 'td', function(){
+            if (lock) return;
+            const $cell = $(this);
+            if ($cell.hasClass('matched') || $cell.is(firstCell)) return;
+
+            $cell
+                .text($cell.data('value'))
+                .addClass('revealed');
+
+            if (!firstCell) {
+                firstCell = $cell;
+            } else {
+                secondCell = $cell;
+                lock = true;
+
+                if (firstCell.data('value') === secondCell.data('value')) {
+                    firstCell.add(secondCell).addClass('matched');
+                    matchedCount += 2;
+                    resetTurn();
+
+                    if (matchedCount === totalCells) {
+                        setTimeout(() => alert('Felicitari! Ai castigat jocul!'), 200);
+                    }
+                } else {
+                    setTimeout(() => {
+                        firstCell.add(secondCell)
+                            .text('')
+                            .removeClass('revealed');
+                        resetTurn();
+                    }, 700);
+                }
+            }
+        });
+
+        function resetTurn() {
+            firstCell = null;
+            secondCell = null;
+            lock = false;
+        }
+
+        populateTable();
+    });
+</script>
+</body>
+</html>

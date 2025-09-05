@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace>MPP_CSharpProject</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="log4net" Version="3.0.4" />
+      <PackageReference Include="MySql.Data" Version="9.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ConnectionUtils\ConnectionUtils.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="domain\" />
+      <Folder Include="repository\" />
+      <Folder Include="utils\" />
+    </ItemGroup>
+
+</Project>

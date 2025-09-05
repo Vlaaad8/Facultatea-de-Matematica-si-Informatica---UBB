@@ -1,0 +1,9 @@
+rootProject.name = 'Barca'
+include 'Model'
+include 'Networking'
+include 'Persistence'
+include 'Server'
+include 'Services'
+include 'Client'
+include 'restservices'
+

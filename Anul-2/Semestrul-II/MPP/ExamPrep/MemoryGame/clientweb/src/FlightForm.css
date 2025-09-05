@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Reset box-sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* iOS/native reset pentru input */
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    outline: none;
+}
+
+/* Font global */
+body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.5;
+    background-color: #f1f3fb;
+    padding: 0 2rem;
+}
+
+/* Card container */
+.card {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 425px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formularul din interiorul cardului */
+.card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem 0;
+}
+
+/* Container pentru fiecare câmp: label deasupra input */
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label static deasupra */
+.input-label {
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Input-ul propriu-zis */
+.input-field {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #eee;
+    background: transparent;
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    transition: border-color .25s ease;
+}
+
+.input-field:focus {
+    border-bottom-color: #333;
+}
+
+/* Butonul de trimitere */
+.add-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color .25s ease;
+}
+
+.add-button:hover {
+    background-color: #357ab8;
+}

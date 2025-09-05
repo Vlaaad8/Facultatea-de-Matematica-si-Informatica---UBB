@@ -1,0 +1,9 @@
+putere2(0,1).
+putere2(N,R):-N>0,N1 is N-1,putere2(N1,R1),R is R1*2.
+
+
+insereaza([H|T],E,N,Poz,[H,E|Rez]):-putere(N,M),V is M-1,Poz=:=V,Poz1 is Poz+1,N1 is N+1,insereaza(T,E,N1,Poz1,Rez).
+insereaza([H|T],E,N,Poz,[H|Rez]):-putere(N,M),V is M-1,Poz\=V,Poz1 is Poz+1,insereaza(T,E,N,Poz1,Rez).
+insereaza([],_,_,_,[]).
+
+solutie(L,E,R):-insereaza(L,E,1,0,R).

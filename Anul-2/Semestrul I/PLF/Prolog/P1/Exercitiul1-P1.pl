@@ -1,0 +1,9 @@
+%sterge(X,L,R)
+%X- atom, cel ale carui aparitii trebuie sterse
+%L-lista in care caut aparitiile atomului
+%R- rezultat final, o lista
+sterge(_,[],[]).
+%cazul in care gasim atomul,acesta trebuie sters
+sterge(X,[X|T],R):- sterge(X,T,R).
+%cazul in care nu gasim atomul, il vom concatena variabilei R
+sterge(X,[H|T],[H|R]):- X\=H, sterge(X,T,R).

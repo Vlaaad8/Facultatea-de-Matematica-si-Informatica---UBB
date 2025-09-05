@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practic2.view.MakegoodView">
+   <children>
+      <TabPane layoutY="-5.0" prefHeight="412.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Doresc sa ajut!">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="452.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="tableView1" layoutX="29.0" layoutY="29.0" prefHeight="171.0" prefWidth="543.0">
+                          <columns>
+                            <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Titlu" />
+                            <TableColumn fx:id="descriptionColumn" prefWidth="122.19999694824219" text="Descriere" />
+                              <TableColumn fx:id="deadlineColumn" prefWidth="69.80000305175781" text="Deadline" />
+                              <TableColumn fx:id="peopleInNeedColumn" prefWidth="74.19998168945312" text="omInNevoie" />
+                              <TableColumn fx:id="peopleToHelpColumn" prefWidth="96.80001831054688" text="omSalvator" />
+                              <TableColumn fx:id="statusColumn" prefWidth="105.0" text="status" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="solveButton" layoutX="550.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleSolve" text="Solve" />
+                         <TableView fx:id="tableView2" layoutX="26.0" layoutY="214.0" prefHeight="123.0" prefWidth="545.0">
+                             <columns>
+                                 <TableColumn fx:id="titleColumn1" prefWidth="75.0" text="Titlu" />
+                                 <TableColumn fx:id="descriptionColumn1" prefWidth="122.19999694824219" text="Descriere" />
+                                 <TableColumn fx:id="deadlineColumn1" prefWidth="69.80000305175781" text="Deadline" />
+                                 <TableColumn fx:id="peopleInNeedColumn1" prefWidth="74.19998168945312" text="omInNevoie" />
+                                 <TableColumn fx:id="peopleToHelpColumn1" prefWidth="96.80001831054688" text="omSalvator" />
+                                 <TableColumn fx:id="statusColumn1" prefWidth="105.0" text="status" />
+                             </columns>
+                         </TableView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Doresc sa fiu ajutat!">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="320.0" prefWidth="502.0">
+                     <children>
+                        <TextField fx:id="titltuBox" layoutX="26.0" layoutY="28.0" />
+                        <TextField fx:id="descriereBox" layoutX="27.0" layoutY="82.0" />
+                        <DatePicker fx:id="dateBox" layoutX="26.0" layoutY="124.0" />
+                        <Label layoutX="28.0" layoutY="14.0" text="Titlu" />
+                        <Label layoutX="26.0" layoutY="65.0" text="Descriere" />
+                        <Label layoutX="26.0" layoutY="108.0" text="Deadline" />
+                        <Label layoutX="26.0" layoutY="150.0" />
+                        <Button fx:id="saveButton" layoutX="300.0" layoutY="61.0" mnemonicParsing="false" onAction="#saveNeed" prefHeight="26.0" prefWidth="105.0" text="Sent!" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,343 @@
+2025-06-25 13:13:41 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 13:13:56 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 13:13:56 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 13:13:56 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 13:13:56 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 13:13:56 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 13:13:56 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 13:13:56 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 13:13:56 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 13:13:56 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 13:13:56 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 13:13:56 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 13:13:56 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 13:13:56 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 13:13:56 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 13:13:56 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 13:13:56 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 13:13:58 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 13:13:59 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 13:13:59 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2b48dfe4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 13:14:00 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 13:14:00 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 13:14:00 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 13:14:00 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 13:14:01 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 13:14:01 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 13:14:01 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@1fa9e52a, org.example.DTO.GameDTO@c84d54e, org.example.DTO.GameDTO@21dda4de, org.example.DTO.GameDTO@3f391edd, org.example.DTO.GameDTO@6fe92ca5, org.example.DTO.GameDTO@456daab3, org.example.DTO.GameDTO@9da1d94, org.example.DTO.GameDTO@7ee23584, org.example.DTO.GameDTO@5848b2f9, org.example.DTO.GameDTO@70d8b371, org.example.DTO.GameDTO@29b72643, org.example.DTO.GameDTO@469668e4, org.example.DTO.GameDTO@5b54d5b5, org.example.DTO.GameDTO@6e22b695, org.example.DTO.GameDTO@7eb7102c, org.example.DTO.GameDTO@b139656, org.example.DTO.GameDTO@769703fc, org.example.DTO.GameDTO@dfa95a5, org.example.DTO.GameDTO@4b8ad246, org.example.DTO.GameDTO@5c3c5c47, org.example.DTO.GameDTO@12fa3cdf, org.example.DTO.GameDTO@4b74d498, org.example.DTO.GameDTO@56713752, org.example.DTO.GameDTO@681197bf, org.example.DTO.GameDTO@2bce42a6, org.example.DTO.GameDTO@46739353, org.example.DTO.GameDTO@19e7e768, org.example.DTO.GameDTO@7daf3784, org.example.DTO.GameDTO@24ad91e5, org.example.DTO.GameDTO@7e1e6728, org.example.DTO.GameDTO@58640324, org.example.DTO.GameDTO@5c730cbb, org.example.DTO.GameDTO@14999c69, org.example.DTO.GameDTO@19b38ef5, org.example.DTO.GameDTO@61b6c3c4, org.example.DTO.GameDTO@25641d9d, org.example.DTO.GameDTO@7d46b78c, org.example.DTO.GameDTO@78875af7, org.example.DTO.GameDTO@2f781ec0, org.example.DTO.GameDTO@2af56647, org.example.DTO.GameDTO@62474e42, org.example.DTO.GameDTO@2055f01f, org.example.DTO.GameDTO@4f3464cb, org.example.DTO.GameDTO@4e72e434, org.example.DTO.GameDTO@161f86e6, org.example.DTO.GameDTO@19455932, org.example.DTO.GameDTO@753b64ed, org.example.DTO.GameDTO@2cb16d3a]}
+2025-06-25 13:14:21 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 13:14:21 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 13:14:21 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@57c7d2f6}
+2025-06-25 13:14:21 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 13:14:21 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 13:14:21 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 13:14:21 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 13:14:21 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 13:14:21 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 13:14:21 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 13:14:22 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 13:14:22 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 13:14:22 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@754cabc9, org.example.DTO.GameDTO@5b7eb581, org.example.DTO.GameDTO@7c01db69, org.example.DTO.GameDTO@259c1603, org.example.DTO.GameDTO@359ef39a, org.example.DTO.GameDTO@1be28a15, org.example.DTO.GameDTO@69cac093, org.example.DTO.GameDTO@2ca3ffa7, org.example.DTO.GameDTO@6ee3cb8a, org.example.DTO.GameDTO@615e4661, org.example.DTO.GameDTO@5e2fcc81, org.example.DTO.GameDTO@6dc25e24, org.example.DTO.GameDTO@1d8d678d, org.example.DTO.GameDTO@ef34713, org.example.DTO.GameDTO@2e98c988, org.example.DTO.GameDTO@51548101, org.example.DTO.GameDTO@279325a9, org.example.DTO.GameDTO@33cc2597, org.example.DTO.GameDTO@5bf07eef, org.example.DTO.GameDTO@2ed9b019, org.example.DTO.GameDTO@10597606, org.example.DTO.GameDTO@42eb1907, org.example.DTO.GameDTO@1ab400b3, org.example.DTO.GameDTO@798e3284, org.example.DTO.GameDTO@223c82f5, org.example.DTO.GameDTO@38859494, org.example.DTO.GameDTO@20ebaaf, org.example.DTO.GameDTO@a9cb278, org.example.DTO.GameDTO@4cf1a2f4, org.example.DTO.GameDTO@58c4aeca, org.example.DTO.GameDTO@2f68acbf, org.example.DTO.GameDTO@4008c458, org.example.DTO.GameDTO@1af38af, org.example.DTO.GameDTO@7ce064ae, org.example.DTO.GameDTO@160732d9, org.example.DTO.GameDTO@10ab0e45, org.example.DTO.GameDTO@683926bf, org.example.DTO.GameDTO@1783ea02, org.example.DTO.GameDTO@38bd93d1, org.example.DTO.GameDTO@702c6ba5, org.example.DTO.GameDTO@5101b7c1, org.example.DTO.GameDTO@595a9419, org.example.DTO.GameDTO@dadb7f8, org.example.DTO.GameDTO@1ecf84ab, org.example.DTO.GameDTO@422c870c, org.example.DTO.GameDTO@4fdb290c, org.example.DTO.GameDTO@2fa94578, org.example.DTO.GameDTO@4d2176fa, org.example.DTO.GameDTO@6b138cb5]}
+2025-06-25 13:14:53 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 13:14:53 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 13:14:53 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@23168848}
+2025-06-25 13:14:53 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 13:14:53 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 13:14:53 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 13:14:53 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 13:14:53 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 13:14:53 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 13:14:53 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 13:14:54 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 13:14:54 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 13:14:54 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@7d165b92, org.example.DTO.GameDTO@18f143cd, org.example.DTO.GameDTO@5e21608f, org.example.DTO.GameDTO@29a029da, org.example.DTO.GameDTO@66252db7, org.example.DTO.GameDTO@74d8e595, org.example.DTO.GameDTO@2128d699, org.example.DTO.GameDTO@9eed59f, org.example.DTO.GameDTO@46e91980, org.example.DTO.GameDTO@75aeb885, org.example.DTO.GameDTO@12d534b7, org.example.DTO.GameDTO@6d68495f, org.example.DTO.GameDTO@63c3786b, org.example.DTO.GameDTO@63a99e06, org.example.DTO.GameDTO@58e27e48, org.example.DTO.GameDTO@77eff6ba, org.example.DTO.GameDTO@f17c80c, org.example.DTO.GameDTO@20e13e46, org.example.DTO.GameDTO@6b3a042c, org.example.DTO.GameDTO@63e875d7, org.example.DTO.GameDTO@520e960e, org.example.DTO.GameDTO@7bb48107, org.example.DTO.GameDTO@4014e139, org.example.DTO.GameDTO@60f26221, org.example.DTO.GameDTO@466a26d7, org.example.DTO.GameDTO@19893ba4, org.example.DTO.GameDTO@7e731c85, org.example.DTO.GameDTO@de39a00, org.example.DTO.GameDTO@1a2859f5, org.example.DTO.GameDTO@4aac050f, org.example.DTO.GameDTO@2cddafeb, org.example.DTO.GameDTO@3dff13ea, org.example.DTO.GameDTO@65c01251, org.example.DTO.GameDTO@4f6ee79b, org.example.DTO.GameDTO@e8dbb6a, org.example.DTO.GameDTO@4ba89912, org.example.DTO.GameDTO@2e9f58ac, org.example.DTO.GameDTO@16f530db, org.example.DTO.GameDTO@75c08f84, org.example.DTO.GameDTO@7aafe827, org.example.DTO.GameDTO@2e2185e6, org.example.DTO.GameDTO@11ed0b11, org.example.DTO.GameDTO@60201a07, org.example.DTO.GameDTO@65cb28f4, org.example.DTO.GameDTO@47679f1e, org.example.DTO.GameDTO@3eabb160, org.example.DTO.GameDTO@5e3b7490, org.example.DTO.GameDTO@628b6b2b, org.example.DTO.GameDTO@19ef870b, org.example.DTO.GameDTO@7a2c15e7]}
+2025-06-25 13:15:13 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Connection reset
+2025-06-25 15:28:32 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 15:28:56 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 15:28:56 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 15:28:56 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 15:28:56 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 15:28:56 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:28:56 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 15:28:56 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 15:28:56 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 15:28:56 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 15:28:56 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 15:28:56 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 15:28:56 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 15:28:56 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 15:28:56 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 15:28:56 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 15:28:56 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 15:28:57 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 15:28:58 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 15:28:58 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5a0a5dc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 15:28:58 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 15:28:58 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 15:28:58 INFO  org.example.client.LogView - LogView-Client: Logged in employee: 1
+2025-06-25 15:28:58 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:28:58 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:28:59 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:28:59 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:28:59 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@5d733d3, org.example.DTO.GameDTO@3cf82f4b, org.example.DTO.GameDTO@651d34c3, org.example.DTO.GameDTO@692d2b76, org.example.DTO.GameDTO@55d8d42b, org.example.DTO.GameDTO@28272bac, org.example.DTO.GameDTO@2410b947, org.example.DTO.GameDTO@24e64028, org.example.DTO.GameDTO@370cb113, org.example.DTO.GameDTO@26679615, org.example.DTO.GameDTO@79cd91f, org.example.DTO.GameDTO@116d2ec4, org.example.DTO.GameDTO@433b91d3, org.example.DTO.GameDTO@5976709f, org.example.DTO.GameDTO@38431e8f, org.example.DTO.GameDTO@40a01c4d, org.example.DTO.GameDTO@5f8aa883, org.example.DTO.GameDTO@3512c965, org.example.DTO.GameDTO@15050e2e, org.example.DTO.GameDTO@55073ab7, org.example.DTO.GameDTO@5f434e24, org.example.DTO.GameDTO@7c39ed48, org.example.DTO.GameDTO@4170f89f, org.example.DTO.GameDTO@2dceb084, org.example.DTO.GameDTO@6839f977, org.example.DTO.GameDTO@5b590a95, org.example.DTO.GameDTO@1dabb561, org.example.DTO.GameDTO@45396cc0, org.example.DTO.GameDTO@626cc751, org.example.DTO.GameDTO@71f2642b, org.example.DTO.GameDTO@31b2c7c9, org.example.DTO.GameDTO@3fe3e253, org.example.DTO.GameDTO@3bb1ecb1, org.example.DTO.GameDTO@590014d0, org.example.DTO.GameDTO@7eab0cb6, org.example.DTO.GameDTO@5efa984a, org.example.DTO.GameDTO@6a1a2340, org.example.DTO.GameDTO@33651c47, org.example.DTO.GameDTO@150d7821, org.example.DTO.GameDTO@1fbf8a02, org.example.DTO.GameDTO@2404ba96, org.example.DTO.GameDTO@3f181d75, org.example.DTO.GameDTO@41aab6c7, org.example.DTO.GameDTO@2226db6a, org.example.DTO.GameDTO@23f715b2, org.example.DTO.GameDTO@5c7b470c, org.example.DTO.GameDTO@48f3ceca, org.example.DTO.GameDTO@5c9ab135, org.example.DTO.GameDTO@47db7591, org.example.DTO.GameDTO@419e0941]}
+2025-06-25 15:29:15 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Connection reset
+2025-06-25 15:29:26 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 15:29:31 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 15:29:31 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 15:29:31 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 15:29:31 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 15:29:31 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:29:31 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 15:29:31 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 15:29:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 15:29:31 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 15:29:31 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 15:29:32 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 15:29:32 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 15:29:32 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 15:29:32 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 15:29:32 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 15:29:32 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 15:29:32 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 15:29:33 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 15:29:33 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5a0a5dc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 15:29:33 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 15:29:33 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 15:29:33 INFO  org.example.client.LogView - LogView-Client: Logged in employee: 1
+2025-06-25 15:29:33 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:29:33 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:29:34 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:29:34 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:29:34 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@757d7ccf, org.example.DTO.GameDTO@5ad97e99, org.example.DTO.GameDTO@29ba6bb2, org.example.DTO.GameDTO@3c45a605, org.example.DTO.GameDTO@22c02e46, org.example.DTO.GameDTO@337ca131, org.example.DTO.GameDTO@4961bb17, org.example.DTO.GameDTO@588559b0, org.example.DTO.GameDTO@7b94fef8, org.example.DTO.GameDTO@2d37bd92, org.example.DTO.GameDTO@694a0220, org.example.DTO.GameDTO@1b708e60, org.example.DTO.GameDTO@474fc0c8, org.example.DTO.GameDTO@57042e9e, org.example.DTO.GameDTO@6ee67d5c, org.example.DTO.GameDTO@71faed6e, org.example.DTO.GameDTO@480a3a19, org.example.DTO.GameDTO@3e0c9d58, org.example.DTO.GameDTO@63dd0b58, org.example.DTO.GameDTO@456a1bd0, org.example.DTO.GameDTO@5ca92b96, org.example.DTO.GameDTO@6158b06, org.example.DTO.GameDTO@d99d757, org.example.DTO.GameDTO@18b8e9af, org.example.DTO.GameDTO@dd884b5, org.example.DTO.GameDTO@27bf63b3, org.example.DTO.GameDTO@64df3b7c, org.example.DTO.GameDTO@3bf543d9, org.example.DTO.GameDTO@7241953e, org.example.DTO.GameDTO@2ebfc23e, org.example.DTO.GameDTO@33a6184e, org.example.DTO.GameDTO@22dc7e68, org.example.DTO.GameDTO@5c4ae768, org.example.DTO.GameDTO@c3460ed, org.example.DTO.GameDTO@f536d4d, org.example.DTO.GameDTO@4e3d7df1, org.example.DTO.GameDTO@45c7a2f9, org.example.DTO.GameDTO@6a5b81a4, org.example.DTO.GameDTO@7ef6b0a7, org.example.DTO.GameDTO@5b81887d, org.example.DTO.GameDTO@23a9399e, org.example.DTO.GameDTO@1549daee, org.example.DTO.GameDTO@5e712368, org.example.DTO.GameDTO@9e48abb, org.example.DTO.GameDTO@636b27d0, org.example.DTO.GameDTO@38ae0ff9, org.example.DTO.GameDTO@6f1311e7, org.example.DTO.GameDTO@428fffec, org.example.DTO.GameDTO@786005ca, org.example.DTO.GameDTO@30790cf8]}
+2025-06-25 15:30:15 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Connection reset
+2025-06-25 15:30:21 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 15:30:31 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 15:30:31 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 15:30:31 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 15:30:31 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 15:30:31 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:30:31 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 15:30:31 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 15:30:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 15:30:31 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 15:30:31 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 15:30:31 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 15:30:31 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 15:30:31 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 15:30:31 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 15:30:31 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 15:30:31 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 15:30:32 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 15:30:32 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 15:30:32 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35a0886c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 15:30:33 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 15:30:33 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 15:30:33 INFO  org.example.client.LogView - LogView-Client: Logged in employee: 1
+2025-06-25 15:30:33 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:30:33 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:30:34 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:30:34 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:30:34 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@5d733d3, org.example.DTO.GameDTO@3cf82f4b, org.example.DTO.GameDTO@651d34c3, org.example.DTO.GameDTO@692d2b76, org.example.DTO.GameDTO@55d8d42b, org.example.DTO.GameDTO@28272bac, org.example.DTO.GameDTO@2410b947, org.example.DTO.GameDTO@24e64028, org.example.DTO.GameDTO@370cb113, org.example.DTO.GameDTO@26679615, org.example.DTO.GameDTO@79cd91f, org.example.DTO.GameDTO@116d2ec4, org.example.DTO.GameDTO@433b91d3, org.example.DTO.GameDTO@5976709f, org.example.DTO.GameDTO@38431e8f, org.example.DTO.GameDTO@40a01c4d, org.example.DTO.GameDTO@5f8aa883, org.example.DTO.GameDTO@3512c965, org.example.DTO.GameDTO@15050e2e, org.example.DTO.GameDTO@55073ab7, org.example.DTO.GameDTO@5f434e24, org.example.DTO.GameDTO@7c39ed48, org.example.DTO.GameDTO@4170f89f, org.example.DTO.GameDTO@2dceb084, org.example.DTO.GameDTO@6839f977, org.example.DTO.GameDTO@5b590a95, org.example.DTO.GameDTO@1dabb561, org.example.DTO.GameDTO@45396cc0, org.example.DTO.GameDTO@626cc751, org.example.DTO.GameDTO@71f2642b, org.example.DTO.GameDTO@31b2c7c9, org.example.DTO.GameDTO@3fe3e253, org.example.DTO.GameDTO@3bb1ecb1, org.example.DTO.GameDTO@590014d0, org.example.DTO.GameDTO@7eab0cb6, org.example.DTO.GameDTO@5efa984a, org.example.DTO.GameDTO@6a1a2340, org.example.DTO.GameDTO@33651c47, org.example.DTO.GameDTO@150d7821, org.example.DTO.GameDTO@1fbf8a02, org.example.DTO.GameDTO@2404ba96, org.example.DTO.GameDTO@3f181d75, org.example.DTO.GameDTO@41aab6c7, org.example.DTO.GameDTO@2226db6a, org.example.DTO.GameDTO@23f715b2, org.example.DTO.GameDTO@5c7b470c, org.example.DTO.GameDTO@48f3ceca, org.example.DTO.GameDTO@5c9ab135, org.example.DTO.GameDTO@47db7591, org.example.DTO.GameDTO@419e0941]}
+2025-06-25 15:30:37 INFO  org.example.ProxyRPC - Sending request: SAVE_CONFIG
+2025-06-25 15:30:37 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:30:37 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_CONFIG, data=org.example.DTO.ConfigurationDTO@7b5e7754}
+2025-06-25 15:30:37 ERROR org.example.ReflectionWorkerRPC - Error handling request: null
+2025-06-25 15:33:23 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 15:33:34 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 15:33:34 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 15:33:34 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 15:33:34 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 15:33:34 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:33:34 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 15:33:34 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 15:33:34 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 15:33:34 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 15:33:34 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 15:33:35 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 15:33:35 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 15:33:35 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 15:33:35 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 15:33:35 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 15:33:35 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 15:33:35 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 15:33:36 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 15:33:36 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@263b27c7] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 15:33:36 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 15:33:36 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 15:33:36 INFO  org.example.client.LogView - LogView-Client: Logged in employee: 1
+2025-06-25 15:33:36 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:33:36 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:33:37 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:33:37 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:33:37 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@1325395f, org.example.DTO.GameDTO@6ae54d95, org.example.DTO.GameDTO@3b163232, org.example.DTO.GameDTO@c789e1a, org.example.DTO.GameDTO@362da10b, org.example.DTO.GameDTO@76e4cbbe, org.example.DTO.GameDTO@7c69e0f2, org.example.DTO.GameDTO@34a9292b, org.example.DTO.GameDTO@6fd7f34c, org.example.DTO.GameDTO@3f3e7c33, org.example.DTO.GameDTO@c636556, org.example.DTO.GameDTO@71fef580, org.example.DTO.GameDTO@21632560, org.example.DTO.GameDTO@6d700a9b, org.example.DTO.GameDTO@7a2e9bb6, org.example.DTO.GameDTO@7cfa3386, org.example.DTO.GameDTO@440a415c, org.example.DTO.GameDTO@29c3bf94, org.example.DTO.GameDTO@273e7231, org.example.DTO.GameDTO@a750353, org.example.DTO.GameDTO@1c63b3e0, org.example.DTO.GameDTO@28e880e7, org.example.DTO.GameDTO@7c13d031, org.example.DTO.GameDTO@5e5e2b7b, org.example.DTO.GameDTO@5f236fe3, org.example.DTO.GameDTO@33a02358, org.example.DTO.GameDTO@51d0ff45, org.example.DTO.GameDTO@7e7a03f7, org.example.DTO.GameDTO@3ae237ac, org.example.DTO.GameDTO@8ea694b, org.example.DTO.GameDTO@5e1685c4, org.example.DTO.GameDTO@705d504a, org.example.DTO.GameDTO@5b2956ba, org.example.DTO.GameDTO@52cca5, org.example.DTO.GameDTO@6a8041ce, org.example.DTO.GameDTO@70c593d4, org.example.DTO.GameDTO@614897f0, org.example.DTO.GameDTO@77695898, org.example.DTO.GameDTO@1f8ff98a, org.example.DTO.GameDTO@4308829c, org.example.DTO.GameDTO@665a6a1a, org.example.DTO.GameDTO@5b4a43d1, org.example.DTO.GameDTO@3be9a29b, org.example.DTO.GameDTO@3cf2cb18, org.example.DTO.GameDTO@9cd6c26, org.example.DTO.GameDTO@90e205, org.example.DTO.GameDTO@769b75f6, org.example.DTO.GameDTO@5c1bda36, org.example.DTO.GameDTO@3e5521cf, org.example.DTO.GameDTO@39d27cca]}
+2025-06-25 15:33:44 INFO  org.example.ProxyRPC - Sending request: SAVE_CONFIG
+2025-06-25 15:33:44 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:33:44 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_CONFIG, data=org.example.DTO.ConfigurationDTO@7305e7b5}
+2025-06-25 15:33:44 ERROR org.example.ReflectionWorkerRPC - Exception inside method: handleSAVE_CONFIG
+2025-06-25 15:36:16 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 15:36:20 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 15:36:20 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 15:36:20 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 15:36:20 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 15:36:20 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:36:20 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 15:36:20 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 15:36:20 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 15:36:20 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 15:36:20 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 15:36:20 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 15:36:20 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 15:36:20 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 15:36:20 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 15:36:20 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 15:36:20 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 15:36:21 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 15:36:22 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 15:36:22 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35a0886c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 15:36:22 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 15:36:22 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 15:36:22 INFO  org.example.client.LogView - LogView-Client: Logged in employee: 1
+2025-06-25 15:36:22 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:36:22 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:36:23 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:36:23 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:36:23 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@21a6344e, org.example.DTO.GameDTO@3b7c81e0, org.example.DTO.GameDTO@7fca4340, org.example.DTO.GameDTO@3dfc9f2e, org.example.DTO.GameDTO@2de8c89b, org.example.DTO.GameDTO@72c42f47, org.example.DTO.GameDTO@5f39a21c, org.example.DTO.GameDTO@665533a, org.example.DTO.GameDTO@6d22ff7d, org.example.DTO.GameDTO@3e4f5b89, org.example.DTO.GameDTO@2c74271e, org.example.DTO.GameDTO@244d29, org.example.DTO.GameDTO@7a878347, org.example.DTO.GameDTO@3ed00c8d, org.example.DTO.GameDTO@3391809e, org.example.DTO.GameDTO@11fedec0, org.example.DTO.GameDTO@5725ea03, org.example.DTO.GameDTO@69af200e, org.example.DTO.GameDTO@5605d8d5, org.example.DTO.GameDTO@316a140b, org.example.DTO.GameDTO@49e785d7, org.example.DTO.GameDTO@59d873b5, org.example.DTO.GameDTO@21e3db2b, org.example.DTO.GameDTO@40c85950, org.example.DTO.GameDTO@3574b5a3, org.example.DTO.GameDTO@2f2b3d63, org.example.DTO.GameDTO@102e912e, org.example.DTO.GameDTO@12ae58a2, org.example.DTO.GameDTO@2672ef9, org.example.DTO.GameDTO@7451cbf3, org.example.DTO.GameDTO@101293b6, org.example.DTO.GameDTO@7019b25e, org.example.DTO.GameDTO@4b324a42, org.example.DTO.GameDTO@31461e84, org.example.DTO.GameDTO@354db439, org.example.DTO.GameDTO@87b6b8c, org.example.DTO.GameDTO@51c2509b, org.example.DTO.GameDTO@5071c619, org.example.DTO.GameDTO@8454c52, org.example.DTO.GameDTO@5bb161dd, org.example.DTO.GameDTO@1834b4b8, org.example.DTO.GameDTO@462bf8a9, org.example.DTO.GameDTO@642e0be2, org.example.DTO.GameDTO@34c13133, org.example.DTO.GameDTO@9edd267, org.example.DTO.GameDTO@101a9d43, org.example.DTO.GameDTO@47fe5b9, org.example.DTO.GameDTO@390a14ac, org.example.DTO.GameDTO@5e939700, org.example.DTO.GameDTO@1a27e914]}
+2025-06-25 15:36:29 INFO  org.example.ProxyRPC - Sending request: SAVE_CONFIG
+2025-06-25 15:36:29 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:36:29 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_CONFIG, data=org.example.DTO.ConfigurationDTO@7b5e7754}
+2025-06-25 15:36:29 ERROR org.example.ReflectionWorkerRPC - Exception inside method: handleSAVE_CONFIG
+2025-06-25 15:37:27 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Connection reset
+2025-06-25 15:37:31 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 15:37:33 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 15:37:33 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 15:37:33 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 15:37:33 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 15:37:33 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:37:33 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 15:37:33 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 15:37:34 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 15:37:34 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 15:37:34 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 15:37:34 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 15:37:34 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 15:37:34 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 15:37:34 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 15:37:34 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 15:37:34 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 15:37:34 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 15:37:35 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 15:37:35 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@50c3a9da] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 15:37:36 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 15:37:36 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 15:37:36 INFO  org.example.client.LogView - LogView-Client: Logged in employee: 1
+2025-06-25 15:37:36 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:37:36 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:37:37 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:37:37 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:37:37 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@5d733d3, org.example.DTO.GameDTO@3cf82f4b, org.example.DTO.GameDTO@651d34c3, org.example.DTO.GameDTO@692d2b76, org.example.DTO.GameDTO@55d8d42b, org.example.DTO.GameDTO@28272bac, org.example.DTO.GameDTO@2410b947, org.example.DTO.GameDTO@24e64028, org.example.DTO.GameDTO@370cb113, org.example.DTO.GameDTO@26679615, org.example.DTO.GameDTO@79cd91f, org.example.DTO.GameDTO@116d2ec4, org.example.DTO.GameDTO@433b91d3, org.example.DTO.GameDTO@5976709f, org.example.DTO.GameDTO@38431e8f, org.example.DTO.GameDTO@40a01c4d, org.example.DTO.GameDTO@5f8aa883, org.example.DTO.GameDTO@3512c965, org.example.DTO.GameDTO@15050e2e, org.example.DTO.GameDTO@55073ab7, org.example.DTO.GameDTO@5f434e24, org.example.DTO.GameDTO@7c39ed48, org.example.DTO.GameDTO@4170f89f, org.example.DTO.GameDTO@2dceb084, org.example.DTO.GameDTO@6839f977, org.example.DTO.GameDTO@5b590a95, org.example.DTO.GameDTO@1dabb561, org.example.DTO.GameDTO@45396cc0, org.example.DTO.GameDTO@626cc751, org.example.DTO.GameDTO@71f2642b, org.example.DTO.GameDTO@31b2c7c9, org.example.DTO.GameDTO@3fe3e253, org.example.DTO.GameDTO@3bb1ecb1, org.example.DTO.GameDTO@590014d0, org.example.DTO.GameDTO@7eab0cb6, org.example.DTO.GameDTO@5efa984a, org.example.DTO.GameDTO@6a1a2340, org.example.DTO.GameDTO@33651c47, org.example.DTO.GameDTO@150d7821, org.example.DTO.GameDTO@1fbf8a02, org.example.DTO.GameDTO@2404ba96, org.example.DTO.GameDTO@3f181d75, org.example.DTO.GameDTO@41aab6c7, org.example.DTO.GameDTO@2226db6a, org.example.DTO.GameDTO@23f715b2, org.example.DTO.GameDTO@5c7b470c, org.example.DTO.GameDTO@48f3ceca, org.example.DTO.GameDTO@5c9ab135, org.example.DTO.GameDTO@47db7591, org.example.DTO.GameDTO@419e0941]}
+2025-06-25 15:37:40 INFO  org.example.ProxyRPC - Sending request: SAVE_CONFIG
+2025-06-25 15:37:40 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:37:40 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_CONFIG, data=org.example.DTO.ConfigurationDTO@3cfe4bfb}
+2025-06-25 15:37:40 INFO  org.example.ReflectionWorkerRPC - Am primit 0__X0_XX0 0
+2025-06-25 15:37:40 ERROR org.example.ReflectionWorkerRPC - Exception inside method: handleSAVE_CONFIG
+2025-06-25 15:39:20 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Connection reset
+2025-06-25 15:39:24 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 15:39:27 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 15:39:27 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 15:39:27 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 15:39:27 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 15:39:27 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:39:27 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 15:39:27 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 15:39:27 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 15:39:27 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 15:39:27 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 15:39:27 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 15:39:27 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 15:39:27 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 15:39:27 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 15:39:27 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 15:39:27 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 15:39:28 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 15:39:28 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 15:39:28 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@47a1fbd9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 15:39:29 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 15:39:29 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 15:39:29 INFO  org.example.client.LogView - LogView-Client: Logged in employee: 1
+2025-06-25 15:39:29 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:39:29 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:39:30 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:39:30 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:39:30 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@21a6344e, org.example.DTO.GameDTO@3b7c81e0, org.example.DTO.GameDTO@7fca4340, org.example.DTO.GameDTO@3dfc9f2e, org.example.DTO.GameDTO@2de8c89b, org.example.DTO.GameDTO@72c42f47, org.example.DTO.GameDTO@5f39a21c, org.example.DTO.GameDTO@665533a, org.example.DTO.GameDTO@6d22ff7d, org.example.DTO.GameDTO@3e4f5b89, org.example.DTO.GameDTO@2c74271e, org.example.DTO.GameDTO@244d29, org.example.DTO.GameDTO@7a878347, org.example.DTO.GameDTO@3ed00c8d, org.example.DTO.GameDTO@3391809e, org.example.DTO.GameDTO@11fedec0, org.example.DTO.GameDTO@5725ea03, org.example.DTO.GameDTO@69af200e, org.example.DTO.GameDTO@5605d8d5, org.example.DTO.GameDTO@316a140b, org.example.DTO.GameDTO@49e785d7, org.example.DTO.GameDTO@59d873b5, org.example.DTO.GameDTO@21e3db2b, org.example.DTO.GameDTO@40c85950, org.example.DTO.GameDTO@3574b5a3, org.example.DTO.GameDTO@2f2b3d63, org.example.DTO.GameDTO@102e912e, org.example.DTO.GameDTO@12ae58a2, org.example.DTO.GameDTO@2672ef9, org.example.DTO.GameDTO@7451cbf3, org.example.DTO.GameDTO@101293b6, org.example.DTO.GameDTO@7019b25e, org.example.DTO.GameDTO@4b324a42, org.example.DTO.GameDTO@31461e84, org.example.DTO.GameDTO@354db439, org.example.DTO.GameDTO@87b6b8c, org.example.DTO.GameDTO@51c2509b, org.example.DTO.GameDTO@5071c619, org.example.DTO.GameDTO@8454c52, org.example.DTO.GameDTO@5bb161dd, org.example.DTO.GameDTO@1834b4b8, org.example.DTO.GameDTO@462bf8a9, org.example.DTO.GameDTO@642e0be2, org.example.DTO.GameDTO@34c13133, org.example.DTO.GameDTO@9edd267, org.example.DTO.GameDTO@101a9d43, org.example.DTO.GameDTO@47fe5b9, org.example.DTO.GameDTO@390a14ac, org.example.DTO.GameDTO@5e939700, org.example.DTO.GameDTO@1a27e914]}
+2025-06-25 15:39:34 INFO  org.example.ProxyRPC - Sending request: SAVE_CONFIG
+2025-06-25 15:39:34 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:39:34 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_CONFIG, data=org.example.DTO.ConfigurationDTO@7423d839}
+2025-06-25 15:39:34 INFO  org.example.ReflectionWorkerRPC - Am primit X00XX_X0_ 0
+2025-06-25 15:39:34 ERROR org.example.ConfigurationRepo - detached entity passed to persist: org.example.Configuration
+2025-06-25 15:39:34 ERROR org.example.ReflectionWorkerRPC - Exception inside method: handleSAVE_CONFIG
+2025-06-25 15:45:32 INFO  org.example.StartServerRPC - Server running on port 55556
+2025-06-25 15:45:37 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 15:45:37 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 15:45:37 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 15:45:37 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 15:45:37 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:45:37 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 15:45:37 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 15:45:37 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 15:45:37 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/tictac, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 15:45:37 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 15:45:37 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 15:45:37 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 15:45:37 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/tictac]
+2025-06-25 15:45:37 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 15:45:37 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 15:45:37 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 15:45:38 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 15:45:39 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 15:45:39 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@35a0886c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 15:45:39 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 15:45:39 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 15:45:39 INFO  org.example.client.LogView - LogView-Client: Logged in employee: 1
+2025-06-25 15:45:39 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:45:39 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:45:40 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:45:40 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:45:40 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@5d733d3, org.example.DTO.GameDTO@3cf82f4b, org.example.DTO.GameDTO@651d34c3, org.example.DTO.GameDTO@692d2b76, org.example.DTO.GameDTO@55d8d42b, org.example.DTO.GameDTO@28272bac, org.example.DTO.GameDTO@2410b947, org.example.DTO.GameDTO@24e64028, org.example.DTO.GameDTO@370cb113, org.example.DTO.GameDTO@26679615, org.example.DTO.GameDTO@79cd91f, org.example.DTO.GameDTO@116d2ec4, org.example.DTO.GameDTO@433b91d3, org.example.DTO.GameDTO@5976709f, org.example.DTO.GameDTO@38431e8f, org.example.DTO.GameDTO@40a01c4d, org.example.DTO.GameDTO@5f8aa883, org.example.DTO.GameDTO@3512c965, org.example.DTO.GameDTO@15050e2e, org.example.DTO.GameDTO@55073ab7, org.example.DTO.GameDTO@5f434e24, org.example.DTO.GameDTO@7c39ed48, org.example.DTO.GameDTO@4170f89f, org.example.DTO.GameDTO@2dceb084, org.example.DTO.GameDTO@6839f977, org.example.DTO.GameDTO@5b590a95, org.example.DTO.GameDTO@1dabb561, org.example.DTO.GameDTO@45396cc0, org.example.DTO.GameDTO@626cc751, org.example.DTO.GameDTO@71f2642b, org.example.DTO.GameDTO@31b2c7c9, org.example.DTO.GameDTO@3fe3e253, org.example.DTO.GameDTO@3bb1ecb1, org.example.DTO.GameDTO@590014d0, org.example.DTO.GameDTO@7eab0cb6, org.example.DTO.GameDTO@5efa984a, org.example.DTO.GameDTO@6a1a2340, org.example.DTO.GameDTO@33651c47, org.example.DTO.GameDTO@150d7821, org.example.DTO.GameDTO@1fbf8a02, org.example.DTO.GameDTO@2404ba96, org.example.DTO.GameDTO@3f181d75, org.example.DTO.GameDTO@41aab6c7, org.example.DTO.GameDTO@2226db6a, org.example.DTO.GameDTO@23f715b2, org.example.DTO.GameDTO@5c7b470c, org.example.DTO.GameDTO@48f3ceca, org.example.DTO.GameDTO@5c9ab135, org.example.DTO.GameDTO@47db7591, org.example.DTO.GameDTO@419e0941]}
+2025-06-25 15:45:45 INFO  org.example.ProxyRPC - Sending request: SAVE_CONFIG
+2025-06-25 15:45:45 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:45:45 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_CONFIG, data=org.example.DTO.ConfigurationDTO@7b5e7754}
+2025-06-25 15:45:45 INFO  org.example.ReflectionWorkerRPC - Am primit 0_0XXXX0_ 0
+2025-06-25 15:45:45 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_CONFIG
+2025-06-25 15:45:45 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 15:45:45 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 15:45:45 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:45:46 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@3bf291f7}
+2025-06-25 15:45:46 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 15:45:46 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 15:45:46 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 15:45:46 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 15:45:46 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 15:45:46 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:45:46 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:45:47 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:45:47 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:45:47 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@1ed702f3, org.example.DTO.GameDTO@2bc8b45, org.example.DTO.GameDTO@33595e52, org.example.DTO.GameDTO@4cbafe25, org.example.DTO.GameDTO@6adcaddb, org.example.DTO.GameDTO@cdcf566, org.example.DTO.GameDTO@758e9161, org.example.DTO.GameDTO@6e5e1223, org.example.DTO.GameDTO@61e3d846, org.example.DTO.GameDTO@a7f66d9, org.example.DTO.GameDTO@bfbeb6e, org.example.DTO.GameDTO@15aa2f38, org.example.DTO.GameDTO@6af4f423, org.example.DTO.GameDTO@1bcc0e0a, org.example.DTO.GameDTO@4fb82686, org.example.DTO.GameDTO@baf13a6, org.example.DTO.GameDTO@46b7bb1c, org.example.DTO.GameDTO@3df0419e, org.example.DTO.GameDTO@33f2dcb0, org.example.DTO.GameDTO@4033db4b, org.example.DTO.GameDTO@3b27e70a, org.example.DTO.GameDTO@464ad41, org.example.DTO.GameDTO@2156f621, org.example.DTO.GameDTO@7f6188c3, org.example.DTO.GameDTO@7b7a2f92, org.example.DTO.GameDTO@5ad58b19, org.example.DTO.GameDTO@4c24899c, org.example.DTO.GameDTO@3f70274b, org.example.DTO.GameDTO@15dc8988, org.example.DTO.GameDTO@63274569, org.example.DTO.GameDTO@ba748f8, org.example.DTO.GameDTO@35d36cb8, org.example.DTO.GameDTO@44b22343, org.example.DTO.GameDTO@1de72ab1, org.example.DTO.GameDTO@2cb6417d, org.example.DTO.GameDTO@22e4eff, org.example.DTO.GameDTO@5753cdc2, org.example.DTO.GameDTO@73c5d73b, org.example.DTO.GameDTO@6d66cd97, org.example.DTO.GameDTO@1dcf2f72, org.example.DTO.GameDTO@543bdcd4, org.example.DTO.GameDTO@91aa567, org.example.DTO.GameDTO@524bdba6, org.example.DTO.GameDTO@361bda22, org.example.DTO.GameDTO@3c4c6d49, org.example.DTO.GameDTO@60a1c63a, org.example.DTO.GameDTO@6c3ba763, org.example.DTO.GameDTO@499ba0c, org.example.DTO.GameDTO@5be0a9f3, org.example.DTO.GameDTO@359e34a3, org.example.DTO.GameDTO@4af8dcc]}
+2025-06-25 15:46:05 INFO  org.example.ProxyRPC - Sending request: SAVE_CONFIG
+2025-06-25 15:46:05 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:46:05 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_CONFIG, data=org.example.DTO.ConfigurationDTO@377e1301}
+2025-06-25 15:46:05 INFO  org.example.ReflectionWorkerRPC - Am primit X_00X___X 0
+2025-06-25 15:46:05 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_CONFIG
+2025-06-25 15:46:05 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 15:46:05 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 15:46:05 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:46:06 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@15c077e8}
+2025-06-25 15:46:06 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 15:46:06 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 15:46:06 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 15:46:06 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 15:46:06 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 15:46:06 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 15:46:06 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 15:46:07 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 15:46:07 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 15:46:07 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@4daf1e8f, org.example.DTO.GameDTO@13de89f8, org.example.DTO.GameDTO@57218c0c, org.example.DTO.GameDTO@2f98aac9, org.example.DTO.GameDTO@1af692d3, org.example.DTO.GameDTO@7d00493c, org.example.DTO.GameDTO@261aeb7c, org.example.DTO.GameDTO@4c3ec394, org.example.DTO.GameDTO@62f0b0ca, org.example.DTO.GameDTO@1dc65c01, org.example.DTO.GameDTO@6c7615ce, org.example.DTO.GameDTO@566e49b7, org.example.DTO.GameDTO@31ffc550, org.example.DTO.GameDTO@1ef6b13a, org.example.DTO.GameDTO@42720f4f, org.example.DTO.GameDTO@66f5d547, org.example.DTO.GameDTO@29ef598c, org.example.DTO.GameDTO@23b42ea, org.example.DTO.GameDTO@50e12d95, org.example.DTO.GameDTO@18f69523, org.example.DTO.GameDTO@4b868c88, org.example.DTO.GameDTO@13f2bb00, org.example.DTO.GameDTO@4a26b16e, org.example.DTO.GameDTO@66d56a84, org.example.DTO.GameDTO@1948581a, org.example.DTO.GameDTO@1fe4da88, org.example.DTO.GameDTO@6036b5db, org.example.DTO.GameDTO@2dfa7213, org.example.DTO.GameDTO@76a9773e, org.example.DTO.GameDTO@4fa0c3f9, org.example.DTO.GameDTO@1aed2fbb, org.example.DTO.GameDTO@6479ac1f, org.example.DTO.GameDTO@59d42729, org.example.DTO.GameDTO@10a298e1, org.example.DTO.GameDTO@6341edb9, org.example.DTO.GameDTO@4a71bc9a, org.example.DTO.GameDTO@32642792, org.example.DTO.GameDTO@3685d4af, org.example.DTO.GameDTO@5a45cbe3, org.example.DTO.GameDTO@1d97395d, org.example.DTO.GameDTO@edcd5ca, org.example.DTO.GameDTO@16645812, org.example.DTO.GameDTO@620a83ee, org.example.DTO.GameDTO@46f31323, org.example.DTO.GameDTO@2e69ecb2, org.example.DTO.GameDTO@1a7995a5, org.example.DTO.GameDTO@2cda70f7, org.example.DTO.GameDTO@726e0444, org.example.DTO.GameDTO@13837ac7, org.example.DTO.GameDTO@458101af, org.example.DTO.GameDTO@3aa39c20, org.example.DTO.GameDTO@38edf314]}

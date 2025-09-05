@@ -1,0 +1,24 @@
+li{
+    display: block;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    background-color: yellow;
+    padding: 10px;
+    width: 400px;
+}
+li:last-child{
+    border-bottom: 2px solid black;
+}
+li:first-child{
+    border-top: 2px solid black;
+}
+img{
+    width: 130px;
+    height: 160px;
+}
+ol{
+    height: 140px;
+}
+p{
+    display:inline;
+}

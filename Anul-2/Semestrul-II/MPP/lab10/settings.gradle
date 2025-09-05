@@ -1,0 +1,10 @@
+rootProject.name = "example.demo"
+include 'model'
+include 'persistence'
+include 'service'
+include 'networking'
+include 'client'
+include 'server'
+include 'services'
+include 'Rest-Services'
+

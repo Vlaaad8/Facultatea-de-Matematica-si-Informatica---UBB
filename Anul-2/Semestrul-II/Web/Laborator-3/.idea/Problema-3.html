@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema - 3A</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        td {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            background-color: #b0c4de;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<table id="myTable"></table>
+<script>
+    const rows = 4;
+    const column = 4;
+    const totalData = rows * column;
+
+    let numbers = [];
+    let firstCell = null;
+    let secondCell = null;
+    let lock = false;
+    let matchedCount = 0;
+
+    function generateData() {
+        const dataSet = [];
+        for(let i = 1; i <= totalData / 2; i++) {
+            dataSet.push(i);
+            dataSet.push(i);
+        }
+        dataSet.sort(() => Math.random() - 0.5);
+        return dataSet;
+    }
+
+    function populateTable() {
+        let table = document.getElementById('myTable');
+        const dataSet = generateData();
+        let index = 0;
+
+        for (let i = 0; i < rows; i++) {
+            let row = table.insertRow(i);
+            for(let j = 0; j < column; j++) {
+                let cell = row.insertCell(j);
+                cell.dataset.value = dataSet[index];
+                cell.textContent ='';
+                cell.onclick = handleClick;
+                cell.style.cursor = 'pointer';
+                index++;
+            }
+        }
+    }
+    function handleClick(e) {
+        const cell = e.target;
+
+        if (lock || cell.classList.contains("matched") || cell === firstCell) {
+            return;
+        }
+
+        cell.innerText = cell.dataset.value;
+        cell.classList.add("revealed");
+
+        if (!firstCell) {
+            firstCell = cell;
+        } else {
+            secondCell = cell;
+            lock = true;
+
+            if (firstCell.dataset.value === secondCell.dataset.value) {
+                firstCell.classList.add("matched");
+                secondCell.classList.add("matched");
+                firstCell = null;
+                secondCell = null;
+                lock = false;
+                matchedCount += 2;
+
+                if (matchedCount === totalCells) {
+                    setTimeout(() => alert("Felicitari! Ai castigat jocul!"), 200);
+                }
+            } else {
+                setTimeout(() => {
+                    firstCell.innerText = '';
+                    secondCell.innerText = '';
+                    firstCell.classList.remove("revealed");
+                    secondCell.classList.remove("revealed");
+                    firstCell = null;
+                    secondCell = null;
+                    lock = false;
+                }, 700);
+            }
+        }
+    }
+
+    populateTable();
+</script>
+</body>
+</html>

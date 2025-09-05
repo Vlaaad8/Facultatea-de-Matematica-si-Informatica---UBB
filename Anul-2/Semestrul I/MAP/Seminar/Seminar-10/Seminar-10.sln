@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seminar-10", "Seminar-10\Seminar-10.csproj", "{32822950-2E23-4C9B-BB87-EEAACA9793AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32822950-2E23-4C9B-BB87-EEAACA9793AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32822950-2E23-4C9B-BB87-EEAACA9793AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32822950-2E23-4C9B-BB87-EEAACA9793AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32822950-2E23-4C9B-BB87-EEAACA9793AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

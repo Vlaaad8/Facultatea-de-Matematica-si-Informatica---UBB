@@ -1,0 +1,19 @@
+elimina(_,[],[]).
+elimina(X,[X|T],R):-elimina(X,T,R).
+elimina(X,[H|T],[H|R]):-H\=X,elimina(X,T,R).
+
+%-------------------
+cauta(X,[X|_]).
+cauta(X,[H|T]):-X\=H,cauta(X,T).
+
+numara(_,[],0).
+numara(X,[X|T],N):-numara(X,T,N1),N is N1+1.
+numara(X,[H|T],N):-X\=H,numara(X,T,N).
+
+multime([],[]).
+multime([H|T],[H|Rez]):- \+ cauta(H,T),multime(T,Rez).
+multime([H|T],Rez):- cauta(H,T),multime(T,Rez).
+
+
+perechi([],_,[]).
+perechi([H|T],L,[[H,M]|Rez]):-numara(H,L,M),perechi(T,L,Rez).

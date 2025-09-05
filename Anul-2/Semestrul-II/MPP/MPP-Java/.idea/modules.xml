@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MPP-Java.iml" filepath="$PROJECT_DIR$/.idea/MPP-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model.main.iml" filepath="$PROJECT_DIR$/.idea/modules/model.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model.test.iml" filepath="$PROJECT_DIR$/.idea/modules/model.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository.main.iml" filepath="$PROJECT_DIR$/.idea/modules/repository.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository.test.iml" filepath="$PROJECT_DIR$/.idea/modules/repository.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/startGradle.iml" filepath="$PROJECT_DIR$/startGradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/startGradle.main.iml" filepath="$PROJECT_DIR$/.idea/modules/startGradle.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/startGradle.test.iml" filepath="$PROJECT_DIR$/.idea/modules/startGradle.test.iml" />
+    </modules>
+  </component>
+</project>

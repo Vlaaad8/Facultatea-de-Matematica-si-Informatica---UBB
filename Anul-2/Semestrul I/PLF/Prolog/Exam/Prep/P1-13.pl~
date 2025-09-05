@@ -1,0 +1,7 @@
+numarare(_,[],0).
+numarare(X,[X|T],N):-numarare(X,T,N1),N is N1+1.
+numarare(X,[H|T],N):-H\=X,numarare(X,T,N).
+
+multime([H|T],[H|Rez]):-numarare(H,T,N),N=:=0,multime(T,Rez).
+multime([H|T],Rez):-numarare(H,T,N),N>0,multime(T,Rez).
+multime([],[]).

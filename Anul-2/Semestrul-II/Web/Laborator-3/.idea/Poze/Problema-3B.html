@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema - 3B</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        td {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            background-color: #b0c4de;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+        }
+
+        td img {
+            width: 100%;
+            height: 100%;
+            display: none;
+            object-fit: cover;
+        }
+
+        td.revealed img,
+        td.matched img {
+            display: block;
+        }
+
+        td.matched {
+            background-color: #90ee90;
+            cursor: default;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<table id="memory-table"></table>
+
+<script>
+    const rows = 4;
+    const cols = 4;
+    const totalCells = rows * cols;
+
+    const imageSources = [
+        "Boian-Rares-133x100.jpg",
+        "Czibula-Gabriela.jpg",
+        "Grigoreta-Cojocar.jpg",
+        "Manuela-Petrescu-2.jpg",
+        "Mircea-Gabriel-small.jpg",
+        "Pop-Emilia.jpg",
+        "Serban-Camelia.jpg",
+        "Suciu-Dan.jpg"
+    ];
+
+    let images = [];
+    let firstCell = null;
+    let secondCell = null;
+    let lock = false;
+    let matchedCount = 0;
+
+    function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
+
+    function generateImages() {
+        const temp = [...imageSources, ...imageSources];
+        return shuffle(temp);
+    }
+
+    function createTable() {
+        const table = document.getElementById("memory-table");
+        images = generateImages();
+        let index = 0;
+
+        for (let r = 0; r < rows; r++) {
+            const row = table.insertRow();
+            for (let c = 0; c < cols; c++) {
+                const cell = row.insertCell();
+                const img = document.createElement("img");
+                img.src = images[index];
+                img.dataset.src = images[index];
+                cell.appendChild(img);
+                cell.dataset.value = images[index];
+                cell.onclick = handleClick;
+                index++;
+            }
+        }
+    }
+
+    function handleClick(e) {
+        const cell = e.currentTarget;
+
+        if (lock || cell.classList.contains("matched") || cell === firstCell) {
+            return;
+        }
+
+        cell.classList.add("revealed");
+
+        if (!firstCell) {
+            firstCell = cell;
+        } else {
+            secondCell = cell;
+            lock = true;
+
+            if (firstCell.dataset.value === secondCell.dataset.value) {
+                // Match
+                firstCell.classList.add("matched");
+                secondCell.classList.add("matched");
+                firstCell = null;
+                secondCell = null;
+                lock = false;
+                matchedCount += 2;
+
+            } else {
+                setTimeout(() => {
+                    firstCell.classList.remove("revealed");
+                    secondCell.classList.remove("revealed");
+                    firstCell = null;
+                    secondCell = null;
+                    lock = false;
+                }, 700);
+            }
+        }
+    }
+
+    createTable();
+</script>
+
+</body>
+</html>

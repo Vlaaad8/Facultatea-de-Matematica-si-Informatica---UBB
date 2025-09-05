@@ -1,0 +1,9 @@
+inv([],A,A).
+inv([H|T],B,R):-inv(T,[H|B],R).
+inverseaza(L,R):-inv(L,[],R).
+
+adauga([],[1]).
+adauga([H|T],[J|R],F):-J is H+F,J<10,adauga(T,R,0).
+adauga([H|T],[M|R],F):-J is H+F,J>9,M is J mod 10,adauga(T,R,1).
+
+succesor(L,R):-inv(L,Tmp),adauga(Tmp,Rez,1),inv(Rez,R).

@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="mockito-core-5.14.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/mockito-core-5.14.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/byte-buddy-1.15.10.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/byte-buddy-agent-1.15.10.jar!/" />
+      <root url="file://$USER_HOME$/Downloads" />
+      <root url="file://$USER_HOME$/Downloads" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads" />
+      <root url="file://$USER_HOME$/Downloads" />
+      <root url="file://$USER_HOME$/Downloads" />
+      <root url="file://$USER_HOME$/Downloads/Laborator2/Laborator2/src" />
+      <root url="file://$USER_HOME$/Downloads/curs4p (1)/curs4p/src/main/java" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Downloads" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Downloads" recursive="false" type="SOURCES" />
+  </library>
+</component>

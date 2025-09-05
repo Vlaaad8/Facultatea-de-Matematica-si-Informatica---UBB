@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.seminar8.MainView">
+   <children>
+      <TableView fx:id="tableView" layoutX="23.0" layoutY="14.0" prefHeight="368.0" prefWidth="267.0">
+        <columns>
+          <TableColumn fx:id="studentColumn" prefWidth="75.0" text="Student" />
+          <TableColumn fx:id="temaColumn" prefWidth="97.19999694824219" text="Tema" />
+            <TableColumn fx:id="noteColumn" prefWidth="93.19999694824219" text="Note" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textFieldName" layoutX="392.0" layoutY="58.0" />
+      <TextField fx:id="textFieldNota" layoutX="393.0" layoutY="118.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="textFieldTema" layoutX="394.0" layoutY="173.0" />
+      <ComboBox layoutX="394.0" layoutY="233.0" prefWidth="150.0" promptText="Selecteaza tema" />
+      <Label layoutX="300.0" layoutY="24.0" text="Filtreaza dupa" />
+      <Label layoutX="305.0" layoutY="62.0" prefHeight="18.0" prefWidth="90.0" text="Nume student:" />
+      <Label layoutX="293.0" layoutY="122.0" prefHeight="18.0" prefWidth="105.0" text="Nota mai mare decat:">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label layoutX="305.0" layoutY="177.0" text="Tema" />
+   </children>
+</AnchorPane>

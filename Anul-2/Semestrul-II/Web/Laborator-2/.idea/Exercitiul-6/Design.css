@@ -1,0 +1,29 @@
+.nume,.prenume{
+    vertical-align: middle;
+    font-family: courier;
+    font-size: 45px;
+    letter-spacing: 14px;
+    height: 30px;
+    width: 797px;
+    background-image: repeating-linear-gradient(
+        90deg,
+    black,
+    black 3px,
+    white 1px,
+    white 40px);
+    );
+}
+.cnp{
+    vertical-align: middle;
+    font-family: courier;
+    font-size: 43px;
+    letter-spacing: 14px;
+    height: 30px;
+    width: 519px;
+    background-image: repeating-linear-gradient(
+            90deg,
+            black,
+            black 3px,
+            white 1px,
+            white 40px);
+}

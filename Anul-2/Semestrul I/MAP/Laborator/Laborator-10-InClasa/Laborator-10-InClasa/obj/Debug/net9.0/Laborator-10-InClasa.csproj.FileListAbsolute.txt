@@ -1,0 +1,15 @@
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\bin\Debug\net9.0\Laborator-10-InClasa.exe
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\bin\Debug\net9.0\Laborator-10-InClasa.deps.json
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\bin\Debug\net9.0\Laborator-10-InClasa.runtimeconfig.json
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\bin\Debug\net9.0\Laborator-10-InClasa.dll
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\bin\Debug\net9.0\Laborator-10-InClasa.pdb
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\Laborator-10-InClasa.GeneratedMSBuildEditorConfig.editorconfig
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\Laborator-10-InClasa.AssemblyInfoInputs.cache
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\Laborator-10-InClasa.AssemblyInfo.cs
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\Laborator-10-InClasa.csproj.CoreCompileInputs.cache
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\Laborator-10-InClasa.sourcelink.json
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\Laborator-10-InClasa.dll
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\refint\Laborator-10-InClasa.dll
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\Laborator-10-InClasa.pdb
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\Laborator-10-InClasa.genruntimeconfig.cache
+D:\Anul 2\MAP\Laborator\Laborator-10-InClasa\Laborator-10-InClasa\obj\Debug\net9.0\ref\Laborator-10-InClasa.dll

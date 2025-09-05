@@ -1,0 +1,10 @@
+cauta(X,[H|T]):-X\=H,cauta(X,T).
+cauta(X,[X|_]).
+
+diferenta([],_,[]).
+diferenta([H|T],L,Rez):-cauta(H,L),diferenta(T,L,Rez).
+diferenta([H|T],L,[H|Rez]):- \+ cauta(H,L),diferenta(T,L,Rez).
+
+adauga([],[]).
+adauga([H|T],[1,H|Rez]):-H mod 2 =:=0,adauga(T,Rez).
+adauga([H|T],[H|Rez]):- H mod 2 =:=1,adauga(T,Rez).

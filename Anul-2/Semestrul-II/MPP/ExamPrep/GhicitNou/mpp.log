@@ -1,0 +1,735 @@
+2025-06-25 18:08:31 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:08:50 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:08:53 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:08:53 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:08:53 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:08:53 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:08:53 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:08:53 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:08:53 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:08:53 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:08:53 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:08:53 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/memory, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:08:53 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:08:53 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:08:53 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:08:53 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/memory]
+2025-06-25 18:08:53 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:08:53 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:08:53 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:08:54 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:08:56 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:08:56 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d0c29fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:08:57 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:08:57 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:08:57 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:08:57 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:08:58 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:08:58 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:08:58 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@62891afc, org.example.DTO.GameDTO@5470146e, org.example.DTO.GameDTO@248a47aa, org.example.DTO.GameDTO@1b2690ea, org.example.DTO.GameDTO@31523788, org.example.DTO.GameDTO@655586a8, org.example.DTO.GameDTO@13943abf, org.example.DTO.GameDTO@3c1a49e7, org.example.DTO.GameDTO@1c54c79b, org.example.DTO.GameDTO@557d627f, org.example.DTO.GameDTO@670eebad, org.example.DTO.GameDTO@935c3da, org.example.DTO.GameDTO@33e7b578, org.example.DTO.GameDTO@d3757e1, org.example.DTO.GameDTO@1d748669, org.example.DTO.GameDTO@3af8bd0e, org.example.DTO.GameDTO@343a935c, org.example.DTO.GameDTO@3054265, org.example.DTO.GameDTO@3afbdba2]}
+2025-06-25 18:08:58 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:08:58 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:08:59 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:08:59 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:08:59 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:08:59 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@ed3edf3}
+2025-06-25 18:09:11 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Connection reset
+2025-06-25 18:10:52 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:11:03 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:11:07 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:11:07 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:11:07 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:11:07 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:11:07 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:11:07 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:11:07 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:11:07 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:11:07 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:11:07 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:11:07 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:11:07 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:11:07 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:11:07 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:11:07 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:11:07 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:11:07 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:11:08 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:11:09 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:11:09 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d0c29fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:11:10 ERROR org.example.ReflectionWorkerRPC - Error in login: null
+2025-06-25 18:11:10 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:11:10 INFO  org.example.ProxyRPC - Response received: Response{type=ERROR, data=null}
+2025-06-25 18:11:10 ERROR org.example.ProxyRPC - Erroare la logare
+2025-06-25 18:11:10 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Socket closed
+2025-06-25 18:11:50 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:11:59 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:12:03 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:12:03 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:12:03 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:12:03 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:12:03 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:12:03 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:12:03 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:12:03 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:12:03 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:12:03 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:12:03 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:12:03 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:12:03 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:12:03 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:12:03 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:12:03 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:12:03 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:12:04 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:12:05 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:12:05 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3d92d37a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:12:06 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:12:06 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:12:06 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:12:06 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:12:07 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:12:07 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:12:07 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[]}
+2025-06-25 18:12:07 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:12:07 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:12:08 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:12:08 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:12:08 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:12:08 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@51e99cf7}
+2025-06-25 18:12:16 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:12:16 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:12:16 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:12:16 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:12:16 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:12:16 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@8c96fae}
+2025-06-25 18:12:26 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:12:26 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:12:26 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@2e29c586}
+2025-06-25 18:12:26 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:12:26 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:12:26 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:12:26 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:12:26 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:12:26 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:12:26 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:12:27 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:12:27 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:12:27 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@747e0995]}
+2025-06-25 18:15:35 INFO  org.example.ReflectionWorkerRPC - Error in worker run: Connection reset
+2025-06-25 18:15:38 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:15:42 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:15:44 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:15:44 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:15:44 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:15:44 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:15:44 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:15:44 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:15:44 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:15:44 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:15:44 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:15:44 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:15:44 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:15:44 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:15:44 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:15:44 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:15:44 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:15:44 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:15:44 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:15:45 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:15:46 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:15:46 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d0c29fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:15:46 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:15:46 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:15:46 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:15:46 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:15:47 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:15:47 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:15:47 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@6225a881]}
+2025-06-25 18:15:47 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:15:47 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:15:48 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:15:48 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:15:48 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:15:48 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@1e365872}
+2025-06-25 18:15:51 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:15:51 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:15:51 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:15:51 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:15:51 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:15:51 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@7c081390}
+2025-06-25 18:16:23 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:16:23 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:16:23 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@49abe5c5}
+2025-06-25 18:16:23 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:16:23 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:16:23 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:16:23 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:16:23 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:16:23 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:16:23 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:16:24 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:16:24 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:16:24 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@10f757eb, org.example.DTO.GameDTO@3c2e684f]}
+2025-06-25 18:20:00 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:20:11 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:20:13 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:20:13 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:20:13 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:20:13 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:20:13 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:20:13 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:20:13 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:20:13 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:20:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:20:13 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:20:13 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:20:13 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:20:13 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:20:13 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:20:13 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:20:13 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:20:13 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:20:14 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:20:15 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:20:15 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d0c29fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:20:15 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:20:15 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:20:15 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:20:15 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:20:16 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:20:16 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:20:16 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@8c96fae, org.example.DTO.GameDTO@42b40dfa]}
+2025-06-25 18:20:16 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:20:16 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:20:17 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:20:17 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:20:17 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:20:17 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@4c167d3f}
+2025-06-25 18:20:19 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:20:19 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:20:19 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:20:19 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:20:19 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:20:19 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@322817cb}
+2025-06-25 18:20:26 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:20:26 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:20:26 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@51500de7}
+2025-06-25 18:20:26 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:20:26 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:20:26 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:20:26 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:20:26 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:20:26 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:20:26 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:20:27 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:20:27 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:20:27 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@2ff60f7, org.example.DTO.GameDTO@7dff1a12, org.example.DTO.GameDTO@f1bdc29]}
+2025-06-25 18:21:58 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:21:59 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:22:02 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:22:02 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:22:02 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:22:02 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:22:02 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:02 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:22:02 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:22:02 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:22:02 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:22:02 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:22:02 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:22:02 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:22:02 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:22:02 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:22:02 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:22:02 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:22:02 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:22:03 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:22:04 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:22:04 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d0c29fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:22:04 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:22:04 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:22:04 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:22:04 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:05 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:22:05 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:22:05 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@6225a881, org.example.DTO.GameDTO@164e1b3b, org.example.DTO.GameDTO@2f824567]}
+2025-06-25 18:22:05 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:22:05 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:06 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:22:06 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:22:06 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:22:06 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@27a2d9fb}
+2025-06-25 18:22:08 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:22:08 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:08 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:22:08 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:22:08 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:22:08 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@10f757eb}
+2025-06-25 18:22:09 ERROR org.example.client.MainView - 18
+2025-06-25 18:22:15 ERROR org.example.client.MainView - 15
+2025-06-25 18:22:27 ERROR org.example.client.MainView - 7
+2025-06-25 18:22:29 ERROR org.example.client.MainView - 6
+2025-06-25 18:22:29 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:22:29 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:29 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@677dda50}
+2025-06-25 18:22:29 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:22:29 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:22:29 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:22:29 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:22:29 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:22:29 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:22:29 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:30 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:22:30 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:22:30 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@668c9, org.example.DTO.GameDTO@315a1433, org.example.DTO.GameDTO@1bb845fc, org.example.DTO.GameDTO@549b3ad4]}
+2025-06-25 18:22:34 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:22:34 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:34 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:22:34 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:22:34 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:22:34 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@676850ae}
+2025-06-25 18:22:35 ERROR org.example.client.MainView - -1
+2025-06-25 18:22:40 ERROR org.example.client.MainView - -1
+2025-06-25 18:22:46 ERROR org.example.client.MainView - -4
+2025-06-25 18:22:48 ERROR org.example.client.MainView - 5
+2025-06-25 18:22:48 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:22:48 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:48 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@4849eaa0}
+2025-06-25 18:22:48 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:22:48 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:22:48 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:22:48 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:22:48 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:22:48 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:22:48 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:22:49 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:22:49 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:22:49 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@6f23bfc, org.example.DTO.GameDTO@5fbc197b, org.example.DTO.GameDTO@527cc5c2, org.example.DTO.GameDTO@77341203, org.example.DTO.GameDTO@600eeac2]}
+2025-06-25 18:26:56 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:27:05 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:27:09 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:27:09 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:27:09 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:27:09 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:27:09 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:09 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:27:09 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:27:09 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:27:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:27:09 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:27:09 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:27:09 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:27:09 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:27:09 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:27:10 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:27:10 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:27:10 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:27:10 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:27:11 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:27:11 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d0c29fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:27:12 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:27:12 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:27:12 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:27:12 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:13 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:27:13 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:27:13 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@5470146e, org.example.DTO.GameDTO@248a47aa, org.example.DTO.GameDTO@1b2690ea, org.example.DTO.GameDTO@31523788, org.example.DTO.GameDTO@655586a8]}
+2025-06-25 18:27:13 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:27:13 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:14 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:27:14 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:27:14 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:27:14 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@935c3da}
+2025-06-25 18:27:16 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:27:16 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:16 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:27:16 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:27:16 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:27:16 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@33e7b578}
+2025-06-25 18:27:18 ERROR org.example.client.MainView - 13
+2025-06-25 18:27:18 ERROR org.example.client.MainView - 10 3
+2025-06-25 18:27:24 ERROR org.example.client.MainView - 10
+2025-06-25 18:27:24 ERROR org.example.client.MainView - 3 10
+2025-06-25 18:27:28 ERROR org.example.client.MainView - 9
+2025-06-25 18:27:28 ERROR org.example.client.MainView - 1 3
+2025-06-25 18:27:31 ERROR org.example.client.MainView - 1
+2025-06-25 18:27:31 ERROR org.example.client.MainView - 8 10
+2025-06-25 18:27:31 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:27:31 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:31 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@1d23d8d9}
+2025-06-25 18:27:32 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:27:32 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:27:32 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:27:32 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:27:32 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:27:32 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:27:32 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:33 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:27:33 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:27:33 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@1d748669, org.example.DTO.GameDTO@3af8bd0e, org.example.DTO.GameDTO@343a935c, org.example.DTO.GameDTO@3054265, org.example.DTO.GameDTO@3afbdba2, org.example.DTO.GameDTO@4594013e]}
+2025-06-25 18:27:39 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:27:39 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:39 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:27:39 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:27:39 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:27:39 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@25d4daa3}
+2025-06-25 18:27:40 ERROR org.example.client.MainView - 13
+2025-06-25 18:27:40 ERROR org.example.client.MainView - 10 3
+2025-06-25 18:27:41 ERROR org.example.client.MainView - 10
+2025-06-25 18:27:41 ERROR org.example.client.MainView - 3 10
+2025-06-25 18:27:44 ERROR org.example.client.MainView - 19
+2025-06-25 18:27:44 ERROR org.example.client.MainView - 8 1
+2025-06-25 18:27:45 ERROR org.example.client.MainView - 18
+2025-06-25 18:27:45 ERROR org.example.client.MainView - 1 10
+2025-06-25 18:27:45 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:27:45 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:45 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@3ad1261f}
+2025-06-25 18:27:45 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:27:45 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:27:45 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:27:45 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:27:45 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:27:45 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:27:45 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:46 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:27:46 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:27:46 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@c6bb216, org.example.DTO.GameDTO@68a95ef2, org.example.DTO.GameDTO@dd12f28, org.example.DTO.GameDTO@ed3edf3, org.example.DTO.GameDTO@5f79153d, org.example.DTO.GameDTO@7d858eee, org.example.DTO.GameDTO@79a95619]}
+2025-06-25 18:27:57 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:27:57 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:27:57 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:27:57 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:27:57 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:27:57 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@688490aa}
+2025-06-25 18:27:58 ERROR org.example.client.MainView - -1
+2025-06-25 18:27:58 ERROR org.example.client.MainView - 1 10
+2025-06-25 18:27:59 ERROR org.example.client.MainView - 17
+2025-06-25 18:27:59 ERROR org.example.client.MainView - 10 8
+2025-06-25 18:28:00 ERROR org.example.client.MainView - 17
+2025-06-25 18:28:00 ERROR org.example.client.MainView - 3 3
+2025-06-25 18:28:07 ERROR org.example.client.MainView - 26
+2025-06-25 18:28:07 ERROR org.example.client.MainView - 8 1
+2025-06-25 18:28:07 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:28:07 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:28:07 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@533982b8}
+2025-06-25 18:28:07 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:28:07 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:28:07 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:28:07 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:28:07 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:28:07 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:28:07 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:28:08 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:28:08 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:28:08 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@7fc3a07a, org.example.DTO.GameDTO@2ee0a392, org.example.DTO.GameDTO@1dca31c9, org.example.DTO.GameDTO@5107e31a, org.example.DTO.GameDTO@33a55930, org.example.DTO.GameDTO@18f290e5, org.example.DTO.GameDTO@547abe4b, org.example.DTO.GameDTO@3a0b98ed]}
+2025-06-25 18:28:42 INFO  org.example.ReflectionWorkerRPC - Error in worker run: Connection reset
+2025-06-25 18:28:46 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:28:53 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:28:53 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:28:53 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:28:53 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:28:53 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:28:53 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:28:53 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:28:53 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:28:53 INFO  org.example.ServicesImplementation - Deja inregistrat
+2025-06-25 18:28:53 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:28:53 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:28:53 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:28:53 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:28:54 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:28:54 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:28:54 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@5470146e, org.example.DTO.GameDTO@248a47aa, org.example.DTO.GameDTO@1b2690ea, org.example.DTO.GameDTO@31523788, org.example.DTO.GameDTO@655586a8, org.example.DTO.GameDTO@13943abf, org.example.DTO.GameDTO@3c1a49e7, org.example.DTO.GameDTO@1c54c79b]}
+2025-06-25 18:28:54 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:28:54 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:28:55 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:28:55 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:28:55 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:28:55 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@1d748669}
+2025-06-25 18:29:11 INFO  org.example.ReflectionWorkerRPC - Error in worker run: Connection reset
+2025-06-25 18:29:36 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:29:47 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:29:50 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:29:50 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:29:50 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:29:50 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:29:50 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:29:50 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:29:50 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:29:50 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:29:50 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:29:50 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:29:50 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:29:50 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:29:50 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:29:50 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:29:50 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:29:50 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:29:50 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:29:51 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:29:52 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:29:52 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@43d4eb4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:29:52 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:29:52 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:29:52 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:29:52 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:29:53 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:29:53 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:29:53 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@5470146e, org.example.DTO.GameDTO@248a47aa, org.example.DTO.GameDTO@1b2690ea, org.example.DTO.GameDTO@31523788, org.example.DTO.GameDTO@655586a8, org.example.DTO.GameDTO@13943abf, org.example.DTO.GameDTO@3c1a49e7, org.example.DTO.GameDTO@1c54c79b]}
+2025-06-25 18:29:53 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:29:53 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:29:54 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:29:54 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:29:54 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:29:54 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@1d748669}
+2025-06-25 18:29:56 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:29:56 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:29:56 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:29:56 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:29:56 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:29:56 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@3af8bd0e}
+2025-06-25 18:29:57 ERROR org.example.client.MainView - 13
+2025-06-25 18:29:57 ERROR org.example.client.MainView - 10 3
+2025-06-25 18:29:58 ERROR org.example.client.MainView - 10
+2025-06-25 18:29:58 ERROR org.example.client.MainView - 3 8
+2025-06-25 18:29:59 ERROR org.example.client.MainView - 2
+2025-06-25 18:29:59 ERROR org.example.client.MainView - 8 10
+2025-06-25 18:30:00 ERROR org.example.client.MainView - Am incredentat same 1
+2025-06-25 18:30:00 ERROR org.example.client.MainView - 2
+2025-06-25 18:30:00 ERROR org.example.client.MainView - 1 1
+2025-06-25 18:30:00 ERROR org.example.client.MainView - 1
+2025-06-25 18:30:00 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:30:00 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:30:00 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@209d73c6}
+2025-06-25 18:30:00 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:30:00 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:30:00 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:30:00 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:30:00 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:30:00 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:30:00 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:30:01 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:30:01 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:30:01 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@3054265, org.example.DTO.GameDTO@3afbdba2, org.example.DTO.GameDTO@4594013e, org.example.DTO.GameDTO@25d4daa3, org.example.DTO.GameDTO@c6bb216, org.example.DTO.GameDTO@68a95ef2, org.example.DTO.GameDTO@dd12f28, org.example.DTO.GameDTO@ed3edf3, org.example.DTO.GameDTO@5f79153d]}
+2025-06-25 18:31:29 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:31:31 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:31:35 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:31:35 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:31:35 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:31:35 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:31:35 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:31:35 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:31:35 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:31:35 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:31:35 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:31:35 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:31:35 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:31:35 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:31:35 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:31:35 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:31:35 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:31:35 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:31:35 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:31:36 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:31:37 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:31:37 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3d92d37a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:31:38 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:31:38 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:31:38 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:31:38 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:31:39 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:31:39 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:31:39 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@60b04a3f, org.example.DTO.GameDTO@7323d9de, org.example.DTO.GameDTO@136efc31, org.example.DTO.GameDTO@e565e5f, org.example.DTO.GameDTO@6cd50c18, org.example.DTO.GameDTO@1d5c575, org.example.DTO.GameDTO@65be2e0a, org.example.DTO.GameDTO@59a62044, org.example.DTO.GameDTO@1dd742a4]}
+2025-06-25 18:31:39 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:31:39 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:31:40 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:31:40 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:31:40 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:31:40 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@28df8009}
+2025-06-25 18:31:41 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:31:41 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:31:41 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:31:41 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:31:41 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:31:41 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@60a21c93}
+2025-06-25 18:31:42 ERROR org.example.client.MainView - 18
+2025-06-25 18:31:42 ERROR org.example.client.MainView - 10 8
+2025-06-25 18:31:43 ERROR org.example.client.MainView - Am incredentat same 1
+2025-06-25 18:31:43 ERROR org.example.client.MainView - 18
+2025-06-25 18:31:43 ERROR org.example.client.MainView - 8 8
+2025-06-25 18:31:47 ERROR org.example.client.MainView - 15
+2025-06-25 18:31:47 ERROR org.example.client.MainView - 3 10
+2025-06-25 18:31:48 ERROR org.example.client.MainView - 14
+2025-06-25 18:31:48 ERROR org.example.client.MainView - 1 8
+2025-06-25 18:31:48 ERROR org.example.client.MainView - Am pus in game 1
+2025-06-25 18:31:48 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:31:48 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:31:48 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@aad4b8c}
+2025-06-25 18:31:48 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:31:48 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:31:48 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:31:48 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:31:48 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:31:48 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:31:48 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:31:49 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:31:49 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:31:49 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@77e9f13b, org.example.DTO.GameDTO@2362f807, org.example.DTO.GameDTO@53542e7c, org.example.DTO.GameDTO@3023c5f8, org.example.DTO.GameDTO@8fb8aee, org.example.DTO.GameDTO@3cedf936, org.example.DTO.GameDTO@4eb81719, org.example.DTO.GameDTO@609a1733, org.example.DTO.GameDTO@34624d34, org.example.DTO.GameDTO@671526c7]}
+2025-06-25 18:32:45 INFO  org.example.ReflectionWorkerRPC - Error in worker run: Connection reset
+2025-06-25 18:34:59 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:35:09 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:35:12 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:35:12 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:35:12 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:35:12 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:35:12 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:35:12 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:35:12 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:35:12 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:35:12 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:35:12 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:35:12 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:35:13 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:35:13 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:35:13 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:35:13 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:35:13 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:35:13 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:35:13 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:35:14 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:35:14 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d0c29fd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:35:15 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:35:15 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:35:15 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:35:15 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:35:16 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:35:16 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:35:16 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@60b04a3f, org.example.DTO.GameDTO@7323d9de, org.example.DTO.GameDTO@136efc31, org.example.DTO.GameDTO@e565e5f, org.example.DTO.GameDTO@6cd50c18, org.example.DTO.GameDTO@1d5c575, org.example.DTO.GameDTO@65be2e0a, org.example.DTO.GameDTO@59a62044, org.example.DTO.GameDTO@1dd742a4, org.example.DTO.GameDTO@3206d206]}
+2025-06-25 18:35:16 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:35:16 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:35:17 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:35:17 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:35:17 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:35:17 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@60a21c93}
+2025-06-25 18:35:19 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:35:19 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:35:19 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:35:19 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:35:19 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:35:19 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@22783d8b}
+2025-06-25 18:35:19 ERROR org.example.client.MainView - 13
+2025-06-25 18:35:19 ERROR org.example.client.MainView - 10 3
+2025-06-25 18:35:20 ERROR org.example.client.MainView - Am incredentat same 1
+2025-06-25 18:35:20 ERROR org.example.client.MainView - 13
+2025-06-25 18:35:20 ERROR org.example.client.MainView - 3 3
+2025-06-25 18:35:20 ERROR org.example.client.MainView - 24
+2025-06-25 18:35:20 ERROR org.example.client.MainView - 8 3
+2025-06-25 18:35:21 ERROR org.example.client.MainView - 23
+2025-06-25 18:35:21 ERROR org.example.client.MainView - 1 3
+2025-06-25 18:35:21 ERROR org.example.client.MainView - Am pus in game 1
+2025-06-25 18:35:21 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 18:35:21 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:35:21 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@19295cbc}
+2025-06-25 18:35:21 INFO  org.example.ServicesImplementation - Trimitem notificare la 1 clienti
+2025-06-25 18:35:21 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 18:35:21 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 18:35:21 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 18:35:21 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 18:35:21 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:35:21 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:35:22 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:35:22 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:35:22 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@2362f807, org.example.DTO.GameDTO@53542e7c, org.example.DTO.GameDTO@3023c5f8, org.example.DTO.GameDTO@8fb8aee, org.example.DTO.GameDTO@3cedf936, org.example.DTO.GameDTO@4eb81719, org.example.DTO.GameDTO@609a1733, org.example.DTO.GameDTO@34624d34, org.example.DTO.GameDTO@671526c7, org.example.DTO.GameDTO@699bf5e3, org.example.DTO.GameDTO@5908446c]}
+2025-06-25 18:58:53 INFO  org.example.StartServerRPC - Server started
+2025-06-25 18:59:16 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:59:19 INFO  org.example.client.StartClientRPC - Client running on localhost:55556
+2025-06-25 18:59:37 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:59:37 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:59:37 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:59:37 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:59:37 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:59:37 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:59:37 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=a]}
+2025-06-25 18:59:37 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele a
+2025-06-25 18:59:37 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-25 18:59:37 INFO  org.hibernate.cfg.Environment - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.format_sql=true, hibernate.hbm2ddl.auto=update, hibernate.highlight_sql=true, jakarta.persistence.jdbc.url=jdbc:mariadb://localhost:3306/ghicit, jakarta.persistence.jdbc.user=root, jakarta.persistence.jdbc.schema-generation.database.action=update, server.port=55556, hibernate.show_sql=true, jakarta.persistence.jdbc.password=}
+2025-06-25 18:59:37 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-25 18:59:38 WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2025-06-25 18:59:38 INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+2025-06-25 18:59:38 INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:mariadb://localhost:3306/ghicit]
+2025-06-25 18:59:38 INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2025-06-25 18:59:38 INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2025-06-25 18:59:38 INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 20 (min=1)
+2025-06-25 18:59:39 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2025-06-25 18:59:40 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-25 18:59:40 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6e06904e] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2025-06-25 18:59:41 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:59:41 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=1, name=a]}
+2025-06-25 18:59:41 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:59:41 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:59:42 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:59:42 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:59:42 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@60b04a3f, org.example.DTO.GameDTO@7323d9de, org.example.DTO.GameDTO@136efc31, org.example.DTO.GameDTO@e565e5f, org.example.DTO.GameDTO@6cd50c18, org.example.DTO.GameDTO@1d5c575, org.example.DTO.GameDTO@65be2e0a, org.example.DTO.GameDTO@59a62044, org.example.DTO.GameDTO@1dd742a4, org.example.DTO.GameDTO@3206d206, org.example.DTO.GameDTO@265c6432]}
+2025-06-25 18:59:42 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:59:42 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:59:43 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:59:43 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:59:43 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:59:43 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@22783d8b}
+2025-06-25 18:59:48 INFO  org.example.ReflectionWorkerRPC - Am fost creat la cererea clientului
+2025-06-25 18:59:48 INFO  org.example.ProxyRPC - Connection initialized successfully
+2025-06-25 18:59:48 INFO  org.example.ProxyRPC - Am intrat in login
+2025-06-25 18:59:48 INFO  org.example.ProxyRPC - Sending request: LOGIN
+2025-06-25 18:59:48 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:59:48 INFO  org.example.ProxyRPC - Am trimis requestul de login
+2025-06-25 18:59:48 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=LOGIN, data=PlayerDTO [id=0, name=b]}
+2025-06-25 18:59:48 INFO  org.example.ReflectionWorkerRPC - Angajatul pe care l-am primit are datele b
+2025-06-25 18:59:48 INFO  org.example.ReflectionWorkerRPC - Handled request: LOGIN
+2025-06-25 18:59:48 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=PlayerDTO [id=2, name=b]}
+2025-06-25 18:59:48 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 18:59:48 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:59:49 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 18:59:49 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 18:59:49 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@a8ac236, org.example.DTO.GameDTO@1609fc52, org.example.DTO.GameDTO@22392aed, org.example.DTO.GameDTO@2cc32de5, org.example.DTO.GameDTO@7084d139, org.example.DTO.GameDTO@29365817, org.example.DTO.GameDTO@42b3719e, org.example.DTO.GameDTO@77aac028, org.example.DTO.GameDTO@21f1dafd, org.example.DTO.GameDTO@3a9cc834, org.example.DTO.GameDTO@63fa6178]}
+2025-06-25 18:59:49 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:59:49 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:59:50 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:59:50 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:59:50 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:59:50 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@66b355ae}
+2025-06-25 18:59:53 INFO  org.example.ProxyRPC - Sending request: GET_CONFIG
+2025-06-25 18:59:53 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 18:59:53 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_CONFIG, data=null}
+2025-06-25 18:59:53 INFO  org.example.ServicesImplementation - Am ajuns aici config!
+2025-06-25 18:59:53 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_CONFIG
+2025-06-25 18:59:53 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=org.example.DTO.ConfigurationDTO@102bad3f}
+2025-06-25 18:59:55 ERROR org.example.client.MainView - -3
+2025-06-25 18:59:55 ERROR org.example.client.MainView - 3 10
+2025-06-25 18:59:57 ERROR org.example.client.MainView - -13
+2025-06-25 18:59:57 ERROR org.example.client.MainView - 10 11
+2025-06-25 18:59:59 ERROR org.example.client.MainView - 8
+2025-06-25 18:59:59 ERROR org.example.client.MainView - 11 10
+2025-06-25 19:00:00 ERROR org.example.client.MainView - 15
+2025-06-25 19:00:00 ERROR org.example.client.MainView - 4 3
+2025-06-25 19:00:00 ERROR org.example.client.MainView - Am pus in game 0
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Sending request: SAVE_GAME
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 19:00:00 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=SAVE_GAME, data=org.example.DTO.GameDTO@659eba10}
+2025-06-25 19:00:00 INFO  org.example.ServicesImplementation - Trimitem notificare la 2 clienti
+2025-06-25 19:00:00 INFO  org.example.ReflectionWorkerRPC - Handled request: SAVE_GAME
+2025-06-25 19:00:00 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 19:00:00 INFO  org.example.ReflectionWorkerRPC - Am trimis update!
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Response received: Response{type=NEW_GAME, data=null}
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=null}
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 19:00:00 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Sending request: GET_GAMES
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Request sent successfully
+2025-06-25 19:00:00 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 19:00:00 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@2362f807, org.example.DTO.GameDTO@53542e7c, org.example.DTO.GameDTO@3023c5f8, org.example.DTO.GameDTO@8fb8aee, org.example.DTO.GameDTO@3cedf936, org.example.DTO.GameDTO@4eb81719, org.example.DTO.GameDTO@609a1733, org.example.DTO.GameDTO@34624d34, org.example.DTO.GameDTO@671526c7, org.example.DTO.GameDTO@699bf5e3, org.example.DTO.GameDTO@5908446c, org.example.DTO.GameDTO@7f25a994]}
+2025-06-25 19:00:01 INFO  org.example.ReflectionWorkerRPC - Request received: Request{type=GET_GAMES, data=null}
+2025-06-25 19:00:01 INFO  org.example.ReflectionWorkerRPC - Handled request: GET_GAMES
+2025-06-25 19:00:01 INFO  org.example.ProxyRPC - Response received: Response{type=OK, data=[org.example.DTO.GameDTO@7f9c3748, org.example.DTO.GameDTO@3fe0330, org.example.DTO.GameDTO@4ef11425, org.example.DTO.GameDTO@6cf78a25, org.example.DTO.GameDTO@724fd684, org.example.DTO.GameDTO@15bac7e, org.example.DTO.GameDTO@47cdc04c, org.example.DTO.GameDTO@17bbdc32, org.example.DTO.GameDTO@1bccd3b7, org.example.DTO.GameDTO@4728a4ec, org.example.DTO.GameDTO@6e4ec3e5, org.example.DTO.GameDTO@27ddc852]}
+2025-06-25 19:00:07 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Connection reset
+2025-06-25 19:00:07 ERROR org.example.ProxyRPC - PROXY: Error in reader thread: Connection reset

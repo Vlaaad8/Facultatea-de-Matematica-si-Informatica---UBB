@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="362.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.iss.controler.AdminView">
+   <children>
+      <TableView fx:id="mainTable" layoutX="36.0" layoutY="43.0" prefHeight="296.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="typeColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="priceColumn" prefWidth="47.19999694824219" text="Price" />
+            <TableColumn fx:id="obsColumn" prefWidth="88.39997863769531" text="Observations" />
+            <TableColumn fx:id="unitsColumn" prefWidth="113.20001220703125" text="Available Units" />
+        </columns>
+      </TableView>
+      <Button fx:id="addButton" layoutX="461.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="26.0" prefWidth="62.0" text="Add" />
+      <Button fx:id="updateButton" layoutX="534.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="26.0" prefWidth="62.0" text="Update" />
+      <Button fx:id="deleteButton" layoutX="605.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="26.0" prefWidth="62.0" text="Delete" />
+      <TextField fx:id="nameBox" layoutX="473.0" layoutY="60.0" />
+      <TextField fx:id="typeBox" layoutX="473.0" layoutY="104.0" />
+      <TextField fx:id="priceBox" layoutX="473.0" layoutY="148.0" />
+      <TextField fx:id="obsBox" layoutX="473.0" layoutY="192.0" />
+      <TextField fx:id="unitsBox" layoutX="473.0" layoutY="236.0" />
+      <Label layoutX="473.0" layoutY="43.0" prefHeight="18.0" prefWidth="39.0" text="Name" />
+      <Label layoutX="476.0" layoutY="86.0" prefHeight="18.0" prefWidth="32.0" text="Type" />
+      <Label layoutX="473.0" layoutY="130.0" text="Price" />
+      <Label layoutX="472.0" layoutY="174.0" text="Observations" />
+      <Label layoutX="472.0" layoutY="218.0" text="Available Units" />
+   </children>
+</AnchorPane>

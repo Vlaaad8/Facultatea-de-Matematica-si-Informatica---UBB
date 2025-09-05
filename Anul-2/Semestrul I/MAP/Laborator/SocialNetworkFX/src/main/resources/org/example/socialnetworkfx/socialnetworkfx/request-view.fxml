@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.socialnetworkfx.socialnetworkfx.controller.RequestView">
+    <children>
+
+        <!-- Centered Search Field -->
+        <TextField fx:id="searchText" layoutX="100.0" layoutY="23.0" prefHeight="30.0" prefWidth="400.0" promptText="Search..." style="-fx-font-size: 14px; -fx-border-color: #cccccc; -fx-background-radius: 15; -fx-border-radius: 15; -fx-padding: 5 10;" />
+
+        <!-- TableView for Results -->
+        <TableView fx:id="tableView" layoutX="50.0" layoutY="71.0" prefHeight="257.0" prefWidth="500.0" style="-fx-border-color: #cccccc; -fx-background-color: #ffffff; -fx-border-radius: 10; -fx-padding: 5;">
+            <columns>
+                <TableColumn fx:id="firstnameColumn" prefWidth="250.0" text="First Name" />
+                <TableColumn fx:id="lastnameColumn" prefWidth="250.0" text="Last Name" />
+            </columns>
+        </TableView>
+
+        <!-- Send Button -->
+        <Button fx:id="sendButton" layoutX="250.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleSendRequest" prefHeight="33.0" prefWidth="100.0" text="Send" />
+    </children>
+</AnchorPane>

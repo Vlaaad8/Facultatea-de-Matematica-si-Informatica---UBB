@@ -1,0 +1,60 @@
+.dialog {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    position: relative;
+    display:inline;
+}
+
+.dialog li {
+    padding: 10px 20px;
+    position: relative;
+}
+
+
+.alice {
+    list-style-image: url('Alice.png');
+    background-color: #ffe0cc;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
+ .bob {
+    background-color: #cfe2ff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+
+
+.dialog .alice::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border: 9px solid transparent;
+    border-right-color: #ffe0cc;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}
+
+
+.dialog .bob::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border: 9px solid transparent;
+    border-right-color: #cfe2ff;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}

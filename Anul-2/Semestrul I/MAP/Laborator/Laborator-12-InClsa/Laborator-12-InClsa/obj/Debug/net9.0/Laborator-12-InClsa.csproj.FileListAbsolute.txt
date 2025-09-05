@@ -1,0 +1,15 @@
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\bin\Debug\net9.0\Laborator-12-InClsa.exe
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\bin\Debug\net9.0\Laborator-12-InClsa.deps.json
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\bin\Debug\net9.0\Laborator-12-InClsa.runtimeconfig.json
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\bin\Debug\net9.0\Laborator-12-InClsa.dll
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\bin\Debug\net9.0\Laborator-12-InClsa.pdb
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\Laborator-12-InClsa.GeneratedMSBuildEditorConfig.editorconfig
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\Laborator-12-InClsa.AssemblyInfoInputs.cache
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\Laborator-12-InClsa.AssemblyInfo.cs
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\Laborator-12-InClsa.csproj.CoreCompileInputs.cache
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\Laborator-12-InClsa.sourcelink.json
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\Laborator-12-InClsa.dll
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\refint\Laborator-12-InClsa.dll
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\Laborator-12-InClsa.pdb
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\Laborator-12-InClsa.genruntimeconfig.cache
+D:\Anul 2\MAP\Laborator\Laborator-12-InClsa\Laborator-12-InClsa\obj\Debug\net9.0\ref\Laborator-12-InClsa.dll

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema-2 cu jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h4>Formular de feedback:</h4>
+
+<label for="name">Nume: </label>
+<input type="text" id="name" name="name">
+<label for="dateOfBirth">Data nasterii:</label>
+<input type="date" id="dateOfBirth" name="dateOfBirth">
+<label for="email">Email:</label>
+<input type="text" id="email" name="email">
+<button type="button" id="submitButton">Trimite</button>
+<br>
+<label id="validationResponse"></label>
+<p> Pentru a trimite un formular valid, trebuie sa respecte conditiile:
+<ol>
+    <li>Numele sa aiba o lungime mai mare de 4 litere.</li>
+    <li>Sa fie o data selectata.</li>
+    <li>Sa fie introdus un email, mai lung de 9 caractere.</li>
+</ol>
+</p>
+
+<script>
+    $(function () {
+        $('#submitButton').on('click', function () {
+            $('#name, #dateOfBirth, #email')
+                .css({'border-width': '1px', 'border-color': 'black'});
+
+            var validationStatus = true;
+            var validationErrors = "Va rugam sa verificati campurile:"
+
+            const name = $('#name').val().trim();
+            const dateOfBirth = $('#dateOfBirth').val().trim();
+            const email = $('#email').val().trim();
+
+            if (name.length < 5 || !name) {
+                $('#name').css({'border-width': '3px', 'border-color': 'red'});
+                validationStatus = false;
+                validationErrors += "Nume, ";
+            }
+            if (!dateOfBirth) {
+                $('#dateOfBirth').css({'border-width': '3px', 'border-color': 'red'});
+                validationStatus = false;
+                validationErrors += "Data Nasterii, ";
+            }
+            if (email.length < 10 || !email) {
+                $('#email').css({'border-width': '3px', 'border-color': 'red'});
+                validationStatus = false;
+                validationErrors += "Email. ";
+            }
+            const $response = $('#validationResponse');
+            if (!validationStatus) {
+                $response.text(validationErrors).css({'color': 'red'})
+            } else {
+                $response.text("Formularul a fost trimis cu succes!").css({'color': 'green'})
+                $('#name').val('')
+                $('#dateOfBirth').val('')
+                $('#email').val('')
+            }
+        })
+    });
+</script>
+
+</body>
+</html>

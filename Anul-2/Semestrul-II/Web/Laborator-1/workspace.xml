@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="77e20d64-d754-43b6-9045-c657050b05ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/.idea/.idea.Seminar-10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/.idea/.idea.Seminar-10/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/.idea/.idea.Seminar-10/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/.idea/.idea.Seminar-10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/Factory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/Seminar-10.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/Strategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/bin/Debug/net9.0/Seminar-10.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/bin/Debug/net9.0/Seminar-10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/bin/Debug/net9.0/Seminar-10.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/bin/Debug/net9.0/Seminar-10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/bin/Debug/net9.0/Seminar-10.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/container/AbstractContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/container/Container.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/container/QueueContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/container/StackContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/Seminar-10.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/ref/Seminar-10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Debug/net9.0/refint/Seminar-10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Seminar-10.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Seminar-10.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/Seminar-10.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/sort/AbstractSort.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/sort/BubbleSort.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/sort/QuickSort.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/AbstractTaskRunner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/DelayTaskRunner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/MessageTask.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/PrinterTaskRunner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/SortingTask.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/StrategyTaskRunner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/Task.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/TaskContainerFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../MAP/Seminar/Seminar-10/Seminar-10/task/TaskRunner.cs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2twrIrUoDptEbh0e1yzvRSv6TEw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.HeartSync.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.HeartSync4.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Anul-2/Semestrul-II/Web/Laborator-1/.idea&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Anul-2\Semestrul-II\Web\Laborator-1\.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Anul-2\Semestrul-II\Web\Laborator-1\.idea" />
+      <recent name="D:\Anul-2\Semestrul-II\Web\Laborator-1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HeartSync.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Laborator-1/HeartSync.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.HeartSync.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77e20d64-d754-43b6-9045-c657050b05ba" name="Changes" comment="" />
+      <created>1741273902176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741273902176</updated>
+      <workItem from="1741273903273" duration="3170000" />
+      <workItem from="1741716348587" duration="12381000" />
+      <workItem from="1741782074287" duration="12950000" />
+      <workItem from="1741795232615" duration="1779000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\MPP-WindowsForm\\MPP-WindowsForm.csproj": {}
+  },
+  "projects": {
+    "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\ConnectionUtils\\ConnectionUtils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\ConnectionUtils\\ConnectionUtils.csproj",
+        "projectName": "ConnectionUtils",
+        "projectPath": "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\ConnectionUtils\\ConnectionUtils.csproj",
+        "packagesPath": "C:\\Users\\vladb\\.nuget\\packages\\",
+        "outputPath": "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\ConnectionUtils\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\vladb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        }
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.2.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\vladb\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\MPP-WindowsForm\\MPP-WindowsForm.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\MPP-WindowsForm\\MPP-WindowsForm.csproj",
+        "projectName": "MPP-WindowsForm",
+        "projectPath": "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\MPP-WindowsForm\\MPP-WindowsForm.csproj",
+        "packagesPath": "C:\\Users\\vladb\\.nuget\\packages\\",
+        "outputPath": "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\MPP-WindowsForm\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "C:\\Users\\vladb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0-windows7.0": {
+            "targetAlias": "net9.0-windows",
+            "projectReferences": {
+              "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\ConnectionUtils\\ConnectionUtils.csproj": {
+                "projectPath": "D:\\Anul-2\\Semestrul-II\\MPP\\MPP-WindowsForm\\ConnectionUtils\\ConnectionUtils.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        }
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "dependencies": {
+            "log4net": {
+              "target": "Package",
+              "version": "[3.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\vladb\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema-1 cu jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<label for="subject">Alege o materie:</label>
+<select id="subject" name="subject" ondblclick="changeList(this,'university')">
+    <option value="MPP">Medii de Proiectare si programare</option>
+    <option value="SGBD">Sisteme de gestiune a bazelor de date</option>
+    <option value="ISS">Ingineria Sistemelor Soft</option>
+    <option value="PW">Programare Web</option>
+    <option value="AI">Inteligenta Artificiala</option>
+</select>
+
+<label for="university">Alege o universitate:</label>
+<select id="university" name="university" ondblclick="changeList(this,'subject')">
+    <option value="UBB">Universitate Babes-Bolyai</option>
+    <option value="UPB">Universitate Politehnica Bucuresti</option>
+    <option value="UTCN">Universitatea Tehnica Cluj-Napoca</option>
+    <option value="UB">Universitatea Bucuresti</option>
+</select>
+
+<script>
+    $(function() {
+        function changeList($from,$to){
+            $from.find('option:selected').appendTo($to);
+        }
+        $('#subject').on('dblclick',function(){
+            changeList($(this),$('#university'));
+        });
+        $('#university').on('dblclick',function(){
+            changeList($(this),$('#subject'));
+        });
+    })
+</script>
+</body>
+</html>

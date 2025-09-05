@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema-1</title>
+</head>
+<body>
+<label for="subject">Alege o materie:</label>
+<select id="subject" name="subject" ondblclick="changeList(this,'university')">
+    <option value="MPP">Medii de Proiectare si programare</option>
+    <option value="SGBD">Sisteme de gestiune a bazelor de date</option>
+    <option value="ISS">Ingineria Sistemelor Soft</option>
+    <option value="PW">Programare Web</option>
+    <option value="AI">Inteligenta Artificiala</option>
+</select>
+
+<label for="university">Alege o universitate:</label>
+<select id="university" name="university" ondblclick="changeList(this,'subject')">
+    <option value="UBB">Universitate Babes-Bolyai</option>
+    <option value="UPB">Universitate Politehnica Bucuresti</option>
+    <option value="UTCN">Universitatea Tehnica Cluj-Napoca</option>
+    <option value="UB">Universitatea Bucuresti</option>
+</select>
+
+<script>
+    function changeList(source,destinationId){
+        const destination= document.getElementById(destinationId);
+        const sourceItems= Array.from(source.selectedOptions);
+
+        sourceItems.forEach(item => {
+            destination.appendChild(item);
+            source.removeChild(item);
+        });
+
+    }
+</script>
+</body>
+</html>

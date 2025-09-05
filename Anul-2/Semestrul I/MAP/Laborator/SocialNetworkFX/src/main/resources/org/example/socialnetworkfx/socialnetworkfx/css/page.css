@@ -1,0 +1,92 @@
+/* General Styles */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #e5d6f5, #ffffff); /* Soft purple to white gradient */
+    -fx-padding: 10;
+    -fx-font-family: "Tahoma", Arial, sans-serif;
+}
+
+/* Image Styles */
+ImageView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 1, 1); /* Subtle shadow for depth */
+    -fx-border-color: #d2b9f3; /* Light purple border */
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+}
+
+/* Label Styles */
+Label {
+    -fx-text-fill: #4b3869; /* Dark purple for readability */
+    -fx-font-weight: bold;
+    -fx-padding: 5;
+}
+
+Label#userText {
+    -fx-font-size: 28px; /* Larger font size for the username */
+    -fx-text-fill: #4a235a; /* Medium purple for emphasis */
+}
+
+Label#friendsText {
+    -fx-font-size: 16px;
+    -fx-text-fill: #4b3869; /* Dark purple for text */
+}
+
+Label#totalFriendsText, Label#statusText {
+    -fx-font-size: 14px;
+    -fx-text-fill: #5f4b8b; /* Soft purple for secondary text */
+}
+
+/* PieChart Styles */
+PieChart {
+    -fx-legend-visible: true; /* Display legend */
+    -fx-title-side: top; /* Title at the top */
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 0;
+
+}
+
+PieChart .chart-title {
+    -fx-text-fill: #4b3869; /* Dark purple for chart title */
+    -fx-font-size: 14px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "SoftPurpleFont";
+    src: url('https://example.com/fonts/SoftPurpleFont.ttf'); /* Replace with an actual font file */
+}
+
+Label, PieChart {
+    -fx-font-family: "SoftPurpleFont", "Tahoma", sans-serif;
+}
+
+/* Hover Effects */
+ImageView:hover {
+    -fx-opacity: 0.85;
+    -fx-cursor: hand;
+}
+
+Label:hover {
+    -fx-effect: dropshadow(gaussian, rgb(74, 35, 90), 3, 0.3, 1, 1); /* Highlighted with medium purple */
+}
+
+/* Tooltip and Effects */
+Label {
+    -fx-effect: dropshadow(gaussian, rgba(75, 56, 105, 0.2), 2, 0.2, 1, 1); /* Subtle shadow effect */
+    -fx-padding: 8;
+}
+
+/* Button (if needed) */
+Button {
+    -fx-background-color: #d2b9f3; /* Light purple background */
+    -fx-text-fill: #4b3869; /* Dark purple text */
+    -fx-border-color: #6a5acd; /* Medium purple border */
+    -fx-border-radius: 5;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+}
+
+Button:hover {
+    -fx-background-color: #c7aefc; /* Slightly darker purple on hover */
+    -fx-cursor: hand;
+}

@@ -1,0 +1,10 @@
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\bin\Debug\Simulare-1.exe.config
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\bin\Debug\Simulare-1.exe
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\bin\Debug\Simulare-1.pdb
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\obj\Debug\Simulare-1.csproj.AssemblyReference.cache
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\obj\Debug\Simulare_1.Form1.resources
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\obj\Debug\Simulare_1.Properties.Resources.resources
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\obj\Debug\Simulare-1.csproj.GenerateResource.cache
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\obj\Debug\Simulare-1.csproj.CoreCompileInputs.cache
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\obj\Debug\Simulare-1.exe
+D:\Anul-2\Semestrul-II\SGBD\Pregatire-Practic\Simulare-1\Simulare-1\obj\Debug\Simulare-1.pdb

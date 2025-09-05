@@ -1,0 +1,5 @@
+1.Numele de clase se scriu cu litera mare
+2. Variabilele cu litera mica
+3. Numele de pachete cu litera mica
+4. Se codeaza in engleza 
+5. Interfata e un fel de header din C/C++

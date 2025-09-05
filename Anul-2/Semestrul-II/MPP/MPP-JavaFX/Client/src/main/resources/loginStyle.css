@@ -1,0 +1,42 @@
+
+.root {
+    -fx-background-color: white;
+}
+
+
+#userField,
+#passwordField {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 30px;
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-size: 14px;
+}
+
+/* Button base */
+.button {
+    -fx-pref-width: 180px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-background-radius: 4px;
+}
+
+#loginButton {
+    -fx-background-color: #ebc431;
+    -fx-text-fill: #073578;
+    -fx-font-weight: bold;
+}
+#loginButton:hover {
+    -fx-background-color: #c5a42a
+}
+
+
+/* Error label */
+#loginFailLabel {
+    -fx-text-fill: #d32f2f;
+    -fx-font-size: 12px;
+}
+

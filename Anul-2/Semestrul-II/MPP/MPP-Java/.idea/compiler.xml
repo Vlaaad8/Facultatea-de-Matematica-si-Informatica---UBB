@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="model" target="22" />
+      <module name="model.main" target="22" />
+      <module name="model.test" target="22" />
+      <module name="repository" target="22" />
+      <module name="repository.main" target="22" />
+      <module name="repository.test" target="22" />
+      <module name="startGradle" target="22" />
+      <module name="startGradle.main" target="22" />
+      <module name="startGradle.model" target="22" />
+      <module name="startGradle.model.main" target="22" />
+      <module name="startGradle.model.test" target="22" />
+      <module name="startGradle.repository" target="22" />
+      <module name="startGradle.repository.main" target="22" />
+      <module name="startGradle.repository.test" target="22" />
+      <module name="startGradle.test" target="22" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

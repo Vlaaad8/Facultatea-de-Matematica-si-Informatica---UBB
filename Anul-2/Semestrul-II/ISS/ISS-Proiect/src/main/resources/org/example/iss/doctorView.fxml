@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.iss.controler.DoctorView">
+   <children>
+      <TableView fx:id="tableView" layoutX="33.0" layoutY="30.0" prefHeight="290.0" prefWidth="456.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="104.20001602172852" text="Name" />
+          <TableColumn fx:id="typeColumn" prefWidth="82.19998168945312" text="Type" />
+            <TableColumn fx:id="priceColumn" prefWidth="83.19996643066406" text="Price" />
+            <TableColumn fx:id="obsColumn" prefWidth="90.39999389648438" text="Observations" />
+            <TableColumn fx:id="unitsColumn" prefWidth="96.20001220703125" text="Available Units" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="orderText" layoutX="516.0" layoutY="77.0" prefHeight="239.0" prefWidth="162.0" />
+      <Button fx:id="specialOrderButton" layoutX="553.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleAddSpecial" prefHeight="26.0" prefWidth="123.0" text="Make Special Order" />
+      <Label fx:id="doctorLabel" layoutX="515.0" layoutY="30.0" prefHeight="27.0" prefWidth="162.0" text="Dr. Leonescu Andrei">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="orderButton" layoutX="33.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="26.0" prefWidth="97.0" text="Order" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 6 cu jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            background-color: #b0c4de;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+<table id="myTable"></table>
+
+<script>
+    $(function(){
+        const dim = 3;
+        let emptyIndex;
+
+        function generateTable() {
+            const numbers = shuffle(Array.from({length: dim*dim}, (_,i) => i+1));
+            const $table = $('#myTable').empty();
+
+            for (let i = 0; i < dim; i++) {
+                const $tr = $('<tr>');
+                for (let j = 0; j < dim; j++) {
+                    const idx = i*dim + j;
+                    const n = numbers[idx];
+                    const $td = $('<td>')
+                        .attr('id', idx)
+                        .text(n === dim*dim ? '' : n);
+
+                    if (n === dim*dim) {
+                        emptyIndex = idx;
+                    }
+
+                    $tr.append($td);
+                }
+                $table.append($tr);
+            }
+        }
+
+        function swap(idx1, idx2) {
+            const $a = $('#' + idx1), $b = $('#' + idx2);
+            const ta = $a.text(), tb = $b.text();
+            $a.text(tb);
+            $b.text(ta);
+            emptyIndex = idx2;
+        }
+
+        function tryMove(direction) {
+            let target;
+            switch(direction) {
+                case 'up':    target = emptyIndex - dim; break;
+                case 'down':  target = emptyIndex + dim; break;
+                case 'left':  target = emptyIndex % dim !== 0 ? emptyIndex - 1 : null; break;
+                case 'right': target = emptyIndex % dim !== dim-1 ? emptyIndex + 1 : null; break;
+            }
+            if (target !== null && target >= 0 && target < dim*dim) {
+                swap(emptyIndex, target);
+            } else {
+                alert("Nu pot muta " + direction);
+            }
+        }
+
+        function shuffle(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random()*(i+1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        generateTable();
+
+        $(document).on('keydown', function(e){
+            switch(e.which) {
+                case 37: tryMove('left');  break;
+                case 38: tryMove('up');    break;
+                case 39: tryMove('right'); break;
+                case 40: tryMove('down');  break;
+            }
+        });
+
+        $('#myTable').on('click', 'td', function(){
+            const idx = parseInt(this.id,10);
+            const rowA = Math.floor(idx/dim), colA = idx%dim;
+            const rowE = Math.floor(emptyIndex/dim), colE = emptyIndex%dim;
+            if ((rowA === rowE && Math.abs(colA-colE)===1) ||
+                (colA === colE && Math.abs(rowA-rowE)===1)) {
+                swap(emptyIndex, idx);
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

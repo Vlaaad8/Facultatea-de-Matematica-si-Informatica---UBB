@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema 3B cu jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #333;
+            background-color: #b0c4de;
+            cursor: pointer;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+            position: relative;
+        }
+        td img {
+            width: 100%;
+            height: 100%;
+            display: none;
+            object-fit: cover;
+        }
+        td.revealed img,
+        td.matched img {
+            display: block;
+        }
+        td.matched {
+            background-color: #90ee90;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+<table id="memory-table"></table>
+
+<script>
+    $(function(){
+        const rows       = 4;
+        const cols       = 4;
+        const totalCells = rows * cols;
+        const imageSources = [
+            "Boian-Rares-133x100.jpg",
+            "Czibula-Gabriela.jpg",
+            "Grigoreta-Cojocar.jpg",
+            "Manuela-Petrescu-2.jpg",
+            "Mircea-Gabriel-small.jpg",
+            "Pop-Emilia.jpg",
+            "Serban-Camelia.jpg",
+            "Suciu-Dan.jpg"
+        ];
+
+        let firstCell = null;
+        let secondCell = null;
+        let lock       = false;
+        let matchedCount = 0;
+
+        function shuffle(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        function generateImages() {
+            const imgs = imageSources.concat(imageSources);
+            return shuffle(imgs);
+        }
+
+        function createTable() {
+            const images = generateImages();
+            const $table = $('#memory-table').empty();
+            let idx = 0;
+
+            for (let r = 0; r < rows; r++) {
+                const $tr = $('<tr>');
+                for (let c = 0; c < cols; c++) {
+                    const src = images[idx++];
+                    const $td = $('<td>').data('value', src);
+                    $('<img>').attr('src', src).appendTo($td);
+                    $tr.append($td);
+                }
+                $table.append($tr);
+            }
+        }
+
+        $('#memory-table').on('click', 'td', function(){
+            if (lock) return;
+            const $cell = $(this);
+            if ($cell.hasClass('matched') || $cell.is(firstCell)) return;
+
+            $cell.addClass('revealed');
+
+            if (!firstCell) {
+                firstCell = $cell;
+            } else {
+                secondCell = $cell;
+                lock = true;
+
+                if (firstCell.data('value') === secondCell.data('value')) {
+                    // potrivire
+                    firstCell.add(secondCell).addClass('matched');
+                    matchedCount += 2;
+                    resetTurn();
+                } else {
+                    // nepotrivire: ascunde după 700ms
+                    setTimeout(() => {
+                        firstCell.add(secondCell)
+                            .removeClass('revealed');
+                        resetTurn();
+                    }, 700);
+                }
+
+                if (matchedCount === totalCells) {
+                    setTimeout(() => alert('Felicitari! Ai castigat jocul!'), 200);
+                }
+            }
+        });
+
+        function resetTurn() {
+            firstCell = null;
+            secondCell = null;
+            lock = false;
+        }
+
+        createTable();
+    });
+</script>
+</body>
+</html>

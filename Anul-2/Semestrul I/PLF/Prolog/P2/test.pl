@@ -1,0 +1,42 @@
+% succesor(L, R)
+% L - initial list
+% R - result
+% Model de flux: (i, o)
+succesor(Lista, Succesor) :-
+    inverseaza(Lista, [], RevLista),
+    adauga_2(RevLista, Rezultat),
+    inverseaza(Rezultat, [], Succesor).
+
+% adauga_2(L, R)
+% L - initial list
+% R - result
+% Model de flux: (i, o)
+adauga_2([], [2]).
+adauga_2([Cifra | Rest], [NouaCifra | Rest]) :-
+    NouaCifra is Cifra + 2,
+    NouaCifra < 8.
+adauga_2([Cifra | Rest], [NouaCifra | NouR]) :-
+    NouaCifra is (Cifra + 2) mod 10,
+    adauga_2(Rest, NouR).
+
+% inverseaza(L, Aux, R)
+% L - initial list
+% Aux - auxiliary list for reversing
+% R - result
+% Model de flux: (i, i, o)
+inverseaza([], Acc, Acc).
+inverseaza([H | T], Acc, Inversa) :-
+    inverseaza(T, [H | Acc], Inversa).
+
+% prelucreaza(L, R)
+% L - initial list
+% R - result
+% Model de flux: (i, o)
+prelucreaza([], []).
+prelucreaza([H | T], [M | Rez]) :-
+    prelucreaza(T, Rez),
+    is_list(H),
+    succesor(H, M).
+prelucreaza([H | T], [H | Rez]) :-
+    prelucreaza(T, Rez),
+    number(H).

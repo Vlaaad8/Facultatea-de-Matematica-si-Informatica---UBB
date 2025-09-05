@@ -1,0 +1,9 @@
+% john likes anyone who likes wine
+
+likes(mary, wine).
+likes(bob, beer).
+likes(wini, apple).
+likes(charlie, wine).
+likes(mary,beer).
+likes(john, X) :- likes(X, wine),likes(X,beer).
+likes(mary,X):- likes(bob,X).

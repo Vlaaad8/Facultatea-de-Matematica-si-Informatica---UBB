@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="448.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.restaurantnou.StaffView">
+   <children>
+      <TableView fx:id="tableView" layoutX="34.0" layoutY="30.0" prefHeight="118.0" prefWidth="421.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="37.200016021728516" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="160.39996337890625" text="Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="27.0" layoutY="165.0" prefHeight="18.0" prefWidth="81.0" text="Placed orders:" />
+      <TableView fx:id="tableView2" layoutX="24.0" layoutY="192.0" prefHeight="200.0" prefWidth="422.0">
+        <columns>
+          <TableColumn fx:id="tableIDColumn" prefWidth="75.0" text="TableID" />
+          <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="orderColumn" prefWidth="268.2000274658203" text="Ordered products" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

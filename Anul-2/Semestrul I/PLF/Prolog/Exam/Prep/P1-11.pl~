@@ -1,0 +1,13 @@
+vale([H1,H2|T]):-H1>H2,vale([H2|T]).
+vale([H1,H2|T]):-H2>H1,deal([H2|T]).
+
+deal([X]):-number(X).
+deal([H1,H2|T]):-H2>H1,deal([H2|T]).
+
+suma([],_,0).
+suma([H|T],F,N):-F=:=1,N1 is N+H,suma(T,-1,N1).
+suma([H|T],F,N):-F=:=(-1),N1 is N-H,suma(T,1,N1).
+
+
+
+

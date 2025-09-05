@@ -1,0 +1,18 @@
+numara(_,[],0).
+numara(X,[X|T],N):-numara(X,T,N1),N is N1+1.
+numara(X,[H|T],N):-H\=X,numara(X,T,N).
+
+multimeTester([],_,0).
+multimeTester([H|T],L,N):-numara(H,L,M),M=:=1,multimeTester(T,L,N).
+multimeTester([H|T],L,N):-numara(H,L,M),M>1,multimeTester(T,L,N1),N is N1+1.
+
+conditie(L):-multimeTester(L,L,N),N=0.
+
+
+
+%elimina 3 aparitii
+eliminaP3(_,T,0,T).
+eliminaP3(X,[X|T],N,R):-N>0,N1 is N-1,eliminaP3(X,T,N1,R).
+eliminaP3(X,[H|T],N,[H|R]):-N>0,H\=X,eliminaP3(X,T,N,R).
+
+eliminare(X,L,R):-numara(X,L,N),(N>2->eliminaP3(X,L,3,R); eliminaP3(X,L,N,R)).

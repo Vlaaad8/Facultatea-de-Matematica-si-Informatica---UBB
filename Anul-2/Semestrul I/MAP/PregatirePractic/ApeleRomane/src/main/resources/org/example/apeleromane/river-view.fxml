@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.apeleromane.view.RiverView">
+   <children>
+      <TableView fx:id="tableView" layoutX="30.0" layoutY="29.0" prefHeight="200.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="245.20000648498535" text="Name" />
+          <TableColumn fx:id="capacityColumn" prefWidth="258.0" text="Capacity" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

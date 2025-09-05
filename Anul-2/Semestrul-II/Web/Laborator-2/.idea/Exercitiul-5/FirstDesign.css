@@ -1,0 +1,21 @@
+li {
+    display: inline-flex;
+    text-align: left;
+    padding: 10px
+
+}
+
+ol {
+    border: 1px solid black;
+    height: 550px;
+    width: 400px;
+    padding: 10px;
+}
+img{
+    width: 130px;
+    height: 160px;
+    border: 20px solid aqua;
+}
+p{
+    text-align: center;
+}

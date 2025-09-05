@@ -1,0 +1,9 @@
+rootProject.name = 'Indiciu'
+include 'Model'
+include 'Networking'
+include 'Server'
+include 'Services'
+include 'Persistence'
+include 'Client'
+include 'restservices'
+

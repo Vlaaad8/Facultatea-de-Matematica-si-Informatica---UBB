@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema-4 cu jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: cadetblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<table class="sortable">
+    <thead>
+    <tr>
+        <th>Country</th>
+        <th>Population</th>
+        <th>Capital</th>
+        <th>Life Expectancy</th>
+        <th>Area</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>USA</td>
+        <td>331,002,651</td>
+        <td>Washington, D.C.</td>
+        <td>78.5</td>
+        <td>9,525,067 km²</td>
+    </tr>
+    <tr>
+        <td>Japan</td>
+        <td>126,476,461</td>
+        <td>Tokyo</td>
+        <td>84.6</td>
+        <td>377,975 km²</td>
+    </tr>
+    <tr>
+        <td>Germany</td>
+        <td>83,783,942</td>
+        <td>Berlin</td>
+        <td>81.0</td>
+        <td>357,022 km²</td>
+    </tr>
+    <tr>
+        <td>India</td>
+        <td>1,366,417,754</td>
+        <td>New Delhi</td>
+        <td>69.4</td>
+        <td>3,287,263 km²</td>
+    </tr>
+    <tr>
+        <td>Brazil</td>
+        <td>211,049,527</td>
+        <td>Brasília</td>
+        <td>75.0</td>
+        <td>8,515,767 km²</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+
+<table class="sortable">
+    <thead>
+    <tr>
+        <th>Language</th>
+        <th>First Appeared</th>
+        <th>Paradigm</th>
+        <th>Developer</th>
+        <th>Current Stable Version</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Python</td>
+        <td>1991</td>
+        <td>Multi-paradigm</td>
+        <td>Guido van Rossum</td>
+        <td>3.11.2</td>
+    </tr>
+    <tr>
+        <td>JavaScript</td>
+        <td>1995</td>
+        <td>Event-driven, Functional</td>
+        <td>Brendan Eich</td>
+        <td>4.13</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>1995</td>
+        <td>Object-oriented</td>
+        <td>James Gosling</td>
+        <td>2.1</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>1972</td>
+        <td>Procedural</td>
+        <td>Dennis Ritchie</td>
+        <td>1.8</td>
+    </tr>
+    <tr>
+        <td>Rust</td>
+        <td>2010</td>
+        <td>Multi-paradigm</td>
+        <td>Graydon Hoare</td>
+        <td>1.72.0</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    $(function () {
+        $('.sortable th').each(function () {
+            const $th = $(this);
+            $th.data('asc', true);
+        });
+
+        $('.sortable th').on('click', function () {
+            const $th = $(this);
+            const table = $th.closest('table');
+            const colIndex = $th.index();
+            const ascending = $th.data('asc');
+            const $rows = table.find('tbody tr');
+
+
+            const sorted = $rows.toArray().sort((a, b) => {
+                let A = $(a).find('td').eq(colIndex).text().trim();
+                let B = $(b).find('td').eq(colIndex).text().trim();
+
+                const numA = parseFloat(A.replace(/[^0-9.\-]/g, ''));
+                const numB = parseFloat(B.replace(/[^0-9.\-]/g, ''));
+                const isNum = !isNaN(numA) && !isNaN(numB);
+
+                if (isNum) {
+                    return ascending ? numA - numB : numB - numA;
+                } else {
+                    return ascending
+                        ? A.localeCompare(B)
+                        : B.localeCompare(A);
+                }
+            });
+
+
+            table.find('tbody').append(sorted);
+
+
+            $th.data('asc', !ascending);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="422.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zboruri.views.Zboruri">
+   <children>
+      <Label fx:id="usernameBox" layoutX="22.0" layoutY="23.0" prefHeight="18.0" prefWidth="118.0" text="Label" />
+      <ComboBox fx:id="toBox" layoutX="127.0" layoutY="29.0" prefHeight="26.0" prefWidth="107.0" />
+      <ComboBox fx:id="fromBox" layoutX="275.0" layoutY="29.0" prefHeight="26.0" prefWidth="118.0" />
+      <DatePicker fx:id="dateBox" layoutX="412.0" layoutY="29.0" />
+      <TableView fx:id="tableView" layoutX="40.0" layoutY="94.0" prefHeight="288.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="32.19997787475586" text="ID" />
+          <TableColumn fx:id="toColumn" prefWidth="94.39999389648438" text="TO" />
+            <TableColumn fx:id="fromColumn" prefWidth="99.20002746582031" text="FROM" />
+            <TableColumn fx:id="departureColumn" prefWidth="105.19998168945312" text="DEPARTURE" />
+            <TableColumn fx:id="landingColumn" prefWidth="75.199951171875" text="LANDING" />
+            <TableColumn fx:id="seatsColumn" prefWidth="60.4000244140625" text="SEATS" />
+            <TableColumn fx:id="leftSeats" prefWidth="75.5999755859375" text="LEFT" />
+        </columns>
+      </TableView>
+      <Label layoutX="127.0" layoutY="14.0" prefHeight="18.0" prefWidth="118.0" text="From:" />
+      <Label layoutX="275.0" layoutY="14.0" prefHeight="18.0" prefWidth="118.0" text="To:" />
+      <Button fx:id="buyButton" layoutX="22.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleBuyButton" prefHeight="26.0" prefWidth="54.0" text="Buy" />
+      <Button fx:id="backButton" layoutX="155.0" layoutY="382.0" onAction="#handleBackPage" mnemonicParsing="false" text="Back" />
+      <Button fx:id="nextButton" layoutX="360.0" layoutY="382.0" onAction="#handleNextPage" mnemonicParsing="false" text="Next" />
+      <Label fx:id="pageLabel" layoutX="235.0" layoutY="386.0" prefHeight="18.0" prefWidth="90.0" text="Label" />
+   </children>
+</AnchorPane>

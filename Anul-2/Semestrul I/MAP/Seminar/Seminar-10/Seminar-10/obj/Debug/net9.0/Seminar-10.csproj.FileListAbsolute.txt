@@ -1,0 +1,15 @@
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\bin\Debug\net9.0\Seminar-10.exe
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\bin\Debug\net9.0\Seminar-10.deps.json
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\bin\Debug\net9.0\Seminar-10.runtimeconfig.json
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\bin\Debug\net9.0\Seminar-10.dll
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\bin\Debug\net9.0\Seminar-10.pdb
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\Seminar-10.GeneratedMSBuildEditorConfig.editorconfig
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\Seminar-10.AssemblyInfoInputs.cache
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\Seminar-10.AssemblyInfo.cs
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\Seminar-10.csproj.CoreCompileInputs.cache
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\Seminar-10.dll
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\refint\Seminar-10.dll
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\Seminar-10.pdb
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\Seminar-10.genruntimeconfig.cache
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\ref\Seminar-10.dll
+D:\Anul 2\MAP\Seminar\Seminar-10\Seminar-10\obj\Debug\net9.0\Seminar-10.sourcelink.json

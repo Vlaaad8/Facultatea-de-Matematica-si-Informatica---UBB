@@ -1,0 +1,43 @@
+header,footer{
+    background-color: red;
+    text-align: left;
+    align-content: center;
+    display: grid;
+    height: 10vh
+}
+footer{
+    background-color: pink;
+
+}
+.mainContainer{
+    height:80vh;
+
+}
+.menuItem{
+    background-color: yellow;
+    text-align: center;
+    height: 5vh;
+}
+.mainView{
+    width: 100%;
+    background-color: green;
+    align-content: center;
+    display: grid;
+    height: 80vh;
+
+}
+ol{
+    background-color: yellow;
+    list-style: none;
+}
+li{
+    display: inline-block;
+    border-right: 1px black solid;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
