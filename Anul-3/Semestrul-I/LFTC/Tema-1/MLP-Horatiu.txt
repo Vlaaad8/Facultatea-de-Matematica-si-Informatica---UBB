@@ -1,0 +1,49 @@
+# Laborator 1 LFTC
+
+# Specificarea minilimbajului de programare:
+### Tipuri de date:
+<tip> ::= "int" | "float" | struct <id> {<lista_decl>}
+<lista_decl> ::= <instr_decl>,<lista_decl> | <instr_decl>
+
+### Identificatori și constante:
+<ID> ::= <litera><alfabet> | <ID>.<ID>
+<alfabet>::= <litera><alfabet>|<cifra><alfabet>|<litera>|<cifra>
+<litera>::= a|b|c|...|z|A|...|Z
+<cifra>::= 0|1|2|...|9
+<const>::= <cifra>|<cifra><const>|<cifra>.<cifra><cifra>
+<compl>::= <cifra><cifra>."<cifra><cifra>
+
+### Instructiuni:
+<instructiune>::= <instr_atr>|
+                  <instr_intrare>|
+                  <instr_iesire>|
+                  <instr_selectie>|
+                  <instr_ciclu>|
+                  <instr_decl>
+                  ";"
+
+### Declarare:
+<instr_decl>::= <tip><id>
+
+### Atribuire:
+<instr_atr>::= <tip><id> "=" <expresie>";"| <id> "=" <expresie> ";"
+<expresie>::= <id>|<const>|<expresie><op_arit><expresie>
+<op_arit>::= "+" | "-" | "*" | "/" | "%"
+
+### I/O
+<instr_intrare>::= "cin" ">>"<ID>";"
+<instr_iesire>::="cout""<<" <expresie>"<<""endl">>";"
+
+### Selectie:
+<instr_selectie>::= "if" "(" <cond>")" "{" <lista_instr> "}"
+"else" "{" <lista_instr>"}"
+<conditie>::= <expresie><op_rel><expresie>
+
+
+<lista_instr> ::= <instructiune><lista_instr> | <instructiune>
+
+### Ciclare:
+<instr_ciclu>::= "while" "(" <conditie> ")" "{" <lista_instr>"}"
+
+### Program:
+<Program>::= "#Include <iostream>" "using namespace std;" "int main()" "{"<lista_instr> "return 0;" "}"

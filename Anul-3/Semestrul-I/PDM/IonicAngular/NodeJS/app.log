@@ -1,0 +1,1519 @@
+[2025-10-11T14:44:37.037] [INFO] default - Server started on port 8080
+[2025-10-11T14:44:45.097] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:45:10.322] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:45:14.671] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 1 5
+[2025-10-11T14:45:56.365] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:47:57.671] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:48:00.549] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:48:02.371] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:48:04.975] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:48:33.643] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:54:35.658] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:54:36.730] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:54:47.930] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:55:15.642] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:56:42.521] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:57:35.576] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:58:01.028] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T14:58:19.292] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:00:19.337] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:01:43.857] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:15:07.820] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:15:13.265] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:15:13.904] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 1 5
+[2025-10-11T15:15:20.372] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 2 5
+[2025-10-11T15:15:21.452] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 3 5
+[2025-10-11T15:15:21.516] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 4 5
+[2025-10-11T15:15:21.656] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 5 5
+[2025-10-11T15:15:21.660] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 6 5
+[2025-10-11T15:15:21.669] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 7 5
+[2025-10-11T15:15:21.676] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 8 5
+[2025-10-11T15:15:21.681] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 9 5
+[2025-10-11T15:15:21.688] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 10 5
+[2025-10-11T15:15:21.694] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 11 5
+[2025-10-11T15:15:21.701] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 12 5
+[2025-10-11T15:15:21.709] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 13 5
+[2025-10-11T15:15:21.716] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 14 5
+[2025-10-11T15:15:21.725] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 15 5
+[2025-10-11T15:15:21.732] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 16 5
+[2025-10-11T15:15:21.740] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 17 5
+[2025-10-11T15:15:21.747] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 18 5
+[2025-10-11T15:15:21.754] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 19 5
+[2025-10-11T15:15:21.759] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 20 5
+[2025-10-11T15:15:21.767] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 21 5
+[2025-10-11T15:15:21.774] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 22 5
+[2025-10-11T15:15:21.780] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 23 5
+[2025-10-11T15:15:21.787] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 24 5
+[2025-10-11T15:15:21.795] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 25 5
+[2025-10-11T15:15:21.801] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 26 5
+[2025-10-11T15:15:21.808] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 27 5
+[2025-10-11T15:15:21.815] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 28 5
+[2025-10-11T15:15:21.824] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 29 5
+[2025-10-11T15:15:21.830] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 30 5
+[2025-10-11T15:15:23.732] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 31 5
+[2025-10-11T15:15:23.741] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 32 5
+[2025-10-11T15:15:23.748] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 33 5
+[2025-10-11T15:15:23.757] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 34 5
+[2025-10-11T15:15:23.762] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 35 5
+[2025-10-11T15:15:23.766] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 36 5
+[2025-10-11T15:15:23.774] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 37 5
+[2025-10-11T15:15:23.781] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 38 5
+[2025-10-11T15:15:23.789] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 39 5
+[2025-10-11T15:15:23.797] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 40 5
+[2025-10-11T15:15:23.800] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 41 5
+[2025-10-11T15:15:23.808] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 42 5
+[2025-10-11T15:15:23.814] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 43 5
+[2025-10-11T15:15:23.826] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 44 5
+[2025-10-11T15:15:23.829] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 45 5
+[2025-10-11T15:15:23.837] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 46 5
+[2025-10-11T15:15:23.842] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 47 5
+[2025-10-11T15:15:23.848] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 48 5
+[2025-10-11T15:15:23.855] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 49 5
+[2025-10-11T15:15:23.865] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 50 5
+[2025-10-11T15:15:23.872] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 51 5
+[2025-10-11T15:15:23.880] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 52 5
+[2025-10-11T15:15:23.889] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 53 5
+[2025-10-11T15:15:23.894] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 54 5
+[2025-10-11T15:15:23.902] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 55 5
+[2025-10-11T15:15:23.908] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 56 5
+[2025-10-11T15:15:24.345] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 57 5
+[2025-10-11T15:15:24.350] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 58 5
+[2025-10-11T15:15:24.358] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 59 5
+[2025-10-11T15:15:24.367] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 60 5
+[2025-10-11T15:15:24.378] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 61 5
+[2025-10-11T15:15:24.380] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 62 5
+[2025-10-11T15:15:24.384] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 63 5
+[2025-10-11T15:15:24.398] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 64 5
+[2025-10-11T15:15:24.401] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 65 5
+[2025-10-11T15:15:24.406] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 66 5
+[2025-10-11T15:15:24.414] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 67 5
+[2025-10-11T15:15:24.419] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 68 5
+[2025-10-11T15:15:24.426] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 69 5
+[2025-10-11T15:15:24.434] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 70 5
+[2025-10-11T15:15:24.439] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 71 5
+[2025-10-11T15:15:24.448] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 72 5
+[2025-10-11T15:15:24.455] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 73 5
+[2025-10-11T15:15:24.462] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 74 5
+[2025-10-11T15:15:24.468] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 75 5
+[2025-10-11T15:15:24.475] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 76 5
+[2025-10-11T15:15:24.480] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 77 5
+[2025-10-11T15:15:24.487] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 78 5
+[2025-10-11T15:15:24.497] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 79 5
+[2025-10-11T15:15:24.505] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 80 5
+[2025-10-11T15:15:24.515] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 81 5
+[2025-10-11T15:15:28.662] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:15:47.649] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:15:54.104] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:16:42.793] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:19:05.946] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:19:19.186] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:19:20.164] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 1 5
+[2025-10-11T15:19:23.298] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 2 5
+[2025-10-11T15:19:24.754] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 3 5
+[2025-10-11T15:19:24.814] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 4 5
+[2025-10-11T15:19:24.900] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 5 5
+[2025-10-11T15:19:24.929] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 6 5
+[2025-10-11T15:19:24.950] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 7 5
+[2025-10-11T15:19:24.969] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 8 5
+[2025-10-11T15:19:24.978] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 9 5
+[2025-10-11T15:19:24.992] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 10 5
+[2025-10-11T15:19:25.004] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 11 5
+[2025-10-11T15:19:25.011] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 12 5
+[2025-10-11T15:19:25.021] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 13 5
+[2025-10-11T15:19:25.033] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 14 5
+[2025-10-11T15:19:25.049] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 15 5
+[2025-10-11T15:19:25.062] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 16 5
+[2025-10-11T15:19:25.077] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 17 5
+[2025-10-11T15:19:25.097] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 18 5
+[2025-10-11T15:19:25.118] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 19 5
+[2025-10-11T15:19:25.140] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 20 5
+[2025-10-11T15:19:25.167] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 21 5
+[2025-10-11T15:19:25.189] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 22 5
+[2025-10-11T15:19:25.206] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 23 5
+[2025-10-11T15:19:25.227] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 24 5
+[2025-10-11T15:19:25.251] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 25 5
+[2025-10-11T15:19:25.268] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 26 5
+[2025-10-11T15:19:25.275] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 27 5
+[2025-10-11T15:19:25.289] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 28 5
+[2025-10-11T15:19:25.309] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 29 5
+[2025-10-11T15:19:25.328] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 30 5
+[2025-10-11T15:19:25.353] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 31 5
+[2025-10-11T15:19:25.374] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 32 5
+[2025-10-11T15:19:25.396] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 33 5
+[2025-10-11T15:19:25.416] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 34 5
+[2025-10-11T15:19:25.438] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 35 5
+[2025-10-11T15:19:25.458] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 36 5
+[2025-10-11T15:19:25.479] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 37 5
+[2025-10-11T15:19:25.508] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 38 5
+[2025-10-11T15:19:25.526] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 39 5
+[2025-10-11T15:19:25.549] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 40 5
+[2025-10-11T15:19:25.569] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 41 5
+[2025-10-11T15:19:25.592] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 42 5
+[2025-10-11T15:19:25.609] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 43 5
+[2025-10-11T15:19:25.631] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 44 5
+[2025-10-11T15:19:25.656] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 45 5
+[2025-10-11T15:19:25.679] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 46 5
+[2025-10-11T15:19:25.700] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 47 5
+[2025-10-11T15:19:25.722] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 48 5
+[2025-10-11T15:19:25.742] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 49 5
+[2025-10-11T15:19:25.763] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 50 5
+[2025-10-11T15:19:25.782] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 51 5
+[2025-10-11T15:19:25.789] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 52 5
+[2025-10-11T15:19:25.809] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 53 5
+[2025-10-11T15:19:25.818] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 54 5
+[2025-10-11T15:19:25.837] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 55 5
+[2025-10-11T15:19:25.848] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 56 5
+[2025-10-11T15:19:25.865] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 57 5
+[2025-10-11T15:19:25.891] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 58 5
+[2025-10-11T15:19:25.912] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 59 5
+[2025-10-11T15:19:25.935] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 60 5
+[2025-10-11T15:19:25.955] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 61 5
+[2025-10-11T15:19:25.976] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 62 5
+[2025-10-11T15:19:25.995] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 63 5
+[2025-10-11T15:19:26.015] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 64 5
+[2025-10-11T15:19:26.039] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 65 5
+[2025-10-11T15:19:26.064] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 66 5
+[2025-10-11T15:19:26.073] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 67 5
+[2025-10-11T15:19:26.096] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 68 5
+[2025-10-11T15:19:26.115] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 69 5
+[2025-10-11T15:19:26.130] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 70 5
+[2025-10-11T15:19:26.145] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 71 5
+[2025-10-11T15:19:26.156] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 72 5
+[2025-10-11T15:19:26.167] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 73 5
+[2025-10-11T15:19:26.182] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 74 5
+[2025-10-11T15:19:26.200] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 75 5
+[2025-10-11T15:19:26.214] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 76 5
+[2025-10-11T15:19:26.228] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 77 5
+[2025-10-11T15:19:26.244] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 78 5
+[2025-10-11T15:19:26.257] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 79 5
+[2025-10-11T15:19:26.270] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 80 5
+[2025-10-11T15:19:26.283] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 81 5
+[2025-10-11T15:19:26.296] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 82 5
+[2025-10-11T15:19:26.658] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 83 5
+[2025-10-11T15:19:26.681] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 84 5
+[2025-10-11T15:19:26.701] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 85 5
+[2025-10-11T15:19:26.717] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 86 5
+[2025-10-11T15:19:26.736] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 87 5
+[2025-10-11T15:19:26.750] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 88 5
+[2025-10-11T15:19:26.763] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 89 5
+[2025-10-11T15:19:26.774] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 90 5
+[2025-10-11T15:19:26.790] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 91 5
+[2025-10-11T15:19:26.804] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 92 5
+[2025-10-11T15:19:26.816] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 93 5
+[2025-10-11T15:19:26.832] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 94 5
+[2025-10-11T15:19:26.847] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 95 5
+[2025-10-11T15:19:26.861] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 96 5
+[2025-10-11T15:19:26.880] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 97 5
+[2025-10-11T15:19:26.902] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 98 5
+[2025-10-11T15:19:26.924] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 99 5
+[2025-10-11T15:19:26.953] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 100 5
+[2025-10-11T15:19:26.979] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 101 5
+[2025-10-11T15:19:27.001] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 102 5
+[2025-10-11T15:19:27.025] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 103 5
+[2025-10-11T15:19:27.045] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 104 5
+[2025-10-11T15:19:27.069] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 105 5
+[2025-10-11T15:19:27.089] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 106 5
+[2025-10-11T15:19:27.109] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 107 5
+[2025-10-11T15:19:27.129] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 108 5
+[2025-10-11T15:19:27.154] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 109 5
+[2025-10-11T15:19:27.179] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 110 5
+[2025-10-11T15:19:27.201] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 111 5
+[2025-10-11T15:19:27.223] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 112 5
+[2025-10-11T15:19:27.247] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 113 5
+[2025-10-11T15:19:27.267] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 114 5
+[2025-10-11T15:19:27.290] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 115 5
+[2025-10-11T15:19:27.317] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 116 5
+[2025-10-11T15:19:27.338] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 117 5
+[2025-10-11T15:19:27.357] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 118 5
+[2025-10-11T15:19:27.378] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 119 5
+[2025-10-11T15:19:27.398] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 120 5
+[2025-10-11T15:19:27.420] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 121 5
+[2025-10-11T15:19:27.440] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 122 5
+[2025-10-11T15:19:27.465] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 123 5
+[2025-10-11T15:19:27.481] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 124 5
+[2025-10-11T15:19:27.506] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 125 5
+[2025-10-11T15:19:27.524] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 126 5
+[2025-10-11T15:19:27.543] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 127 5
+[2025-10-11T15:19:27.567] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 128 5
+[2025-10-11T15:19:27.596] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 129 5
+[2025-10-11T15:19:27.623] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 130 5
+[2025-10-11T15:19:27.649] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 131 5
+[2025-10-11T15:19:27.673] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 132 5
+[2025-10-11T15:19:27.699] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 133 5
+[2025-10-11T15:19:27.717] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 134 5
+[2025-10-11T15:19:27.739] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 135 5
+[2025-10-11T15:19:27.764] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 136 5
+[2025-10-11T15:19:27.788] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 137 5
+[2025-10-11T15:19:27.808] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 138 5
+[2025-10-11T15:19:27.829] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 139 5
+[2025-10-11T15:19:27.850] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 140 5
+[2025-10-11T15:19:27.872] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 141 5
+[2025-10-11T15:19:27.894] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 142 5
+[2025-10-11T15:19:27.920] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 143 5
+[2025-10-11T15:19:27.941] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 144 5
+[2025-10-11T15:19:27.961] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 145 5
+[2025-10-11T15:19:27.982] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 146 5
+[2025-10-11T15:19:28.002] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 147 5
+[2025-10-11T15:19:28.025] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 148 5
+[2025-10-11T15:19:28.044] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 149 5
+[2025-10-11T15:19:28.065] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 150 5
+[2025-10-11T15:19:28.086] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 151 5
+[2025-10-11T15:19:28.107] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 152 5
+[2025-10-11T15:19:28.128] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 153 5
+[2025-10-11T15:19:28.149] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 154 5
+[2025-10-11T15:19:28.169] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 155 5
+[2025-10-11T15:19:28.191] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 156 5
+[2025-10-11T15:19:28.212] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 157 5
+[2025-10-11T15:19:28.234] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 158 5
+[2025-10-11T15:19:28.256] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 159 5
+[2025-10-11T15:19:28.268] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 160 5
+[2025-10-11T15:19:28.284] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 161 5
+[2025-10-11T15:19:28.296] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 162 5
+[2025-10-11T15:19:28.312] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 163 5
+[2025-10-11T15:19:28.326] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 164 5
+[2025-10-11T15:19:28.340] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 165 5
+[2025-10-11T15:19:28.352] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 166 5
+[2025-10-11T15:19:28.365] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 167 5
+[2025-10-11T15:19:28.381] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 168 5
+[2025-10-11T15:19:28.394] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 169 5
+[2025-10-11T15:19:28.409] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 170 5
+[2025-10-11T15:19:28.426] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 171 5
+[2025-10-11T15:19:28.715] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 172 5
+[2025-10-11T15:19:28.728] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 173 5
+[2025-10-11T15:19:28.741] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 174 5
+[2025-10-11T15:19:28.755] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 175 5
+[2025-10-11T15:19:28.768] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 176 5
+[2025-10-11T15:19:28.786] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 177 5
+[2025-10-11T15:19:28.806] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 178 5
+[2025-10-11T15:19:28.820] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 179 5
+[2025-10-11T15:19:28.833] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 180 5
+[2025-10-11T15:19:28.847] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 181 5
+[2025-10-11T15:19:28.858] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 182 5
+[2025-10-11T15:19:28.874] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 183 5
+[2025-10-11T15:19:28.887] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 184 5
+[2025-10-11T15:19:31.077] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:21:26.312] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:21:33.066] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:21:47.370] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:21:50.438] [DEBUG] default - A user requested movies with pageNumber= {} and pageSize= {} 0 5
+[2025-10-11T15:22:04.554] [INFO] default - Server started on port 8080
+[2025-10-11T15:22:07.887] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 0 5
+[2025-10-11T15:22:08.322] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 1 5
+[2025-10-11T15:22:10.524] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 2 5
+[2025-10-11T15:22:11.945] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 3 5
+[2025-10-11T15:22:12.007] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 4 5
+[2025-10-11T15:22:12.609] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 5 5
+[2025-10-11T15:22:12.628] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 6 5
+[2025-10-11T15:22:12.644] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 7 5
+[2025-10-11T15:22:12.658] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 8 5
+[2025-10-11T15:22:12.679] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 9 5
+[2025-10-11T15:22:12.694] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 10 5
+[2025-10-11T15:22:12.706] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 11 5
+[2025-10-11T15:22:12.765] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 12 5
+[2025-10-11T15:22:12.774] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 13 5
+[2025-10-11T15:22:12.786] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 14 5
+[2025-10-11T15:22:12.811] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 15 5
+[2025-10-11T15:22:12.841] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 16 5
+[2025-10-11T15:22:12.865] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 17 5
+[2025-10-11T15:22:12.887] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 18 5
+[2025-10-11T15:22:12.904] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 19 5
+[2025-10-11T15:22:12.916] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 20 5
+[2025-10-11T15:22:12.938] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 21 5
+[2025-10-11T15:22:12.960] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 22 5
+[2025-10-11T15:22:12.970] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 23 5
+[2025-10-11T15:22:12.994] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 24 5
+[2025-10-11T15:22:13.016] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 25 5
+[2025-10-11T15:22:13.038] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 26 5
+[2025-10-11T15:22:13.059] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 27 5
+[2025-10-11T15:22:13.079] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 28 5
+[2025-10-11T15:22:13.099] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 29 5
+[2025-10-11T15:22:13.106] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 30 5
+[2025-10-11T15:22:13.120] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 31 5
+[2025-10-11T15:22:13.127] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 32 5
+[2025-10-11T15:22:13.141] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 33 5
+[2025-10-11T15:22:13.147] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 34 5
+[2025-10-11T15:22:13.163] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 35 5
+[2025-10-11T15:22:13.169] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 36 5
+[2025-10-11T15:22:13.182] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 37 5
+[2025-10-11T15:22:13.190] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 38 5
+[2025-10-11T15:22:13.210] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 39 5
+[2025-10-11T15:22:13.232] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 40 5
+[2025-10-11T15:22:13.252] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 41 5
+[2025-10-11T15:22:13.273] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 42 5
+[2025-10-11T15:22:13.294] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 43 5
+[2025-10-11T15:22:13.315] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 44 5
+[2025-10-11T15:22:13.335] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 45 5
+[2025-10-11T15:22:13.358] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 46 5
+[2025-10-11T15:22:13.388] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 47 5
+[2025-10-11T15:22:13.414] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 48 5
+[2025-10-11T15:22:13.448] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 49 5
+[2025-10-11T15:22:13.460] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 50 5
+[2025-10-11T15:22:13.468] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 51 5
+[2025-10-11T15:22:13.482] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 52 5
+[2025-10-11T15:22:13.489] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 53 5
+[2025-10-11T15:22:13.504] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 54 5
+[2025-10-11T15:22:13.517] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 55 5
+[2025-10-11T15:22:13.531] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 56 5
+[2025-10-11T15:22:13.545] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 57 5
+[2025-10-11T15:22:13.561] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 58 5
+[2025-10-11T15:22:13.578] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 59 5
+[2025-10-11T15:22:13.598] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 60 5
+[2025-10-11T15:22:13.616] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 61 5
+[2025-10-11T15:22:13.632] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 62 5
+[2025-10-11T15:22:18.292] [DEBUG] default - A user requested movies with pageNumber= {pageNumber} and pageSize= {pageSize} 0 5
+[2025-10-11T15:22:54.014] [INFO] default - Server started on port 8080
+[2025-10-11T15:22:55.999] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 5
+[2025-10-11T15:26:35.735] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 5
+[2025-10-11T15:27:43.742] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 8
+[2025-10-11T15:28:02.668] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 12
+[2025-10-11T15:28:13.218] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 12
+[2025-10-11T15:28:16.521] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 12
+[2025-10-11T15:29:53.507] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 12
+[2025-10-11T15:30:52.563] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 12
+[2025-10-11T15:32:31.742] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 12
+[2025-10-11T15:32:32.471] [DEBUG] default - A user requested movies with pageNumber= 1 and pageSize= 12
+[2025-10-11T15:32:32.915] [DEBUG] default - A user requested movies with pageNumber= 2 and pageSize= 12
+[2025-10-11T15:32:32.939] [DEBUG] default - A user requested movies with pageNumber= 3 and pageSize= 12
+[2025-10-11T15:32:33.220] [DEBUG] default - A user requested movies with pageNumber= 4 and pageSize= 12
+[2025-10-11T15:32:33.231] [DEBUG] default - A user requested movies with pageNumber= 5 and pageSize= 12
+[2025-10-11T15:32:33.244] [DEBUG] default - A user requested movies with pageNumber= 6 and pageSize= 12
+[2025-10-11T15:32:33.256] [DEBUG] default - A user requested movies with pageNumber= 7 and pageSize= 12
+[2025-10-11T15:32:33.265] [DEBUG] default - A user requested movies with pageNumber= 8 and pageSize= 12
+[2025-10-11T15:32:33.277] [DEBUG] default - A user requested movies with pageNumber= 9 and pageSize= 12
+[2025-10-11T15:32:33.286] [DEBUG] default - A user requested movies with pageNumber= 10 and pageSize= 12
+[2025-10-11T15:32:33.302] [DEBUG] default - A user requested movies with pageNumber= 11 and pageSize= 12
+[2025-10-11T15:32:33.317] [DEBUG] default - A user requested movies with pageNumber= 12 and pageSize= 12
+[2025-10-11T15:32:33.329] [DEBUG] default - A user requested movies with pageNumber= 13 and pageSize= 12
+[2025-10-11T15:32:33.344] [DEBUG] default - A user requested movies with pageNumber= 14 and pageSize= 12
+[2025-10-11T15:32:33.358] [DEBUG] default - A user requested movies with pageNumber= 15 and pageSize= 12
+[2025-10-11T15:32:33.371] [DEBUG] default - A user requested movies with pageNumber= 16 and pageSize= 12
+[2025-10-11T15:32:33.387] [DEBUG] default - A user requested movies with pageNumber= 17 and pageSize= 12
+[2025-10-11T15:32:33.403] [DEBUG] default - A user requested movies with pageNumber= 18 and pageSize= 12
+[2025-10-11T15:32:33.419] [DEBUG] default - A user requested movies with pageNumber= 19 and pageSize= 12
+[2025-10-11T15:32:33.443] [DEBUG] default - A user requested movies with pageNumber= 20 and pageSize= 12
+[2025-10-11T15:32:33.468] [DEBUG] default - A user requested movies with pageNumber= 21 and pageSize= 12
+[2025-10-11T15:32:33.492] [DEBUG] default - A user requested movies with pageNumber= 22 and pageSize= 12
+[2025-10-11T15:32:33.520] [DEBUG] default - A user requested movies with pageNumber= 23 and pageSize= 12
+[2025-10-11T15:32:33.548] [DEBUG] default - A user requested movies with pageNumber= 24 and pageSize= 12
+[2025-10-11T15:32:33.572] [DEBUG] default - A user requested movies with pageNumber= 25 and pageSize= 12
+[2025-10-11T15:32:33.593] [DEBUG] default - A user requested movies with pageNumber= 26 and pageSize= 12
+[2025-10-11T15:32:33.614] [DEBUG] default - A user requested movies with pageNumber= 27 and pageSize= 12
+[2025-10-11T15:32:33.637] [DEBUG] default - A user requested movies with pageNumber= 28 and pageSize= 12
+[2025-10-11T15:32:33.665] [DEBUG] default - A user requested movies with pageNumber= 29 and pageSize= 12
+[2025-10-11T15:32:33.686] [DEBUG] default - A user requested movies with pageNumber= 30 and pageSize= 12
+[2025-10-11T15:32:33.713] [DEBUG] default - A user requested movies with pageNumber= 31 and pageSize= 12
+[2025-10-11T15:32:33.735] [DEBUG] default - A user requested movies with pageNumber= 32 and pageSize= 12
+[2025-10-11T15:32:33.754] [DEBUG] default - A user requested movies with pageNumber= 33 and pageSize= 12
+[2025-10-11T15:32:33.776] [DEBUG] default - A user requested movies with pageNumber= 34 and pageSize= 12
+[2025-10-11T15:32:33.796] [DEBUG] default - A user requested movies with pageNumber= 35 and pageSize= 12
+[2025-10-11T15:32:33.816] [DEBUG] default - A user requested movies with pageNumber= 36 and pageSize= 12
+[2025-10-11T15:32:33.838] [DEBUG] default - A user requested movies with pageNumber= 37 and pageSize= 12
+[2025-10-11T15:32:33.858] [DEBUG] default - A user requested movies with pageNumber= 38 and pageSize= 12
+[2025-10-11T15:32:33.879] [DEBUG] default - A user requested movies with pageNumber= 39 and pageSize= 12
+[2025-10-11T15:32:33.900] [DEBUG] default - A user requested movies with pageNumber= 40 and pageSize= 12
+[2025-10-11T15:32:33.923] [DEBUG] default - A user requested movies with pageNumber= 41 and pageSize= 12
+[2025-10-11T15:32:33.946] [DEBUG] default - A user requested movies with pageNumber= 42 and pageSize= 12
+[2025-10-11T15:32:33.969] [DEBUG] default - A user requested movies with pageNumber= 43 and pageSize= 12
+[2025-10-11T15:32:33.990] [DEBUG] default - A user requested movies with pageNumber= 44 and pageSize= 12
+[2025-10-11T15:32:34.011] [DEBUG] default - A user requested movies with pageNumber= 45 and pageSize= 12
+[2025-10-11T15:32:34.031] [DEBUG] default - A user requested movies with pageNumber= 46 and pageSize= 12
+[2025-10-11T15:32:34.054] [DEBUG] default - A user requested movies with pageNumber= 47 and pageSize= 12
+[2025-10-11T15:32:34.081] [DEBUG] default - A user requested movies with pageNumber= 48 and pageSize= 12
+[2025-10-11T15:32:34.111] [DEBUG] default - A user requested movies with pageNumber= 49 and pageSize= 12
+[2025-10-11T15:32:34.135] [DEBUG] default - A user requested movies with pageNumber= 50 and pageSize= 12
+[2025-10-11T15:32:34.160] [DEBUG] default - A user requested movies with pageNumber= 51 and pageSize= 12
+[2025-10-11T15:32:34.185] [DEBUG] default - A user requested movies with pageNumber= 52 and pageSize= 12
+[2025-10-11T15:32:34.209] [DEBUG] default - A user requested movies with pageNumber= 53 and pageSize= 12
+[2025-10-11T15:32:34.228] [DEBUG] default - A user requested movies with pageNumber= 54 and pageSize= 12
+[2025-10-11T15:32:34.249] [DEBUG] default - A user requested movies with pageNumber= 55 and pageSize= 12
+[2025-10-11T15:32:34.268] [DEBUG] default - A user requested movies with pageNumber= 56 and pageSize= 12
+[2025-10-11T15:32:34.277] [DEBUG] default - A user requested movies with pageNumber= 57 and pageSize= 12
+[2025-10-11T15:32:34.298] [DEBUG] default - A user requested movies with pageNumber= 58 and pageSize= 12
+[2025-10-11T15:32:34.320] [DEBUG] default - A user requested movies with pageNumber= 59 and pageSize= 12
+[2025-10-11T15:32:34.339] [DEBUG] default - A user requested movies with pageNumber= 60 and pageSize= 12
+[2025-10-11T15:32:34.363] [DEBUG] default - A user requested movies with pageNumber= 61 and pageSize= 12
+[2025-10-11T15:32:34.383] [DEBUG] default - A user requested movies with pageNumber= 62 and pageSize= 12
+[2025-10-11T15:32:34.405] [DEBUG] default - A user requested movies with pageNumber= 63 and pageSize= 12
+[2025-10-11T15:32:34.427] [DEBUG] default - A user requested movies with pageNumber= 64 and pageSize= 12
+[2025-10-11T15:32:34.452] [DEBUG] default - A user requested movies with pageNumber= 65 and pageSize= 12
+[2025-10-11T15:32:34.473] [DEBUG] default - A user requested movies with pageNumber= 66 and pageSize= 12
+[2025-10-11T15:32:34.492] [DEBUG] default - A user requested movies with pageNumber= 67 and pageSize= 12
+[2025-10-11T15:32:34.513] [DEBUG] default - A user requested movies with pageNumber= 68 and pageSize= 12
+[2025-10-11T15:32:34.536] [DEBUG] default - A user requested movies with pageNumber= 69 and pageSize= 12
+[2025-10-11T15:32:34.565] [DEBUG] default - A user requested movies with pageNumber= 70 and pageSize= 12
+[2025-10-11T15:32:34.593] [DEBUG] default - A user requested movies with pageNumber= 71 and pageSize= 12
+[2025-10-11T15:32:34.618] [DEBUG] default - A user requested movies with pageNumber= 72 and pageSize= 12
+[2025-10-11T15:32:34.641] [DEBUG] default - A user requested movies with pageNumber= 73 and pageSize= 12
+[2025-10-11T15:32:34.658] [DEBUG] default - A user requested movies with pageNumber= 74 and pageSize= 12
+[2025-10-11T15:32:34.677] [DEBUG] default - A user requested movies with pageNumber= 75 and pageSize= 12
+[2025-10-11T15:32:34.688] [DEBUG] default - A user requested movies with pageNumber= 76 and pageSize= 12
+[2025-10-11T15:32:34.703] [DEBUG] default - A user requested movies with pageNumber= 77 and pageSize= 12
+[2025-10-11T15:32:34.719] [DEBUG] default - A user requested movies with pageNumber= 78 and pageSize= 12
+[2025-10-11T15:32:34.735] [DEBUG] default - A user requested movies with pageNumber= 79 and pageSize= 12
+[2025-10-11T15:32:34.749] [DEBUG] default - A user requested movies with pageNumber= 80 and pageSize= 12
+[2025-10-11T15:32:34.767] [DEBUG] default - A user requested movies with pageNumber= 81 and pageSize= 12
+[2025-10-11T15:32:34.782] [DEBUG] default - A user requested movies with pageNumber= 82 and pageSize= 12
+[2025-10-11T15:32:34.799] [DEBUG] default - A user requested movies with pageNumber= 83 and pageSize= 12
+[2025-10-11T15:32:34.817] [DEBUG] default - A user requested movies with pageNumber= 84 and pageSize= 12
+[2025-10-11T15:32:34.829] [DEBUG] default - A user requested movies with pageNumber= 85 and pageSize= 12
+[2025-10-11T15:32:35.022] [DEBUG] default - A user requested movies with pageNumber= 86 and pageSize= 12
+[2025-10-11T15:32:35.042] [DEBUG] default - A user requested movies with pageNumber= 87 and pageSize= 12
+[2025-10-11T15:32:35.063] [DEBUG] default - A user requested movies with pageNumber= 88 and pageSize= 12
+[2025-10-11T15:32:35.081] [DEBUG] default - A user requested movies with pageNumber= 89 and pageSize= 12
+[2025-10-11T15:32:35.097] [DEBUG] default - A user requested movies with pageNumber= 90 and pageSize= 12
+[2025-10-11T15:32:35.110] [DEBUG] default - A user requested movies with pageNumber= 91 and pageSize= 12
+[2025-10-11T15:32:35.128] [DEBUG] default - A user requested movies with pageNumber= 92 and pageSize= 12
+[2025-10-11T15:32:35.141] [DEBUG] default - A user requested movies with pageNumber= 93 and pageSize= 12
+[2025-10-11T15:32:35.155] [DEBUG] default - A user requested movies with pageNumber= 94 and pageSize= 12
+[2025-10-11T15:32:35.449] [DEBUG] default - A user requested movies with pageNumber= 95 and pageSize= 12
+[2025-10-11T15:32:35.468] [DEBUG] default - A user requested movies with pageNumber= 96 and pageSize= 12
+[2025-10-11T15:32:35.486] [DEBUG] default - A user requested movies with pageNumber= 97 and pageSize= 12
+[2025-10-11T15:32:35.503] [DEBUG] default - A user requested movies with pageNumber= 98 and pageSize= 12
+[2025-10-11T15:32:35.516] [DEBUG] default - A user requested movies with pageNumber= 99 and pageSize= 12
+[2025-10-11T15:32:35.531] [DEBUG] default - A user requested movies with pageNumber= 100 and pageSize= 12
+[2025-10-11T15:32:36.130] [DEBUG] default - A user requested movies with pageNumber= 101 and pageSize= 12
+[2025-10-11T15:32:36.150] [DEBUG] default - A user requested movies with pageNumber= 102 and pageSize= 12
+[2025-10-11T15:32:36.166] [DEBUG] default - A user requested movies with pageNumber= 103 and pageSize= 12
+[2025-10-11T15:32:36.185] [DEBUG] default - A user requested movies with pageNumber= 104 and pageSize= 12
+[2025-10-11T15:32:36.197] [DEBUG] default - A user requested movies with pageNumber= 105 and pageSize= 12
+[2025-10-11T15:32:36.210] [DEBUG] default - A user requested movies with pageNumber= 106 and pageSize= 12
+[2025-10-11T15:32:36.224] [DEBUG] default - A user requested movies with pageNumber= 107 and pageSize= 12
+[2025-10-11T15:32:36.239] [DEBUG] default - A user requested movies with pageNumber= 108 and pageSize= 12
+[2025-10-11T15:32:36.255] [DEBUG] default - A user requested movies with pageNumber= 109 and pageSize= 12
+[2025-10-11T15:32:36.273] [DEBUG] default - A user requested movies with pageNumber= 110 and pageSize= 12
+[2025-10-11T15:32:36.399] [DEBUG] default - A user requested movies with pageNumber= 111 and pageSize= 12
+[2025-10-11T15:32:36.423] [DEBUG] default - A user requested movies with pageNumber= 112 and pageSize= 12
+[2025-10-11T15:32:36.442] [DEBUG] default - A user requested movies with pageNumber= 113 and pageSize= 12
+[2025-10-11T15:32:43.697] [DEBUG] default - A user requested movies with pageNumber= 114 and pageSize= 12
+[2025-10-11T15:32:43.709] [DEBUG] default - A user requested movies with pageNumber= 115 and pageSize= 12
+[2025-10-11T15:32:43.719] [DEBUG] default - A user requested movies with pageNumber= 116 and pageSize= 12
+[2025-10-11T15:32:43.729] [DEBUG] default - A user requested movies with pageNumber= 117 and pageSize= 12
+[2025-10-11T15:32:43.744] [DEBUG] default - A user requested movies with pageNumber= 118 and pageSize= 12
+[2025-10-11T15:32:43.758] [DEBUG] default - A user requested movies with pageNumber= 119 and pageSize= 12
+[2025-10-11T15:32:44.047] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 5
+[2025-10-11T15:32:46.590] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 5
+[2025-10-11T15:32:49.644] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 5
+[2025-10-11T15:32:54.126] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 7
+[2025-10-11T15:32:54.874] [DEBUG] default - A user requested movies with pageNumber= 1 and pageSize= 7
+[2025-10-11T15:32:55.531] [DEBUG] default - A user requested movies with pageNumber= 2 and pageSize= 7
+[2025-10-11T15:32:56.374] [DEBUG] default - A user requested movies with pageNumber= 3 and pageSize= 7
+[2025-10-11T15:32:56.387] [DEBUG] default - A user requested movies with pageNumber= 4 and pageSize= 7
+[2025-10-11T15:32:56.400] [DEBUG] default - A user requested movies with pageNumber= 5 and pageSize= 7
+[2025-10-11T15:32:56.409] [DEBUG] default - A user requested movies with pageNumber= 6 and pageSize= 7
+[2025-10-11T15:32:56.423] [DEBUG] default - A user requested movies with pageNumber= 7 and pageSize= 7
+[2025-10-11T15:32:56.436] [DEBUG] default - A user requested movies with pageNumber= 8 and pageSize= 7
+[2025-10-11T15:32:56.449] [DEBUG] default - A user requested movies with pageNumber= 9 and pageSize= 7
+[2025-10-11T15:32:56.465] [DEBUG] default - A user requested movies with pageNumber= 10 and pageSize= 7
+[2025-10-11T15:32:56.789] [DEBUG] default - A user requested movies with pageNumber= 11 and pageSize= 7
+[2025-10-11T15:32:56.809] [DEBUG] default - A user requested movies with pageNumber= 12 and pageSize= 7
+[2025-10-11T15:32:56.827] [DEBUG] default - A user requested movies with pageNumber= 13 and pageSize= 7
+[2025-10-11T15:32:56.839] [DEBUG] default - A user requested movies with pageNumber= 14 and pageSize= 7
+[2025-10-11T15:32:56.853] [DEBUG] default - A user requested movies with pageNumber= 15 and pageSize= 7
+[2025-10-11T15:32:56.867] [DEBUG] default - A user requested movies with pageNumber= 16 and pageSize= 7
+[2025-10-11T15:32:56.882] [DEBUG] default - A user requested movies with pageNumber= 17 and pageSize= 7
+[2025-10-11T15:32:56.896] [DEBUG] default - A user requested movies with pageNumber= 18 and pageSize= 7
+[2025-10-11T15:32:56.908] [DEBUG] default - A user requested movies with pageNumber= 19 and pageSize= 7
+[2025-10-11T15:32:56.923] [DEBUG] default - A user requested movies with pageNumber= 20 and pageSize= 7
+[2025-10-11T15:32:56.935] [DEBUG] default - A user requested movies with pageNumber= 21 and pageSize= 7
+[2025-10-11T15:32:56.949] [DEBUG] default - A user requested movies with pageNumber= 22 and pageSize= 7
+[2025-10-11T15:32:57.455] [DEBUG] default - A user requested movies with pageNumber= 23 and pageSize= 7
+[2025-10-11T15:32:57.485] [DEBUG] default - A user requested movies with pageNumber= 24 and pageSize= 7
+[2025-10-11T15:32:57.501] [DEBUG] default - A user requested movies with pageNumber= 25 and pageSize= 7
+[2025-10-11T15:32:57.519] [DEBUG] default - A user requested movies with pageNumber= 26 and pageSize= 7
+[2025-10-11T15:32:57.533] [DEBUG] default - A user requested movies with pageNumber= 27 and pageSize= 7
+[2025-10-11T15:32:57.554] [DEBUG] default - A user requested movies with pageNumber= 28 and pageSize= 7
+[2025-10-11T15:32:57.581] [DEBUG] default - A user requested movies with pageNumber= 29 and pageSize= 7
+[2025-10-11T15:32:58.385] [DEBUG] default - A user requested movies with pageNumber= 30 and pageSize= 7
+[2025-10-11T15:32:58.392] [DEBUG] default - A user requested movies with pageNumber= 31 and pageSize= 7
+[2025-10-11T15:32:58.406] [DEBUG] default - A user requested movies with pageNumber= 32 and pageSize= 7
+[2025-10-11T15:32:58.422] [DEBUG] default - A user requested movies with pageNumber= 33 and pageSize= 7
+[2025-10-11T15:32:58.435] [DEBUG] default - A user requested movies with pageNumber= 34 and pageSize= 7
+[2025-10-11T15:32:58.443] [DEBUG] default - A user requested movies with pageNumber= 35 and pageSize= 7
+[2025-10-11T15:32:58.453] [DEBUG] default - A user requested movies with pageNumber= 36 and pageSize= 7
+[2025-10-11T15:32:58.462] [DEBUG] default - A user requested movies with pageNumber= 37 and pageSize= 7
+[2025-10-11T15:32:58.472] [DEBUG] default - A user requested movies with pageNumber= 38 and pageSize= 7
+[2025-10-11T15:33:00.169] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 7
+[2025-10-11T15:33:04.256] [DEBUG] default - A user requested movies with pageNumber= 1 and pageSize= 7
+[2025-10-11T15:33:05.084] [DEBUG] default - A user requested movies with pageNumber= 2 and pageSize= 7
+[2025-10-11T15:33:05.986] [DEBUG] default - A user requested movies with pageNumber= 3 and pageSize= 7
+[2025-10-11T15:33:06.004] [DEBUG] default - A user requested movies with pageNumber= 4 and pageSize= 7
+[2025-10-11T15:33:06.019] [DEBUG] default - A user requested movies with pageNumber= 5 and pageSize= 7
+[2025-10-11T15:33:06.032] [DEBUG] default - A user requested movies with pageNumber= 6 and pageSize= 7
+[2025-10-11T15:33:06.364] [DEBUG] default - A user requested movies with pageNumber= 7 and pageSize= 7
+[2025-10-11T15:33:06.379] [DEBUG] default - A user requested movies with pageNumber= 8 and pageSize= 7
+[2025-10-11T15:33:06.393] [DEBUG] default - A user requested movies with pageNumber= 9 and pageSize= 7
+[2025-10-11T15:33:06.400] [DEBUG] default - A user requested movies with pageNumber= 10 and pageSize= 7
+[2025-10-11T15:33:06.416] [DEBUG] default - A user requested movies with pageNumber= 11 and pageSize= 7
+[2025-10-11T15:33:06.428] [DEBUG] default - A user requested movies with pageNumber= 12 and pageSize= 7
+[2025-10-11T15:33:06.442] [DEBUG] default - A user requested movies with pageNumber= 13 and pageSize= 7
+[2025-10-11T15:33:06.458] [DEBUG] default - A user requested movies with pageNumber= 14 and pageSize= 7
+[2025-10-11T15:33:06.469] [DEBUG] default - A user requested movies with pageNumber= 15 and pageSize= 7
+[2025-10-11T15:33:06.483] [DEBUG] default - A user requested movies with pageNumber= 16 and pageSize= 7
+[2025-10-11T15:33:06.491] [DEBUG] default - A user requested movies with pageNumber= 17 and pageSize= 7
+[2025-10-11T15:33:06.503] [DEBUG] default - A user requested movies with pageNumber= 18 and pageSize= 7
+[2025-10-11T15:33:06.511] [DEBUG] default - A user requested movies with pageNumber= 19 and pageSize= 7
+[2025-10-11T15:33:06.517] [DEBUG] default - A user requested movies with pageNumber= 20 and pageSize= 7
+[2025-10-11T15:33:06.525] [DEBUG] default - A user requested movies with pageNumber= 21 and pageSize= 7
+[2025-10-11T15:33:06.538] [DEBUG] default - A user requested movies with pageNumber= 22 and pageSize= 7
+[2025-10-11T15:33:06.557] [DEBUG] default - A user requested movies with pageNumber= 23 and pageSize= 7
+[2025-10-11T15:33:06.569] [DEBUG] default - A user requested movies with pageNumber= 24 and pageSize= 7
+[2025-10-11T15:33:06.589] [DEBUG] default - A user requested movies with pageNumber= 25 and pageSize= 7
+[2025-10-11T15:33:06.610] [DEBUG] default - A user requested movies with pageNumber= 26 and pageSize= 7
+[2025-10-11T15:33:06.633] [DEBUG] default - A user requested movies with pageNumber= 27 and pageSize= 7
+[2025-10-11T15:33:06.651] [DEBUG] default - A user requested movies with pageNumber= 28 and pageSize= 7
+[2025-10-11T15:33:06.673] [DEBUG] default - A user requested movies with pageNumber= 29 and pageSize= 7
+[2025-10-11T15:33:06.702] [DEBUG] default - A user requested movies with pageNumber= 30 and pageSize= 7
+[2025-10-11T15:33:06.727] [DEBUG] default - A user requested movies with pageNumber= 31 and pageSize= 7
+[2025-10-11T15:33:06.751] [DEBUG] default - A user requested movies with pageNumber= 32 and pageSize= 7
+[2025-10-11T15:33:06.772] [DEBUG] default - A user requested movies with pageNumber= 33 and pageSize= 7
+[2025-10-11T15:33:06.798] [DEBUG] default - A user requested movies with pageNumber= 34 and pageSize= 7
+[2025-10-11T15:33:06.818] [DEBUG] default - A user requested movies with pageNumber= 35 and pageSize= 7
+[2025-10-11T15:33:06.838] [DEBUG] default - A user requested movies with pageNumber= 36 and pageSize= 7
+[2025-10-11T15:33:06.859] [DEBUG] default - A user requested movies with pageNumber= 37 and pageSize= 7
+[2025-10-11T15:33:06.883] [DEBUG] default - A user requested movies with pageNumber= 38 and pageSize= 7
+[2025-10-11T15:33:06.903] [DEBUG] default - A user requested movies with pageNumber= 39 and pageSize= 7
+[2025-10-11T15:33:06.928] [DEBUG] default - A user requested movies with pageNumber= 40 and pageSize= 7
+[2025-10-11T15:33:06.948] [DEBUG] default - A user requested movies with pageNumber= 41 and pageSize= 7
+[2025-10-11T15:33:06.967] [DEBUG] default - A user requested movies with pageNumber= 42 and pageSize= 7
+[2025-10-11T15:33:06.988] [DEBUG] default - A user requested movies with pageNumber= 43 and pageSize= 7
+[2025-10-11T15:33:07.009] [DEBUG] default - A user requested movies with pageNumber= 44 and pageSize= 7
+[2025-10-11T15:33:07.030] [DEBUG] default - A user requested movies with pageNumber= 45 and pageSize= 7
+[2025-10-11T15:33:07.051] [DEBUG] default - A user requested movies with pageNumber= 46 and pageSize= 7
+[2025-10-11T15:33:07.074] [DEBUG] default - A user requested movies with pageNumber= 47 and pageSize= 7
+[2025-10-11T15:33:07.101] [DEBUG] default - A user requested movies with pageNumber= 48 and pageSize= 7
+[2025-10-11T15:33:07.121] [DEBUG] default - A user requested movies with pageNumber= 49 and pageSize= 7
+[2025-10-11T15:33:07.141] [DEBUG] default - A user requested movies with pageNumber= 50 and pageSize= 7
+[2025-10-11T15:33:07.165] [DEBUG] default - A user requested movies with pageNumber= 51 and pageSize= 7
+[2025-10-11T15:33:07.182] [DEBUG] default - A user requested movies with pageNumber= 52 and pageSize= 7
+[2025-10-11T15:33:07.203] [DEBUG] default - A user requested movies with pageNumber= 53 and pageSize= 7
+[2025-10-11T15:33:07.226] [DEBUG] default - A user requested movies with pageNumber= 54 and pageSize= 7
+[2025-10-11T15:33:07.246] [DEBUG] default - A user requested movies with pageNumber= 55 and pageSize= 7
+[2025-10-11T15:33:07.266] [DEBUG] default - A user requested movies with pageNumber= 56 and pageSize= 7
+[2025-10-11T15:33:07.285] [DEBUG] default - A user requested movies with pageNumber= 57 and pageSize= 7
+[2025-10-11T15:33:07.293] [DEBUG] default - A user requested movies with pageNumber= 58 and pageSize= 7
+[2025-10-11T15:33:07.306] [DEBUG] default - A user requested movies with pageNumber= 59 and pageSize= 7
+[2025-10-11T15:33:07.314] [DEBUG] default - A user requested movies with pageNumber= 60 and pageSize= 7
+[2025-10-11T15:33:07.336] [DEBUG] default - A user requested movies with pageNumber= 61 and pageSize= 7
+[2025-10-11T15:33:07.360] [DEBUG] default - A user requested movies with pageNumber= 62 and pageSize= 7
+[2025-10-11T15:33:07.388] [DEBUG] default - A user requested movies with pageNumber= 63 and pageSize= 7
+[2025-10-11T15:33:07.406] [DEBUG] default - A user requested movies with pageNumber= 64 and pageSize= 7
+[2025-10-11T15:33:07.430] [DEBUG] default - A user requested movies with pageNumber= 65 and pageSize= 7
+[2025-10-11T15:33:07.454] [DEBUG] default - A user requested movies with pageNumber= 66 and pageSize= 7
+[2025-10-11T15:33:07.476] [DEBUG] default - A user requested movies with pageNumber= 67 and pageSize= 7
+[2025-10-11T15:33:07.497] [DEBUG] default - A user requested movies with pageNumber= 68 and pageSize= 7
+[2025-10-11T15:33:07.517] [DEBUG] default - A user requested movies with pageNumber= 69 and pageSize= 7
+[2025-10-11T15:33:07.537] [DEBUG] default - A user requested movies with pageNumber= 70 and pageSize= 7
+[2025-10-11T15:33:07.558] [DEBUG] default - A user requested movies with pageNumber= 71 and pageSize= 7
+[2025-10-11T15:33:07.578] [DEBUG] default - A user requested movies with pageNumber= 72 and pageSize= 7
+[2025-10-11T15:33:07.601] [DEBUG] default - A user requested movies with pageNumber= 73 and pageSize= 7
+[2025-10-11T15:33:07.621] [DEBUG] default - A user requested movies with pageNumber= 74 and pageSize= 7
+[2025-10-11T15:33:07.640] [DEBUG] default - A user requested movies with pageNumber= 75 and pageSize= 7
+[2025-10-11T15:33:07.662] [DEBUG] default - A user requested movies with pageNumber= 76 and pageSize= 7
+[2025-10-11T15:33:07.683] [DEBUG] default - A user requested movies with pageNumber= 77 and pageSize= 7
+[2025-10-11T15:33:07.703] [DEBUG] default - A user requested movies with pageNumber= 78 and pageSize= 7
+[2025-10-11T15:33:07.725] [DEBUG] default - A user requested movies with pageNumber= 79 and pageSize= 7
+[2025-10-11T15:33:07.746] [DEBUG] default - A user requested movies with pageNumber= 80 and pageSize= 7
+[2025-10-11T15:33:07.766] [DEBUG] default - A user requested movies with pageNumber= 81 and pageSize= 7
+[2025-10-11T15:33:07.790] [DEBUG] default - A user requested movies with pageNumber= 82 and pageSize= 7
+[2025-10-11T15:33:07.812] [DEBUG] default - A user requested movies with pageNumber= 83 and pageSize= 7
+[2025-10-11T15:33:07.830] [DEBUG] default - A user requested movies with pageNumber= 84 and pageSize= 7
+[2025-10-11T15:33:07.853] [DEBUG] default - A user requested movies with pageNumber= 85 and pageSize= 7
+[2025-10-11T15:33:07.870] [DEBUG] default - A user requested movies with pageNumber= 86 and pageSize= 7
+[2025-10-11T15:33:07.877] [DEBUG] default - A user requested movies with pageNumber= 87 and pageSize= 7
+[2025-10-11T15:33:07.893] [DEBUG] default - A user requested movies with pageNumber= 88 and pageSize= 7
+[2025-10-11T15:33:07.914] [DEBUG] default - A user requested movies with pageNumber= 89 and pageSize= 7
+[2025-10-11T15:33:07.935] [DEBUG] default - A user requested movies with pageNumber= 90 and pageSize= 7
+[2025-10-11T15:33:07.956] [DEBUG] default - A user requested movies with pageNumber= 91 and pageSize= 7
+[2025-10-11T15:33:07.977] [DEBUG] default - A user requested movies with pageNumber= 92 and pageSize= 7
+[2025-10-11T15:33:07.988] [DEBUG] default - A user requested movies with pageNumber= 93 and pageSize= 7
+[2025-10-11T15:33:08.011] [DEBUG] default - A user requested movies with pageNumber= 94 and pageSize= 7
+[2025-10-11T15:33:08.019] [DEBUG] default - A user requested movies with pageNumber= 95 and pageSize= 7
+[2025-10-11T15:33:08.040] [DEBUG] default - A user requested movies with pageNumber= 96 and pageSize= 7
+[2025-10-11T15:33:08.060] [DEBUG] default - A user requested movies with pageNumber= 97 and pageSize= 7
+[2025-10-11T15:33:08.080] [DEBUG] default - A user requested movies with pageNumber= 98 and pageSize= 7
+[2025-10-11T15:33:08.101] [DEBUG] default - A user requested movies with pageNumber= 99 and pageSize= 7
+[2025-10-11T15:33:08.123] [DEBUG] default - A user requested movies with pageNumber= 100 and pageSize= 7
+[2025-10-11T15:33:08.145] [DEBUG] default - A user requested movies with pageNumber= 101 and pageSize= 7
+[2025-10-11T15:33:08.166] [DEBUG] default - A user requested movies with pageNumber= 102 and pageSize= 7
+[2025-10-11T15:33:08.187] [DEBUG] default - A user requested movies with pageNumber= 103 and pageSize= 7
+[2025-10-11T15:33:08.206] [DEBUG] default - A user requested movies with pageNumber= 104 and pageSize= 7
+[2025-10-11T15:33:08.227] [DEBUG] default - A user requested movies with pageNumber= 105 and pageSize= 7
+[2025-10-11T15:33:08.234] [DEBUG] default - A user requested movies with pageNumber= 106 and pageSize= 7
+[2025-10-11T15:33:08.256] [DEBUG] default - A user requested movies with pageNumber= 107 and pageSize= 7
+[2025-10-11T15:33:08.278] [DEBUG] default - A user requested movies with pageNumber= 108 and pageSize= 7
+[2025-10-11T15:33:08.296] [DEBUG] default - A user requested movies with pageNumber= 109 and pageSize= 7
+[2025-10-11T15:33:08.316] [DEBUG] default - A user requested movies with pageNumber= 110 and pageSize= 7
+[2025-10-11T15:33:08.338] [DEBUG] default - A user requested movies with pageNumber= 111 and pageSize= 7
+[2025-10-11T15:33:08.358] [DEBUG] default - A user requested movies with pageNumber= 112 and pageSize= 7
+[2025-10-11T15:33:08.383] [DEBUG] default - A user requested movies with pageNumber= 113 and pageSize= 7
+[2025-10-11T15:33:08.390] [DEBUG] default - A user requested movies with pageNumber= 114 and pageSize= 7
+[2025-10-11T15:33:08.413] [DEBUG] default - A user requested movies with pageNumber= 115 and pageSize= 7
+[2025-10-11T15:33:08.433] [DEBUG] default - A user requested movies with pageNumber= 116 and pageSize= 7
+[2025-10-11T15:33:08.457] [DEBUG] default - A user requested movies with pageNumber= 117 and pageSize= 7
+[2025-10-11T15:33:08.484] [DEBUG] default - A user requested movies with pageNumber= 118 and pageSize= 7
+[2025-10-11T15:33:08.502] [DEBUG] default - A user requested movies with pageNumber= 119 and pageSize= 7
+[2025-10-11T15:33:08.524] [DEBUG] default - A user requested movies with pageNumber= 120 and pageSize= 7
+[2025-10-11T15:33:08.544] [DEBUG] default - A user requested movies with pageNumber= 121 and pageSize= 7
+[2025-10-11T15:33:08.565] [DEBUG] default - A user requested movies with pageNumber= 122 and pageSize= 7
+[2025-10-11T15:33:08.584] [DEBUG] default - A user requested movies with pageNumber= 123 and pageSize= 7
+[2025-10-11T15:33:08.592] [DEBUG] default - A user requested movies with pageNumber= 124 and pageSize= 7
+[2025-10-11T15:33:08.616] [DEBUG] default - A user requested movies with pageNumber= 125 and pageSize= 7
+[2025-10-11T15:33:08.636] [DEBUG] default - A user requested movies with pageNumber= 126 and pageSize= 7
+[2025-10-11T15:33:08.658] [DEBUG] default - A user requested movies with pageNumber= 127 and pageSize= 7
+[2025-10-11T15:33:08.676] [DEBUG] default - A user requested movies with pageNumber= 128 and pageSize= 7
+[2025-10-11T15:33:08.699] [DEBUG] default - A user requested movies with pageNumber= 129 and pageSize= 7
+[2025-10-11T15:33:08.724] [DEBUG] default - A user requested movies with pageNumber= 130 and pageSize= 7
+[2025-10-11T15:33:08.745] [DEBUG] default - A user requested movies with pageNumber= 131 and pageSize= 7
+[2025-10-11T15:33:08.770] [DEBUG] default - A user requested movies with pageNumber= 132 and pageSize= 7
+[2025-10-11T15:33:08.798] [DEBUG] default - A user requested movies with pageNumber= 133 and pageSize= 7
+[2025-10-11T15:33:08.823] [DEBUG] default - A user requested movies with pageNumber= 134 and pageSize= 7
+[2025-10-11T15:33:08.844] [DEBUG] default - A user requested movies with pageNumber= 135 and pageSize= 7
+[2025-10-11T15:33:08.865] [DEBUG] default - A user requested movies with pageNumber= 136 and pageSize= 7
+[2025-10-11T15:33:08.873] [DEBUG] default - A user requested movies with pageNumber= 137 and pageSize= 7
+[2025-10-11T15:33:08.885] [DEBUG] default - A user requested movies with pageNumber= 138 and pageSize= 7
+[2025-10-11T15:33:08.892] [DEBUG] default - A user requested movies with pageNumber= 139 and pageSize= 7
+[2025-10-11T15:33:08.898] [DEBUG] default - A user requested movies with pageNumber= 140 and pageSize= 7
+[2025-10-11T15:33:08.912] [DEBUG] default - A user requested movies with pageNumber= 141 and pageSize= 7
+[2025-10-11T15:33:08.919] [DEBUG] default - A user requested movies with pageNumber= 142 and pageSize= 7
+[2025-10-11T15:33:08.926] [DEBUG] default - A user requested movies with pageNumber= 143 and pageSize= 7
+[2025-10-11T15:33:08.934] [DEBUG] default - A user requested movies with pageNumber= 144 and pageSize= 7
+[2025-10-11T15:33:08.941] [DEBUG] default - A user requested movies with pageNumber= 145 and pageSize= 7
+[2025-10-11T15:33:08.948] [DEBUG] default - A user requested movies with pageNumber= 146 and pageSize= 7
+[2025-10-11T15:33:08.954] [DEBUG] default - A user requested movies with pageNumber= 147 and pageSize= 7
+[2025-10-11T15:33:08.961] [DEBUG] default - A user requested movies with pageNumber= 148 and pageSize= 7
+[2025-10-11T15:33:08.968] [DEBUG] default - A user requested movies with pageNumber= 149 and pageSize= 7
+[2025-10-11T15:33:08.974] [DEBUG] default - A user requested movies with pageNumber= 150 and pageSize= 7
+[2025-10-11T15:33:08.983] [DEBUG] default - A user requested movies with pageNumber= 151 and pageSize= 7
+[2025-10-11T15:33:08.989] [DEBUG] default - A user requested movies with pageNumber= 152 and pageSize= 7
+[2025-10-11T15:33:08.996] [DEBUG] default - A user requested movies with pageNumber= 153 and pageSize= 7
+[2025-10-11T15:33:09.004] [DEBUG] default - A user requested movies with pageNumber= 154 and pageSize= 7
+[2025-10-11T15:33:09.011] [DEBUG] default - A user requested movies with pageNumber= 155 and pageSize= 7
+[2025-10-11T15:33:09.023] [DEBUG] default - A user requested movies with pageNumber= 156 and pageSize= 7
+[2025-10-11T15:33:09.032] [DEBUG] default - A user requested movies with pageNumber= 157 and pageSize= 7
+[2025-10-11T15:33:09.037] [DEBUG] default - A user requested movies with pageNumber= 158 and pageSize= 7
+[2025-10-11T15:33:09.044] [DEBUG] default - A user requested movies with pageNumber= 159 and pageSize= 7
+[2025-10-11T15:33:09.051] [DEBUG] default - A user requested movies with pageNumber= 160 and pageSize= 7
+[2025-10-11T15:33:09.058] [DEBUG] default - A user requested movies with pageNumber= 161 and pageSize= 7
+[2025-10-11T15:33:09.065] [DEBUG] default - A user requested movies with pageNumber= 162 and pageSize= 7
+[2025-10-11T15:33:09.618] [DEBUG] default - A user requested movies with pageNumber= 163 and pageSize= 7
+[2025-10-11T15:33:09.640] [DEBUG] default - A user requested movies with pageNumber= 164 and pageSize= 7
+[2025-10-11T15:33:09.657] [DEBUG] default - A user requested movies with pageNumber= 165 and pageSize= 7
+[2025-10-11T15:33:09.670] [DEBUG] default - A user requested movies with pageNumber= 166 and pageSize= 7
+[2025-10-11T15:33:09.685] [DEBUG] default - A user requested movies with pageNumber= 167 and pageSize= 7
+[2025-10-11T15:33:09.700] [DEBUG] default - A user requested movies with pageNumber= 168 and pageSize= 7
+[2025-10-11T15:33:09.713] [DEBUG] default - A user requested movies with pageNumber= 169 and pageSize= 7
+[2025-10-11T15:33:09.728] [DEBUG] default - A user requested movies with pageNumber= 170 and pageSize= 7
+[2025-10-11T15:33:09.740] [DEBUG] default - A user requested movies with pageNumber= 171 and pageSize= 7
+[2025-10-11T15:33:09.756] [DEBUG] default - A user requested movies with pageNumber= 172 and pageSize= 7
+[2025-10-11T15:33:09.768] [DEBUG] default - A user requested movies with pageNumber= 173 and pageSize= 7
+[2025-10-11T15:33:09.781] [DEBUG] default - A user requested movies with pageNumber= 174 and pageSize= 7
+[2025-10-11T15:33:09.804] [DEBUG] default - A user requested movies with pageNumber= 175 and pageSize= 7
+[2025-10-11T15:33:09.826] [DEBUG] default - A user requested movies with pageNumber= 176 and pageSize= 7
+[2025-10-11T15:33:09.844] [DEBUG] default - A user requested movies with pageNumber= 177 and pageSize= 7
+[2025-10-11T15:33:09.865] [DEBUG] default - A user requested movies with pageNumber= 178 and pageSize= 7
+[2025-10-11T15:33:09.887] [DEBUG] default - A user requested movies with pageNumber= 179 and pageSize= 7
+[2025-10-11T15:33:09.907] [DEBUG] default - A user requested movies with pageNumber= 180 and pageSize= 7
+[2025-10-11T15:33:09.930] [DEBUG] default - A user requested movies with pageNumber= 181 and pageSize= 7
+[2025-10-11T15:33:09.949] [DEBUG] default - A user requested movies with pageNumber= 182 and pageSize= 7
+[2025-10-11T15:33:09.970] [DEBUG] default - A user requested movies with pageNumber= 183 and pageSize= 7
+[2025-10-11T15:33:09.993] [DEBUG] default - A user requested movies with pageNumber= 184 and pageSize= 7
+[2025-10-11T15:33:10.020] [DEBUG] default - A user requested movies with pageNumber= 185 and pageSize= 7
+[2025-10-11T15:33:10.050] [DEBUG] default - A user requested movies with pageNumber= 186 and pageSize= 7
+[2025-10-11T15:33:10.075] [DEBUG] default - A user requested movies with pageNumber= 187 and pageSize= 7
+[2025-10-11T15:33:10.095] [DEBUG] default - A user requested movies with pageNumber= 188 and pageSize= 7
+[2025-10-11T15:33:10.118] [DEBUG] default - A user requested movies with pageNumber= 189 and pageSize= 7
+[2025-10-11T15:33:10.137] [DEBUG] default - A user requested movies with pageNumber= 190 and pageSize= 7
+[2025-10-11T15:33:10.157] [DEBUG] default - A user requested movies with pageNumber= 191 and pageSize= 7
+[2025-10-11T15:33:10.179] [DEBUG] default - A user requested movies with pageNumber= 192 and pageSize= 7
+[2025-10-11T15:33:10.207] [DEBUG] default - A user requested movies with pageNumber= 193 and pageSize= 7
+[2025-10-11T15:33:10.232] [DEBUG] default - A user requested movies with pageNumber= 194 and pageSize= 7
+[2025-10-11T15:33:10.254] [DEBUG] default - A user requested movies with pageNumber= 195 and pageSize= 7
+[2025-10-11T15:33:10.273] [DEBUG] default - A user requested movies with pageNumber= 196 and pageSize= 7
+[2025-10-11T15:33:10.294] [DEBUG] default - A user requested movies with pageNumber= 197 and pageSize= 7
+[2025-10-11T15:33:10.314] [DEBUG] default - A user requested movies with pageNumber= 198 and pageSize= 7
+[2025-10-11T15:33:10.334] [DEBUG] default - A user requested movies with pageNumber= 199 and pageSize= 7
+[2025-10-11T15:33:10.343] [DEBUG] default - A user requested movies with pageNumber= 200 and pageSize= 7
+[2025-10-11T15:33:10.363] [DEBUG] default - A user requested movies with pageNumber= 201 and pageSize= 7
+[2025-10-11T15:33:10.385] [DEBUG] default - A user requested movies with pageNumber= 202 and pageSize= 7
+[2025-10-11T15:33:10.405] [DEBUG] default - A user requested movies with pageNumber= 203 and pageSize= 7
+[2025-10-11T15:33:10.425] [DEBUG] default - A user requested movies with pageNumber= 204 and pageSize= 7
+[2025-10-11T15:33:10.446] [DEBUG] default - A user requested movies with pageNumber= 205 and pageSize= 7
+[2025-10-11T15:33:10.466] [DEBUG] default - A user requested movies with pageNumber= 206 and pageSize= 7
+[2025-10-11T15:33:10.488] [DEBUG] default - A user requested movies with pageNumber= 207 and pageSize= 7
+[2025-10-11T15:33:10.510] [DEBUG] default - A user requested movies with pageNumber= 208 and pageSize= 7
+[2025-10-11T15:33:10.530] [DEBUG] default - A user requested movies with pageNumber= 209 and pageSize= 7
+[2025-10-11T15:33:10.553] [DEBUG] default - A user requested movies with pageNumber= 210 and pageSize= 7
+[2025-10-11T15:33:10.579] [DEBUG] default - A user requested movies with pageNumber= 211 and pageSize= 7
+[2025-10-11T15:33:10.599] [DEBUG] default - A user requested movies with pageNumber= 212 and pageSize= 7
+[2025-10-11T15:33:10.619] [DEBUG] default - A user requested movies with pageNumber= 213 and pageSize= 7
+[2025-10-11T15:33:10.640] [DEBUG] default - A user requested movies with pageNumber= 214 and pageSize= 7
+[2025-10-11T15:33:10.663] [DEBUG] default - A user requested movies with pageNumber= 215 and pageSize= 7
+[2025-10-11T15:33:10.684] [DEBUG] default - A user requested movies with pageNumber= 216 and pageSize= 7
+[2025-10-11T15:33:10.704] [DEBUG] default - A user requested movies with pageNumber= 217 and pageSize= 7
+[2025-10-11T15:33:10.723] [DEBUG] default - A user requested movies with pageNumber= 218 and pageSize= 7
+[2025-10-11T15:33:10.740] [DEBUG] default - A user requested movies with pageNumber= 219 and pageSize= 7
+[2025-10-11T15:33:10.750] [DEBUG] default - A user requested movies with pageNumber= 220 and pageSize= 7
+[2025-10-11T15:33:10.761] [DEBUG] default - A user requested movies with pageNumber= 221 and pageSize= 7
+[2025-10-11T15:33:10.776] [DEBUG] default - A user requested movies with pageNumber= 222 and pageSize= 7
+[2025-10-11T15:33:10.790] [DEBUG] default - A user requested movies with pageNumber= 223 and pageSize= 7
+[2025-10-11T15:33:10.804] [DEBUG] default - A user requested movies with pageNumber= 224 and pageSize= 7
+[2025-10-11T15:33:10.817] [DEBUG] default - A user requested movies with pageNumber= 225 and pageSize= 7
+[2025-10-11T15:33:10.823] [DEBUG] default - A user requested movies with pageNumber= 226 and pageSize= 7
+[2025-10-11T15:33:10.837] [DEBUG] default - A user requested movies with pageNumber= 227 and pageSize= 7
+[2025-10-11T15:33:15.698] [DEBUG] default - A user requested movies with pageNumber= 228 and pageSize= 7
+[2025-10-11T15:33:23.502] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 7
+[2025-10-11T15:33:26.377] [DEBUG] default - A user requested movies with pageNumber= 1 and pageSize= 7
+[2025-10-11T15:33:33.148] [DEBUG] default - A user requested movies with pageNumber= 2 and pageSize= 7
+[2025-10-11T15:33:33.758] [DEBUG] default - A user requested movies with pageNumber= 3 and pageSize= 7
+[2025-10-11T15:33:33.774] [DEBUG] default - A user requested movies with pageNumber= 4 and pageSize= 7
+[2025-10-11T15:33:33.799] [DEBUG] default - A user requested movies with pageNumber= 5 and pageSize= 7
+[2025-10-11T15:33:33.818] [DEBUG] default - A user requested movies with pageNumber= 6 and pageSize= 7
+[2025-10-11T15:33:33.837] [DEBUG] default - A user requested movies with pageNumber= 7 and pageSize= 7
+[2025-10-11T15:33:33.854] [DEBUG] default - A user requested movies with pageNumber= 8 and pageSize= 7
+[2025-10-11T15:33:33.874] [DEBUG] default - A user requested movies with pageNumber= 9 and pageSize= 7
+[2025-10-11T15:33:33.896] [DEBUG] default - A user requested movies with pageNumber= 10 and pageSize= 7
+[2025-10-11T15:33:33.909] [DEBUG] default - A user requested movies with pageNumber= 11 and pageSize= 7
+[2025-10-11T15:33:33.929] [DEBUG] default - A user requested movies with pageNumber= 12 and pageSize= 7
+[2025-10-11T15:33:33.954] [DEBUG] default - A user requested movies with pageNumber= 13 and pageSize= 7
+[2025-10-11T15:33:33.978] [DEBUG] default - A user requested movies with pageNumber= 14 and pageSize= 7
+[2025-10-11T15:33:34.005] [DEBUG] default - A user requested movies with pageNumber= 15 and pageSize= 7
+[2025-10-11T15:33:34.029] [DEBUG] default - A user requested movies with pageNumber= 16 and pageSize= 7
+[2025-10-11T15:33:34.051] [DEBUG] default - A user requested movies with pageNumber= 17 and pageSize= 7
+[2025-10-11T15:33:34.069] [DEBUG] default - A user requested movies with pageNumber= 18 and pageSize= 7
+[2025-10-11T15:33:34.091] [DEBUG] default - A user requested movies with pageNumber= 19 and pageSize= 7
+[2025-10-11T15:33:34.113] [DEBUG] default - A user requested movies with pageNumber= 20 and pageSize= 7
+[2025-10-11T15:33:34.134] [DEBUG] default - A user requested movies with pageNumber= 21 and pageSize= 7
+[2025-10-11T15:33:34.153] [DEBUG] default - A user requested movies with pageNumber= 22 and pageSize= 7
+[2025-10-11T15:33:34.174] [DEBUG] default - A user requested movies with pageNumber= 23 and pageSize= 7
+[2025-10-11T15:33:34.194] [DEBUG] default - A user requested movies with pageNumber= 24 and pageSize= 7
+[2025-10-11T15:33:34.218] [DEBUG] default - A user requested movies with pageNumber= 25 and pageSize= 7
+[2025-10-11T15:33:34.237] [DEBUG] default - A user requested movies with pageNumber= 26 and pageSize= 7
+[2025-10-11T15:33:34.260] [DEBUG] default - A user requested movies with pageNumber= 27 and pageSize= 7
+[2025-10-11T15:33:34.280] [DEBUG] default - A user requested movies with pageNumber= 28 and pageSize= 7
+[2025-10-11T15:33:34.301] [DEBUG] default - A user requested movies with pageNumber= 29 and pageSize= 7
+[2025-10-11T15:33:34.320] [DEBUG] default - A user requested movies with pageNumber= 30 and pageSize= 7
+[2025-10-11T15:33:34.340] [DEBUG] default - A user requested movies with pageNumber= 31 and pageSize= 7
+[2025-10-11T15:33:34.364] [DEBUG] default - A user requested movies with pageNumber= 32 and pageSize= 7
+[2025-10-11T15:33:34.389] [DEBUG] default - A user requested movies with pageNumber= 33 and pageSize= 7
+[2025-10-11T15:33:34.410] [DEBUG] default - A user requested movies with pageNumber= 34 and pageSize= 7
+[2025-10-11T15:33:34.436] [DEBUG] default - A user requested movies with pageNumber= 35 and pageSize= 7
+[2025-10-11T15:33:34.458] [DEBUG] default - A user requested movies with pageNumber= 36 and pageSize= 7
+[2025-10-11T15:33:34.479] [DEBUG] default - A user requested movies with pageNumber= 37 and pageSize= 7
+[2025-10-11T15:33:34.499] [DEBUG] default - A user requested movies with pageNumber= 38 and pageSize= 7
+[2025-10-11T15:33:34.519] [DEBUG] default - A user requested movies with pageNumber= 39 and pageSize= 7
+[2025-10-11T15:33:34.540] [DEBUG] default - A user requested movies with pageNumber= 40 and pageSize= 7
+[2025-10-11T15:33:34.561] [DEBUG] default - A user requested movies with pageNumber= 41 and pageSize= 7
+[2025-10-11T15:33:34.581] [DEBUG] default - A user requested movies with pageNumber= 42 and pageSize= 7
+[2025-10-11T15:33:34.602] [DEBUG] default - A user requested movies with pageNumber= 43 and pageSize= 7
+[2025-10-11T15:33:34.626] [DEBUG] default - A user requested movies with pageNumber= 44 and pageSize= 7
+[2025-10-11T15:33:34.644] [DEBUG] default - A user requested movies with pageNumber= 45 and pageSize= 7
+[2025-10-11T15:33:34.665] [DEBUG] default - A user requested movies with pageNumber= 46 and pageSize= 7
+[2025-10-11T15:33:34.687] [DEBUG] default - A user requested movies with pageNumber= 47 and pageSize= 7
+[2025-10-11T15:33:34.711] [DEBUG] default - A user requested movies with pageNumber= 48 and pageSize= 7
+[2025-10-11T15:33:34.742] [DEBUG] default - A user requested movies with pageNumber= 49 and pageSize= 7
+[2025-10-11T15:33:34.762] [DEBUG] default - A user requested movies with pageNumber= 50 and pageSize= 7
+[2025-10-11T15:33:34.784] [DEBUG] default - A user requested movies with pageNumber= 51 and pageSize= 7
+[2025-10-11T15:33:34.804] [DEBUG] default - A user requested movies with pageNumber= 52 and pageSize= 7
+[2025-10-11T15:33:34.826] [DEBUG] default - A user requested movies with pageNumber= 53 and pageSize= 7
+[2025-10-11T15:33:34.847] [DEBUG] default - A user requested movies with pageNumber= 54 and pageSize= 7
+[2025-10-11T15:33:34.868] [DEBUG] default - A user requested movies with pageNumber= 55 and pageSize= 7
+[2025-10-11T15:33:34.887] [DEBUG] default - A user requested movies with pageNumber= 56 and pageSize= 7
+[2025-10-11T15:33:34.908] [DEBUG] default - A user requested movies with pageNumber= 57 and pageSize= 7
+[2025-10-11T15:33:34.934] [DEBUG] default - A user requested movies with pageNumber= 58 and pageSize= 7
+[2025-10-11T15:33:34.957] [DEBUG] default - A user requested movies with pageNumber= 59 and pageSize= 7
+[2025-10-11T15:33:34.978] [DEBUG] default - A user requested movies with pageNumber= 60 and pageSize= 7
+[2025-10-11T15:33:34.998] [DEBUG] default - A user requested movies with pageNumber= 61 and pageSize= 7
+[2025-10-11T15:33:35.019] [DEBUG] default - A user requested movies with pageNumber= 62 and pageSize= 7
+[2025-10-11T15:33:35.040] [DEBUG] default - A user requested movies with pageNumber= 63 and pageSize= 7
+[2025-10-11T15:33:35.062] [DEBUG] default - A user requested movies with pageNumber= 64 and pageSize= 7
+[2025-10-11T15:33:35.081] [DEBUG] default - A user requested movies with pageNumber= 65 and pageSize= 7
+[2025-10-11T15:33:35.091] [DEBUG] default - A user requested movies with pageNumber= 66 and pageSize= 7
+[2025-10-11T15:33:44.511] [DEBUG] default - A user requested movies with pageNumber= 67 and pageSize= 7
+[2025-10-11T15:33:44.549] [DEBUG] default - A user requested movies with pageNumber= 68 and pageSize= 7
+[2025-10-11T15:33:48.291] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 7
+[2025-10-11T15:33:49.245] [DEBUG] default - A user requested movies with pageNumber= 1 and pageSize= 7
+[2025-10-11T15:33:49.390] [DEBUG] default - A user requested movies with pageNumber= 2 and pageSize= 7
+[2025-10-11T15:33:49.980] [DEBUG] default - A user requested movies with pageNumber= 3 and pageSize= 7
+[2025-10-11T15:33:50.001] [DEBUG] default - A user requested movies with pageNumber= 4 and pageSize= 7
+[2025-10-11T15:33:50.315] [DEBUG] default - A user requested movies with pageNumber= 5 and pageSize= 7
+[2025-10-11T15:33:50.337] [DEBUG] default - A user requested movies with pageNumber= 6 and pageSize= 7
+[2025-10-11T15:33:50.356] [DEBUG] default - A user requested movies with pageNumber= 7 and pageSize= 7
+[2025-10-11T15:33:50.374] [DEBUG] default - A user requested movies with pageNumber= 8 and pageSize= 7
+[2025-10-11T15:33:50.388] [DEBUG] default - A user requested movies with pageNumber= 9 and pageSize= 7
+[2025-10-11T15:33:50.403] [DEBUG] default - A user requested movies with pageNumber= 10 and pageSize= 7
+[2025-10-11T15:33:50.418] [DEBUG] default - A user requested movies with pageNumber= 11 and pageSize= 7
+[2025-10-11T15:33:50.439] [DEBUG] default - A user requested movies with pageNumber= 12 and pageSize= 7
+[2025-10-11T15:33:50.450] [DEBUG] default - A user requested movies with pageNumber= 13 and pageSize= 7
+[2025-10-11T15:33:50.466] [DEBUG] default - A user requested movies with pageNumber= 14 and pageSize= 7
+[2025-10-11T15:33:50.478] [DEBUG] default - A user requested movies with pageNumber= 15 and pageSize= 7
+[2025-10-11T15:33:50.486] [DEBUG] default - A user requested movies with pageNumber= 16 and pageSize= 7
+[2025-10-11T15:33:50.504] [DEBUG] default - A user requested movies with pageNumber= 17 and pageSize= 7
+[2025-10-11T15:33:50.515] [DEBUG] default - A user requested movies with pageNumber= 18 and pageSize= 7
+[2025-10-11T15:33:50.537] [DEBUG] default - A user requested movies with pageNumber= 19 and pageSize= 7
+[2025-10-11T15:33:50.564] [DEBUG] default - A user requested movies with pageNumber= 20 and pageSize= 7
+[2025-10-11T15:33:50.586] [DEBUG] default - A user requested movies with pageNumber= 21 and pageSize= 7
+[2025-10-11T15:33:50.611] [DEBUG] default - A user requested movies with pageNumber= 22 and pageSize= 7
+[2025-10-11T15:33:50.635] [DEBUG] default - A user requested movies with pageNumber= 23 and pageSize= 7
+[2025-10-11T15:33:50.658] [DEBUG] default - A user requested movies with pageNumber= 24 and pageSize= 7
+[2025-10-11T15:33:50.678] [DEBUG] default - A user requested movies with pageNumber= 25 and pageSize= 7
+[2025-10-11T15:33:50.701] [DEBUG] default - A user requested movies with pageNumber= 26 and pageSize= 7
+[2025-10-11T15:33:50.722] [DEBUG] default - A user requested movies with pageNumber= 27 and pageSize= 7
+[2025-10-11T15:33:50.745] [DEBUG] default - A user requested movies with pageNumber= 28 and pageSize= 7
+[2025-10-11T15:33:50.765] [DEBUG] default - A user requested movies with pageNumber= 29 and pageSize= 7
+[2025-10-11T15:33:50.783] [DEBUG] default - A user requested movies with pageNumber= 30 and pageSize= 7
+[2025-10-11T15:33:50.789] [DEBUG] default - A user requested movies with pageNumber= 31 and pageSize= 7
+[2025-10-11T15:33:50.812] [DEBUG] default - A user requested movies with pageNumber= 32 and pageSize= 7
+[2025-10-11T15:33:50.834] [DEBUG] default - A user requested movies with pageNumber= 33 and pageSize= 7
+[2025-10-11T15:33:50.855] [DEBUG] default - A user requested movies with pageNumber= 34 and pageSize= 7
+[2025-10-11T15:33:50.877] [DEBUG] default - A user requested movies with pageNumber= 35 and pageSize= 7
+[2025-10-11T15:33:50.898] [DEBUG] default - A user requested movies with pageNumber= 36 and pageSize= 7
+[2025-10-11T15:33:50.919] [DEBUG] default - A user requested movies with pageNumber= 37 and pageSize= 7
+[2025-10-11T15:33:50.939] [DEBUG] default - A user requested movies with pageNumber= 38 and pageSize= 7
+[2025-10-11T15:33:50.961] [DEBUG] default - A user requested movies with pageNumber= 39 and pageSize= 7
+[2025-10-11T15:33:50.982] [DEBUG] default - A user requested movies with pageNumber= 40 and pageSize= 7
+[2025-10-11T15:33:51.004] [DEBUG] default - A user requested movies with pageNumber= 41 and pageSize= 7
+[2025-10-11T15:33:51.027] [DEBUG] default - A user requested movies with pageNumber= 42 and pageSize= 7
+[2025-10-11T15:33:51.053] [DEBUG] default - A user requested movies with pageNumber= 43 and pageSize= 7
+[2025-10-11T15:33:51.072] [DEBUG] default - A user requested movies with pageNumber= 44 and pageSize= 7
+[2025-10-11T15:33:51.095] [DEBUG] default - A user requested movies with pageNumber= 45 and pageSize= 7
+[2025-10-11T15:33:51.115] [DEBUG] default - A user requested movies with pageNumber= 46 and pageSize= 7
+[2025-10-11T15:33:51.137] [DEBUG] default - A user requested movies with pageNumber= 47 and pageSize= 7
+[2025-10-11T15:33:51.160] [DEBUG] default - A user requested movies with pageNumber= 48 and pageSize= 7
+[2025-10-11T15:33:51.177] [DEBUG] default - A user requested movies with pageNumber= 49 and pageSize= 7
+[2025-10-11T15:33:51.197] [DEBUG] default - A user requested movies with pageNumber= 50 and pageSize= 7
+[2025-10-11T15:33:51.222] [DEBUG] default - A user requested movies with pageNumber= 51 and pageSize= 7
+[2025-10-11T15:33:51.246] [DEBUG] default - A user requested movies with pageNumber= 52 and pageSize= 7
+[2025-10-11T15:33:51.262] [DEBUG] default - A user requested movies with pageNumber= 53 and pageSize= 7
+[2025-10-11T15:33:51.269] [DEBUG] default - A user requested movies with pageNumber= 54 and pageSize= 7
+[2025-10-11T15:33:51.284] [DEBUG] default - A user requested movies with pageNumber= 55 and pageSize= 7
+[2025-10-11T15:33:51.299] [DEBUG] default - A user requested movies with pageNumber= 56 and pageSize= 7
+[2025-10-11T15:33:51.310] [DEBUG] default - A user requested movies with pageNumber= 57 and pageSize= 7
+[2025-10-11T15:33:51.326] [DEBUG] default - A user requested movies with pageNumber= 58 and pageSize= 7
+[2025-10-11T15:33:51.336] [DEBUG] default - A user requested movies with pageNumber= 59 and pageSize= 7
+[2025-10-11T15:33:51.345] [DEBUG] default - A user requested movies with pageNumber= 60 and pageSize= 7
+[2025-10-11T15:33:51.360] [DEBUG] default - A user requested movies with pageNumber= 61 and pageSize= 7
+[2025-10-11T15:39:07.857] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 7
+[2025-10-11T15:39:08.393] [DEBUG] default - A user requested movies with pageNumber= 1 and pageSize= 7
+[2025-10-11T15:39:08.937] [DEBUG] default - A user requested movies with pageNumber= 2 and pageSize= 7
+[2025-10-11T15:39:09.374] [DEBUG] default - A user requested movies with pageNumber= 3 and pageSize= 7
+[2025-10-11T15:39:21.151] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 7
+[2025-10-11T15:39:22.171] [DEBUG] default - A user requested movies with pageNumber= 1 and pageSize= 7
+[2025-10-11T15:39:25.689] [DEBUG] default - A user requested movies with pageNumber= 2 and pageSize= 7
+[2025-10-11T15:39:26.148] [DEBUG] default - A user requested movies with pageNumber= 3 and pageSize= 7
+[2025-10-11T15:39:26.162] [DEBUG] default - A user requested movies with pageNumber= 4 and pageSize= 7
+[2025-10-11T15:39:26.177] [DEBUG] default - A user requested movies with pageNumber= 5 and pageSize= 7
+[2025-10-11T15:39:26.199] [DEBUG] default - A user requested movies with pageNumber= 6 and pageSize= 7
+[2025-10-11T15:39:28.947] [DEBUG] default - A user requested movies with pageNumber= 7 and pageSize= 7
+[2025-10-11T15:39:28.970] [DEBUG] default - A user requested movies with pageNumber= 8 and pageSize= 7
+[2025-10-11T15:39:28.986] [DEBUG] default - A user requested movies with pageNumber= 9 and pageSize= 7
+[2025-10-11T15:39:29.005] [DEBUG] default - A user requested movies with pageNumber= 10 and pageSize= 7
+[2025-10-11T15:39:29.634] [DEBUG] default - A user requested movies with pageNumber= 11 and pageSize= 7
+[2025-10-11T15:39:29.651] [DEBUG] default - A user requested movies with pageNumber= 12 and pageSize= 7
+[2025-10-11T15:39:29.671] [DEBUG] default - A user requested movies with pageNumber= 13 and pageSize= 7
+[2025-10-11T15:39:29.811] [DEBUG] default - A user requested movies with pageNumber= 14 and pageSize= 7
+[2025-10-11T15:39:29.829] [DEBUG] default - A user requested movies with pageNumber= 15 and pageSize= 7
+[2025-10-11T15:39:29.851] [DEBUG] default - A user requested movies with pageNumber= 16 and pageSize= 7
+[2025-10-11T15:39:29.871] [DEBUG] default - A user requested movies with pageNumber= 17 and pageSize= 7
+[2025-10-11T15:39:29.893] [DEBUG] default - A user requested movies with pageNumber= 18 and pageSize= 7
+[2025-10-11T15:39:29.913] [DEBUG] default - A user requested movies with pageNumber= 19 and pageSize= 7
+[2025-10-11T15:39:29.928] [DEBUG] default - A user requested movies with pageNumber= 20 and pageSize= 7
+[2025-10-11T15:39:29.939] [DEBUG] default - A user requested movies with pageNumber= 21 and pageSize= 7
+[2025-10-11T15:39:29.953] [DEBUG] default - A user requested movies with pageNumber= 22 and pageSize= 7
+[2025-10-11T15:39:29.965] [DEBUG] default - A user requested movies with pageNumber= 23 and pageSize= 7
+[2025-10-11T15:39:29.979] [DEBUG] default - A user requested movies with pageNumber= 24 and pageSize= 7
+[2025-10-11T15:39:29.987] [DEBUG] default - A user requested movies with pageNumber= 25 and pageSize= 7
+[2025-10-11T15:39:30.000] [DEBUG] default - A user requested movies with pageNumber= 26 and pageSize= 7
+[2025-10-11T15:39:30.018] [DEBUG] default - A user requested movies with pageNumber= 27 and pageSize= 7
+[2025-10-11T15:39:30.040] [DEBUG] default - A user requested movies with pageNumber= 28 and pageSize= 7
+[2025-10-11T15:39:30.061] [DEBUG] default - A user requested movies with pageNumber= 29 and pageSize= 7
+[2025-10-11T15:39:30.090] [DEBUG] default - A user requested movies with pageNumber= 30 and pageSize= 7
+[2025-10-11T15:39:30.111] [DEBUG] default - A user requested movies with pageNumber= 31 and pageSize= 7
+[2025-10-11T15:39:30.121] [DEBUG] default - A user requested movies with pageNumber= 32 and pageSize= 7
+[2025-10-11T15:39:30.141] [DEBUG] default - A user requested movies with pageNumber= 33 and pageSize= 7
+[2025-10-11T15:39:30.163] [DEBUG] default - A user requested movies with pageNumber= 34 and pageSize= 7
+[2025-10-11T15:39:30.184] [DEBUG] default - A user requested movies with pageNumber= 35 and pageSize= 7
+[2025-10-11T15:39:30.213] [DEBUG] default - A user requested movies with pageNumber= 36 and pageSize= 7
+[2025-10-11T15:39:30.238] [DEBUG] default - A user requested movies with pageNumber= 37 and pageSize= 7
+[2025-10-11T15:39:30.257] [DEBUG] default - A user requested movies with pageNumber= 38 and pageSize= 7
+[2025-10-11T15:39:30.275] [DEBUG] default - A user requested movies with pageNumber= 39 and pageSize= 7
+[2025-10-11T15:39:30.286] [DEBUG] default - A user requested movies with pageNumber= 40 and pageSize= 7
+[2025-10-11T15:39:30.308] [DEBUG] default - A user requested movies with pageNumber= 41 and pageSize= 7
+[2025-10-11T15:39:30.329] [DEBUG] default - A user requested movies with pageNumber= 42 and pageSize= 7
+[2025-10-11T15:39:30.349] [DEBUG] default - A user requested movies with pageNumber= 43 and pageSize= 7
+[2025-10-11T15:39:30.372] [DEBUG] default - A user requested movies with pageNumber= 44 and pageSize= 7
+[2025-10-11T15:39:30.390] [DEBUG] default - A user requested movies with pageNumber= 45 and pageSize= 7
+[2025-10-11T15:39:30.411] [DEBUG] default - A user requested movies with pageNumber= 46 and pageSize= 7
+[2025-10-11T15:39:30.434] [DEBUG] default - A user requested movies with pageNumber= 47 and pageSize= 7
+[2025-10-11T15:39:30.454] [DEBUG] default - A user requested movies with pageNumber= 48 and pageSize= 7
+[2025-10-11T15:39:30.474] [DEBUG] default - A user requested movies with pageNumber= 49 and pageSize= 7
+[2025-10-11T15:39:30.495] [DEBUG] default - A user requested movies with pageNumber= 50 and pageSize= 7
+[2025-10-11T15:39:30.518] [DEBUG] default - A user requested movies with pageNumber= 51 and pageSize= 7
+[2025-10-11T15:39:30.543] [DEBUG] default - A user requested movies with pageNumber= 52 and pageSize= 7
+[2025-10-11T15:39:30.564] [DEBUG] default - A user requested movies with pageNumber= 53 and pageSize= 7
+[2025-10-11T15:39:30.586] [DEBUG] default - A user requested movies with pageNumber= 54 and pageSize= 7
+[2025-10-11T15:39:30.608] [DEBUG] default - A user requested movies with pageNumber= 55 and pageSize= 7
+[2025-10-11T15:39:30.627] [DEBUG] default - A user requested movies with pageNumber= 56 and pageSize= 7
+[2025-10-11T15:39:30.649] [DEBUG] default - A user requested movies with pageNumber= 57 and pageSize= 7
+[2025-10-11T15:39:30.669] [DEBUG] default - A user requested movies with pageNumber= 58 and pageSize= 7
+[2025-10-11T15:39:30.692] [DEBUG] default - A user requested movies with pageNumber= 59 and pageSize= 7
+[2025-10-11T15:39:30.709] [DEBUG] default - A user requested movies with pageNumber= 60 and pageSize= 7
+[2025-10-11T15:39:30.731] [DEBUG] default - A user requested movies with pageNumber= 61 and pageSize= 7
+[2025-10-11T15:39:30.751] [DEBUG] default - A user requested movies with pageNumber= 62 and pageSize= 7
+[2025-10-11T15:39:30.779] [DEBUG] default - A user requested movies with pageNumber= 63 and pageSize= 7
+[2025-10-11T15:39:30.797] [DEBUG] default - A user requested movies with pageNumber= 64 and pageSize= 7
+[2025-10-11T15:39:30.819] [DEBUG] default - A user requested movies with pageNumber= 65 and pageSize= 7
+[2025-10-11T15:39:30.838] [DEBUG] default - A user requested movies with pageNumber= 66 and pageSize= 7
+[2025-10-11T15:39:30.858] [DEBUG] default - A user requested movies with pageNumber= 67 and pageSize= 7
+[2025-10-11T15:39:30.881] [DEBUG] default - A user requested movies with pageNumber= 68 and pageSize= 7
+[2025-10-11T15:39:30.900] [DEBUG] default - A user requested movies with pageNumber= 69 and pageSize= 7
+[2025-10-11T15:39:30.921] [DEBUG] default - A user requested movies with pageNumber= 70 and pageSize= 7
+[2025-10-11T15:39:30.943] [DEBUG] default - A user requested movies with pageNumber= 71 and pageSize= 7
+[2025-10-11T15:39:30.968] [DEBUG] default - A user requested movies with pageNumber= 72 and pageSize= 7
+[2025-10-11T15:39:30.992] [DEBUG] default - A user requested movies with pageNumber= 73 and pageSize= 7
+[2025-10-11T15:39:31.015] [DEBUG] default - A user requested movies with pageNumber= 74 and pageSize= 7
+[2025-10-11T15:39:31.042] [DEBUG] default - A user requested movies with pageNumber= 75 and pageSize= 7
+[2025-10-11T15:39:31.063] [DEBUG] default - A user requested movies with pageNumber= 76 and pageSize= 7
+[2025-10-11T15:39:31.083] [DEBUG] default - A user requested movies with pageNumber= 77 and pageSize= 7
+[2025-10-11T15:39:31.106] [DEBUG] default - A user requested movies with pageNumber= 78 and pageSize= 7
+[2025-10-11T15:39:31.129] [DEBUG] default - A user requested movies with pageNumber= 79 and pageSize= 7
+[2025-10-11T15:39:31.136] [DEBUG] default - A user requested movies with pageNumber= 80 and pageSize= 7
+[2025-10-11T15:39:31.157] [DEBUG] default - A user requested movies with pageNumber= 81 and pageSize= 7
+[2025-10-11T15:39:31.177] [DEBUG] default - A user requested movies with pageNumber= 82 and pageSize= 7
+[2025-10-11T15:39:31.183] [DEBUG] default - A user requested movies with pageNumber= 83 and pageSize= 7
+[2025-10-11T15:39:31.199] [DEBUG] default - A user requested movies with pageNumber= 84 and pageSize= 7
+[2025-10-11T15:39:31.220] [DEBUG] default - A user requested movies with pageNumber= 85 and pageSize= 7
+[2025-10-11T15:39:31.241] [DEBUG] default - A user requested movies with pageNumber= 86 and pageSize= 7
+[2025-10-11T15:39:31.261] [DEBUG] default - A user requested movies with pageNumber= 87 and pageSize= 7
+[2025-10-11T15:39:31.267] [DEBUG] default - A user requested movies with pageNumber= 88 and pageSize= 7
+[2025-10-11T15:39:31.281] [DEBUG] default - A user requested movies with pageNumber= 89 and pageSize= 7
+[2025-10-11T15:39:31.287] [DEBUG] default - A user requested movies with pageNumber= 90 and pageSize= 7
+[2025-10-11T15:39:31.302] [DEBUG] default - A user requested movies with pageNumber= 91 and pageSize= 7
+[2025-10-11T15:39:31.309] [DEBUG] default - A user requested movies with pageNumber= 92 and pageSize= 7
+[2025-10-11T15:39:31.324] [DEBUG] default - A user requested movies with pageNumber= 93 and pageSize= 7
+[2025-10-11T15:39:31.344] [DEBUG] default - A user requested movies with pageNumber= 94 and pageSize= 7
+[2025-10-11T15:39:31.351] [DEBUG] default - A user requested movies with pageNumber= 95 and pageSize= 7
+[2025-10-11T15:39:31.364] [DEBUG] default - A user requested movies with pageNumber= 96 and pageSize= 7
+[2025-10-11T15:39:31.374] [DEBUG] default - A user requested movies with pageNumber= 97 and pageSize= 7
+[2025-10-11T15:39:31.393] [DEBUG] default - A user requested movies with pageNumber= 98 and pageSize= 7
+[2025-10-11T15:39:31.403] [DEBUG] default - A user requested movies with pageNumber= 99 and pageSize= 7
+[2025-10-11T15:39:31.422] [DEBUG] default - A user requested movies with pageNumber= 100 and pageSize= 7
+[2025-10-11T15:39:31.444] [DEBUG] default - A user requested movies with pageNumber= 101 and pageSize= 7
+[2025-10-11T15:39:31.465] [DEBUG] default - A user requested movies with pageNumber= 102 and pageSize= 7
+[2025-10-11T15:39:31.485] [DEBUG] default - A user requested movies with pageNumber= 103 and pageSize= 7
+[2025-10-11T15:39:31.506] [DEBUG] default - A user requested movies with pageNumber= 104 and pageSize= 7
+[2025-10-11T15:39:31.543] [DEBUG] default - A user requested movies with pageNumber= 105 and pageSize= 7
+[2025-10-11T15:39:31.568] [DEBUG] default - A user requested movies with pageNumber= 106 and pageSize= 7
+[2025-10-11T15:39:31.588] [DEBUG] default - A user requested movies with pageNumber= 107 and pageSize= 7
+[2025-10-11T15:39:31.608] [DEBUG] default - A user requested movies with pageNumber= 108 and pageSize= 7
+[2025-10-11T15:39:31.629] [DEBUG] default - A user requested movies with pageNumber= 109 and pageSize= 7
+[2025-10-11T15:39:31.651] [DEBUG] default - A user requested movies with pageNumber= 110 and pageSize= 7
+[2025-10-11T15:39:31.671] [DEBUG] default - A user requested movies with pageNumber= 111 and pageSize= 7
+[2025-10-11T15:39:31.678] [DEBUG] default - A user requested movies with pageNumber= 112 and pageSize= 7
+[2025-10-11T15:39:31.699] [DEBUG] default - A user requested movies with pageNumber= 113 and pageSize= 7
+[2025-10-11T15:39:31.720] [DEBUG] default - A user requested movies with pageNumber= 114 and pageSize= 7
+[2025-10-11T15:39:31.740] [DEBUG] default - A user requested movies with pageNumber= 115 and pageSize= 7
+[2025-10-11T15:39:31.749] [DEBUG] default - A user requested movies with pageNumber= 116 and pageSize= 7
+[2025-10-11T15:39:31.773] [DEBUG] default - A user requested movies with pageNumber= 117 and pageSize= 7
+[2025-10-11T15:39:31.781] [DEBUG] default - A user requested movies with pageNumber= 118 and pageSize= 7
+[2025-10-11T15:39:31.795] [DEBUG] default - A user requested movies with pageNumber= 119 and pageSize= 7
+[2025-10-11T15:39:31.803] [DEBUG] default - A user requested movies with pageNumber= 120 and pageSize= 7
+[2025-10-11T15:39:31.823] [DEBUG] default - A user requested movies with pageNumber= 121 and pageSize= 7
+[2025-10-11T15:39:31.829] [DEBUG] default - A user requested movies with pageNumber= 122 and pageSize= 7
+[2025-10-11T15:39:31.844] [DEBUG] default - A user requested movies with pageNumber= 123 and pageSize= 7
+[2025-10-11T15:39:31.851] [DEBUG] default - A user requested movies with pageNumber= 124 and pageSize= 7
+[2025-10-11T15:39:31.865] [DEBUG] default - A user requested movies with pageNumber= 125 and pageSize= 7
+[2025-10-11T15:39:31.873] [DEBUG] default - A user requested movies with pageNumber= 126 and pageSize= 7
+[2025-10-11T15:39:31.892] [DEBUG] default - A user requested movies with pageNumber= 127 and pageSize= 7
+[2025-10-11T15:39:31.899] [DEBUG] default - A user requested movies with pageNumber= 128 and pageSize= 7
+[2025-10-11T15:39:31.919] [DEBUG] default - A user requested movies with pageNumber= 129 and pageSize= 7
+[2025-10-11T15:39:31.927] [DEBUG] default - A user requested movies with pageNumber= 130 and pageSize= 7
+[2025-10-11T15:39:31.940] [DEBUG] default - A user requested movies with pageNumber= 131 and pageSize= 7
+[2025-10-11T15:39:31.948] [DEBUG] default - A user requested movies with pageNumber= 132 and pageSize= 7
+[2025-10-11T15:39:31.961] [DEBUG] default - A user requested movies with pageNumber= 133 and pageSize= 7
+[2025-10-11T15:39:31.968] [DEBUG] default - A user requested movies with pageNumber= 134 and pageSize= 7
+[2025-10-11T15:39:31.982] [DEBUG] default - A user requested movies with pageNumber= 135 and pageSize= 7
+[2025-10-11T15:39:31.989] [DEBUG] default - A user requested movies with pageNumber= 136 and pageSize= 7
+[2025-10-11T15:39:32.004] [DEBUG] default - A user requested movies with pageNumber= 137 and pageSize= 7
+[2025-10-11T15:39:32.010] [DEBUG] default - A user requested movies with pageNumber= 138 and pageSize= 7
+[2025-10-11T15:39:32.023] [DEBUG] default - A user requested movies with pageNumber= 139 and pageSize= 7
+[2025-10-11T15:39:32.031] [DEBUG] default - A user requested movies with pageNumber= 140 and pageSize= 7
+[2025-10-11T15:39:32.044] [DEBUG] default - A user requested movies with pageNumber= 141 and pageSize= 7
+[2025-10-11T15:39:32.053] [DEBUG] default - A user requested movies with pageNumber= 142 and pageSize= 7
+[2025-10-11T15:39:32.075] [DEBUG] default - A user requested movies with pageNumber= 143 and pageSize= 7
+[2025-10-11T15:39:32.096] [DEBUG] default - A user requested movies with pageNumber= 144 and pageSize= 7
+[2025-10-11T15:39:32.115] [DEBUG] default - A user requested movies with pageNumber= 145 and pageSize= 7
+[2025-10-11T15:39:32.136] [DEBUG] default - A user requested movies with pageNumber= 146 and pageSize= 7
+[2025-10-11T15:39:32.156] [DEBUG] default - A user requested movies with pageNumber= 147 and pageSize= 7
+[2025-10-11T15:39:32.165] [DEBUG] default - A user requested movies with pageNumber= 148 and pageSize= 7
+[2025-10-11T15:39:32.184] [DEBUG] default - A user requested movies with pageNumber= 149 and pageSize= 7
+[2025-10-11T15:39:32.192] [DEBUG] default - A user requested movies with pageNumber= 150 and pageSize= 7
+[2025-10-11T15:39:32.213] [DEBUG] default - A user requested movies with pageNumber= 151 and pageSize= 7
+[2025-10-11T15:39:32.234] [DEBUG] default - A user requested movies with pageNumber= 152 and pageSize= 7
+[2025-10-11T15:39:32.254] [DEBUG] default - A user requested movies with pageNumber= 153 and pageSize= 7
+[2025-10-11T15:39:32.263] [DEBUG] default - A user requested movies with pageNumber= 154 and pageSize= 7
+[2025-10-11T15:39:32.280] [DEBUG] default - A user requested movies with pageNumber= 155 and pageSize= 7
+[2025-10-11T15:39:32.287] [DEBUG] default - A user requested movies with pageNumber= 156 and pageSize= 7
+[2025-10-11T15:39:32.302] [DEBUG] default - A user requested movies with pageNumber= 157 and pageSize= 7
+[2025-10-11T15:39:32.308] [DEBUG] default - A user requested movies with pageNumber= 158 and pageSize= 7
+[2025-10-11T15:39:32.322] [DEBUG] default - A user requested movies with pageNumber= 159 and pageSize= 7
+[2025-10-11T15:39:32.329] [DEBUG] default - A user requested movies with pageNumber= 160 and pageSize= 7
+[2025-10-11T15:39:32.343] [DEBUG] default - A user requested movies with pageNumber= 161 and pageSize= 7
+[2025-10-11T15:39:32.350] [DEBUG] default - A user requested movies with pageNumber= 162 and pageSize= 7
+[2025-10-11T15:39:32.364] [DEBUG] default - A user requested movies with pageNumber= 163 and pageSize= 7
+[2025-10-11T15:39:32.371] [DEBUG] default - A user requested movies with pageNumber= 164 and pageSize= 7
+[2025-10-11T15:39:32.384] [DEBUG] default - A user requested movies with pageNumber= 165 and pageSize= 7
+[2025-10-11T15:39:32.392] [DEBUG] default - A user requested movies with pageNumber= 166 and pageSize= 7
+[2025-10-11T15:39:32.406] [DEBUG] default - A user requested movies with pageNumber= 167 and pageSize= 7
+[2025-10-11T15:39:32.412] [DEBUG] default - A user requested movies with pageNumber= 168 and pageSize= 7
+[2025-10-11T15:39:32.426] [DEBUG] default - A user requested movies with pageNumber= 169 and pageSize= 7
+[2025-10-11T15:39:32.433] [DEBUG] default - A user requested movies with pageNumber= 170 and pageSize= 7
+[2025-10-11T15:39:32.447] [DEBUG] default - A user requested movies with pageNumber= 171 and pageSize= 7
+[2025-10-11T15:39:32.454] [DEBUG] default - A user requested movies with pageNumber= 172 and pageSize= 7
+[2025-10-11T15:39:32.468] [DEBUG] default - A user requested movies with pageNumber= 173 and pageSize= 7
+[2025-10-11T15:39:32.476] [DEBUG] default - A user requested movies with pageNumber= 174 and pageSize= 7
+[2025-10-11T15:39:32.489] [DEBUG] default - A user requested movies with pageNumber= 175 and pageSize= 7
+[2025-10-11T15:39:32.496] [DEBUG] default - A user requested movies with pageNumber= 176 and pageSize= 7
+[2025-10-11T15:39:32.510] [DEBUG] default - A user requested movies with pageNumber= 177 and pageSize= 7
+[2025-10-11T15:39:32.517] [DEBUG] default - A user requested movies with pageNumber= 178 and pageSize= 7
+[2025-10-11T15:39:32.531] [DEBUG] default - A user requested movies with pageNumber= 179 and pageSize= 7
+[2025-10-11T15:39:32.538] [DEBUG] default - A user requested movies with pageNumber= 180 and pageSize= 7
+[2025-10-11T15:39:32.554] [DEBUG] default - A user requested movies with pageNumber= 181 and pageSize= 7
+[2025-10-11T15:39:32.704] [DEBUG] default - A user requested movies with pageNumber= 182 and pageSize= 7
+[2025-10-11T15:39:53.030] [DEBUG] default - A user requested movies with pageNumber= 0 and pageSize= 7
+[2025-10-14T17:42:26.329] [INFO] default - Server started on port 8080
+[2025-10-14T17:42:29.678] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T17:42:30.903] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T17:42:31.719] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T17:42:32.219] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T17:42:32.247] [DEBUG] default - A user requested movies with pageNumber=4 and pageSize=7
+[2025-10-14T17:42:32.270] [DEBUG] default - A user requested movies with pageNumber=5 and pageSize=7
+[2025-10-14T17:42:32.856] [DEBUG] default - A user requested movies with pageNumber=6 and pageSize=7
+[2025-10-14T17:42:32.919] [DEBUG] default - A user requested movies with pageNumber=7 and pageSize=7
+[2025-10-14T17:42:37.988] [DEBUG] default - A user requested movies with pageNumber=8 and pageSize=7
+[2025-10-14T17:42:38.016] [DEBUG] default - A user requested movies with pageNumber=9 and pageSize=7
+[2025-10-14T17:42:38.036] [DEBUG] default - A user requested movies with pageNumber=10 and pageSize=7
+[2025-10-14T17:42:38.049] [DEBUG] default - A user requested movies with pageNumber=11 and pageSize=7
+[2025-10-14T17:42:39.587] [DEBUG] default - A user requested movies with pageNumber=12 and pageSize=7
+[2025-10-14T17:42:39.599] [DEBUG] default - A user requested movies with pageNumber=13 and pageSize=7
+[2025-10-14T17:42:39.614] [DEBUG] default - A user requested movies with pageNumber=14 and pageSize=7
+[2025-10-14T17:42:39.630] [DEBUG] default - A user requested movies with pageNumber=15 and pageSize=7
+[2025-10-14T17:42:39.639] [DEBUG] default - A user requested movies with pageNumber=16 and pageSize=7
+[2025-10-14T17:42:39.660] [DEBUG] default - A user requested movies with pageNumber=17 and pageSize=7
+[2025-10-14T17:42:40.092] [DEBUG] default - A user requested movies with pageNumber=18 and pageSize=7
+[2025-10-14T17:42:40.112] [DEBUG] default - A user requested movies with pageNumber=19 and pageSize=7
+[2025-10-14T17:42:40.136] [DEBUG] default - A user requested movies with pageNumber=20 and pageSize=7
+[2025-10-14T17:42:40.150] [DEBUG] default - A user requested movies with pageNumber=21 and pageSize=7
+[2025-10-14T17:42:40.162] [DEBUG] default - A user requested movies with pageNumber=22 and pageSize=7
+[2025-10-14T17:42:40.174] [DEBUG] default - A user requested movies with pageNumber=23 and pageSize=7
+[2025-10-14T17:42:40.196] [DEBUG] default - A user requested movies with pageNumber=24 and pageSize=7
+[2025-10-14T17:42:40.519] [DEBUG] default - A user requested movies with pageNumber=25 and pageSize=7
+[2025-10-14T17:42:40.537] [DEBUG] default - A user requested movies with pageNumber=26 and pageSize=7
+[2025-10-14T17:42:40.558] [DEBUG] default - A user requested movies with pageNumber=27 and pageSize=7
+[2025-10-14T17:42:42.989] [DEBUG] default - A user requested movies with pageNumber=28 and pageSize=7
+[2025-10-14T17:42:43.018] [DEBUG] default - A user requested movies with pageNumber=29 and pageSize=7
+[2025-10-14T17:42:43.045] [DEBUG] default - A user requested movies with pageNumber=30 and pageSize=7
+[2025-10-14T17:42:43.062] [DEBUG] default - A user requested movies with pageNumber=31 and pageSize=7
+[2025-10-14T17:42:43.077] [DEBUG] default - A user requested movies with pageNumber=32 and pageSize=7
+[2025-10-14T17:42:43.091] [DEBUG] default - A user requested movies with pageNumber=33 and pageSize=7
+[2025-10-14T17:42:43.099] [DEBUG] default - A user requested movies with pageNumber=34 and pageSize=7
+[2025-10-14T17:42:43.111] [DEBUG] default - A user requested movies with pageNumber=35 and pageSize=7
+[2025-10-14T17:42:43.125] [DEBUG] default - A user requested movies with pageNumber=36 and pageSize=7
+[2025-10-14T17:42:43.144] [DEBUG] default - A user requested movies with pageNumber=37 and pageSize=7
+[2025-10-14T17:42:43.155] [DEBUG] default - A user requested movies with pageNumber=38 and pageSize=7
+[2025-10-14T17:42:43.168] [DEBUG] default - A user requested movies with pageNumber=39 and pageSize=7
+[2025-10-14T17:42:43.183] [DEBUG] default - A user requested movies with pageNumber=40 and pageSize=7
+[2025-10-14T17:42:43.195] [DEBUG] default - A user requested movies with pageNumber=41 and pageSize=7
+[2025-10-14T17:42:43.569] [DEBUG] default - A user requested movies with pageNumber=42 and pageSize=7
+[2025-10-14T17:42:43.592] [DEBUG] default - A user requested movies with pageNumber=43 and pageSize=7
+[2025-10-14T17:42:43.618] [DEBUG] default - A user requested movies with pageNumber=44 and pageSize=7
+[2025-10-14T17:42:43.644] [DEBUG] default - A user requested movies with pageNumber=45 and pageSize=7
+[2025-10-14T17:42:43.661] [DEBUG] default - A user requested movies with pageNumber=46 and pageSize=7
+[2025-10-14T17:42:43.676] [DEBUG] default - A user requested movies with pageNumber=47 and pageSize=7
+[2025-10-14T17:42:43.690] [DEBUG] default - A user requested movies with pageNumber=48 and pageSize=7
+[2025-10-14T17:42:43.701] [DEBUG] default - A user requested movies with pageNumber=49 and pageSize=7
+[2025-10-14T17:42:43.709] [DEBUG] default - A user requested movies with pageNumber=50 and pageSize=7
+[2025-10-14T17:42:43.726] [DEBUG] default - A user requested movies with pageNumber=51 and pageSize=7
+[2025-10-14T17:42:43.737] [DEBUG] default - A user requested movies with pageNumber=52 and pageSize=7
+[2025-10-14T17:42:44.308] [DEBUG] default - A user requested movies with pageNumber=53 and pageSize=7
+[2025-10-14T17:42:44.337] [DEBUG] default - A user requested movies with pageNumber=54 and pageSize=7
+[2025-10-14T17:42:44.360] [DEBUG] default - A user requested movies with pageNumber=55 and pageSize=7
+[2025-10-14T17:42:44.374] [DEBUG] default - A user requested movies with pageNumber=56 and pageSize=7
+[2025-10-14T17:42:44.393] [DEBUG] default - A user requested movies with pageNumber=57 and pageSize=7
+[2025-10-14T17:42:44.410] [DEBUG] default - A user requested movies with pageNumber=58 and pageSize=7
+[2025-10-14T17:42:44.424] [DEBUG] default - A user requested movies with pageNumber=59 and pageSize=7
+[2025-10-14T17:42:44.443] [DEBUG] default - A user requested movies with pageNumber=60 and pageSize=7
+[2025-10-14T17:42:44.622] [DEBUG] default - A user requested movies with pageNumber=61 and pageSize=7
+[2025-10-14T17:42:44.644] [DEBUG] default - A user requested movies with pageNumber=62 and pageSize=7
+[2025-10-14T17:42:44.659] [DEBUG] default - A user requested movies with pageNumber=63 and pageSize=7
+[2025-10-14T17:42:44.686] [DEBUG] default - A user requested movies with pageNumber=64 and pageSize=7
+[2025-10-14T17:42:44.697] [DEBUG] default - A user requested movies with pageNumber=65 and pageSize=7
+[2025-10-14T17:42:44.709] [DEBUG] default - A user requested movies with pageNumber=66 and pageSize=7
+[2025-10-14T17:42:44.721] [DEBUG] default - A user requested movies with pageNumber=67 and pageSize=7
+[2025-10-14T17:42:44.738] [DEBUG] default - A user requested movies with pageNumber=68 and pageSize=7
+[2025-10-14T17:42:44.751] [DEBUG] default - A user requested movies with pageNumber=69 and pageSize=7
+[2025-10-14T17:42:44.828] [DEBUG] default - A user requested movies with pageNumber=70 and pageSize=7
+[2025-10-14T17:42:44.841] [DEBUG] default - A user requested movies with pageNumber=71 and pageSize=7
+[2025-10-14T17:42:44.861] [DEBUG] default - A user requested movies with pageNumber=72 and pageSize=7
+[2025-10-14T17:42:44.874] [DEBUG] default - A user requested movies with pageNumber=73 and pageSize=7
+[2025-10-14T17:42:44.889] [DEBUG] default - A user requested movies with pageNumber=74 and pageSize=7
+[2025-10-14T17:42:44.904] [DEBUG] default - A user requested movies with pageNumber=75 and pageSize=7
+[2025-10-14T17:42:44.916] [DEBUG] default - A user requested movies with pageNumber=76 and pageSize=7
+[2025-10-14T17:42:44.931] [DEBUG] default - A user requested movies with pageNumber=77 and pageSize=7
+[2025-10-14T17:42:44.944] [DEBUG] default - A user requested movies with pageNumber=78 and pageSize=7
+[2025-10-14T17:42:44.958] [DEBUG] default - A user requested movies with pageNumber=79 and pageSize=7
+[2025-10-14T17:42:44.966] [DEBUG] default - A user requested movies with pageNumber=80 and pageSize=7
+[2025-10-14T17:42:44.980] [DEBUG] default - A user requested movies with pageNumber=81 and pageSize=7
+[2025-10-14T17:42:44.993] [DEBUG] default - A user requested movies with pageNumber=82 and pageSize=7
+[2025-10-14T17:42:46.496] [DEBUG] default - A user requested movies with pageNumber=83 and pageSize=7
+[2025-10-14T17:42:46.518] [DEBUG] default - A user requested movies with pageNumber=84 and pageSize=7
+[2025-10-14T17:42:46.536] [DEBUG] default - A user requested movies with pageNumber=85 and pageSize=7
+[2025-10-14T17:42:46.561] [DEBUG] default - A user requested movies with pageNumber=86 and pageSize=7
+[2025-10-14T17:42:46.849] [DEBUG] default - A user requested movies with pageNumber=87 and pageSize=7
+[2025-10-14T17:42:46.876] [DEBUG] default - A user requested movies with pageNumber=88 and pageSize=7
+[2025-10-14T17:42:46.902] [DEBUG] default - A user requested movies with pageNumber=89 and pageSize=7
+[2025-10-14T17:42:46.918] [DEBUG] default - A user requested movies with pageNumber=90 and pageSize=7
+[2025-10-14T17:42:46.931] [DEBUG] default - A user requested movies with pageNumber=91 and pageSize=7
+[2025-10-14T17:42:46.939] [DEBUG] default - A user requested movies with pageNumber=92 and pageSize=7
+[2025-10-14T17:42:46.954] [DEBUG] default - A user requested movies with pageNumber=93 and pageSize=7
+[2025-10-14T17:42:46.966] [DEBUG] default - A user requested movies with pageNumber=94 and pageSize=7
+[2025-10-14T17:42:46.975] [DEBUG] default - A user requested movies with pageNumber=95 and pageSize=7
+[2025-10-14T17:42:46.985] [DEBUG] default - A user requested movies with pageNumber=96 and pageSize=7
+[2025-10-14T17:42:46.992] [DEBUG] default - A user requested movies with pageNumber=97 and pageSize=7
+[2025-10-14T17:42:46.999] [DEBUG] default - A user requested movies with pageNumber=98 and pageSize=7
+[2025-10-14T17:42:47.013] [DEBUG] default - A user requested movies with pageNumber=99 and pageSize=7
+[2025-10-14T17:42:47.024] [DEBUG] default - A user requested movies with pageNumber=100 and pageSize=7
+[2025-10-14T17:42:47.034] [DEBUG] default - A user requested movies with pageNumber=101 and pageSize=7
+[2025-10-14T17:42:47.040] [DEBUG] default - A user requested movies with pageNumber=102 and pageSize=7
+[2025-10-14T17:42:47.053] [DEBUG] default - A user requested movies with pageNumber=103 and pageSize=7
+[2025-10-14T17:42:47.069] [DEBUG] default - A user requested movies with pageNumber=104 and pageSize=7
+[2025-10-14T17:42:47.090] [DEBUG] default - A user requested movies with pageNumber=105 and pageSize=7
+[2025-10-14T17:42:47.097] [DEBUG] default - A user requested movies with pageNumber=106 and pageSize=7
+[2025-10-14T17:42:47.112] [DEBUG] default - A user requested movies with pageNumber=107 and pageSize=7
+[2025-10-14T17:42:47.132] [DEBUG] default - A user requested movies with pageNumber=108 and pageSize=7
+[2025-10-14T17:42:47.154] [DEBUG] default - A user requested movies with pageNumber=109 and pageSize=7
+[2025-10-14T17:42:47.175] [DEBUG] default - A user requested movies with pageNumber=110 and pageSize=7
+[2025-10-14T17:42:47.194] [DEBUG] default - A user requested movies with pageNumber=111 and pageSize=7
+[2025-10-14T17:42:47.216] [DEBUG] default - A user requested movies with pageNumber=112 and pageSize=7
+[2025-10-14T17:42:47.236] [DEBUG] default - A user requested movies with pageNumber=113 and pageSize=7
+[2025-10-14T17:42:47.256] [DEBUG] default - A user requested movies with pageNumber=114 and pageSize=7
+[2025-10-14T17:42:47.264] [DEBUG] default - A user requested movies with pageNumber=115 and pageSize=7
+[2025-10-14T17:42:47.277] [DEBUG] default - A user requested movies with pageNumber=116 and pageSize=7
+[2025-10-14T17:42:47.287] [DEBUG] default - A user requested movies with pageNumber=117 and pageSize=7
+[2025-10-14T17:42:47.306] [DEBUG] default - A user requested movies with pageNumber=118 and pageSize=7
+[2025-10-14T17:42:47.313] [DEBUG] default - A user requested movies with pageNumber=119 and pageSize=7
+[2025-10-14T17:42:47.326] [DEBUG] default - A user requested movies with pageNumber=120 and pageSize=7
+[2025-10-14T17:42:47.336] [DEBUG] default - A user requested movies with pageNumber=121 and pageSize=7
+[2025-10-14T17:42:47.352] [DEBUG] default - A user requested movies with pageNumber=122 and pageSize=7
+[2025-10-14T17:42:47.360] [DEBUG] default - A user requested movies with pageNumber=123 and pageSize=7
+[2025-10-14T17:42:47.375] [DEBUG] default - A user requested movies with pageNumber=124 and pageSize=7
+[2025-10-14T17:42:47.395] [DEBUG] default - A user requested movies with pageNumber=125 and pageSize=7
+[2025-10-14T17:42:47.403] [DEBUG] default - A user requested movies with pageNumber=126 and pageSize=7
+[2025-10-14T17:42:47.423] [DEBUG] default - A user requested movies with pageNumber=127 and pageSize=7
+[2025-10-14T17:42:47.451] [DEBUG] default - A user requested movies with pageNumber=128 and pageSize=7
+[2025-10-14T17:42:47.478] [DEBUG] default - A user requested movies with pageNumber=129 and pageSize=7
+[2025-10-14T17:42:47.498] [DEBUG] default - A user requested movies with pageNumber=130 and pageSize=7
+[2025-10-14T17:42:47.508] [DEBUG] default - A user requested movies with pageNumber=131 and pageSize=7
+[2025-10-14T17:42:47.526] [DEBUG] default - A user requested movies with pageNumber=132 and pageSize=7
+[2025-10-14T17:42:47.538] [DEBUG] default - A user requested movies with pageNumber=133 and pageSize=7
+[2025-10-14T17:42:47.561] [DEBUG] default - A user requested movies with pageNumber=134 and pageSize=7
+[2025-10-14T17:42:47.581] [DEBUG] default - A user requested movies with pageNumber=135 and pageSize=7
+[2025-10-14T17:42:47.589] [DEBUG] default - A user requested movies with pageNumber=136 and pageSize=7
+[2025-10-14T17:42:47.608] [DEBUG] default - A user requested movies with pageNumber=137 and pageSize=7
+[2025-10-14T17:42:47.625] [DEBUG] default - A user requested movies with pageNumber=138 and pageSize=7
+[2025-10-14T17:42:47.645] [DEBUG] default - A user requested movies with pageNumber=139 and pageSize=7
+[2025-10-14T17:42:47.666] [DEBUG] default - A user requested movies with pageNumber=140 and pageSize=7
+[2025-10-14T17:42:47.694] [DEBUG] default - A user requested movies with pageNumber=141 and pageSize=7
+[2025-10-14T17:42:47.715] [DEBUG] default - A user requested movies with pageNumber=142 and pageSize=7
+[2025-10-14T17:42:47.721] [DEBUG] default - A user requested movies with pageNumber=143 and pageSize=7
+[2025-10-14T17:42:47.735] [DEBUG] default - A user requested movies with pageNumber=144 and pageSize=7
+[2025-10-14T17:42:47.744] [DEBUG] default - A user requested movies with pageNumber=145 and pageSize=7
+[2025-10-14T17:42:47.763] [DEBUG] default - A user requested movies with pageNumber=146 and pageSize=7
+[2025-10-14T17:42:47.774] [DEBUG] default - A user requested movies with pageNumber=147 and pageSize=7
+[2025-10-14T17:42:47.790] [DEBUG] default - A user requested movies with pageNumber=148 and pageSize=7
+[2025-10-14T17:42:47.801] [DEBUG] default - A user requested movies with pageNumber=149 and pageSize=7
+[2025-10-14T17:42:47.827] [DEBUG] default - A user requested movies with pageNumber=150 and pageSize=7
+[2025-10-14T17:42:47.846] [DEBUG] default - A user requested movies with pageNumber=151 and pageSize=7
+[2025-10-14T17:42:47.858] [DEBUG] default - A user requested movies with pageNumber=152 and pageSize=7
+[2025-10-14T17:42:47.866] [DEBUG] default - A user requested movies with pageNumber=153 and pageSize=7
+[2025-10-14T17:42:47.874] [DEBUG] default - A user requested movies with pageNumber=154 and pageSize=7
+[2025-10-14T17:42:47.889] [DEBUG] default - A user requested movies with pageNumber=155 and pageSize=7
+[2025-10-14T17:42:47.902] [DEBUG] default - A user requested movies with pageNumber=156 and pageSize=7
+[2025-10-14T17:42:47.909] [DEBUG] default - A user requested movies with pageNumber=157 and pageSize=7
+[2025-10-14T17:42:47.923] [DEBUG] default - A user requested movies with pageNumber=158 and pageSize=7
+[2025-10-14T17:42:47.945] [DEBUG] default - A user requested movies with pageNumber=159 and pageSize=7
+[2025-10-14T17:42:47.959] [DEBUG] default - A user requested movies with pageNumber=160 and pageSize=7
+[2025-10-14T17:42:55.300] [DEBUG] default - A user requested movies with pageNumber=161 and pageSize=7
+[2025-10-14T17:42:55.330] [DEBUG] default - A user requested movies with pageNumber=162 and pageSize=7
+[2025-10-14T17:42:55.339] [DEBUG] default - A user requested movies with pageNumber=163 and pageSize=7
+[2025-10-14T17:42:55.439] [DEBUG] default - A user requested movies with pageNumber=164 and pageSize=7
+[2025-10-14T17:42:55.455] [DEBUG] default - A user requested movies with pageNumber=165 and pageSize=7
+[2025-10-14T17:42:55.466] [DEBUG] default - A user requested movies with pageNumber=166 and pageSize=7
+[2025-10-14T17:42:55.481] [DEBUG] default - A user requested movies with pageNumber=167 and pageSize=7
+[2025-10-14T17:42:55.500] [DEBUG] default - A user requested movies with pageNumber=168 and pageSize=7
+[2025-10-14T17:42:55.514] [DEBUG] default - A user requested movies with pageNumber=169 and pageSize=7
+[2025-10-14T17:45:41.414] [DEBUG] default - A user requested movies with pageNumber=170 and pageSize=7
+[2025-10-14T17:45:41.444] [DEBUG] default - A user requested movies with pageNumber=171 and pageSize=7
+[2025-10-14T17:45:41.459] [DEBUG] default - A user requested movies with pageNumber=172 and pageSize=7
+[2025-10-14T17:45:42.164] [DEBUG] default - A user requested movies with pageNumber=173 and pageSize=7
+[2025-10-14T17:45:42.181] [DEBUG] default - A user requested movies with pageNumber=174 and pageSize=7
+[2025-10-14T17:45:42.190] [DEBUG] default - A user requested movies with pageNumber=175 and pageSize=7
+[2025-10-14T17:45:42.201] [DEBUG] default - A user requested movies with pageNumber=176 and pageSize=7
+[2025-10-14T17:45:42.219] [DEBUG] default - A user requested movies with pageNumber=177 and pageSize=7
+[2025-10-14T17:45:42.235] [DEBUG] default - A user requested movies with pageNumber=178 and pageSize=7
+[2025-10-14T17:45:42.258] [DEBUG] default - A user requested movies with pageNumber=179 and pageSize=7
+[2025-10-14T17:49:10.108] [INFO] default - Server started on port 8080
+[2025-10-14T17:50:36.891] [DEBUG] default - A user requested movies with pageNumber=180 and pageSize=7
+[2025-10-14T17:50:36.932] [DEBUG] default - A user requested movies with pageNumber=181 and pageSize=7
+[2025-10-14T17:50:36.962] [DEBUG] default - A user requested movies with pageNumber=182 and pageSize=7
+[2025-10-14T17:51:29.623] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T17:57:58.229] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T17:58:19.636] [INFO] default - Server started on port 8080
+[2025-10-14T17:58:30.181] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:00:06.858] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:00:07.459] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:00:08.050] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:00:08.075] [DEBUG] default - A user requested movies with pageNumber=4 and pageSize=7
+[2025-10-14T18:00:12.311] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:00:24.388] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:00:30.289] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:01:24.452] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:02:01.510] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:02:04.964] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:02:05.625] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:02:06.008] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:03:10.598] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:03:11.490] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:03:21.731] [INFO] default - Server started on port 8080
+[2025-10-14T18:03:23.183] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:03:23.535] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:03:27.729] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:03:28.611] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:03:29.171] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:03:29.565] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:11:14.828] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:11:15.574] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:11:16.210] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:11:16.522] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:11:55.793] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:11:56.310] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:11:56.892] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:11:57.324] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:12:58.013] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:13:04.300] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:13:06.536] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:13:07.771] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:13:08.109] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:13:34.946] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:13:38.711] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:13:39.173] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:16:14.479] [INFO] default - Server started on port 8080
+[2025-10-14T18:25:32.356] [INFO] default - Server started on port 8080
+[2025-10-14T18:25:36.446] [INFO] default - Server started on port 8080
+[2025-10-14T18:26:57.510] [INFO] default - Server started on port 8080
+[2025-10-14T18:47:56.332] [INFO] default - Server started on port 8080
+[2025-10-14T18:48:09.590] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=6
+[2025-10-14T18:48:36.278] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:48:46.439] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:48:46.603] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:48:46.937] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:48:48.572] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:48:55.598] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:49:11.377] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:49:12.073] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:49:12.827] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:49:18.435] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:49:23.369] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:49:25.654] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:49:26.049] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:49:26.402] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:49:32.235] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:49:33.035] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:49:33.570] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:49:34.042] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:49:34.451] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:49:53.930] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:49:54.478] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:49:54.925] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:49:55.232] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:53:51.200] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T18:53:51.920] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T18:53:52.244] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T18:56:56.907] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T18:56:57.327] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:00:14.378] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:00:16.562] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:04:31.435] [DEBUG] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T19:04:31.941] [DEBUG] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T19:04:32.244] [DEBUG] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T19:06:38.784] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:06:38.825] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:06:55.450] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:06:55.484] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:08:49.613] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:08:49.651] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:10:13.074] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:10:38.162] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:10:38.999] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:11:21.779] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:12:39.758] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:18:21.809] [DEBUG] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:21:56.754] [INFO] default - Server started on port 8080
+[2025-10-14T19:22:02.127] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:22:03.210] [INFO] default - A request came to get movie with id=NaN
+[2025-10-14T19:22:11.113] [INFO] default - A request came to get movie with id=NaN
+[2025-10-14T19:23:01.606] [INFO] default - A request came to get movie with id=NaN
+[2025-10-14T19:23:24.575] [INFO] default - A request came to get movie with id=NaN
+[2025-10-14T19:23:24.577] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:25:02.704] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:25:04.109] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:25:14.778] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:25:16.613] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:25:33.481] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:25:34.081] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:26:13.888] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:26:14.366] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:29:13.750] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:29:22.520] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:29:25.705] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:29:40.533] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:29:46.052] [INFO] default - A request came to get movie with id=2
+[2025-10-14T19:32:07.094] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:32:09.094] [INFO] default - A request came to get movie with id=2
+[2025-10-14T19:32:16.692] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:32:19.717] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:34:20.940] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:34:21.418] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:35:10.691] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:35:11.762] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:35:29.696] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:35:30.873] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:36:18.475] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:36:19.285] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:36:27.407] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:36:29.282] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:37:15.392] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:37:15.427] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:37:17.135] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:18.594] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:20.449] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:44.018] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:37:45.356] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:46.421] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:49.927] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:51.470] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:53.745] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:54.707] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:37:57.085] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:38:04.796] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:38:07.794] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:38:08.344] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:39:06.916] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:39:07.427] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:41:15.072] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:41:16.526] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:41:16.922] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:42:20.320] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:42:20.727] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:42:23.206] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:42:26.464] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:42:50.767] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:42:51.224] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:43:08.515] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:43:16.764] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:43:17.819] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:51:05.252] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:52:01.472] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:53:38.753] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:53:38.876] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:53:40.241] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:53:41.696] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:58:51.302] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:58:53.915] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:58:56.089] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:58:58.579] [INFO] default - A request came to get movie with id=1
+[2025-10-14T19:58:59.938] [INFO] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T19:59:00.507] [INFO] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T19:59:00.832] [INFO] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T19:59:03.605] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T19:59:14.069] [INFO] default - A request came to get movie with id=1
+[2025-10-14T20:01:20.537] [INFO] default - A request came to get movie with id=1
+[2025-10-14T20:04:51.357] [INFO] default - Server started on port 8080
+[2025-10-14T20:04:54.761] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T20:04:56.248] [INFO] default - A request came to get movie with id=1
+[2025-10-14T20:06:36.648] [INFO] default - A request came to get movie with id=1
+[2025-10-14T20:06:37.044] [INFO] default - A request came to get movie with id=1
+[2025-10-14T20:08:15.589] [INFO] default - Server started on port 8080
+[2025-10-14T20:08:21.395] [INFO] default - A request came to get movie with id=1
+[2025-10-14T20:08:35.950] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T20:08:37.576] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:17:06.579] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:17:29.688] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:18:31.296] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:18:31.383] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:25:26.631] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:25:28.125] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:25:29.062] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T21:25:30.804] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:25:33.604] [INFO] default - A request came to get movie with id=2
+[2025-10-14T21:25:35.324] [INFO] default - A request came to get movie with id=2
+[2025-10-14T21:25:37.716] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T21:25:38.951] [INFO] default - A request came to get movie with id=2
+[2025-10-14T21:25:41.528] [INFO] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T21:25:42.147] [INFO] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T21:25:42.466] [INFO] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T21:27:52.611] [INFO] default - A request came to get movie with id=2
+[2025-10-14T21:30:27.546] [INFO] default - A request came to get movie with id=2
+[2025-10-14T21:30:27.672] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T21:30:28.921] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:30:28.932] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:30:30.839] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:30:56.108] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:31:01.399] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:31:21.775] [INFO] default - A request came to get movie with id=1
+[2025-10-14T21:31:23.949] [INFO] default - A request came to get movie with id=2
+[2025-10-14T21:31:25.912] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T21:31:27.091] [INFO] default - A request came to get movie with id=1
+[2025-10-14T23:45:51.450] [INFO] default - Server started on port 8080
+[2025-10-14T23:45:56.525] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T23:46:06.191] [INFO] default - A request came to get movie with id=1
+[2025-10-14T23:46:22.920] [INFO] default - A request came to get movie with id=2
+[2025-10-14T23:46:46.560] [INFO] default - A request came to get movie with id=2
+[2025-10-14T23:49:09.122] [INFO] default - A request came to get movie with id=1
+[2025-10-14T23:49:43.720] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T23:49:46.730] [INFO] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T23:49:47.144] [INFO] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T23:49:47.439] [INFO] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T23:50:17.167] [INFO] default - Server started on port 8080
+[2025-10-14T23:50:21.348] [INFO] default - Client connected
+[2025-10-14T23:50:21.354] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T23:50:21.413] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:50:30.675] [INFO] default - Client connected
+[2025-10-14T23:50:30.677] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T23:50:30.720] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:50:32.746] [INFO] default - A request came to get movie with id=1
+[2025-10-14T23:50:32.750] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:50:32.751] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:50:38.242] [INFO] default - A request came to get movie with id=3
+[2025-10-14T23:50:38.246] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:50:38.248] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:52:47.480] [INFO] default - A request came to get movie with id=1
+[2025-10-14T23:52:47.485] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:52:47.486] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:52:49.741] [INFO] default - A request came to get movie with id=2
+[2025-10-14T23:52:49.747] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:52:49.748] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:53:03.825] [INFO] default - A request came to get movie with id=1
+[2025-10-14T23:53:03.828] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:53:03.829] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:53:11.156] [INFO] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T23:53:11.312] [INFO] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T23:53:11.548] [INFO] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T23:53:30.378] [INFO] default - Client connected
+[2025-10-14T23:53:30.383] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-14T23:53:30.442] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:53:31.964] [INFO] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-14T23:53:33.732] [INFO] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-14T23:53:34.100] [INFO] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-14T23:53:39.658] [INFO] default - A request came to get movie with id=1
+[2025-10-14T23:53:39.665] [INFO] default - Received: {"message":"I received."}
+[2025-10-14T23:53:39.671] [INFO] default - Received: {"message":"I received."}
