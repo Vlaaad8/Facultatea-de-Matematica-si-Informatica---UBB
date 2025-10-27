@@ -7,10 +7,11 @@
 <ion-content class="ion-padding">
   <ion-item *ngIf="movie; else loading">
     <ion-label>
-      <h2>{{ movie.name }}</h2>
-      <p>{{ movie.rating }}</p>
-      <p>{{movie.premierDate}}</p>
-      <p> Status: {{movie.running}}</p>
+      <h2> Name: {{ movie.name }}</h2>
+      <p> Rating: {{ movie.rating }}/10</p>
+      <p> Premier Date: {{movie.premierDate}}</p>
+      <p *ngIf="movie.running"> Status: Still running</p>
+      <p *ngIf="!movie.running">Status: Archived</p>
     </ion-label>
 
   </ion-item>

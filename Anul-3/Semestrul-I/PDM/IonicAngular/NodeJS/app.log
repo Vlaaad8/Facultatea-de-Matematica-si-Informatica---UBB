@@ -1517,3 +1517,71 @@
 [2025-10-14T23:53:39.658] [INFO] default - A request came to get movie with id=1
 [2025-10-14T23:53:39.665] [INFO] default - Received: {"message":"I received."}
 [2025-10-14T23:53:39.671] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:51:07.918] [INFO] default - Server started on port 8080
+[2025-10-21T16:51:31.334] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-21T16:51:31.339] [INFO] default - Client connected
+[2025-10-21T16:51:31.363] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:51:33.342] [INFO] default - A request came to get movie with id=1
+[2025-10-21T16:51:33.351] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:51:43.073] [INFO] default - A request came to get movie with id=2
+[2025-10-21T16:51:43.078] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:52:00.886] [INFO] default - Client connected
+[2025-10-21T16:52:00.888] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-21T16:52:00.896] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:52:02.298] [INFO] default - A request came to get movie with id=1
+[2025-10-21T16:52:02.302] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:52:22.881] [INFO] default - A request came to get movie with id=1
+[2025-10-21T16:52:22.885] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:52:25.459] [INFO] default - A request came to get movie with id=2
+[2025-10-21T16:52:25.462] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:56:22.759] [INFO] default - A request came to get movie with id=2
+[2025-10-21T16:56:27.592] [INFO] default - Client connected
+[2025-10-21T16:56:27.593] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-21T16:56:27.594] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:56:29.175] [INFO] default - A request came to get movie with id=1
+[2025-10-21T16:56:29.178] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T16:56:33.713] [INFO] default - A request came to get movie with id=1
+[2025-10-21T16:56:33.717] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T17:07:00.090] [INFO] default - Client connected
+[2025-10-21T17:07:00.091] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-21T17:07:00.151] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T17:07:03.716] [INFO] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-21T17:07:04.076] [INFO] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-21T17:07:04.400] [INFO] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-21T17:07:07.392] [INFO] default - Client connected
+[2025-10-21T17:07:07.393] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-21T17:07:07.419] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T17:07:07.994] [INFO] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-21T17:07:08.380] [INFO] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-21T17:07:08.699] [INFO] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-21T17:07:11.730] [INFO] default - Client connected
+[2025-10-21T17:07:11.732] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-21T17:07:11.737] [INFO] default - Received: {"message":"I received."}
+[2025-10-21T17:07:11.947] [INFO] default - A user requested movies with pageNumber=1 and pageSize=7
+[2025-10-21T17:07:12.314] [INFO] default - A user requested movies with pageNumber=2 and pageSize=7
+[2025-10-21T17:07:12.546] [INFO] default - A user requested movies with pageNumber=3 and pageSize=7
+[2025-10-22T14:08:52.695] [INFO] default - Server started on port 8080
+[2025-10-22T14:09:04.524] [INFO] default - Client connected
+[2025-10-22T14:09:04.531] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-22T14:09:04.558] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:09:06.153] [INFO] default - Client connected
+[2025-10-22T14:09:06.154] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-22T14:09:06.253] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:09:12.743] [INFO] default - Client connected
+[2025-10-22T14:09:12.749] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-22T14:09:12.758] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:09:14.776] [INFO] default - A request came to get movie with id=1
+[2025-10-22T14:09:14.798] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:09:14.804] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:09:38.942] [INFO] default - Client connected
+[2025-10-22T14:09:38.944] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-22T14:09:38.949] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:09:40.334] [INFO] default - Client connected
+[2025-10-22T14:09:40.336] [INFO] default - A user requested movies with pageNumber=0 and pageSize=7
+[2025-10-22T14:09:40.349] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:10:01.265] [INFO] default - A request came to get movie with id=2
+[2025-10-22T14:10:01.271] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:10:01.273] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:10:39.732] [INFO] default - A request came to get movie with id=4
+[2025-10-22T14:10:39.737] [INFO] default - Received: {"message":"I received."}
+[2025-10-22T14:10:39.739] [INFO] default - Received: {"message":"I received."}
