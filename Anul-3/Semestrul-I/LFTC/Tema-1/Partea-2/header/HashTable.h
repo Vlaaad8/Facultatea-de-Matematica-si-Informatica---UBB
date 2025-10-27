@@ -26,9 +26,10 @@ public:
 
     int add(const string &value);
 
-    string getByPos(int key) ;
+    pair<int,string> getByPos(int key) ;
 
     void writeToFile(const string& file_name);
+
 };
 
 

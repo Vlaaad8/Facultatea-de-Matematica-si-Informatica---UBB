@@ -1,7 +1,3 @@
-//
-// Created by vladb on 20/10/2025.
-//
-
 #include "../header/HashTable.h"
 #include <fstream>
 
@@ -21,13 +17,13 @@ int HashTable::add(const string &value) {
         hash_value=(hash_value+1)%SIZE;
     }
     table[hash_value]={position,value};
-    map_position.push_back(position);
+    map_position.push_back(hash_value);
     position++;
-    return position;
+    return position-1;;
 
 }
-string HashTable::getByPos(int key) {
-        return table[map_position[key]].second;
+pair<int,string> HashTable::getByPos(int key) {
+        return table[map_position[key]];
 }
 void HashTable::writeToFile(const string& file_name) {
     ofstream out(file_name);
@@ -36,7 +32,13 @@ void HashTable::writeToFile(const string& file_name) {
         exit(1);
     }
     for (int i=0;i<map_position.size();i++) {
-            out<< getByPos(i) <<" "<<i;
+        pair<int,string> p= getByPos(i);
+            // out<< p.second <<" "<<p.first<<" "<<map_position[i]<<endl;
+            out<<p.second<<" "<<p.first<<endl;
     }
+    for (int i=0;i<table.size();i++) {
+        cout<<i<<" "<<table[i].first<<" "<<table[i].second<<endl;
+    }
+    cout<<endl;
 
 }

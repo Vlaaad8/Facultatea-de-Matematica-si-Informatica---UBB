@@ -5,8 +5,6 @@
 
 using namespace std;
 
-void generateTS(vector<string> &toSort);
-map<string,int> getTSID();
-map<string,int> getTSCT();
+void generateFIP();
 
 #endif //TEMA_1_CREATETS_H
