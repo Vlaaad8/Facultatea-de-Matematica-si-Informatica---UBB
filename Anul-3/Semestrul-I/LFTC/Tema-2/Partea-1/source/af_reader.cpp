@@ -1,18 +1,15 @@
-//
-// Created by vladb on 27/10/2025.
-//
-
 #include "../header/af_reader.h"
 
+#include <limits>
 #include <sstream>
 
 
 void af_reader::read_from_file(const string &file_name, AF &af) {
     set<string> states;
-    set<int> alphabet;
+    set<char> alphabet;
     string initial_state;
     set<string> final_states;
-    multimap<pair<string, int>, string> transitions;
+    multimap<pair<string, char>, string> transitions;
     ifstream in(file_name);
     if (!in.is_open()) {
         cout << "Error in opening the input file!" << endl;
@@ -35,7 +32,7 @@ void af_reader::read_from_file(const string &file_name, AF &af) {
             stringstream ss(rest);
             string simbol;
             while (getline(ss, simbol, ',')) {
-                if (!simbol.empty()) alphabet.insert(simbol[0]);
+                if (!simbol.empty()) alphabet.insert(simbol[0]);;
             }
         } else if (line.find("StareInitiala:") == 0) {
             initial_state = line.substr(14);
@@ -67,6 +64,76 @@ void af_reader::read_from_file(const string &file_name, AF &af) {
     af.set_final_states(final_states);
     af.set_transitions(transitions);
     af.set_alphabet(alphabet);
-    af.set_states(final_states);
+    af.set_states(states);
     af.set_initial_state(initial_state);
+}
+void af_reader::read_from_command(AF &af) {
+    set<string> states;
+    set<char> alphabet;
+    string initial_state;
+    set<string> final_states;
+    multimap<pair<string, char>, string> transitions;
+
+    string line, token;
+    string from, to;
+    char symbol;
+    stringstream ss;
+
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+    cout << "Introduce states:";
+    getline(cin, line);
+    ss.str(line);
+    ss.clear();
+    while (getline(ss, token, ',')) {
+        if (!token.empty()) states.insert(token);
+    }
+
+
+    cout << "Introduce alphabet:";
+    getline(cin, line);
+    ss.str(line);
+    ss.clear();
+    while (getline(ss, token, ',')) {
+        if (!token.empty()) alphabet.insert(token[0]);
+    }
+
+    cout << "Introduce initial state:";
+    getline(cin, initial_state);
+
+    cout << "Introduce final states:";
+    getline(cin, line);
+    ss.str(line);
+    ss.clear();
+    while (getline(ss, token, ',')) {
+        if (!token.empty()) final_states.insert(token);
+    }
+
+    cout << "Introduce transitions in the format: from->symbol->to:";
+    getline(cin, line);
+    ss.str(line);
+    ss.clear();
+    while (getline(ss, token, ',')) {
+        if (token.empty()) continue;
+
+        size_t p1 = token.find("->");
+        size_t p2 = token.rfind("->");
+
+        if (p1 != string::npos && p2 != string::npos && p1 != p2) {
+            from = token.substr(0, p1);
+            symbol = token[p1 + 2];
+            to = token.substr(p2 + 2);
+            transitions.insert({{from, symbol}, to});
+        } else {
+            cout << "Warning: invalid transition format: " << token << endl;
+        }
+    }
+
+    af.set_states(states);
+    af.set_alphabet(alphabet);
+    af.set_initial_state(initial_state);
+    af.set_final_states(final_states);
+    af.set_transitions(transitions);
+
+    cout << "AF loaded successfully from command." << endl;
 }
