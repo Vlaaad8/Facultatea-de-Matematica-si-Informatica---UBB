@@ -50,7 +50,9 @@ bool AF::is_accepted(string &first_node, const vector<char> &coding) {
             return false;
         }
         auto range = this->transitions.equal_range(pair<string, char>(first_node, value));
-
+        if (range.first == range.second) {
+            return false;
+        }
         first_node = range.first->second;
     }
     for (const auto &value: final_states) {

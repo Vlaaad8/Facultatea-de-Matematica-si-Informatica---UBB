@@ -38,11 +38,11 @@ void show_alphabet(AF &af) {
 
 void show_final_states(AF &af) {
     set<string> final_states = af.final_states1();
-    cout << "{";
+    cout << "Final states = {\n";
     for (const string &state: final_states) {
-        cout << state << ",";
+        cout << state << " ";
     }
-    cout << "}" << endl;
+    cout << "\n }" << endl;
 }
 
 
@@ -139,7 +139,7 @@ int main() {
         cin >> option;
         switch (option) {
             case 1:
-                af_reader::read_from_file("inputN.txt", af);
+                af_reader::read_from_file("inputNou.txt", af);
                 break;
             case 2:
                 af_reader::read_from_command(af);
