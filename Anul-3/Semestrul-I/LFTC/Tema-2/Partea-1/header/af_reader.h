@@ -14,6 +14,7 @@ class af_reader {
 
     public:
     static void read_from_file(const string &file_name,AF &af);
+    static void read_from_command(AF &af);
 };
 
 
