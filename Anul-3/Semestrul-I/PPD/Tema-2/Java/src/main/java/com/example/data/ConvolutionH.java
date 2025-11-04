@@ -3,13 +3,13 @@ package com.example.data;
 import java.util.concurrent.CyclicBarrier;
 
 public class ConvolutionH {
-    private static int P;
-    private static int N;
-    private static int M;
-    private static int K;
+    private int P;
+    private  int N;
+    private  int M;
+    private  int K;
     private ThreadHorizontal[] threads;
     private int[][] matrix;
-    private static int[][] filter;
+    private int[][] filter;
 
     public ConvolutionH(int p, int n,int m,int k,int[][] matrix, int[][] filter) {
         P = p;
@@ -35,7 +35,7 @@ public class ConvolutionH {
                 endIdx++;
                 extra--;
             }
-            threads[i]= new ThreadHorizontal(matrix,filter,startIdx,endIdx,N,M,barrier);
+            threads[i]= new ThreadHorizontal(matrix,filter,startIdx,endIdx,N,M,K,barrier);
             threads[i].start();
             startIdx=endIdx;
         }
@@ -44,7 +44,6 @@ public class ConvolutionH {
         }
 
 
-        //MatrixGenerator.writeMatrix(newMatrix, resultFile);
 
     }
 
@@ -52,7 +51,7 @@ public class ConvolutionH {
         return matrix;
     }
 
-    public static int computeElement(int j, int[] previousRow, int[] currentRow, int[] belowRow) {
+    public static int computeElement(int j, int[] previousRow, int[] currentRow, int[] belowRow,int M,int K,int[][] filter) {
         int half = K / 2;
 
         int sum = 0;

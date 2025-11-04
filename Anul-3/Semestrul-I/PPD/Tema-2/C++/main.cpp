@@ -46,8 +46,8 @@ int main(int argc, char *argv[]) {
         generator.generateMatrix();
         generator.generateFilter();
     }
-    //     if (filesAreEqual("resultH.txt","resultS.txt")) {
+    // if (filesAreEqual("resultH.txt","resultS.txt")) {
         EstimateTime estimate_time(N, M, P, 3);
         estimate_time.run();
-    }
-
+    // }
+}

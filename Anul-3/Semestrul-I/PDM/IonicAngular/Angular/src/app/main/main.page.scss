@@ -1,9 +1,12 @@
+/* main.page.scss */
+
+/* Styling pentru ecranul de loading */
 .loading-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%; // ocupă tot conținutul
+  height: 100%;
   text-align: center;
 
   p {
@@ -11,4 +14,30 @@
     font-size: 1rem;
     color: var(--ion-color-medium);
   }
+}
+
+/* Containerul principal de conținut Ionic */
+ion-content {
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+  display: block;
+}
+
+/* Lista de filme (movie-list) */
+.movie-list {
+  display: block;
+  /* LINIA PROBLEMATICĂ a fost eliminată: min-height: 100%; */
+
+  /* Lăsăm lista să aibă înălțimea conținutului, dar cu spațiu sub ea pentru FAB */
+  padding-bottom: 80px;
+}
+
+/* Stil pentru fiecare element al listei */
+ion-item {
+  --min-height: 56px;
+  --padding-start: 16px;
+  --inner-padding-end: 8px;
+  border-bottom: 1px solid var(--ion-color-light);
 }

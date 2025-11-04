@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\SequentialCalculation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|solutionrelative:SequentialCalculation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\SequentialCalculation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|solutionrelative:SequentialCalculation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\GenerateNumber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|solutionrelative:GenerateNumber.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\GenerateNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|solutionrelative:GenerateNumber.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\Tema-3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|solutionrelative:Tema-3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5FBB6A-6CC5-4D1E-9571-831AD88BEFFF}|Tema-3.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.40.33807\\INCLUDE\\__MSVC_FORMAT_UCD_TABLES.HPP||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 308,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d3750d8a-574b-4fb3-b7e2-aa8af40e8231}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 139,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SequentialCalculation.cpp",
+              "DocumentMoniker": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\SequentialCalculation.cpp",
+              "RelativeDocumentMoniker": "SequentialCalculation.cpp",
+              "ToolTip": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\SequentialCalculation.cpp",
+              "RelativeToolTip": "SequentialCalculation.cpp",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-04T09:55:06.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SequentialCalculation.h",
+              "DocumentMoniker": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\SequentialCalculation.h",
+              "RelativeDocumentMoniker": "SequentialCalculation.h",
+              "ToolTip": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\SequentialCalculation.h",
+              "RelativeToolTip": "SequentialCalculation.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T09:54:53.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenerateNumber.cpp",
+              "DocumentMoniker": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\GenerateNumber.cpp",
+              "RelativeDocumentMoniker": "GenerateNumber.cpp",
+              "ToolTip": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\GenerateNumber.cpp",
+              "RelativeToolTip": "GenerateNumber.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-04T09:26:38.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenerateNumber.h",
+              "DocumentMoniker": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\GenerateNumber.h",
+              "RelativeDocumentMoniker": "GenerateNumber.h",
+              "ToolTip": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\GenerateNumber.h",
+              "RelativeToolTip": "GenerateNumber.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T09:26:30.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "__msvc_format_ucd_tables.hpp",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\__msvc_format_ucd_tables.hpp",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\__msvc_format_ucd_tables.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-04T09:24:14.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tema-3.cpp",
+              "DocumentMoniker": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\Tema-3.cpp",
+              "RelativeDocumentMoniker": "Tema-3.cpp",
+              "ToolTip": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\Tema-3\\Tema-3.cpp",
+              "RelativeToolTip": "Tema-3.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-04T08:55:23.697Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 109,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

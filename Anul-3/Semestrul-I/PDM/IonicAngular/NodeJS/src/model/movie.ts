@@ -3,5 +3,6 @@ export interface Movie{
     name: string,
     premierDate: Date,
     rating: number,
-    running: boolean
+    running: boolean,
+    owner_id: number
 }

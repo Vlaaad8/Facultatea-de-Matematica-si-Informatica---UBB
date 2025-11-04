@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'main',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -13,5 +13,10 @@ export const routes: Routes = [
   {
     path: 'movies/:id',
     loadComponent: () => import('./movie/movie.page').then( m => m.MoviePage)
+  },
+
+  {
+    path: 'login',
+    loadComponent: () => import('./login/login.page').then( m => m.LoginPage)
   },
 ];

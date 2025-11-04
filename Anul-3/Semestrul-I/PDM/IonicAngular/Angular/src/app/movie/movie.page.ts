@@ -48,7 +48,7 @@ export class MoviePage implements OnInit {
   }
 
   handleMain() {
-    this.route.navigate(['']);
+    this.route.navigate(['main']);
   }
 }
 

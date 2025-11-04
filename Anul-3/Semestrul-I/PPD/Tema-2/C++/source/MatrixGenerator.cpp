@@ -31,7 +31,7 @@ void MatrixGenerator::generateFilter() const {
     outFilter << k << " " << k<<endl;
     for (int i = 0; i < k; i++) {
         for (int j = 0; j < k; j++) {
-            outFilter << rand() % 10 << " ";
+            outFilter << rand() % 100 << " ";
         }
         outFilter << endl;
     }

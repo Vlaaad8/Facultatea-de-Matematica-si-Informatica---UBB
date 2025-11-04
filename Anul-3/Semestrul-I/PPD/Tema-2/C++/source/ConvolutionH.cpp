@@ -25,6 +25,7 @@ void ConvolutionH::run() {
             end_idx++;
         }
 
+
         threads[i] = thread([this, start_idx, end_idx,&wait_point]() {
             this->calculate_convolution(start_idx, end_idx, wait_point);
         });
@@ -41,6 +42,7 @@ void ConvolutionH::run() {
 void ConvolutionH::calculate_convolution(int start_idx, int end_idx, barrier<> &wait_point) {
     int *previous_row = new int [M];
     int *current_row = new int [M];
+    int *bellow_row = new int [M];
 
     int *up_row = nullptr;
     int *down_row = nullptr;
@@ -74,7 +76,6 @@ void ConvolutionH::calculate_convolution(int start_idx, int end_idx, barrier<> &
         for (int j = 0; j < M; j++) {
             current_row[j] = matrix[i][j];
         }
-        int *bellow_row = new int [M];
         if (i == end_idx - 1) {
             if (end_idx == N) {
                 for (int j = 0; j < M; j++) {
@@ -95,10 +96,9 @@ void ConvolutionH::calculate_convolution(int start_idx, int end_idx, barrier<> &
             matrix[i][j]=value;
         }
         swap(previous_row, current_row);
-        delete[] bellow_row;
 
     }
-//delete[] bellow_row;
+    delete[] bellow_row;
     delete[] up_row;
     delete[] down_row;
     delete[] previous_row;
