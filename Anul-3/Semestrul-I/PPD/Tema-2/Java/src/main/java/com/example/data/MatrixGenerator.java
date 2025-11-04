@@ -50,7 +50,7 @@ public class MatrixGenerator {
         int[][] matrix = new int[k][k];
         for (int i = 0; i < k; i++) {
             for (int j = 0; j < k; j++) {
-                matrix[i][j] = rand.nextInt(10);
+                matrix[i][j] = rand.nextInt(50);
             }
         }
         writeMatrix(matrix, filterFile);

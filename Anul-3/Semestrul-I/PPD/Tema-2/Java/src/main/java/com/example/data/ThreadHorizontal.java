@@ -9,15 +9,17 @@ public class ThreadHorizontal extends Thread {
     private int startRow, endRow;
     private int N;
     private int M;
+    private int K;
     private CyclicBarrier barrier;
 
-    public ThreadHorizontal(int[][] matrix, int[][] filter, int startRow, int endRow,int N,int M, CyclicBarrier barrier) {
+    public ThreadHorizontal(int[][] matrix, int[][] filter, int startRow, int endRow,int N,int M,int K, CyclicBarrier barrier) {
         this.matrix = matrix;
         this.filter = filter;
         this.startRow = startRow;
         this.endRow = endRow;
         this.N = N;
         this.M = M;
+        this.K = K;
         this.barrier = barrier;
     }
 
@@ -25,6 +27,8 @@ public class ThreadHorizontal extends Thread {
     public void run() {
         int[] previousRow=new int[M];
         int[] currentRow=new int[M];
+        int[] bellowRow= new int[M];
+
 
         int[] upRow= null;
         int[] downRow = null;
@@ -66,7 +70,6 @@ public class ThreadHorizontal extends Thread {
                 currentRow[j] = matrix[i][j];
 
             }
-            int[] bellowRow= new int[M];
             if(i == endRow-1){
                 if(endRow==N){
                     for(int j=0;j<M;j++){
@@ -85,7 +88,8 @@ public class ThreadHorizontal extends Thread {
                 }
             }
             for(int j=0;j<M;j++){
-                int value = ConvolutionH.computeElement(j,previousRow,currentRow,bellowRow);
+                int value = ConvolutionH.computeElement(j, previousRow, currentRow, bellowRow,
+                        this.M, this.K, this.filter);
                 matrix[i][j] = value;
             }
             int[] temp = previousRow;
@@ -96,4 +100,6 @@ public class ThreadHorizontal extends Thread {
 
 
     }
+
+
 }

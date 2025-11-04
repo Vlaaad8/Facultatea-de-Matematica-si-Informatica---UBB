@@ -1,0 +1,26 @@
+struct State {
+    std::string name;
+    bool isAcceptState;
+    std::unordered_map<char, std::vector<State*>> transitions;
+};
+
+class AF {
+    private:
+        bool isAFD = true;
+        std::unordered_map<std::string, State*> states;
+        std::unordered_set<std::string> inputAlphabet;
+        State* initialState;
+        std::vector<State*> finalStates;
+
+-----------------------------------------------------------------
+State
+    name: String
+    isAcceptState: Boolean
+    transitions: UnorderedMap<Char,Vector<State>>
+
+StateMachine
+    isAFD: Boolean
+    states: UnorderedMap<String,State>
+    inputAlphabet: UnorderedSet<string>
+    initialState: State
+    finalStates: Vector<State>

@@ -48,7 +48,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException, IOException {
 
         if (args.length < 4) {
-            System.out.println("Usage: java Main Runs,P ,N ,M");
+            System.out.println("Usage: java Type Main Runs,P ,N ,M");
             exit(1);
         }
         Runs = Integer.parseInt(args[0]);
@@ -61,7 +61,6 @@ public class Main {
     }
 ////        if (compareFiles("result.txt", "resultH.txt") && compareFiles("result.txt", "resultV.txt")) {
         EvaluateTime evaluateTime = new EvaluateTime(N, M, P, 3);
-
         evaluateTime.run(P);
 //
 ////        }
