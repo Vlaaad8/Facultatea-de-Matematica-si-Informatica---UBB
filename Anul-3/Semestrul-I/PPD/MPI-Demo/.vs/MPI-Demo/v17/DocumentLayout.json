@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "MPI-Demo\\MPI-Demo.cpp",
               "ToolTip": "D:\\Facultate\\Anul-3\\Semestrul-I\\PPD\\MPI-Demo\\MPI-Demo\\MPI-Demo.cpp",
               "RelativeToolTip": "MPI-Demo\\MPI-Demo.cpp",
-              "ViewState": "AQIAACgBAAAAAAAAAAAAADIBAAAPAAAA",
+              "ViewState": "AQIAALQAAAAAAAAAAAAiwKEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-03T08:28:58.899Z",
               "EditorCaption": ""
@@ -39,10 +39,6 @@
           "DockedHeight": 139,
           "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"

@@ -19,8 +19,8 @@ public:
     AF(const set<string> &states, const set<char> &alphabet, const string &initial_state, const set<string> &final_states, const multimap<pair<string,char>,string> &transitions);
     AF();
     bool is_deterministic();
-    bool is_accepted(string &first_node, const vector<char> &coding) ;
-    string longest_prefix(const string &first_node, const vector<char> &coding);
+    bool is_accepted(const string &coding) ;
+    string longest_prefix(const vector<char> &coding);
     bool is_from_alphabet(char a);
 
      set<string> states1() const {

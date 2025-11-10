@@ -36,15 +36,12 @@ bool AF::is_deterministic() {
 }
 
 
-bool AF::is_accepted(string &first_node, const vector<char> &coding) {
+bool AF::is_accepted(const string &coding) {
     if (!this->is_deterministic()) {
         cout << "AF is not deterministic" << endl;
         return false;
     }
-    if (this->initial_state!=first_node) {
-        cout <<first_node <<" is not initial state" << endl;
-        return false;
-    }
+    string first_node = this->initial_state;
     for (auto value: coding) {
         if (!is_from_alphabet(value)) {
             return false;
@@ -63,18 +60,15 @@ bool AF::is_accepted(string &first_node, const vector<char> &coding) {
     return false;
 }
 
-string AF::longest_prefix(const string &first_node, const vector<char> &coding) {
+string AF::longest_prefix(const vector<char> &coding) {
     if (!this->is_deterministic()) {
         cout << "AF is not deterministic" << endl;
         return "";
     }
-    if (first_node != initial_state) {
-        cout << first_node + " is not a start position!" << endl;
-        return "";
-    }
+
     string current_prefix = "";
     string accepted_prefix = "";
-    string current_node = first_node;
+    string current_node = this->initial_state;
     for (auto value: coding) {
         if (!is_from_alphabet(value)) {
             return accepted_prefix;

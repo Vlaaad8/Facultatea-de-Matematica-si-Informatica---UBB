@@ -17,6 +17,7 @@ import {Movie} from "../model/movie";
 import {Home} from "../services/home";
 import {WebSocketService} from "../services/web-socket";
 import {Preferences} from "@capacitor/preferences";
+import { lastValueFrom } from 'rxjs';
 
 @Component({
   selector: 'app-main',
@@ -42,6 +43,7 @@ export class MainPage implements OnInit {
   private toastCtrl = inject(ToastController);
   private cd = inject(ChangeDetectorRef);
 
+
   async showToast(message: string, color: string = 'primary') {
     const toast = await this.toastCtrl.create({
       message,
@@ -60,30 +62,30 @@ export class MainPage implements OnInit {
     this.showToast("Movie added to local storage, waiting for internet", 'Offline');
   }
 
-  ngOnInit() {
+  async ngOnInit() {
     this.pageNumber = 0;
     this.data = [];
+    this.filteredData = [];
     this.hasAll = false;
-    this.service.getMovies(this.pageNumber, this.pageSize).subscribe({
-      next: datas => {
-        this.data = [...this.data, ...datas];
-        this.filteredData = [...this.data];
-        if (this.pageSize > datas.length) {
-          this.hasAll = true;
-        }
-        this.cd.detectChanges();
-      },
-      error: error => {
-        console.log(error);
-      }
-    });
+
+    try {
+      const movies = await lastValueFrom(this.service.getMovies(this.pageNumber, this.pageSize));
+      this.data.push(...movies);
+      this.filteredData = [...this.data];
+      this.hasAll = movies.length < this.pageSize;
+      this.cd.detectChanges();
+    } catch (err) {
+      console.error('Error loading movies:', err);
+    }
+
     this.notificationService.connect();
     this.notificationService.notification.subscribe({
-      next: async (data: Movie) => {
-        this.data.push(data);
-        this.filteredData.push(data)
+      next: (movie: Movie) => {
+        this.data.push(movie);
+        this.filteredData.push(movie);
+        this.cd.detectChanges();
       }
-    })
+    });
 
     this.addForm = this.formBuilder.group({
       name: ['', [Validators.required]],
@@ -91,41 +93,28 @@ export class MainPage implements OnInit {
       premierDate: [null, Validators.required],
       running: [true],
     });
+
     this.service.getStatus().subscribe({
-      next: data => {
-        this.networkStatus = data;
-      },
-      error: error => {
-        console.log(error);
-      }
-    })
+      next: status => this.networkStatus = status
+    });
   }
 
 
-  onIonInfinite($event: any) {
-    if (!this.hasAll) {
-      this.pageNumber++;
-      this.service.getMovies(this.pageNumber, this.pageSize).subscribe({
-        next: data => {
-          this.data = [...this.data, ...data];
-          this.filteredData = [...this.data];
-          if (this.pageSize > data.length) {
-            this.hasAll = true;
-          }
-          console.log('Total Movies Loaded (this.data.length):', this.data.length);
-          console.log('Filtered Movies Count (this.filteredData.length):', this.filteredData.length);
-          $event.target.complete();
-          this.cd.detectChanges();
-
-        },
-        error: error => {
-          console.log(error);
-          $event.target.complete();
-        }
-      });
+  async onIonInfinite(event: any) {
+    this.pageNumber++;
+    try {
+      const movies = await lastValueFrom(this.service.getMovies(this.pageNumber, this.pageSize));
+      this.data.push(...movies);
+      this.filteredData.push(...movies);
+      this.hasAll = movies.length < this.pageSize;
+      event.target.complete();
+      this.cd.detectChanges();
+    } catch (err) {
+      console.error(err);
+      event.target.complete();
     }
-
   }
+
 
   handleMovie(movie: Movie) {
     this.router.navigate(['movies', movie.id]);
@@ -139,7 +128,7 @@ export class MainPage implements OnInit {
     if (this.addForm.valid) {
       this.service.addMovie(this.addForm.value).subscribe({
         next: movie => {
-          if (movie!=null) {
+          if (movie != null) {
             this.data.push(movie);
             this.isOpen = false;
             this.someAction();
@@ -156,31 +145,15 @@ export class MainPage implements OnInit {
     }
   }
 
-  filterMovies($event: any) {
-    console.log($event.target.value);
-    const value = $event.target.value?.toLowerCase().trim() || '';
-    if (value == '') {
-      this.filteredData = this.data;
-    } else {
-
-      this.filteredData = this.data.filter(movie => {
-        return movie.name.toLowerCase().includes(value)
-      });
-    }
+  filterMovies(event: any) {
+    const value = event.target.value?.toLowerCase().trim() || '';
+    this.filteredData = value ? this.data.filter(m => m.name.toLowerCase().includes(value)) : [...this.data];
   }
+
   filterByType(type: string) {
-    this.data.forEach(item => {console.log(JSON.stringify(item));});
-    if(type=="Running"){
-      this.filteredData= this.data.filter(movie => {return movie.running})
-    }
-    else if(type=="NRunning"){
-      this.filteredData= this.data.filter(movie => {return !movie.running})
-    }
-    else if(type=="Reset"){
-      this.filteredData = [...this.data];
-    }
-    console.log("-----------------------------------------")
-    this.filteredData.forEach(item => {console.log(JSON.stringify(item));});
+    if(type === "Running") this.filteredData = this.data.filter(m => m.running);
+    else if(type === "NRunning") this.filteredData = this.data.filter(m => !m.running);
+    else this.filteredData = [...this.data];
   }
 
   handleLogOut() {
