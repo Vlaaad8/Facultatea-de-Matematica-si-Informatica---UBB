@@ -31,7 +31,7 @@ void af_reader::read_from_file(const string &file_name, AF &af) {
             string rest = line.substr(8);
             stringstream ss(rest);
             string simbol;
-            while (getline(ss, simbol, ',')) {
+            while (getline(ss, simbol, ' ')) {
                 if (!simbol.empty()) alphabet.insert(simbol[0]);;
             }
         } else if (line.find("StareInitiala:") == 0) {
@@ -47,7 +47,7 @@ void af_reader::read_from_file(const string &file_name, AF &af) {
             string rest = line.substr(10);
             stringstream ss(rest);
             string tranzitie;
-            while (getline(ss, tranzitie, ',')) {
+            while (getline(ss, tranzitie, ' ')) {
                 size_t p1 = tranzitie.find("->");
                 size_t p2 = tranzitie.rfind("->");
                 if (p1 != string::npos && p2 != string::npos && p1 != p2) {

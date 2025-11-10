@@ -80,23 +80,11 @@ void show_transitions(AF &af) {
 }
 
 void verify_sequence(AF &af) {
-    vector<char> coding;
-    string first_node;
     string codes;
-
-    cout << "Introduce first node: ";
-    cin >> first_node;
-    cout << "Introduce codes (separated by ,): ";
+    cout << "Introduce codes: ";
     cin >> codes;
-
     stringstream ss(codes);
-    string token;
-    while (getline(ss, token, ',')) {
-        if (!token.empty()) {
-            coding.push_back(token[0]);
-        }
-    }
-    if (af.is_accepted(first_node, coding)) {
+    if (af.is_accepted(codes)) {
         cout << "Accepted" << endl;
     } else {
         cout << "Not accepted" << endl;
@@ -119,7 +107,7 @@ void longest_prefix(AF &af) {
             coding.push_back(token[0]);
         }
     }
-    string prefix = af.longest_prefix(first_node, coding);
+    string prefix = af.longest_prefix(coding);
     if (prefix.empty()) {
         cout << "I didn't found a valid prefix" << endl;
     }
@@ -139,7 +127,7 @@ int main() {
         cin >> option;
         switch (option) {
             case 1:
-                af_reader::read_from_file("inputNou.txt", af);
+                af_reader::read_from_file("input2.txt", af);
                 break;
             case 2:
                 af_reader::read_from_command(af);

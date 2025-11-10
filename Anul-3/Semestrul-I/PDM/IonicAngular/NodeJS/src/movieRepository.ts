@@ -73,7 +73,7 @@ export class MovieRepository {
                 movie.owner_id
             ]);
 
-            // Convert BigInt ID to number to avoid JSON serialization issues
+
             const insertedId = (result as any).insertId;
             movie.id = Number(insertedId);
 
