@@ -33,6 +33,30 @@ int *GenerateNumber::readNumber(const string &fileName) {
     }
     return table;
 }
+int *GenerateNumber::readNumberP(const string &fileName,const int P) {
+    ifstream in(fileName);
+    if (!in) {
+        cerr << "Number file could not be opened" << endl;
+    }
+    int numberOfDigits;
+    int* table;
+    in >> numberOfDigits;
+    if (numberOfDigits < P) {
+        table=new int[P];
+        for (int i = numberOfDigits; i < P; i++) {
+            table[i] = 0;
+        }
+    }
+    else {
+       table = new int[numberOfDigits];
+    }
+    int digit;
+    for (int i = 0; i < numberOfDigits; i++) {
+        in >> digit;
+        table[i] = digit;
+    }
+    return table;
+}
 
 void GenerateNumber::writeNumber(const string &fileName, int *number, const int numberOfDigits) {
     ofstream out(fileName);

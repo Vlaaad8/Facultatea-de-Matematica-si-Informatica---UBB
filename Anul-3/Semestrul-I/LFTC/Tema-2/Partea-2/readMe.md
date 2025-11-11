@@ -10,8 +10,15 @@
 #### <restID> ::= <litera> <restID> | <cifra> <restID> | e
 #### <litera> ::= a | b ... z
 #### <cifra> ::= 0 | 1 ... 9
+#### <cifraOctal> ::= 0 | 1 ... 7
+#### <octalNumber> ::= 0 <succesiuneOctal>
+#### <succesiuneOctal> ::=, <cifraOctal> | <cifraOctal> <succesiuneOctal>
+#### <alfabetHexa> :: = 0 | 1 ... 9 | a | b .. | f | A | B | .. F
 #### <numar> ::= <cifra> | <cifra> <numar>
-#### <numarFloat> ::= <numar> . <numar>
+#### <succesiuneHexa> ::= <cifra> | <cifra> <succesiuneHexa>
+#### <cifraHexa> ::=  0x <succesiuneHexa>
+#### <numarFloat> ::= <numar> . <numar> | <numar> . <numar> f | <numar> . <numar> F
+
 #### <cuvant> ::= " <litera> | <litera> <cuvant> "
 #### <const> ::= <numar> | <numarFloat> | <cuvant>
 

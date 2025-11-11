@@ -121,7 +121,6 @@ int main() {
     int option;
     AF af;
     bool running = true;
-
     while (running) {
         show_menu();
         cin >> option;

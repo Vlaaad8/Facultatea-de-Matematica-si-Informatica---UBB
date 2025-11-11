@@ -76,7 +76,48 @@ void hello_mpi_async(int rank, int p) {
         MPI_Wait(&request, MPI_STATUSES_IGNORE);
     }
 }
+void async_comm(int rank, int p) {
+    if (rank == 0) {
+        // main
+        char* buf = new char[MAX_COMM * (p - 1) + 1];
+        buf[MAX_COMM * (p - 1)] = '\0';
+        MPI_Request* reqs = new MPI_Request[p - 1];
 
+        for (int i = 1; i < p; i++) {
+            MPI_Irecv(buf + MAX_COMM * (i - 1), MAX_COMM, MPI_CHAR, i, 0, MPI_COMM_WORLD, &reqs[i - 1]);
+        }
+
+        int* has_sent = new int[p - 1];
+
+        bool ok = false;
+
+        for (int i = 0; i < p - 1; i++) {
+            int proc; // indexul procesului prins
+            MPI_Waitany(p - 1, reqs, &proc, MPI_STATUS_IGNORE);
+            printf("%d has returned\n", proc);
+        }
+
+        printf("%s\n", buf);
+
+        delete[] buf;
+        delete[] reqs;
+        delete[] has_sent;
+    }
+    else {
+        // worker
+        MPI_Request request;
+        char* to_send = new char[MAX_COMM + 1];
+
+        snprintf(to_send, MAX_COMM + 1, "Hello from %10d\n", rank);
+        MPI_Isend(to_send, MAX_COMM, MPI_CHAR, 0, 0, MPI_COMM_WORLD, &request);
+
+
+        MPI_Wait(&request, MPI_STATUS_IGNORE);
+
+
+        delete[] to_send;
+    }
+}
 
 void init(int* vec, int len) {
     for (int i = 0; i < len; i++) {
