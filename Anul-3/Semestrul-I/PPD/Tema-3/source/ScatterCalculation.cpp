@@ -3,7 +3,6 @@
 #include <fstream>
 
 #include "../header/GenerateNumber.h"
-ofstream outS("resultScatter.txt");
 
 void ScatterCalculation::run() {
     int rank;
@@ -12,16 +11,18 @@ void ScatterCalculation::run() {
 }
 
 void ScatterCalculation::calculator(int rank) {
+    ofstream outS("results/resultScatter.txt");
     const int totalSize = N_Max % P == 0 ? N_Max : N_Max + (P - (N_Max % P));
     const int dimension = totalSize / P;
     int *firstNumber = nullptr;
     int *secondNumber = nullptr;
     int *result = nullptr;
     if (rank == 0) {
-        firstNumber = GenerateNumber::readNumberP("firstNumber.txt", totalSize);
-        secondNumber = GenerateNumber::readNumberP("secondNumber.txt", totalSize);
+        firstNumber = GenerateNumber::readNumberP("numbers/firstNumber.txt", totalSize);
+        secondNumber = GenerateNumber::readNumberP("numbers/secondNumber.txt", totalSize);
         result = new int[totalSize];
     }
+
     int *first_loc = new int[dimension];
     int *second_loc = new int[dimension];
     int *result_loc = new int[dimension];
@@ -30,33 +31,35 @@ void ScatterCalculation::calculator(int rank) {
     MPI_Scatter(secondNumber, dimension, MPI_INT, second_loc, dimension, MPI_INT, 0, MPI_COMM_WORLD);
 
     int carry = sum(first_loc, second_loc, result_loc, dimension);
-
     if (rank > 0) {
         int receivedCarry;
         MPI_Recv(&receivedCarry, 1,MPI_INT, rank - 1, 4,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
-        if (receivedCarry > 0) {
-            passCarry(result_loc, dimension, receivedCarry);
-            carry += receivedCarry;
-        }
+        passCarry(result_loc, dimension, receivedCarry);
+        carry += receivedCarry;
     }
 
     if (rank < (P - 1)) {
         MPI_Send(&carry, 1,MPI_INT, rank + 1, 4,MPI_COMM_WORLD);
-    } else if (rank == P - 1 && P > 1) {
+    } else if (rank == P - 1) {
         MPI_Send(&carry, 1, MPI_INT, 0, 5, MPI_COMM_WORLD);
     }
 
     MPI_Gather(result_loc, dimension, MPI_INT, result, dimension, MPI_INT, 0, MPI_COMM_WORLD);
-
+    if (!outS.is_open()) {
+        cerr << "Error opening output file" << endl;
+    }
     if (rank == 0) {
         for (int i = 0; i < N_Max; i++) {
             outS << result[i] << " ";
         }
-        int final_carry = 0;
+        int final_carry;
 
         MPI_Recv(&final_carry, 1, MPI_INT, P - 1, 5, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         if (final_carry > 0) {
-            outS << final_carry << "\n";
+            outS << final_carry ;
+        }
+        else if (result[N_Max]==1) {
+            outS << result[N_Max] ;
         }
         delete[] firstNumber;
         delete[] secondNumber;

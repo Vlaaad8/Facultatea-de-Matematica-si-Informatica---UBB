@@ -1,4 +1,6 @@
-#include "../header/StandardCalculation.h"
+//
+// Created by vladb on 11/11/2025.
+//
 
 #include <bits/ranges_base.h>
 
@@ -7,16 +9,17 @@
 #include <fstream>
 
 using namespace std;
-void StandardCalculation::run() {
+#include "../header/StandardClassicCalculation.h"
+void StandardClassicCalculation::run() {
     int rank;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     calculator(rank);
 }
 
-void StandardCalculation::calculator(int rank) {
-    ofstream out("results/resultStandard.txt");
+void StandardClassicCalculation::calculator(int rank) {
+    ofstream out("results/resultClassicStandard.txt");
 
-if (rank == 0) {
+    if (rank == 0) {
         const int dimension = N_Max / (P - 1);
         int extra = N_Max % (P - 1);
         int startPoint = 0;
@@ -37,8 +40,8 @@ if (rank == 0) {
 
             startPoint = endPoint;
 
-             delete[] firstNumber;
-             delete[] secondNumber;
+            delete[] firstNumber;
+            delete[] secondNumber;
         }
 
 
@@ -84,17 +87,16 @@ if (rank == 0) {
 
         int *result = new int[batchSize];
 
+        int receivedCarry = 0;
+        if (rank > 1) {
+            MPI_Recv(&receivedCarry, 1,MPI_INT, rank - 1, 4,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+        }
 
         int carry = sum(firstNumber, secondNumber, result, batchSize);
 
-
-        if (rank > 1) {
-            int receivedCarry;
-            MPI_Recv(&receivedCarry, 1,MPI_INT, rank - 1, 4,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
-            if (receivedCarry > 0) {
-                passCarry(result, batchSize, receivedCarry);
-                carry+=receivedCarry;
-            }
+        if (receivedCarry > 0) {
+            passCarry(result, batchSize, receivedCarry);
+            carry += receivedCarry;
         }
 
         if (rank < (P - 1)) {
@@ -112,7 +114,7 @@ if (rank == 0) {
     }
 }
 
-int StandardCalculation::sum(const int *firstNumber, const int *secondNumber, int *result, const int size) {
+int StandardClassicCalculation::sum(const int *firstNumber, const int *secondNumber, int *result, const int size) {
     int carry = 0;
     for (int i = 0; i < size; i++) {
         result[i] = (firstNumber[i] + secondNumber[i] + carry) % 10;
@@ -121,7 +123,7 @@ int StandardCalculation::sum(const int *firstNumber, const int *secondNumber, in
     return carry;
 }
 
-void StandardCalculation::passCarry(int *number, const int size, int &carry) {
+void StandardClassicCalculation::passCarry(int *number, const int size, int &carry) {
     for (int i = 0; i < size; i++) {
         const int value = number[i] + carry;
         number[i] = value % 10;
