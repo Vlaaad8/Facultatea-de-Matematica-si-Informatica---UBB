@@ -35,12 +35,10 @@ void generateFIP() {
 
     for (string &row: file) {
         string current_section;
-        for (char c: row) {
+        for (int i = 0; i < row.size(); i++) {
 
-            if (AF_OPERATOR.is_accepted(string(1, c)) || AF_SEPARATOR.
-                is_accepted(string(1, c))) {
-
-
+            if (AF_OPERATOR.is_accepted(string(1, row[i])) || AF_SEPARATOR.
+                is_accepted(string(1, row[i]))) {
                 bool resultID = AF_ID.is_accepted(current_section);
                 bool resultINT = AF_INT.is_accepted(current_section);
                 bool resultFloat = AF_FLOAT.is_accepted(current_section);
@@ -57,12 +55,25 @@ void generateFIP() {
                         outError << "Error with: " << current_section << endl;
                     }
                 }
-                outFIP << constantList[string(1, c)] <<endl;
+                if (i+1< row.size()) {
+                    string combined = string(1, row[i]) + string(1, row[i+1]);
+                    if (AF_SEPARATOR.is_accepted(combined) || AF_OPERATOR.is_accepted(combined)) {
+                        outFIP<<constantList[combined]<<endl;
+                        i++;
+                    }
+                    else {
+                        outFIP << constantList[string(1, row[i])] <<endl;
+                    }
+
+                }
+                else {
+                    outFIP << constantList[string(1, row[i])] <<endl;
+                }
                 current_section.clear();
-            } else if (c == ' ') {
+            } else if (row[i] == ' ') {
                 continue;
             } else {
-                current_section += c;
+                current_section += row[i];
                 if (constantList.contains(current_section)) {
                     outFIP << constantList[current_section] << endl;
                     current_section.clear();
