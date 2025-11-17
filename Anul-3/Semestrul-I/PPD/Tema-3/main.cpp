@@ -57,8 +57,8 @@ int main(int argc, char **argv) {
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
     if (rank == 0 && option == 0) {
-        // GenerateNumber::generateNumber("numbers/firstNumber.txt", N1);
-        // GenerateNumber::generateNumber("numbers/secondNumber.txt", N2);
+        GenerateNumber::generateNumber("numbers/firstNumber.txt", N1);
+        GenerateNumber::generateNumber("numbers/secondNumber.txt", N2);
     }
 
     MPI_Barrier(MPI_COMM_WORLD);

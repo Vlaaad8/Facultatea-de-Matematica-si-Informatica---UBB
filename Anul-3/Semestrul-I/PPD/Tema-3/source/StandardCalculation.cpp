@@ -122,7 +122,7 @@ int StandardCalculation::sum(const int *firstNumber, const int *secondNumber, in
 }
 
 void StandardCalculation::passCarry(int *number, const int size, int &carry) {
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size && carry > 0; i++) {
         const int value = number[i] + carry;
         number[i] = value % 10;
         carry = value / 10;

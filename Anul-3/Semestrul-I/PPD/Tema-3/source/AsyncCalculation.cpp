@@ -30,15 +30,14 @@ void AsyncCalculation::calculator(int rank) {
             int batchSize = endPoint - startPoint;
 
             int *firstNumber = GenerateNumber::readNumberBlock("numbers/firstNumber.txt", startPoint, batchSize);
-            int *secondNumber = GenerateNumber::readNumberBlock("numbers/secondNumber.txt", startPoint, batchSize);
-
             MPI_Isend(firstNumber, batchSize,MPI_INT, pid, 0,MPI_COMM_WORLD, &requests[2 * (pid - 1)]);
+            int *secondNumber = GenerateNumber::readNumberBlock("numbers/secondNumber.txt", startPoint, batchSize);
             MPI_Isend(secondNumber, batchSize,MPI_INT, pid, 1,MPI_COMM_WORLD, &requests[2 * (pid - 1) + 1]);
 
             startPoint = endPoint;
         }
 
-        MPI_Waitall(2 * P - 2, requests, MPI_STATUS_IGNORE);
+        // MPI_Waitall(2 * P - 2, requests, MPI_STATUS_IGNORE);
 
         MPI_Request *responseRequest = new MPI_Request[P];
         int finalFlag = 0;
@@ -60,7 +59,7 @@ void AsyncCalculation::calculator(int rank) {
             startPoint = endPoint;
         }
 
-        MPI_Waitall(P, responseRequest,MPI_STATUS_IGNORE);
+        // MPI_Waitall(P, responseRequest,MPI_STATUS_IGNORE);
 
         for (int i = 0; i < N_Max; i++) {
             outA << finalResult[i] << " ";

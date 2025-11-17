@@ -46,7 +46,7 @@ void SequentialCalculation::run() {
     for (int i = 0; i < dim - 1; i++) {
         outSq << result[i] << " ";
     }
-    if (result[dim - 1] > 0) {
+    if (result[dim - 1]  == 1) {
         outSq << result[dim - 1] ;
     }
     delete[] result;
