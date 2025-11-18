@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 4.0)
+project(Tema_4)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(Tema_4 main.cpp
+        source/LinkedList.cpp
+        header/LinkedList.h
+        source/GenerateData.cpp
+        header/GenerateData.h
+        source/CalculateNotes.cpp
+        header/CalculateNotes.h
+        source/QueueContainer.cpp
+        header/QueueContainer.h
+        source/CalculateNotesParallel.cpp
+        header/CalculateNotesParallel.h)
