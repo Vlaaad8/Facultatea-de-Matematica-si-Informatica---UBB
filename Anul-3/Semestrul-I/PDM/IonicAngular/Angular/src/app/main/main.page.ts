@@ -1,30 +1,40 @@
 import {ChangeDetectorRef, Component, inject, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
+import {FormsModule} from '@angular/forms';
 import {Router} from "@angular/router"
 import {
-  IonBadge,
   IonButton, IonButtons, IonChip,
-  IonContent, IonDatetime, IonDatetimeButton, IonFab, IonFabButton,
+  IonContent, IonFab, IonFabButton,
   IonHeader, IonIcon,
-  IonInfiniteScroll, IonInfiniteScrollContent, IonInput, IonItem,
+  IonInfiniteScroll, IonInfiniteScrollContent, IonItem,
   IonLabel,
-  IonList, IonListHeader, IonModal, IonSearchbar, IonSpinner,
-  IonTitle, IonToggle,
-  IonToolbar, ToastController
+  IonList, IonSearchbar, IonSpinner,
+  IonThumbnail,
+  IonTitle,
+  IonToolbar
 } from '@ionic/angular/standalone';
 import {Movie} from "../model/movie";
 import {Home} from "../services/home";
 import {WebSocketService} from "../services/web-socket";
 import {Preferences} from "@capacitor/preferences";
 import { lastValueFrom } from 'rxjs';
+import {animate, style, transition, trigger} from '@angular/animations';
+import {Capacitor} from '@capacitor/core';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.page.html',
   styleUrls: ['./main.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonList, IonLabel, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonButton, IonIcon, IonSpinner, IonBadge, IonButtons, IonModal, IonListHeader, IonFab, IonFabButton, ReactiveFormsModule, IonInput, IonToggle, IonDatetimeButton, IonDatetime, IonSearchbar, IonChip]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonList, IonLabel, IonInfiniteScroll, IonInfiniteScrollContent, IonItem, IonButton, IonIcon, IonSpinner, IonButtons, IonFab, IonFabButton, IonSearchbar, IonChip, IonThumbnail],
+  // animations: [
+  //   trigger('fadeSlide', [
+  //     transition(':enter', [
+  //       style({opacity: 0, transform: 'translateY(12px)'}),
+  //       animate('250ms ease-out', style({opacity: 1, transform: 'translateY(0)'}))
+  //     ])
+  //   ])
+  // ]
 })
 export class MainPage implements OnInit {
 
@@ -36,31 +46,8 @@ export class MainPage implements OnInit {
   public hasAll!: boolean;
   private router = inject(Router);
   private notificationService = inject(WebSocketService);
-  public isOpen: boolean = false;
-  public addForm!: FormGroup;
-  private formBuilder = inject(FormBuilder);
   public networkStatus!: boolean;
-  private toastCtrl = inject(ToastController);
   private cd = inject(ChangeDetectorRef);
-
-
-  async showToast(message: string, color: string = 'primary') {
-    const toast = await this.toastCtrl.create({
-      message,
-      duration: 2000,
-      color,
-      position: 'bottom',
-    });
-    await toast.present();
-  }
-
-  someAction() {
-    this.showToast('Movie added with success!', 'success');
-  }
-
-  showOfflineMessage() {
-    this.showToast("Movie added to local storage, waiting for internet", 'Offline');
-  }
 
   async ngOnInit() {
     this.pageNumber = 0;
@@ -85,13 +72,6 @@ export class MainPage implements OnInit {
         this.filteredData.push(movie);
         this.cd.detectChanges();
       }
-    });
-
-    this.addForm = this.formBuilder.group({
-      name: ['', [Validators.required]],
-      rating: [null, [Validators.required]],
-      premierDate: [null, Validators.required],
-      running: [true],
     });
 
     this.service.getStatus().subscribe({
@@ -120,31 +100,6 @@ export class MainPage implements OnInit {
     this.router.navigate(['movies', movie.id]);
   }
 
-  handleOpenAddMenu(value: boolean) {
-    this.isOpen = value;
-  }
-
-  saveMovie() {
-    if (this.addForm.valid) {
-      this.service.addMovie(this.addForm.value).subscribe({
-        next: movie => {
-          if (movie != null) {
-            this.data.push(movie);
-            this.isOpen = false;
-            this.someAction();
-          } else {
-            this.showOfflineMessage();
-            this.isOpen = false;
-          }
-        },
-        error: error => {
-          this.showOfflineMessage();
-        }
-      })
-      this.addForm.reset();
-    }
-  }
-
   filterMovies(event: any) {
     const value = event.target.value?.toLowerCase().trim() || '';
     this.filteredData = value ? this.data.filter(m => m.name.toLowerCase().includes(value)) : [...this.data];
@@ -161,11 +116,30 @@ export class MainPage implements OnInit {
       if (result.value) {
         const key = 'token';
         Preferences.remove({key}).then(() => {
-          this.router.navigate(['login']);
+          this.router.navigate(['/login']);
         })
       }
     })
 
+  }
+
+  handleAddMovie() {
+    this.router.navigate(['movies', 'new']);
+  }
+
+  handleEditMovie(movie: Movie, event?: Event) {
+    event?.stopPropagation();
+    this.router.navigate(['movies', movie.id, 'edit']);
+  }
+
+  getMovieImage(movie: Movie): string | null {
+    if (movie.photoUrl) {
+      return movie.photoUrl;
+    }
+    if (movie.photoPath) {
+      return Capacitor.convertFileSrc(movie.photoPath);
+    }
+    return null;
   }
 }
 

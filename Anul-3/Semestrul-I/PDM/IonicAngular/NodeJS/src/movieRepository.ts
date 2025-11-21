@@ -22,7 +22,19 @@ export class MovieRepository {
             let offset = pageNumber * pageSize;
             logger.info("Size: " +offset + " " + pageNumber);
             let data = await connection.query("SELECT * FROM movies WHERE owner_id = ? LIMIT ? OFFSET ?", [userId,pageSize, offset]);
-            return data as Movie[];
+            
+            // Convert DECIMAL values to numbers for latitude and longitude
+            const movies = data as Movie[];
+            movies.forEach(movie => {
+                if (movie.latitude != null) {
+                    movie.latitude = Number(movie.latitude);
+                }
+                if (movie.longitude != null) {
+                    movie.longitude = Number(movie.longitude);
+                }
+            });
+            
+            return movies;
         } catch (err) {
             logger.error(err);
             throw err;
@@ -39,7 +51,19 @@ export class MovieRepository {
         try {
             connection = await this.pool.getConnection();
             const rows = await connection.query("SELECT * FROM movies where id = ?", [id]);
-            return rows[0];
+            const movie = rows[0];
+            
+            // Convert DECIMAL values to numbers for latitude and longitude
+            if (movie) {
+                if (movie.latitude != null) {
+                    movie.latitude = Number(movie.latitude);
+                }
+                if (movie.longitude != null) {
+                    movie.longitude = Number(movie.longitude);
+                }
+            }
+            
+            return movie;
 
         } catch (err) {
             console.log(err);
@@ -51,26 +75,44 @@ export class MovieRepository {
         }
     }
 
+    private formatPremierDate(value: Date | string): string {
+        if (value instanceof Date) {
+            return value.toISOString().slice(0, 19).replace('T', ' ');
+        }
+        // If it's a string, try to parse it as Date first
+        if (typeof value === 'string') {
+            const date = new Date(value);
+            if (!isNaN(date.getTime())) {
+                return date.toISOString().slice(0, 19).replace('T', ' ');
+            }
+            // If it's already in the correct format, return as is
+            return value;
+        }
+        // Fallback: use current date
+        return new Date().toISOString().slice(0, 19).replace('T', ' ');
+    }
+
     public async addMovie(movie: Movie): Promise<Movie> {
         let connection;
         try {
             connection = await this.pool.getConnection();
             logger.debug(`Adding a new resource ${movie.name} ${movie.running} ${movie.premierDate} ${movie.rating}`);
 
-            // Format premierDate correctly
-            const premierDateString = movie.premierDate instanceof Date
-                ? movie.premierDate.toISOString().slice(0, 19).replace('T', ' ')
-                : movie.premierDate;
-
+            const premierDateString = this.formatPremierDate(movie.premierDate);
             const runningValue = movie.running ? 1 : 0;
 
-            const sql = "INSERT INTO movies(name, premierDate, rating, running, owner_id) VALUES (?, ?, ?, ?, ?)";
+            const sql = "INSERT INTO movies(name, premierDate, rating, running, owner_id, photoPath, photoUrl, latitude, longitude, locationLabel) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             const result = await connection.query(sql, [
                 movie.name,
                 premierDateString,
                 movie.rating,
                 runningValue,
-                movie.owner_id
+                movie.owner_id,
+                movie.photoPath ?? null,
+                movie.photoUrl ?? null,
+                movie.latitude ?? null,
+                movie.longitude ?? null,
+                movie.locationLabel ?? null
             ]);
 
 
@@ -80,6 +122,42 @@ export class MovieRepository {
             logger.info(`Added movie with id ${insertedId}`);
             return movie;
 
+        } catch (error) {
+            throw error;
+        } finally {
+            if (connection) {
+                connection.release();
+            }
+        }
+    }
+
+    public async updateMovie(movie: Movie): Promise<Movie> {
+        let connection;
+        try {
+            connection = await this.pool.getConnection();
+            logger.info(`Updating movie ${movie.id}`);
+            const premierDateString = this.formatPremierDate(movie.premierDate);
+            const runningValue = movie.running ? 1 : 0;
+
+            const sql = `UPDATE movies 
+                         SET name = ?, premierDate = ?, rating = ?, running = ?, photoPath = ?, photoUrl = ?, latitude = ?, longitude = ?, locationLabel = ?
+                         WHERE id = ? AND owner_id = ?`;
+
+            await connection.query(sql, [
+                movie.name,
+                premierDateString,
+                movie.rating,
+                runningValue,
+                movie.photoPath ?? null,
+                movie.photoUrl ?? null,
+                movie.latitude ?? null,
+                movie.longitude ?? null,
+                movie.locationLabel ?? null,
+                movie.id,
+                movie.owner_id
+            ]);
+
+            return movie;
         } catch (error) {
             throw error;
         } finally {

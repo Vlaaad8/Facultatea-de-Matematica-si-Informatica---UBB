@@ -85,7 +85,10 @@ struct ConstantTable table[] = {
     {"namespace", 32},
     {"iostream", 33},
     {"std", 34},
-    {"using", 35}
+    {"using", 35},
+    {"repeta" ,36},
+    {"panacand",37},
+    {"sfrepeta",38}
 };
 
 int tableSize = sizeof(table) / sizeof(table[0]);
@@ -101,12 +104,17 @@ int isConstant(const char* atom){
 %}
 
 %option noyywrap
-
-
-ID_NECONFORM [0-9][a-zA-Z0-9]+
+SUFIX       (([uU]?[lL]{0,2})|([lL]{0,2}[uU]?))?
+ERR_ID [1-9]+[a-zA-Z][a-zA-Z0-9]*
 ID        [a-zA-Z][a-zA-Z0-9]*
-CT_FLOAT  [0-9]+\.[0-9]+
-CT_INT    0|[1-9]+[0-9]*
+CT_HEXA   0[xX][0-9a-fA-f]+{SUFIX}
+ERR_BINARA 0[bB][01]*[2-9][0-9a-zA-Z]*{SUFIX}
+CT_BINARA 0[bB][01]+{SUFIX}
+ERR_OCTAL 0[0-7]+[8-9][0-9a-zA-Z]*{SUFIX}
+CT_OCTAL 0[0-7]+{SUFIX}
+ERR_FLOAT     [0-9]*\.[0-9]*\.[0-9.]*{SUFIX}
+CT_FLOAT  [0-9]+\.[0-9]+([eE][+-]?[0-9]+)?{SUFIX}
+CT_INT    0|[1-9]+[0-9]*{SUFIX}
 CT_STRING \"[^"\n]*\"
 STRING_NEINCHIS \"[^"\n]*
 %%
@@ -114,8 +122,9 @@ STRING_NEINCHIS \"[^"\n]*
 \n      { currentLine++; }
 [ \t]   { }
 
-{ID_NECONFORM} {
-    int code = isConstant(yytext);
+
+{ERR_ID} {
+int code = isConstant(yytext);
     if(code != -1)
         fprintf(fip_file,"%d -\n", code);
     else
@@ -128,25 +137,74 @@ STRING_NEINCHIS \"[^"\n]*
     } else {
         int fipCode = isConstant("ID");
         int tsCode = addID(yytext);
-        fprintf(fip_file, "%d %d\n", fipCode, tsCode);
+        fprintf(fip_file, "%d %d\n", 1, tsCode);
     }
 }
 
-{CT_INT} {int code = isConstant(yytext);
+
+{CT_HEXA} {int code = isConstant(yytext);
     if(code != -1){
-        fprintf(fip_file, "%d -\n", code);
+        fprintf(fip_file, "%d -1\n", code);
     } else {
-        int fipCode = isConstant("ID");
+        int fipCode = isConstant("CT");
+        int tsCode = addCT(yytext);
+        fprintf(fip_file, "%d %d\n", 0, tsCode);
+    }
+}
+{ERR_BINARA} {
+int code = isConstant(yytext);
+    if(code != -1)
+        fprintf(fip_file,"%d -\n", code);
+    else
+        fprintf(errors_file,"Eroare la linia %d: %s\n",currentLine,yytext);
+}
+{CT_BINARA} {int code = isConstant(yytext);
+    if(code != -1){
+        fprintf(fip_file, "%d -1\n", code);
+    } else {
+        int fipCode = isConstant("CT");
+        int tsCode = addCT(yytext);
+        fprintf(fip_file, "%d %d\n", fipCode, tsCode);
+    }
+}
+{ERR_OCTAL} {
+int code = isConstant(yytext);
+    if(code != -1)
+        fprintf(fip_file,"%d -\n", code);
+    else
+        fprintf(errors_file,"Eroare la linia %d: %s\n",currentLine,yytext);
+}
+{CT_OCTAL} {int code = isConstant(yytext);
+    if(code != -1){
+        fprintf(fip_file, "%d -1\n", code);
+    } else {
+        int fipCode = isConstant("CT");
         int tsCode = addCT(yytext);
         fprintf(fip_file, "%d %d\n", fipCode, tsCode);
     }
 }
 
+{ERR_FLOAT} {
+int code = isConstant(yytext);
+    if(code != -1)
+        fprintf(fip_file,"%d -\n", code);
+    else
+        fprintf(errors_file,"Eroare la linia %d: %s\n",currentLine,yytext);
+}
 {CT_FLOAT} {int code = isConstant(yytext);
     if(code != -1){
         fprintf(fip_file, "%d -1\n", code);
     } else {
-        int fipCode = isConstant("ID");
+        int fipCode = isConstant("CT");
+        int tsCode = addCT(yytext);
+        fprintf(fip_file, "%d %d\n", fipCode, tsCode);
+    }
+}
+{CT_INT} {int code = isConstant(yytext);
+    if(code != -1){
+        fprintf(fip_file, "%d -\n", code);
+    } else {
+        int fipCode = isConstant("CT");
         int tsCode = addCT(yytext);
         fprintf(fip_file, "%d %d\n", fipCode, tsCode);
     }

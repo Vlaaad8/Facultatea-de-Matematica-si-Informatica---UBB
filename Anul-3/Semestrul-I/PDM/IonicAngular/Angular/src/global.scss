@@ -35,3 +35,17 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Google Maps styles */
+#movie-location-map,
+#movie-preview-map {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+.gm-style {
+  width: 100% !important;
+  height: 100% !important;
+}

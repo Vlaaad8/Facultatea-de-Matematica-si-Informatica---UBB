@@ -45,31 +45,6 @@ Node *LinkedList::getNodeById(const int id) const {
     return nullptr;
 }
 
-//TODO refactor this and be sure all cases are covered
-// void LinkedList::addOrUpdateNode(Node *node) {
-//     lock_guard<mutex> lock(mtx);
-//     Node *currentNode = this->head;
-//     Node *previousNode = nullptr;
-//
-//     while (currentNode != nullptr && currentNode->getId() < node->getId()) {
-//         previousNode = currentNode;
-//         currentNode = currentNode->getNextNode();
-//     }
-//     if (currentNode != nullptr && currentNode->getId() == node->getId()) {
-//         currentNode->modifyNote(node->getNote());
-//     } else {
-//         this->size++;
-//         if (previousNode == nullptr) {
-//             this->head = node;
-//         } else {
-//             Node *nextNode = previousNode->getNextNode();
-//             previousNode->setNextNode(node);
-//             if (nextNode != nullptr) {
-//                 node->setNextNode(nextNode);
-//             }
-//         }
-//     }
-// }
 void LinkedList::addOrUpdateNode(Node *node) {
     lock_guard<mutex> lock(mtx);
     Node *currentNode = this->head;

@@ -4274,3 +4274,948 @@
 [2025-11-05T16:34:03.961] [ERROR] default - Invalid or expired token
 [2025-11-05T16:34:03.971] [INFO] default - Client attempting WS connection
 [2025-11-05T16:34:03.972] [ERROR] default - Invalid or expired token
+[2025-11-18T19:11:56.584] [INFO] default - Server started on port 8081
+[2025-11-18T19:12:27.539] [INFO] default - Client attempting WS connection
+[2025-11-18T19:12:27.542] [ERROR] default - Invalid or expired token
+[2025-11-18T19:12:30.606] [INFO] default - Client attempting WS connection
+[2025-11-18T19:12:30.608] [ERROR] default - Invalid or expired token
+[2025-11-18T19:12:33.627] [INFO] default - Client attempting WS connection
+[2025-11-18T19:12:33.629] [ERROR] default - Invalid or expired token
+[2025-11-18T19:12:36.081] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-18T19:12:36.082] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-18T19:12:37.563] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-18T19:12:37.564] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-18T19:12:37.994] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-18T19:12:37.994] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-18T19:12:38.301] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-18T19:12:38.302] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-18T19:12:38.449] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-18T19:12:38.449] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-18T19:12:46.857] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-18T19:12:46.858] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-18T19:12:47.399] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-18T19:12:47.399] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-18T19:12:52.327] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-18T19:12:52.327] [INFO] default - A login request with username= a and passoword= a
+[2025-11-18T19:12:52.367] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:12:52.368] [INFO] default - Entered getMovies method
+[2025-11-18T19:12:52.370] [INFO] default - Size: 0 0
+[2025-11-18T19:12:52.410] [INFO] default - Client attempting WS connection
+[2025-11-18T19:12:52.412] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:12:52.435] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:12:54.052] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-18T19:12:54.053] [INFO] default - Entered getMovies method
+[2025-11-18T19:12:54.055] [INFO] default - Size: 7 1
+[2025-11-18T19:12:54.852] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-18T19:12:54.853] [INFO] default - Entered getMovies method
+[2025-11-18T19:12:54.855] [INFO] default - Size: 14 2
+[2025-11-18T19:12:55.510] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-18T19:12:55.511] [INFO] default - Entered getMovies method
+[2025-11-18T19:12:55.513] [INFO] default - Size: 21 3
+[2025-11-18T19:12:59.825] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:13:07.070] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:13:32.919] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:13:33.324] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:13:44.069] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:13:44.857] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:13:44.858] [INFO] default - Entered getMovies method
+[2025-11-18T19:13:44.859] [INFO] default - Size: 0 0
+[2025-11-18T19:13:44.912] [INFO] default - Client attempting WS connection
+[2025-11-18T19:13:44.914] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:13:44.952] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:13:47.821] [INFO] default - A request came to get movie with id=NaN
+[2025-11-18T19:13:52.583] [INFO] default - A request came to get movie with id=NaN
+[2025-11-18T19:13:59.642] [INFO] default - A request came to get movie with id=NaN
+[2025-11-18T19:14:28.772] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:14:29.040] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:14:29.041] [INFO] default - Entered getMovies method
+[2025-11-18T19:14:29.042] [INFO] default - Size: 0 0
+[2025-11-18T19:14:29.080] [INFO] default - Client attempting WS connection
+[2025-11-18T19:14:29.082] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:14:29.113] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:19:58.863] [INFO] default - Server started on port 8081
+[2025-11-18T19:20:27.222] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-18T19:20:27.223] [INFO] default - A login request with username= a and passoword= a
+[2025-11-18T19:20:27.340] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:20:27.341] [INFO] default - Entered getMovies method
+[2025-11-18T19:20:27.343] [INFO] default - Size: 0 0
+[2025-11-18T19:20:27.380] [INFO] default - Client attempting WS connection
+[2025-11-18T19:20:27.381] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:20:27.411] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:20:29.519] [INFO] default - A request came to get movie with id=NaN
+[2025-11-18T19:20:33.796] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:20:36.414] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:21:00.519] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:21:01.049] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:21:04.538] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:24:31.115] [INFO] default - Server started on port 8081
+[2025-11-18T19:24:31.189] [INFO] default - Client attempting WS connection
+[2025-11-18T19:24:31.194] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:24:31.197] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:24:34.355] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:24:34.735] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:24:34.736] [INFO] default - Entered getMovies method
+[2025-11-18T19:24:34.739] [INFO] default - Size: 0 0
+[2025-11-18T19:24:34.816] [INFO] default - Client attempting WS connection
+[2025-11-18T19:24:34.853] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:24:34.885] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:24:38.706] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-18T19:24:38.706] [INFO] default - Entered getMovies method
+[2025-11-18T19:24:38.708] [INFO] default - Size: 7 1
+[2025-11-18T19:24:38.727] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-18T19:24:38.728] [INFO] default - Entered getMovies method
+[2025-11-18T19:24:38.728] [INFO] default - Size: 14 2
+[2025-11-18T19:24:40.748] [INFO] default - A request came to get movie with id=6
+[2025-11-18T19:25:01.329] [INFO] default - Updating movie 6
+[2025-11-18T19:25:01.339] [ERROR] default - SqlError: (conn:17, no: 1054, SQLState: 42S22) Unknown column 'photoPath' in 'SET'
+sql: UPDATE movies 
+                         SET name = ?, premierDate = ?, rating = ?, running = ?, photoPath = ?, photoUrl = ?, latitude = ?, longitude = ?, locationLabel = ?
+                         WHERE id = ? AND owner_id = ? - parameters:['Titanic','1997...
+    at Object.module.exports.createError (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\misc\errors.js:66:10)
+    at PacketNodeEncoded.readError (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet.js:588:19)
+    at Query.handleErrorPacket (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\cmd\parser.js:92:24)
+    at Query.readResponsePacket (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\cmd\parser.js:70:21)
+    at PacketInputStream.receivePacketBasic (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet-input-stream.js:85:9)
+    at PacketInputStream.onData (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet-input-stream.js:135:20)
+    at Socket.emit (node:events:507:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+  sqlMessage: "Unknown column 'photoPath' in 'SET'",
+  sql: 'UPDATE movies \n' +
+    '                         SET name = ?, premierDate = ?, rating = ?, running = ?, photoPath = ?, photoUrl = ?, latitude = ?, longitude = ?, locationLabel = ?\n' +
+    "                         WHERE id = ? AND owner_id = ? - parameters:['Titanic','1997...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2025-11-18T19:25:58.066] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:26:03.573] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:26:20.507] [INFO] default - A request came to get movie with id=9
+[2025-11-18T19:26:36.311] [INFO] default - A request came to get movie with id=8
+[2025-11-18T19:28:24.942] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:28:34.375] [INFO] default - A request came to get movie with id=8
+[2025-11-18T19:29:06.383] [INFO] default - A request came to get movie with id=8
+[2025-11-18T19:29:25.345] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:29:25.345] [INFO] default - Entered getMovies method
+[2025-11-18T19:29:25.346] [INFO] default - Size: 0 0
+[2025-11-18T19:29:26.121] [INFO] default - Client attempting WS connection
+[2025-11-18T19:29:26.122] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:29:26.721] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:29:36.065] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:30:37.116] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:30:50.545] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:31:48.069] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:33:26.686] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:33:48.610] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:33:57.711] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:33:57.711] [INFO] default - Entered getMovies method
+[2025-11-18T19:33:57.712] [INFO] default - Size: 0 0
+[2025-11-18T19:33:58.690] [INFO] default - Client attempting WS connection
+[2025-11-18T19:33:58.691] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:33:59.277] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:33:59.559] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-18T19:33:59.560] [INFO] default - Entered getMovies method
+[2025-11-18T19:33:59.562] [INFO] default - Size: 7 1
+[2025-11-18T19:34:00.265] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-18T19:34:00.266] [INFO] default - Entered getMovies method
+[2025-11-18T19:34:00.267] [INFO] default - Size: 14 2
+[2025-11-18T19:34:16.031] [INFO] default - Server started on port 8081
+[2025-11-18T19:34:16.234] [INFO] default - Client attempting WS connection
+[2025-11-18T19:34:16.239] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:34:16.852] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:34:22.860] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-18T19:34:22.861] [INFO] default - A login request with username= a and passoword= a
+[2025-11-18T19:34:30.051] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-18T19:34:30.052] [INFO] default - Entered getMovies method
+[2025-11-18T19:34:30.053] [INFO] default - Size: 21 3
+[2025-11-18T19:34:32.446] [INFO] default - A request came to get movie with id=21
+[2025-11-18T19:35:34.744] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:35:50.296] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:35:50.298] [INFO] default - Entered getMovies method
+[2025-11-18T19:35:50.299] [INFO] default - Size: 0 0
+[2025-11-18T19:35:50.357] [INFO] default - Client attempting WS connection
+[2025-11-18T19:35:50.359] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:35:50.392] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:35:52.970] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:37:19.697] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:37:20.368] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:37:27.023] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:37:48.367] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:37:48.367] [INFO] default - Entered getMovies method
+[2025-11-18T19:37:48.369] [INFO] default - Size: 0 0
+[2025-11-18T19:37:48.401] [INFO] default - Client attempting WS connection
+[2025-11-18T19:37:48.404] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:37:48.448] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:37:55.303] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-18T19:37:55.304] [INFO] default - A login request with username= a and passoword= a
+[2025-11-18T19:37:57.247] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:38:04.633] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:39:07.855] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:39:08.200] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:39:59.543] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:40:06.756] [INFO] default - A request came to get movie with id=7
+[2025-11-18T19:40:07.226] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T19:40:07.226] [INFO] default - Entered getMovies method
+[2025-11-18T19:40:07.227] [INFO] default - Size: 0 0
+[2025-11-18T19:40:07.847] [INFO] default - Client attempting WS connection
+[2025-11-18T19:40:07.849] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T19:40:08.464] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T19:40:21.106] [INFO] default - A request came to get movie with id=5
+[2025-11-18T19:41:33.258] [INFO] default - WebSocket closed for user 1
+[2025-11-18T19:41:34.474] [INFO] default - A request came to get movie with id=5
+[2025-11-18T21:41:20.663] [INFO] default - Server started on port 8081
+[2025-11-18T21:41:22.860] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:22.877] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:25.937] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:25.939] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:28.965] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:28.967] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:31.994] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:31.996] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:35.025] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:35.027] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:38.058] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:38.064] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:39.242] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:39.245] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:41.582] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:41.584] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:44.693] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:44.697] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:46.048] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:46.050] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:49.076] [INFO] default - Client attempting WS connection
+[2025-11-18T21:41:49.078] [ERROR] default - Invalid or expired token
+[2025-11-18T21:41:55.402] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-18T21:41:55.403] [INFO] default - A login request with username= a and passoword= a
+[2025-11-18T21:41:56.748] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-18T21:41:56.770] [INFO] default - Entered getMovies method
+[2025-11-18T21:41:56.773] [INFO] default - Size: 7 1
+[2025-11-18T21:41:56.830] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-18T21:41:56.831] [INFO] default - Entered getMovies method
+[2025-11-18T21:41:56.835] [INFO] default - Size: 14 2
+[2025-11-18T21:41:57.716] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-18T21:41:57.718] [INFO] default - Entered getMovies method
+[2025-11-18T21:41:57.720] [INFO] default - Size: 21 3
+[2025-11-18T21:41:59.334] [INFO] default - A request came to get movie with id=14
+[2025-11-18T21:42:01.073] [INFO] default - A request came to get movie with id=14
+[2025-11-18T21:47:47.115] [INFO] default - Server started on port 8081
+[2025-11-18T21:47:48.378] [INFO] default - Client attempting WS connection
+[2025-11-18T21:47:48.384] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T21:47:48.387] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T21:47:53.793] [INFO] default - WebSocket closed for user 1
+[2025-11-18T21:47:54.039] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T21:47:54.040] [INFO] default - Entered getMovies method
+[2025-11-18T21:47:54.043] [INFO] default - Size: 0 0
+[2025-11-18T21:47:54.073] [INFO] default - Client attempting WS connection
+[2025-11-18T21:47:54.075] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T21:47:54.097] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T21:47:56.353] [INFO] default - A request came to get movie with id=5
+[2025-11-18T21:55:47.353] [INFO] default - Server started on port 8081
+[2025-11-18T21:55:49.664] [INFO] default - Client attempting WS connection
+[2025-11-18T21:55:49.667] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T21:55:49.668] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T21:56:07.110] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T21:56:07.111] [INFO] default - Entered getMovies method
+[2025-11-18T21:56:07.115] [INFO] default - Size: 0 0
+[2025-11-18T21:56:07.213] [INFO] default - Client attempting WS connection
+[2025-11-18T21:56:07.216] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T21:56:07.217] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T21:57:02.236] [INFO] default - WebSocket closed for user 1
+[2025-11-18T21:57:02.239] [INFO] default - WebSocket closed for user 1
+[2025-11-18T21:57:12.420] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T21:57:12.422] [INFO] default - Entered getMovies method
+[2025-11-18T21:57:12.424] [INFO] default - Size: 0 0
+[2025-11-18T21:57:12.495] [INFO] default - Client attempting WS connection
+[2025-11-18T21:57:12.501] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T21:57:12.577] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T21:57:18.249] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T21:57:18.249] [INFO] default - Entered getMovies method
+[2025-11-18T21:57:18.251] [INFO] default - Size: 0 0
+[2025-11-18T21:57:18.387] [INFO] default - Client attempting WS connection
+[2025-11-18T21:57:18.390] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T21:57:18.582] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T21:57:39.473] [INFO] default - WebSocket closed for user 1
+[2025-11-18T21:57:39.807] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T21:57:39.808] [INFO] default - Entered getMovies method
+[2025-11-18T21:57:39.813] [INFO] default - Size: 0 0
+[2025-11-18T21:57:39.851] [INFO] default - Client attempting WS connection
+[2025-11-18T21:57:39.853] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T21:57:39.913] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T21:57:47.720] [INFO] default - WebSocket closed for user 1
+[2025-11-18T21:57:54.220] [INFO] default - WebSocket closed for user 1
+[2025-11-18T21:58:13.800] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-18T21:58:13.801] [INFO] default - A login request with username= a and passoword= a
+[2025-11-18T21:58:13.859] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T21:58:13.860] [INFO] default - Entered getMovies method
+[2025-11-18T21:58:13.861] [INFO] default - Size: 0 0
+[2025-11-18T21:58:13.894] [INFO] default - Client attempting WS connection
+[2025-11-18T21:58:13.896] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T21:58:13.923] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T21:58:16.125] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:01:30.203] [INFO] default - WebSocket closed for user 1
+[2025-11-18T22:03:27.041] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T22:03:27.042] [INFO] default - Entered getMovies method
+[2025-11-18T22:03:27.044] [INFO] default - Size: 0 0
+[2025-11-18T22:03:27.104] [INFO] default - Client attempting WS connection
+[2025-11-18T22:03:27.107] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T22:03:27.192] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T22:03:30.330] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:03:54.436] [INFO] default - WebSocket closed for user 1
+[2025-11-18T22:03:56.011] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:04:26.182] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:04:28.213] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:04:30.257] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:04:33.648] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:05:15.902] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:05:18.463] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:05:22.543] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:05:27.671] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:05:31.516] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:05:37.450] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:05:53.149] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T22:05:53.150] [INFO] default - Entered getMovies method
+[2025-11-18T22:05:53.152] [INFO] default - Size: 0 0
+[2025-11-18T22:05:53.410] [INFO] default - Client attempting WS connection
+[2025-11-18T22:05:53.412] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T22:05:53.608] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T22:05:54.781] [INFO] default - A request came to get movie with id=6
+[2025-11-18T22:06:15.202] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-18T22:06:15.203] [INFO] default - A login request with username= a and passoword= a
+[2025-11-18T22:06:16.937] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:06:19.719] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:06:36.357] [INFO] default - WebSocket closed for user 1
+[2025-11-18T22:06:37.732] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:07:05.455] [INFO] default - Updating movie 5
+[2025-11-18T22:07:05.458] [ERROR] default - SqlError: (conn:34, no: 1054, SQLState: 42S22) Unknown column 'photoPath' in 'SET'
+sql: UPDATE movies 
+                         SET name = ?, premierDate = ?, rating = ?, running = ?, photoPath = ?, photoUrl = ?, latitude = ?, longitude = ?, locationLabel = ?
+                         WHERE id = ? AND owner_id = ? - parameters:['Avatar','2009-...
+    at Object.module.exports.createError (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\misc\errors.js:66:10)
+    at PacketNodeEncoded.readError (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet.js:588:19)
+    at Query.handleErrorPacket (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\cmd\parser.js:92:24)
+    at Query.readResponsePacket (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\cmd\parser.js:70:21)
+    at PacketInputStream.receivePacketBasic (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet-input-stream.js:85:9)
+    at PacketInputStream.onData (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet-input-stream.js:135:20)
+    at Socket.emit (node:events:507:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+  sqlMessage: "Unknown column 'photoPath' in 'SET'",
+  sql: 'UPDATE movies \n' +
+    '                         SET name = ?, premierDate = ?, rating = ?, running = ?, photoPath = ?, photoUrl = ?, latitude = ?, longitude = ?, locationLabel = ?\n' +
+    "                         WHERE id = ? AND owner_id = ? - parameters:['Avatar','2009-...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2025-11-18T22:07:14.700] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T22:07:14.700] [INFO] default - Entered getMovies method
+[2025-11-18T22:07:14.701] [INFO] default - Size: 0 0
+[2025-11-18T22:07:14.952] [INFO] default - Client attempting WS connection
+[2025-11-18T22:07:14.953] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T22:07:15.138] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T22:07:16.982] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-18T22:07:16.983] [INFO] default - Entered getMovies method
+[2025-11-18T22:07:16.984] [INFO] default - Size: 7 1
+[2025-11-18T22:07:17.467] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-18T22:07:17.468] [INFO] default - Entered getMovies method
+[2025-11-18T22:07:17.469] [INFO] default - Size: 14 2
+[2025-11-18T22:07:17.928] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-18T22:07:17.928] [INFO] default - Entered getMovies method
+[2025-11-18T22:07:17.929] [INFO] default - Size: 21 3
+[2025-11-18T22:07:19.908] [INFO] default - A request came to get movie with id=NaN
+[2025-11-18T22:07:33.872] [INFO] default - WebSocket closed for user 1
+[2025-11-18T22:07:35.083] [INFO] default - A request came to get movie with id=NaN
+[2025-11-18T22:07:57.831] [INFO] default - Server started on port 8081
+[2025-11-18T22:08:06.770] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T22:08:06.771] [INFO] default - Entered getMovies method
+[2025-11-18T22:08:06.775] [INFO] default - Size: 0 0
+[2025-11-18T22:08:06.824] [INFO] default - Client attempting WS connection
+[2025-11-18T22:08:06.826] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T22:08:06.863] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T22:08:09.492] [INFO] default - A request came to get movie with id=6
+[2025-11-18T22:08:18.725] [INFO] default - Updating movie 6
+[2025-11-18T22:08:18.728] [ERROR] default - SqlError: (conn:40, no: 1054, SQLState: 42S22) Unknown column 'photoPath' in 'SET'
+sql: UPDATE movies 
+                         SET name = ?, premierDate = ?, rating = ?, running = ?, photoPath = ?, photoUrl = ?, latitude = ?, longitude = ?, locationLabel = ?
+                         WHERE id = ? AND owner_id = ? - parameters:['Titanic','1997...
+    at Object.module.exports.createError (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\misc\errors.js:66:10)
+    at PacketNodeEncoded.readError (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet.js:588:19)
+    at Query.handleErrorPacket (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\cmd\parser.js:92:24)
+    at Query.readResponsePacket (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\cmd\parser.js:70:21)
+    at PacketInputStream.receivePacketBasic (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet-input-stream.js:85:9)
+    at PacketInputStream.onData (D:\Facultate\Anul-3\Semestrul-I\PDM\IonicAngular\NodeJS\node_modules\mariadb\lib\io\packet-input-stream.js:135:20)
+    at Socket.emit (node:events:507:28)
+    at Socket.emit (node:domain:489:12)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+  sqlMessage: "Unknown column 'photoPath' in 'SET'",
+  sql: 'UPDATE movies \n' +
+    '                         SET name = ?, premierDate = ?, rating = ?, running = ?, photoPath = ?, photoUrl = ?, latitude = ?, longitude = ?, locationLabel = ?\n' +
+    "                         WHERE id = ? AND owner_id = ? - parameters:['Titanic','1997...",
+  fatal: false,
+  errno: 1054,
+  sqlState: '42S22',
+  code: 'ER_BAD_FIELD_ERROR'
+}
+[2025-11-18T22:11:39.888] [INFO] default - Server started on port 8081
+[2025-11-18T22:11:39.984] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-18T22:11:39.985] [INFO] default - Entered getMovies method
+[2025-11-18T22:11:39.986] [INFO] default - Size: 7 1
+[2025-11-18T22:11:40.155] [INFO] default - Client attempting WS connection
+[2025-11-18T22:11:40.157] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T22:11:40.158] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T22:11:43.143] [INFO] default - A request came to get movie with id=6
+[2025-11-18T22:11:55.796] [INFO] default - Updating movie 6
+[2025-11-18T22:12:00.416] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-18T22:12:00.416] [INFO] default - Entered getMovies method
+[2025-11-18T22:12:00.417] [INFO] default - Size: 14 2
+[2025-11-18T22:12:02.898] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:12:21.548] [INFO] default - Updating movie 5
+[2025-11-18T22:12:25.356] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:13:19.684] [INFO] default - WebSocket closed for user 1
+[2025-11-18T22:13:23.072] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:13:37.253] [INFO] default - A request came to get movie with id=5
+[2025-11-18T22:13:51.983] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T22:13:51.984] [INFO] default - Entered getMovies method
+[2025-11-18T22:13:51.985] [INFO] default - Size: 0 0
+[2025-11-18T22:13:52.236] [INFO] default - Client attempting WS connection
+[2025-11-18T22:13:52.241] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T22:13:52.433] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T22:13:53.538] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-18T22:13:53.539] [INFO] default - Entered getMovies method
+[2025-11-18T22:13:53.541] [INFO] default - Size: 7 1
+[2025-11-18T22:13:54.703] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-18T22:13:54.704] [INFO] default - Entered getMovies method
+[2025-11-18T22:13:54.705] [INFO] default - Size: 14 2
+[2025-11-18T22:14:00.117] [INFO] default - WebSocket closed for user 1
+[2025-11-18T22:14:00.638] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-18T22:14:00.638] [INFO] default - Entered getMovies method
+[2025-11-18T22:14:00.639] [INFO] default - Size: 0 0
+[2025-11-18T22:14:00.690] [INFO] default - Client attempting WS connection
+[2025-11-18T22:14:00.691] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-18T22:14:00.738] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-18T22:14:01.937] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-18T22:14:01.938] [INFO] default - Entered getMovies method
+[2025-11-18T22:14:01.940] [INFO] default - Size: 7 1
+[2025-11-18T22:14:02.389] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-18T22:14:02.390] [INFO] default - Entered getMovies method
+[2025-11-18T22:14:02.391] [INFO] default - Size: 14 2
+[2025-11-18T22:14:02.973] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-18T22:14:02.973] [INFO] default - Entered getMovies method
+[2025-11-18T22:14:02.975] [INFO] default - Size: 21 3
+[2025-11-19T10:13:20.895] [INFO] default - Server started on port 8081
+[2025-11-19T10:13:59.353] [INFO] default - Client attempting WS connection
+[2025-11-19T10:13:59.364] [ERROR] default - Invalid or expired token
+[2025-11-19T10:14:02.408] [INFO] default - Client attempting WS connection
+[2025-11-19T10:14:02.411] [ERROR] default - Invalid or expired token
+[2025-11-19T10:14:05.570] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T10:14:05.571] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T10:14:05.699] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:14:05.700] [INFO] default - Entered getMovies method
+[2025-11-19T10:14:05.702] [INFO] default - Size: 0 0
+[2025-11-19T10:14:05.756] [INFO] default - Client attempting WS connection
+[2025-11-19T10:14:05.760] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:14:05.801] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:14:06.746] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:14:06.747] [INFO] default - Entered getMovies method
+[2025-11-19T10:14:06.751] [INFO] default - Size: 7 1
+[2025-11-19T10:14:07.974] [INFO] default - A request came to get movie with id=9
+[2025-11-19T10:14:15.551] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:14:15.999] [INFO] default - A request came to get movie with id=9
+[2025-11-19T10:14:22.897] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:14:22.898] [INFO] default - Entered getMovies method
+[2025-11-19T10:14:22.903] [INFO] default - Size: 0 0
+[2025-11-19T10:14:22.972] [INFO] default - Client attempting WS connection
+[2025-11-19T10:14:22.984] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:14:23.029] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:14:28.169] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:14:28.461] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:14:28.462] [INFO] default - Entered getMovies method
+[2025-11-19T10:14:28.467] [INFO] default - Size: 0 0
+[2025-11-19T10:14:28.525] [INFO] default - Client attempting WS connection
+[2025-11-19T10:14:28.531] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:14:28.568] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:14:29.640] [INFO] default - A request came to get movie with id=8
+[2025-11-19T10:21:53.529] [INFO] default - Server started on port 8081
+[2025-11-19T10:21:57.062] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T10:21:57.151] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T10:21:57.304] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T10:21:57.341] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T10:21:57.626] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:21:57.642] [INFO] default - Entered getMovies method
+[2025-11-19T10:21:57.685] [INFO] default - Size: 0 0
+[2025-11-19T10:21:58.860] [INFO] default - Client attempting WS connection
+[2025-11-19T10:21:58.900] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:21:58.987] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:22:00.664] [INFO] default - A request came to get movie with id=8
+[2025-11-19T10:22:19.392] [INFO] default - Updating movie 8
+[2025-11-19T10:22:21.446] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:22:21.592] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:21.656] [INFO] default - Size: 7 1
+[2025-11-19T10:22:22.586] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-19T10:22:22.631] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:22.719] [INFO] default - Size: 14 2
+[2025-11-19T10:22:23.017] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-19T10:22:23.060] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:23.087] [INFO] default - Size: 21 3
+[2025-11-19T10:22:25.028] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:22:25.726] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:22:26.075] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:26.149] [INFO] default - Size: 0 0
+[2025-11-19T10:22:26.320] [INFO] default - Client attempting WS connection
+[2025-11-19T10:22:26.365] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:22:26.419] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:22:27.721] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:22:27.783] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:27.806] [INFO] default - Size: 7 1
+[2025-11-19T10:22:46.754] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:22:47.095] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:22:47.152] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:47.216] [INFO] default - Size: 0 0
+[2025-11-19T10:22:47.322] [INFO] default - Client attempting WS connection
+[2025-11-19T10:22:47.368] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:22:47.397] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:22:48.142] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:22:48.154] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:48.187] [INFO] default - Size: 7 1
+[2025-11-19T10:22:48.938] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-19T10:22:48.968] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:49.029] [INFO] default - Size: 14 2
+[2025-11-19T10:22:49.904] [INFO] default - A request came to get movie with id=9
+[2025-11-19T10:22:53.469] [INFO] default - Updating movie 9
+[2025-11-19T10:22:56.763] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:22:57.187] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:22:57.222] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:57.303] [INFO] default - Size: 0 0
+[2025-11-19T10:22:57.411] [INFO] default - Client attempting WS connection
+[2025-11-19T10:22:57.461] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:22:57.532] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:22:58.067] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:22:58.085] [INFO] default - Entered getMovies method
+[2025-11-19T10:22:58.123] [INFO] default - Size: 7 1
+[2025-11-19T10:23:01.226] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-19T10:23:01.279] [INFO] default - Entered getMovies method
+[2025-11-19T10:23:01.359] [INFO] default - Size: 14 2
+[2025-11-19T10:24:06.299] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:24:06.659] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:24:06.681] [INFO] default - Entered getMovies method
+[2025-11-19T10:24:06.716] [INFO] default - Size: 0 0
+[2025-11-19T10:24:06.828] [INFO] default - Client attempting WS connection
+[2025-11-19T10:24:06.869] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:24:06.892] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:24:08.360] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:24:39.318] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:24:59.431] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T10:24:59.437] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T10:24:59.517] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:24:59.529] [INFO] default - Entered getMovies method
+[2025-11-19T10:24:59.550] [INFO] default - Size: 0 0
+[2025-11-19T10:24:59.688] [INFO] default - Client attempting WS connection
+[2025-11-19T10:24:59.710] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:24:59.753] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:25:01.206] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:25:08.972] [INFO] default - A request came to get movie with id=NaN
+[2025-11-19T10:25:18.662] [INFO] default - A request came to get movie with id=NaN
+[2025-11-19T10:25:21.750] [INFO] default - A request came to get movie with id=NaN
+[2025-11-19T10:25:24.820] [INFO] default - A request came to get movie with id=NaN
+[2025-11-19T10:25:27.699] [INFO] default - A request came to get movie with id=NaN
+[2025-11-19T10:25:38.925] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:25:40.637] [INFO] default - A request came to get movie with id=NaN
+[2025-11-19T10:26:26.311] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:26:26.329] [INFO] default - Entered getMovies method
+[2025-11-19T10:26:26.415] [INFO] default - Size: 0 0
+[2025-11-19T10:26:26.624] [INFO] default - Client attempting WS connection
+[2025-11-19T10:26:26.700] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:26:26.790] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:26:28.338] [INFO] default - A request came to get movie with id=NaN
+[2025-11-19T10:26:32.081] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:26:57.546] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:27:04.957] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:27:05.085] [INFO] default - Entered getMovies method
+[2025-11-19T10:27:05.144] [INFO] default - Size: 0 0
+[2025-11-19T10:27:05.466] [INFO] default - Client attempting WS connection
+[2025-11-19T10:27:05.514] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:27:05.556] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:27:32.098] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:27:35.249] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:27:35.264] [INFO] default - Entered getMovies method
+[2025-11-19T10:27:35.315] [INFO] default - Size: 0 0
+[2025-11-19T10:27:35.400] [INFO] default - Client attempting WS connection
+[2025-11-19T10:27:35.419] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:27:35.461] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:29:05.395] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:29:19.770] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:29:20.124] [INFO] default - Entered getMovies method
+[2025-11-19T10:29:20.140] [INFO] default - Size: 0 0
+[2025-11-19T10:29:20.207] [INFO] default - Client attempting WS connection
+[2025-11-19T10:29:20.223] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:29:20.269] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:29:21.681] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:31:47.403] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:31:50.435] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:31:53.835] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:32:03.713] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:32:03.714] [INFO] default - Entered getMovies method
+[2025-11-19T10:32:03.716] [INFO] default - Size: 0 0
+[2025-11-19T10:32:03.772] [INFO] default - Client attempting WS connection
+[2025-11-19T10:32:03.776] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:32:03.828] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:32:04.979] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:32:04.981] [INFO] default - Entered getMovies method
+[2025-11-19T10:32:04.984] [INFO] default - Size: 0 0
+[2025-11-19T10:32:05.027] [INFO] default - Client attempting WS connection
+[2025-11-19T10:32:05.035] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:32:05.074] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:32:24.374] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:32:24.376] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:32:34.480] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:32:34.481] [INFO] default - Entered getMovies method
+[2025-11-19T10:32:34.482] [INFO] default - Size: 0 0
+[2025-11-19T10:32:34.518] [INFO] default - Client attempting WS connection
+[2025-11-19T10:32:34.521] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:32:34.572] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:32:40.582] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:32:40.861] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:32:40.863] [INFO] default - Entered getMovies method
+[2025-11-19T10:32:40.865] [INFO] default - Size: 0 0
+[2025-11-19T10:32:40.904] [INFO] default - Client attempting WS connection
+[2025-11-19T10:32:40.906] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:32:40.930] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:35:25.863] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:35:26.230] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:35:26.231] [INFO] default - Entered getMovies method
+[2025-11-19T10:35:26.232] [INFO] default - Size: 0 0
+[2025-11-19T10:35:26.259] [INFO] default - Client attempting WS connection
+[2025-11-19T10:35:26.262] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:35:26.283] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:35:30.193] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:35:30.194] [INFO] default - Entered getMovies method
+[2025-11-19T10:35:30.195] [INFO] default - Size: 0 0
+[2025-11-19T10:35:30.234] [INFO] default - Client attempting WS connection
+[2025-11-19T10:35:30.237] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:35:30.279] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:35:33.973] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:35:33.977] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:36:16.810] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:36:16.811] [INFO] default - Entered getMovies method
+[2025-11-19T10:36:16.813] [INFO] default - Size: 0 0
+[2025-11-19T10:36:16.858] [INFO] default - Client attempting WS connection
+[2025-11-19T10:36:16.861] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:36:16.900] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:36:20.438] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:36:20.782] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:36:20.783] [INFO] default - Entered getMovies method
+[2025-11-19T10:36:20.785] [INFO] default - Size: 0 0
+[2025-11-19T10:36:20.825] [INFO] default - Client attempting WS connection
+[2025-11-19T10:36:20.830] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:36:20.866] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:38:07.768] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:38:09.738] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:38:09.739] [INFO] default - Entered getMovies method
+[2025-11-19T10:38:09.740] [INFO] default - Size: 0 0
+[2025-11-19T10:38:09.865] [INFO] default - Client attempting WS connection
+[2025-11-19T10:38:09.867] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:38:10.073] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:38:11.376] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:38:12.419] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:38:12.420] [INFO] default - Entered getMovies method
+[2025-11-19T10:38:12.422] [INFO] default - Size: 0 0
+[2025-11-19T10:38:12.538] [INFO] default - Client attempting WS connection
+[2025-11-19T10:38:12.541] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:38:12.773] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:38:33.110] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:38:34.055] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:38:34.058] [INFO] default - Entered getMovies method
+[2025-11-19T10:38:34.059] [INFO] default - Size: 0 0
+[2025-11-19T10:38:34.111] [INFO] default - Client attempting WS connection
+[2025-11-19T10:38:34.116] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:38:34.143] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:38:36.604] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:38:37.250] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:38:37.285] [INFO] default - Entered getMovies method
+[2025-11-19T10:38:37.339] [INFO] default - Size: 0 0
+[2025-11-19T10:38:37.430] [INFO] default - Client attempting WS connection
+[2025-11-19T10:38:37.437] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:38:37.508] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:38:39.221] [INFO] default - A request came to get movie with id=6
+[2025-11-19T10:38:41.406] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:38:41.419] [INFO] default - Entered getMovies method
+[2025-11-19T10:38:41.424] [INFO] default - Size: 7 1
+[2025-11-19T10:38:42.548] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:41:00.587] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:41:09.758] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:41:18.794] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:41:57.625] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:41:57.629] [INFO] default - Entered getMovies method
+[2025-11-19T10:41:57.634] [INFO] default - Size: 0 0
+[2025-11-19T10:41:57.688] [INFO] default - Client attempting WS connection
+[2025-11-19T10:41:57.693] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:41:57.748] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:42:03.943] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:42:14.771] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:42:14.782] [INFO] default - Entered getMovies method
+[2025-11-19T10:42:14.796] [INFO] default - Size: 0 0
+[2025-11-19T10:42:14.887] [INFO] default - Client attempting WS connection
+[2025-11-19T10:42:14.896] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:42:14.978] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:46:41.603] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:46:58.140] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:46:58.140] [INFO] default - Entered getMovies method
+[2025-11-19T10:46:58.141] [INFO] default - Size: 0 0
+[2025-11-19T10:46:58.619] [INFO] default - Client attempting WS connection
+[2025-11-19T10:46:58.620] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:46:59.738] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:47:13.716] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T10:47:13.718] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T10:47:14.609] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T10:47:14.611] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T10:47:17.326] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T10:47:17.327] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T10:47:17.481] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T10:47:17.482] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T10:47:17.659] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T10:47:17.660] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T10:47:17.877] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T10:47:17.880] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T10:47:18.577] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:47:48.829] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T10:47:48.831] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T10:47:48.872] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:47:48.874] [INFO] default - Entered getMovies method
+[2025-11-19T10:47:48.876] [INFO] default - Size: 0 0
+[2025-11-19T10:47:48.914] [INFO] default - Client attempting WS connection
+[2025-11-19T10:47:48.917] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:47:48.969] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:47:50.931] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:48:02.594] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:48:04.087] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:49:28.866] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:50:05.208] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:50:05.217] [INFO] default - Entered getMovies method
+[2025-11-19T10:50:05.247] [INFO] default - Size: 0 0
+[2025-11-19T10:50:05.293] [INFO] default - Client attempting WS connection
+[2025-11-19T10:50:05.303] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:50:05.352] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:50:06.975] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:51:51.465] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:51:54.591] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:51:54.592] [INFO] default - Entered getMovies method
+[2025-11-19T10:51:54.594] [INFO] default - Size: 0 0
+[2025-11-19T10:51:54.738] [INFO] default - Client attempting WS connection
+[2025-11-19T10:51:54.742] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:51:55.016] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:52:10.405] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:52:12.482] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:52:12.483] [INFO] default - Entered getMovies method
+[2025-11-19T10:52:12.484] [INFO] default - Size: 0 0
+[2025-11-19T10:52:12.612] [INFO] default - Client attempting WS connection
+[2025-11-19T10:52:12.615] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:52:12.723] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:53:24.992] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:53:47.300] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:53:47.301] [INFO] default - Entered getMovies method
+[2025-11-19T10:53:47.302] [INFO] default - Size: 0 0
+[2025-11-19T10:53:47.345] [INFO] default - Client attempting WS connection
+[2025-11-19T10:53:47.347] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:53:47.386] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:53:51.447] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:53:51.449] [INFO] default - Entered getMovies method
+[2025-11-19T10:53:51.451] [INFO] default - Size: 7 1
+[2025-11-19T10:53:52.196] [INFO] default - A request came to get movie with id=7
+[2025-11-19T10:54:04.762] [INFO] default - Updating movie 7
+[2025-11-19T10:54:08.748] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:54:09.091] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:54:09.092] [INFO] default - Entered getMovies method
+[2025-11-19T10:54:09.095] [INFO] default - Size: 0 0
+[2025-11-19T10:54:09.122] [INFO] default - Client attempting WS connection
+[2025-11-19T10:54:09.125] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:54:09.151] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:54:10.848] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:54:10.849] [INFO] default - Entered getMovies method
+[2025-11-19T10:54:10.853] [INFO] default - Size: 7 1
+[2025-11-19T10:54:11.818] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-19T10:54:11.819] [INFO] default - Entered getMovies method
+[2025-11-19T10:54:11.821] [INFO] default - Size: 14 2
+[2025-11-19T10:54:13.769] [INFO] default - A request came to get movie with id=10
+[2025-11-19T10:54:30.648] [INFO] default - Updating movie 10
+[2025-11-19T10:54:32.600] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:54:32.898] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:54:32.899] [INFO] default - Entered getMovies method
+[2025-11-19T10:54:32.901] [INFO] default - Size: 0 0
+[2025-11-19T10:54:32.931] [INFO] default - Client attempting WS connection
+[2025-11-19T10:54:32.935] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:54:32.967] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:54:34.484] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T10:54:34.488] [INFO] default - Entered getMovies method
+[2025-11-19T10:54:34.491] [INFO] default - Size: 7 1
+[2025-11-19T10:54:34.845] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-19T10:54:34.846] [INFO] default - Entered getMovies method
+[2025-11-19T10:54:34.851] [INFO] default - Size: 14 2
+[2025-11-19T10:55:49.428] [INFO] default - Adding a new resource
+[2025-11-19T10:55:49.431] [DEBUG] default - Adding a new resource tEST true 2025-11-22T00:00:00.000Z 1
+[2025-11-19T10:55:49.474] [INFO] default - Added movie with id 68
+[2025-11-19T10:55:49.476] [DEBUG] default - Starting to send notifications
+[2025-11-19T10:55:49.477] [DEBUG] default - 1
+[2025-11-19T10:55:49.480] [INFO] default - Sent new movie to user 1: {"id":68,"name":"tEST","rating":1,"premierDate":"2025-11-22T00:00:00.000Z","running":true,"owner_id":1,"photoPath":"movie_1763542534026.jpeg","photoUrl":"http://localhost:8081/uploads/movie_1763542534026.jpeg","latitude":46.914912564482265,"longitude":24.50935930377642,"locationLabel":"Lat: 46.9149, Lng: 24.5094"}
+[2025-11-19T10:55:50.842] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-19T10:55:50.845] [INFO] default - Entered getMovies method
+[2025-11-19T10:55:50.847] [INFO] default - Size: 21 3
+[2025-11-19T10:55:54.201] [INFO] default - WebSocket closed for user 1
+[2025-11-19T10:55:54.849] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T10:55:54.853] [INFO] default - Entered getMovies method
+[2025-11-19T10:55:54.862] [INFO] default - Size: 0 0
+[2025-11-19T10:55:54.910] [INFO] default - Client attempting WS connection
+[2025-11-19T10:55:54.916] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T10:55:54.966] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T10:56:02.006] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T10:56:02.008] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T10:56:02.786] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T10:56:02.786] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T11:05:40.768] [INFO] default - Server started on port 8081
+[2025-11-19T11:14:56.997] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:14:57.000] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:14:58.835] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:14:58.837] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:14:59.341] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:14:59.342] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:15:24.245] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:15:24.250] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:23:13.404] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:23:13.406] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:24:14.415] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:24:14.416] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:24:15.335] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:24:15.335] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:25:05.609] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:25:05.610] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:30:40.961] [INFO] default - Server started on port 8081
+[2025-11-19T11:30:41.048] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:30:41.051] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:35:13.526] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T11:35:13.531] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T11:35:13.944] [DEBUG] default - {
+  username: 'vlad.balahura@stud.ubbcluj.ro',
+  password: 'NhjjQEHRqnv6JSU'
+}
+[2025-11-19T11:35:13.946] [INFO] default - A login request with username= vlad.balahura@stud.ubbcluj.ro and passoword= NhjjQEHRqnv6JSU
+[2025-11-19T11:35:18.675] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:35:18.676] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:38:20.106] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:38:20.107] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:39:02.422] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:39:02.423] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:40:21.628] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T11:40:21.630] [INFO] default - Entered getMovies method
+[2025-11-19T11:40:21.635] [INFO] default - Size: 0 0
+[2025-11-19T11:40:21.865] [INFO] default - Client attempting WS connection
+[2025-11-19T11:40:21.869] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T11:40:22.051] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T11:40:27.713] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T11:40:27.714] [INFO] default - Entered getMovies method
+[2025-11-19T11:40:27.718] [INFO] default - Size: 7 1
+[2025-11-19T11:40:30.189] [INFO] default - A request came to get movie with id=6
+[2025-11-19T11:40:35.820] [INFO] default - Updating movie 6
+[2025-11-19T11:40:37.727] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-19T11:40:37.775] [INFO] default - Entered getMovies method
+[2025-11-19T11:40:37.845] [INFO] default - Size: 14 2
+[2025-11-19T11:40:37.989] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-19T11:40:37.990] [INFO] default - Entered getMovies method
+[2025-11-19T11:40:37.991] [INFO] default - Size: 21 3
+[2025-11-19T11:41:06.651] [INFO] default - Adding a new resource
+[2025-11-19T11:41:06.653] [DEBUG] default - Adding a new resource 344 true 2025-11-29T00:00:00.000Z 9
+[2025-11-19T11:41:06.661] [INFO] default - Added movie with id 69
+[2025-11-19T11:41:06.662] [DEBUG] default - Starting to send notifications
+[2025-11-19T11:41:06.662] [DEBUG] default - 1
+[2025-11-19T11:41:06.664] [INFO] default - Sent new movie to user 1: {"id":69,"name":"344","rating":9,"premierDate":"2025-11-29T00:00:00.000Z","running":true,"owner_id":1,"photoPath":"movie_1763545251971.jpeg","photoUrl":"http://localhost:8081/uploads/movie_1763545251971.jpeg","latitude":46.77583037836875,"longitude":23.62349701165839,"locationLabel":"Lat: 46.7758, Lng: 23.6235"}
+[2025-11-19T11:41:11.907] [INFO] default - WebSocket closed for user 1
+[2025-11-19T11:41:12.334] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T11:41:12.334] [INFO] default - Entered getMovies method
+[2025-11-19T11:41:12.336] [INFO] default - Size: 0 0
+[2025-11-19T11:41:12.362] [INFO] default - Client attempting WS connection
+[2025-11-19T11:41:12.364] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T11:41:12.398] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T11:41:12.649] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T11:41:12.651] [INFO] default - Entered getMovies method
+[2025-11-19T11:41:12.654] [INFO] default - Size: 7 1
+[2025-11-19T11:41:13.122] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-19T11:41:13.123] [INFO] default - Entered getMovies method
+[2025-11-19T11:41:13.126] [INFO] default - Size: 14 2
+[2025-11-19T11:41:13.709] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-19T11:41:13.710] [INFO] default - Entered getMovies method
+[2025-11-19T11:41:13.712] [INFO] default - Size: 21 3
+[2025-11-19T11:41:37.673] [INFO] default - A request came to get movie with id=11
+[2025-11-19T11:41:47.155] [INFO] default - Updating movie 11
+[2025-11-19T11:41:50.268] [INFO] default - WebSocket closed for user 1
+[2025-11-19T11:41:50.771] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=7
+[2025-11-19T11:41:50.772] [INFO] default - Entered getMovies method
+[2025-11-19T11:41:50.772] [INFO] default - Size: 0 0
+[2025-11-19T11:41:50.810] [INFO] default - Client attempting WS connection
+[2025-11-19T11:41:50.812] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-11-19T11:41:50.834] [INFO] default - Message from user 1: {"message":"Salut server!"}
+[2025-11-19T11:41:51.749] [INFO] default - User 1 requested movies with pageNumber=1 and pageSize=7
+[2025-11-19T11:41:51.751] [INFO] default - Entered getMovies method
+[2025-11-19T11:41:51.754] [INFO] default - Size: 7 1
+[2025-11-19T11:41:52.889] [INFO] default - User 1 requested movies with pageNumber=2 and pageSize=7
+[2025-11-19T11:41:52.892] [INFO] default - Entered getMovies method
+[2025-11-19T11:41:52.894] [INFO] default - Size: 14 2
+[2025-11-19T11:41:53.883] [INFO] default - User 1 requested movies with pageNumber=3 and pageSize=7
+[2025-11-19T11:41:53.918] [INFO] default - Entered getMovies method
+[2025-11-19T11:41:53.964] [INFO] default - Size: 21 3
+[2025-11-19T11:43:04.610] [INFO] default - WebSocket closed for user 1
+[2025-11-19T11:43:20.262] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:43:20.263] [INFO] default - A login request with username= a and passoword= a
+[2025-11-19T11:43:20.788] [DEBUG] default - { username: 'a', password: 'a' }
+[2025-11-19T11:43:20.789] [INFO] default - A login request with username= a and passoword= a

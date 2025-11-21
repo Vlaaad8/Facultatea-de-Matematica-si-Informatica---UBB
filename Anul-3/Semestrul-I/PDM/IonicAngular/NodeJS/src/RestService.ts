@@ -8,6 +8,8 @@ import {Express} from "express"
 import {Movie} from "./model/movie";
 import {authenticateJWT} from "./jwt";
 import jwt from "jsonwebtoken";
+import path from "path";
+import fs from "fs";
 
 
 interface ExpressWithWs extends Express {
@@ -20,12 +22,15 @@ export class RestService {
     private port: number = 8081;
     private movieRepository = new MovieRepository();
     private appW!: ReturnType<typeof expressWs>;
+    private uploadDir = path.join(__dirname, "..", "uploads");
 
     constructor() {
         this.app=express() as ExpressWithWs;
         this.app.use(cors())
         this.appW = expressWs(this.app);
-        this.app.use(express.json());
+        this.app.use(express.json({limit: "10mb"}));
+        this.ensureUploadDirectory();
+        this.app.use("/uploads", express.static(this.uploadDir));
         this.app.use((req, res, next) => {
             if (req.path === "/" || req.path === "/login" || req.path === "/ws/.websocket") {
                 return next();
@@ -38,10 +43,18 @@ export class RestService {
         this.webSocket();
         this.login();
         this.addMovie();
+        this.updateMovie();
+        this.uploadPhoto();
         this.app.listen(this.port, () => {
             logger.log(`Server started on port ${this.port}`)
         })
 
+    }
+
+    private ensureUploadDirectory(): void {
+        if (!fs.existsSync(this.uploadDir)) {
+            fs.mkdirSync(this.uploadDir, {recursive: true});
+        }
     }
 
 
@@ -175,6 +188,50 @@ export class RestService {
             catch(error){
                 console.error(error);
                 res.status(500).send({error: "Failed to add movie to the user!"})
+            }
+        })
+    }
+
+    public updateMovie() {
+        this.app.put("/movies/:id", authenticateJWT, async (req: express.Request, res: express.Response) => {
+            try {
+                const user = (req as any).user;
+                const userId = user.id || user.userId;
+                if (!userId) {
+                    return res.status(401).send({ error: "User ID missing in token" });
+                }
+
+                const movie : Movie = req.body;
+                movie.id = Number(req.params.id);
+                movie.owner_id = userId;
+
+                const updated = await this.movieRepository.updateMovie(movie);
+                res.send(updated);
+            } catch (error) {
+                logger.error(error);
+                res.status(500).send({error: "Failed to update movie!"})
+            }
+        })
+    }
+
+    public uploadPhoto() {
+        this.app.post("/upload", authenticateJWT, async (req: express.Request, res: express.Response) => {
+            const { data, fileName } = req.body;
+            if (!data) {
+                return res.status(400).send({error: "Missing photo data"});
+            }
+
+            try {
+                const base64Data = data.includes("base64,") ? data.split("base64,")[1] : data;
+                const buffer = Buffer.from(base64Data, "base64");
+                const safeName = fileName || `movie_${Date.now()}.jpeg`;
+                const targetPath = path.join(this.uploadDir, safeName);
+                await fs.promises.writeFile(targetPath, buffer);
+                const url = `${req.protocol}://${req.get("host")}/uploads/${safeName}`;
+                res.send({photoUrl: url, photoPath: safeName});
+            } catch (error) {
+                logger.error(error);
+                res.status(500).send({error: "Failed to upload photo"});
             }
         })
     }
