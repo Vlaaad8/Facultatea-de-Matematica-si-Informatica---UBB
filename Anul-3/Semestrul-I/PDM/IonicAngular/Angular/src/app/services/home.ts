@@ -1,6 +1,6 @@
 import {inject, Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {BehaviorSubject, catchError, EMPTY, from, Observable, of, switchMap} from "rxjs";
+import {BehaviorSubject, catchError, from, Observable, of, switchMap} from "rxjs";
 import {Movie} from '../../../../NodeJS/src/model/movie'
 import {Network} from "@capacitor/network";
 import {Preferences} from '@capacitor/preferences';
@@ -92,6 +92,17 @@ export class Home {
     }
   }
 
+  public updateMovie(movie: Movie): Observable<Movie> {
+    return from(this.getAuthHeaders()).pipe(
+      switchMap(options => this.http.put<Movie>(`${this.URL}movies/${movie.id}`, movie, options))
+    );
+  }
+
+  public uploadPhoto(data: string, fileName?: string): Observable<{photoUrl: string, photoPath?: string}> {
+    return from(this.getAuthHeaders()).pipe(
+      switchMap(options => this.http.post<{photoUrl: string, photoPath?: string}>(`${this.URL}upload`, {data, fileName}, options))
+    );
+  }
 
   private async saveOfflineMovie(movie: Movie) {
     const {value} = await Preferences.get({key: this.STORAGE_KEY});

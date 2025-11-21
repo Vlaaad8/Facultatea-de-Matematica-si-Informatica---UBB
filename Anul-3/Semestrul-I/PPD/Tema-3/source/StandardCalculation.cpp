@@ -7,8 +7,6 @@
 #include <fstream>
 
 using namespace std;
-ofstream out("result1.txt");
-
 void StandardCalculation::run() {
     int rank;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -16,6 +14,8 @@ void StandardCalculation::run() {
 }
 
 void StandardCalculation::calculator(int rank) {
+    ofstream out("results/resultStandard.txt");
+
 if (rank == 0) {
         const int dimension = N_Max / (P - 1);
         int extra = N_Max % (P - 1);
@@ -29,8 +29,8 @@ if (rank == 0) {
             }
             int batchSize = endPoint - startPoint;
 
-            int *firstNumber = GenerateNumber::readNumberBlock("firstNumber.txt", startPoint, batchSize);
-            int *secondNumber = GenerateNumber::readNumberBlock("secondNumber.txt", startPoint, batchSize);
+            int *firstNumber = GenerateNumber::readNumberBlock("numbers/firstNumber.txt", startPoint, batchSize);
+            int *secondNumber = GenerateNumber::readNumberBlock("numbers/secondNumber.txt", startPoint, batchSize);
 
             MPI_Send(firstNumber, batchSize, MPI_INT, pid, 0, MPI_COMM_WORLD);
             MPI_Send(secondNumber, batchSize, MPI_INT, pid, 1, MPI_COMM_WORLD);
@@ -122,7 +122,7 @@ int StandardCalculation::sum(const int *firstNumber, const int *secondNumber, in
 }
 
 void StandardCalculation::passCarry(int *number, const int size, int &carry) {
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size && carry > 0; i++) {
         const int value = number[i] + carry;
         number[i] = value % 10;
         carry = value / 10;

@@ -11,6 +11,14 @@ export const routes: Routes = [
     loadComponent: () => import('./main/main.page').then( m => m.MainPage)
   },
   {
+    path: 'movies/new',
+    loadComponent: () => import('./movie-edit/movie-edit.page').then( m => m.MovieEditPage)
+  },
+  {
+    path: 'movies/:id/edit',
+    loadComponent: () => import('./movie-edit/movie-edit.page').then( m => m.MovieEditPage)
+  },
+  {
     path: 'movies/:id',
     loadComponent: () => import('./movie/movie.page').then( m => m.MoviePage)
   },

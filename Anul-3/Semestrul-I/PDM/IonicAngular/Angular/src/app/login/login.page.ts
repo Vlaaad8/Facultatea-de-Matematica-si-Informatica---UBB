@@ -5,12 +5,31 @@ import {IonContent, IonHeader, IonInput, IonItem, IonTitle, IonToolbar} from '@i
 import {Login} from "../services/login";
 import {Router} from "@angular/router";
 import {Preferences} from '@capacitor/preferences';
+import {animate, query, stagger, style, transition, trigger} from '@angular/animations';
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, ReactiveFormsModule, IonInput, IonItem],
+  animations: [
+    trigger('formIntro', [
+      transition(':enter', [
+        style({opacity: 0, transform: 'translateY(16px)'}),
+        animate('250ms ease-out', style({opacity: 1, transform: 'translateY(0)'}))
+      ])
+    ]),
+    trigger('fieldStagger', [
+      transition(':enter', [
+        query('.form-field', [
+          style({opacity: 0, transform: 'translateY(18px)'}),
+          stagger(120, [
+            animate('280ms cubic-bezier(0.4, 0, 0.2, 1)', style({opacity: 1, transform: 'translateY(0)'}))
+          ])
+        ], {optional: true})
+      ])
+    ])
+  ]
 })
 export class LoginPage implements OnInit {
 
@@ -27,11 +46,11 @@ export class LoginPage implements OnInit {
       username: ['', Validators.required],
       password: ['', Validators.required],
     })
-    Preferences.get({key: "token"}).then((result) => {
-      if(result.value) {
-        this.router.navigate(['main']);
-      }
-    })
+    // Preferences.get({key: "token"}).then((result) => {
+    //   if(result.value) {
+    //     this.router.navigate(['/main']);
+    //   }
+    // })
   }
 
   async handleLogin() {
@@ -46,7 +65,7 @@ export class LoginPage implements OnInit {
           });
 
           console.log("Token salvat:", data.token);
-          this.router.navigate(['main']);
+          this.router.navigate(['/main']);
         } else {
           console.error("Răspuns invalid: lipsește tokenul!");
         }

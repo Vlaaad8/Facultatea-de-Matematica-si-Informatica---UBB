@@ -15,5 +15,7 @@ add_executable(Tema_3 main.cpp
         source/ScatterCalculation.cpp
         source/AsyncCalculation.cpp
         header/AsyncCalculation.h
-        source/AsyncCalculation.cpp)
+        source/AsyncCalculation.cpp
+        source/StandardClassicCalculation.cpp
+        header/StandardClassicCalculation.h)
 target_link_libraries(Tema_3 ${MPI_LIBRARIES})

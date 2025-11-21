@@ -19,11 +19,29 @@
 <ion-content [fullscreen]="true" *ngIf="data.length !== 0; else loading">
 
   <ion-list class="movie-list">
-    <ion-item *ngFor="let movie of filteredData">
-      <ion-label>{{ movie.name }}</ion-label>
-      <ion-button (click)="handleMovie(movie)" fill="clear">
-        <ion-icon name="arrow-forward"></ion-icon>
-      </ion-button>
+    <ion-item
+      *ngFor="let movie of filteredData"
+      (click)="handleMovie(movie)"
+      [detail]="false"
+      [@fadeSlide]="movie.id">
+      <ion-thumbnail slot="start" *ngIf="getMovieImage(movie) as photo">
+        <img [src]="photo" alt="{{ movie.name }} poster">
+      </ion-thumbnail>
+
+      <ion-label>
+        <h2>{{ movie.name }}</h2>
+        <p>Rating: {{ movie.rating }}/10</p>
+        <p *ngIf="movie.locationLabel">{{ movie.locationLabel }}</p>
+      </ion-label>
+
+      <ion-buttons slot="end">
+        <ion-button fill="clear" color="medium" (click)="handleEditMovie(movie, $event)">
+          <ion-icon name="create-outline"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="primary" (click)="handleMovie(movie); $event.stopPropagation()">
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-item>
   </ion-list>
 
@@ -35,7 +53,7 @@
   </ion-infinite-scroll>
 
   <ion-fab horizontal="end" vertical="bottom" slot="fixed">
-    <ion-fab-button (click)="handleOpenAddMenu(true)">
+    <ion-fab-button (click)="handleAddMovie()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
@@ -50,76 +68,3 @@
     <p>Loading movie details...</p>
   </div>
 </ng-template>
-
-<ion-modal [isOpen]="isOpen" (didDismiss)="handleOpenAddMenu(false)">
-  <ng-template>
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Add a new movie</ion-title>
-        <ion-buttons slot="end">
-          <ion-button (click)="handleOpenAddMenu(false)">Close</ion-button>
-        </ion-buttons>
-      </ion-toolbar>
-    </ion-header>
-
-    <ion-content class="ion-padding">
-      <form [formGroup]="addForm" (ngSubmit)="saveMovie()">
-
-        <ion-item>
-          <ion-input
-            label="Name"
-            label-placement="stacked"
-            placeholder="Enter movie name"
-            formControlName="name"
-            type="text">
-          </ion-input>
-        </ion-item>
-
-        <!-- Rating -->
-        <ion-item>
-          <ion-input
-            label="Rating"
-            label-placement="stacked"
-            placeholder="Enter movie ratin"
-            formControlName="rating"
-            type="number"
-            step="0.1"
-            max="5">
-          </ion-input>
-        </ion-item>
-
-        <!-- Premier Date -->
-        <ion-item>
-          <ion-label>Premiere Date</ion-label>
-          <ion-datetime-button datetime="premierDate"></ion-datetime-button>
-          <ion-modal [keepContentsMounted]="true">
-            <ng-template>
-              <ion-datetime
-                id="premierDate"
-              formControlName="premierDate"
-              presentation="date"
-              displayFormat="MMM DD, YYYY"
-              pickerFormat="YYYY-MM-DD" >
-              </ion-datetime>
-            </ng-template>
-          </ion-modal>
-        </ion-item>
-
-
-        <!-- Running -->
-        <ion-item lines="none">
-          <ion-label>Currently running?</ion-label>
-          <ion-toggle formControlName="running"></ion-toggle>
-        </ion-item>
-
-        <!-- Submit -->
-        <ion-button
-          type="submit"
-          [disabled]="addForm.invalid"
-        >
-          Save Movie
-        </ion-button>
-      </form>
-    </ion-content>
-  </ng-template>
-</ion-modal>
