@@ -38,11 +38,15 @@ intr: atribuire | intrIf | intrWhile | intrCitire | intrAfisare;
 atribuire: ID ASSIGN operand POINTCOMMA | ID ASSIGN expresie POINTCOMMA;
 expresie: operand Operator operand | operand Operator expresie ;
 operand: CT | ID ;
+
 intrIf: IF LPARANT conditie RPARANT LBRACE intrComp RBRACE | IF LPARANT conditie RPARANT LBRACE intrComp RBRACE ELSE LBRACE intrComp RBRACE;
 intrWhile: WHILE LPARANT conditie RPARANT LBRACE intrComp RBRACE;
+
 conditie: operand | operand operatorRelational operand;
+
 intrCitire: CIN SHR ID POINTCOMMA ;
 intrAfisare: COUT SHL ID POINTCOMMA;
+
 Operator: PLUS | MINUS | DIV | ORI | MOD;
 operatorRelational: EQ | LT | GT | NEQ | ASSIGN;
 

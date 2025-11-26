@@ -14,7 +14,7 @@ class QueueContainer {
 private:
     Node *head;
     Node *tail;
-    int size;
+    atomic<int> size;
     mutex mtx;
     atomic<int> activeProducers;
 
@@ -40,4 +40,4 @@ public:
 };
 
 
-#endif //TEMA_4_QUEUECONTAINER_H
+#endif

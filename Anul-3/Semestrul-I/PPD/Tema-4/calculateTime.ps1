@@ -3,7 +3,7 @@ param(
     [int]$Runs,
     [int]$Readers
 )
-$PValues = @(4, 8, 16)
+$PValues = @(8, 16)
 $Variants = @(0,1)
 $InvariantCulture = [System.Globalization.CultureInfo]::InvariantCulture
 

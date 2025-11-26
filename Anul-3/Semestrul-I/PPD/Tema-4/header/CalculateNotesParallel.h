@@ -1,7 +1,3 @@
-//
-// Created by vladb on 18/11/2025.
-//
-
 #ifndef TEMA_4_CALCULATENOTESPARALLEL_H
 #define TEMA_4_CALCULATENOTESPARALLEL_H
 #include <thread>
@@ -28,4 +24,4 @@ public:
 };
 
 
-#endif //TEMA_4_CALCULATENOTESPARALLEL_H
+#endif
