@@ -16,8 +16,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             val navController = rememberNavController();
             //val startDestination = if (TokenManager.token != null) "list" else "login"
-            NavHost(navController =  navController, startDestination = "login"){
-                composable("login"){
+            NavHost(navController = navController, startDestination = "login") {
+                composable("login") {
                     LoginScreen {
                         navController.navigate("movies") {
                             popUpTo("login") { inclusive = true }
@@ -28,7 +28,20 @@ class MainActivity : ComponentActivity() {
                     MoviesScreen(
                         onMovieClick = { movieId ->
                             println("Ai dat click pe filmul cu id: $movieId")
-                             navController.navigate("edit/$movieId")
+                            navController.navigate("edit/$movieId")
+                        },
+                        onAddClick = {
+                            navController.navigate("add")
+                        }
+                    )
+                }
+                composable("add") {
+                    MovieAddScreen(
+                        onAddSuccess = {
+                            navController.popBackStack()
+                        },
+                        onBackClick = {
+                            navController.popBackStack()
                         }
                     )
                 }

@@ -4,6 +4,7 @@ import com.example.frontend.Movie
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.PUT
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -23,5 +24,9 @@ interface MovieService {
         @Path("movieId") id: Int,
         @Body movie: Movie
     ): Response<Movie>
+
+    @POST("/")
+    suspend fun addMovie(@Body movie: Movie): Response<Movie>
+
 
 }
