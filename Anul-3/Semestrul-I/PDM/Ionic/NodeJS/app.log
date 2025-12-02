@@ -5284,3 +5284,19 @@ sql: UPDATE movies
 [2025-12-02T19:57:38.683] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
 [2025-12-02T19:57:38.684] [INFO] default - Entered getMovies method
 [2025-12-02T19:57:38.688] [INFO] default - Size: 0 0
+[2025-12-02T21:05:02.955] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T21:05:02.981] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T21:05:03.653] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T21:05:03.654] [INFO] default - Entered getMovies method
+[2025-12-02T21:05:03.694] [INFO] default - Size: 0 0
+[2025-12-02T21:12:01.925] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T21:12:01.927] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T21:12:02.334] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T21:12:02.335] [INFO] default - Entered getMovies method
+[2025-12-02T21:12:02.337] [INFO] default - Size: 0 0
+[2025-12-02T21:12:11.128] [INFO] default - Adding a new resource
+[2025-12-02T21:12:11.135] [DEBUG] default - Adding a new resource asasa 1 Dec 2, 2025 9:12:04 PM 1.2
+[2025-12-02T21:12:11.160] [INFO] default - Added movie with id 70
+[2025-12-02T21:12:11.293] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T21:12:11.294] [INFO] default - Entered getMovies method
+[2025-12-02T21:12:11.294] [INFO] default - Size: 0 0

@@ -8,7 +8,7 @@ import {
   cameraOutline,
   createOutline,
   globeOutline,
-  imageOutline,
+  imageOutline, imagesOutline,
   locationOutline,
   logOut,
   mapOutline,
@@ -36,7 +36,8 @@ export class AppComponent {
       'location-outline': locationOutline,
       'map-outline': mapOutline,
       'image-outline': imageOutline,
-      'create-outline': createOutline
+      'create-outline': createOutline,
+      'images-outline': imagesOutline,
     });
   }
 }
