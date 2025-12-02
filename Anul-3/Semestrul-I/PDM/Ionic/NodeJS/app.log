@@ -5233,3 +5233,54 @@ sql: UPDATE movies
 [2025-12-02T19:22:17.478] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
 [2025-12-02T19:22:17.481] [INFO] default - Entered getMovies method
 [2025-12-02T19:22:17.484] [INFO] default - Size: 0 0
+[2025-12-02T19:23:45.078] [INFO] default - Server started on port 8081
+[2025-12-02T19:24:06.683] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T19:24:06.684] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:24:06.756] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:24:06.759] [INFO] default - Entered getMovies method
+[2025-12-02T19:24:06.760] [INFO] default - Size: 0 0
+[2025-12-02T19:26:31.096] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T19:26:31.097] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:26:31.296] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:26:31.296] [INFO] default - Entered getMovies method
+[2025-12-02T19:26:31.299] [INFO] default - Size: 0 0
+[2025-12-02T19:29:40.203] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T19:29:40.205] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:29:40.414] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:29:40.415] [INFO] default - Entered getMovies method
+[2025-12-02T19:29:40.417] [INFO] default - Size: 0 0
+[2025-12-02T19:51:51.669] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T19:51:51.723] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:51:52.755] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:51:52.755] [INFO] default - Entered getMovies method
+[2025-12-02T19:51:52.762] [INFO] default - Size: 0 0
+[2025-12-02T19:51:55.454] [INFO] default - A request came to get movie with id=3
+[2025-12-02T19:52:06.462] [INFO] default - Updating movie 3
+[2025-12-02T19:52:06.595] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:52:06.595] [INFO] default - Entered getMovies method
+[2025-12-02T19:52:06.598] [INFO] default - Size: 0 0
+[2025-12-02T19:52:25.630] [INFO] default - A request came to get movie with id=3
+[2025-12-02T19:52:32.571] [INFO] default - Updating movie 3
+[2025-12-02T19:52:32.630] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:52:32.631] [INFO] default - Entered getMovies method
+[2025-12-02T19:52:32.632] [INFO] default - Size: 0 0
+[2025-12-02T19:52:51.672] [INFO] default - A request came to get movie with id=3
+[2025-12-02T19:53:04.004] [INFO] default - Updating movie 3
+[2025-12-02T19:53:04.069] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:53:04.070] [INFO] default - Entered getMovies method
+[2025-12-02T19:53:04.070] [INFO] default - Size: 0 0
+[2025-12-02T19:54:08.160] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T19:54:08.161] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:54:08.263] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:54:08.263] [INFO] default - Entered getMovies method
+[2025-12-02T19:54:08.264] [INFO] default - Size: 0 0
+[2025-12-02T19:54:12.471] [INFO] default - A request came to get movie with id=4
+[2025-12-02T19:54:17.453] [INFO] default - Updating movie 4
+[2025-12-02T19:54:17.565] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:54:17.566] [INFO] default - Entered getMovies method
+[2025-12-02T19:54:17.566] [INFO] default - Size: 0 0
+[2025-12-02T19:57:38.028] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T19:57:38.039] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:57:38.683] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:57:38.684] [INFO] default - Entered getMovies method
+[2025-12-02T19:57:38.688] [INFO] default - Size: 0 0
