@@ -18,12 +18,12 @@
 
 <ion-content [fullscreen]="true" *ngIf="data.length !== 0; else loading">
 
-  <ion-list class="movie-list">
+  <ion-list class="movie-list" [@listAnimation]="filteredData.length">
     <ion-item
       *ngFor="let movie of filteredData"
       (click)="handleMovie(movie)"
       [detail]="false"
-      [@fadeSlide]="movie.id">
+     >
       <ion-thumbnail slot="start" *ngIf="getMovieImage(movie) as photo">
         <img [src]="photo" alt="{{ movie.name }} poster">
       </ion-thumbnail>
@@ -37,9 +37,6 @@
       <ion-buttons slot="end">
         <ion-button fill="clear" color="medium" (click)="handleEditMovie(movie, $event)">
           <ion-icon name="create-outline"></ion-icon>
-        </ion-button>
-        <ion-button fill="clear" color="primary" (click)="handleMovie(movie); $event.stopPropagation()">
-          <ion-icon name="arrow-forward"></ion-icon>
         </ion-button>
       </ion-buttons>
     </ion-item>
