@@ -5219,3 +5219,17 @@ sql: UPDATE movies
 [2025-11-19T11:43:20.263] [INFO] default - A login request with username= a and passoword= a
 [2025-11-19T11:43:20.788] [DEBUG] default - { username: 'a', password: 'a' }
 [2025-11-19T11:43:20.789] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T18:09:18.314] [INFO] default - Server started on port 8081
+[2025-12-02T18:23:00.376] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T18:23:00.402] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T18:37:10.350] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T18:37:10.365] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T18:37:13.858] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T18:37:13.861] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:07:58.745] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T19:07:58.779] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:22:16.968] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-02T19:22:16.988] [INFO] default - A login request with username= a and passoword= a
+[2025-12-02T19:22:17.478] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=10
+[2025-12-02T19:22:17.481] [INFO] default - Entered getMovies method
+[2025-12-02T19:22:17.484] [INFO] default - Size: 0 0

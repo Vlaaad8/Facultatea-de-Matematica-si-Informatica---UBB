@@ -33,7 +33,7 @@ export class MovieRepository {
                     movie.longitude = Number(movie.longitude);
                 }
             });
-            
+            console.log("Am trimis catre client un number de " +movies.length)
             return movies;
         } catch (err) {
             logger.error(err);
