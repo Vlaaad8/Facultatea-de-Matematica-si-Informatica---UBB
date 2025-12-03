@@ -37,7 +37,7 @@ fun MovieAddScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Adaugă Film Nou") },
+                title = { Text("Adauga Film Nou") },
                 navigationIcon = {
                     IconButton(onClick = { onBackClick() }) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Înapoi")
