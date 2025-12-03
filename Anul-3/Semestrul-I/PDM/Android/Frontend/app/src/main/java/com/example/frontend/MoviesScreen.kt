@@ -34,53 +34,86 @@ fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
     var movies by remember { mutableStateOf(emptyList<Movie>()) }
     var isLoading by remember { mutableStateOf(true) }
 
-    LaunchedEffect(Unit) {
-        SocketManager.connect()
-        try {
-            val response = RetrofitClient.movieService.getMovies(page = 0, size = 10)
-            if (response.isSuccessful) {
-                movies = response.body() ?: emptyList()
-                println("Lista de filme: $movies")
-            } else {
-                println("Eroare server: ${response.code()}")
-            }
-        } catch (e: Exception) {
-            println("Eroare server: ${e.message}")
-        } finally {
-            isLoading = false
-        }
-    }
-    //TODO Fix this
-    LaunchedEffect(Unit) {
-        SocketManager.events.collect { jsonString ->
+
+    LaunchedEffect(true) {
+
+        kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+            SocketManager.connect()
             try {
-                println("DEBUG: Procesez mesajul: $jsonString")
+                val response = RetrofitClient.movieService.getMovies(page = 0, size = 100)
+                if (response.isSuccessful) {
 
-                // AICI E SCHIMBAREA: Formatul datei trebuie să se potrivească cu ce trimite WebSocket-ul
-                // "Dec 9, 2025 2:00:00 AM" -> "MMM d, yyyy h:mm:ss a"
-                val gson = GsonBuilder()
-                    .setDateFormat("MMM d, yyyy h:mm:ss a")
-                    .create()
-
-                val newMovie = gson.fromJson(jsonString, Movie::class.java)
-
-                if (newMovie != null && newMovie.name.isNotEmpty()) {
-                    println("DEBUG: Adaug filmul în listă: ${newMovie.name}")
-                    movies = movies + newMovie
+                    kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                        movies = response.body() ?: emptyList()
+                        println("Lista de filme: $movies")
+                    }
+                } else {
+                    println("Eroare server: ${response.code()}")
                 }
             } catch (e: Exception) {
-                println("EROARE PARSING: ${e.message}")
-                // Dacă nu merge cu primul format, încercăm și formatul ISO ca rezervă
-                try {
-                    val gsonIso = GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").create()
-                    val newMovie = gsonIso.fromJson(jsonString, Movie::class.java)
-                    if (newMovie != null) movies = movies + newMovie
-                } catch (e2: Exception) {
-                    println("Niciun format de dată nu a funcționat.")
+                println("Eroare server: ${e.message}")
+            } finally {
+
+                kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                    isLoading = false
                 }
             }
         }
     }
+
+
+    LaunchedEffect(key1 = true) {
+        SocketManager.events.collect { jsonString ->
+            kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+                println("DEBUG: Am primit un nou eveniment de la WebSocket: $jsonString")
+                try {
+
+                    val idMatch = "\"id\":(\\d+)".toRegex().find(jsonString)
+                    val nameMatch = "\"name\":\"([^\"]+)\"".toRegex().find(jsonString)
+                    val ownerMatch = "\"owner_id\":(\\d+)".toRegex().find(jsonString)
+                    val ratingMatch = "\"rating\":(\\d+)".toRegex().find(jsonString)
+                    val runningMatch = "\"running\":(\\d+)".toRegex().find(jsonString)
+
+                    val id = idMatch?.groupValues?.get(1)?.toIntOrNull()
+                    val name = nameMatch?.groupValues?.get(1)
+                    val ownerId = ownerMatch?.groupValues?.get(1)?.toIntOrNull()
+                    val rating = ratingMatch?.groupValues?.get(1)?.toDoubleOrNull()
+
+                    val isRunning = runningMatch?.groupValues?.get(1)?.toIntOrNull() == 1
+
+                    if (id != null && name != null && ownerId != null && rating != null) {
+                        val newMovie = Movie(
+                            id = id,
+                            name = name,
+                            owner_id = ownerId,
+                            premierDate = java.util.Date(),
+                            rating = rating,
+                            running = 1
+                        )
+
+                        println("DEBUG: Obiectul Movie creat manual: $newMovie")
+
+                        kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                            val movieExists = movies.any { it.id == newMovie.id }
+                            if (!movieExists) {
+                                println("DEBUG: Adaug filmul în listă: ${newMovie.name}")
+                                movies = movies + newMovie
+                            } else {
+                                println("DEBUG: Filmul '${newMovie.name}' (ID: ${newMovie.id}) deja există.")
+                            }
+                        }
+                    } else {
+                        println("EROARE PARSARE MANUALĂ: Nu s-au putut extrage toate datele.")
+                    }
+                } catch (e: Exception) {
+                    println("EROARE CRITICĂ în blocul collect: ${e.message}")
+                }
+            }
+        }
+    }
+
+
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -98,8 +131,6 @@ fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
         }
 
     ) { innerPadding ->
-
-
         Box(
             modifier = Modifier
                 .fillMaxSize()
@@ -109,7 +140,8 @@ fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
                 CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
             } else {
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
-                    items(movies) { movie ->
+                    // Adaugăm `key` pentru a ajuta Compose să optimizeze lista
+                    items(items = movies, key = { movie -> movie.id }) { movie ->
                         MovieRow(movie = movie, onClick = { onMovieClick(movie.id) })
                     }
                 }

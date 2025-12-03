@@ -42,14 +42,14 @@ fun LoginScreen(onLoginSuccess: () -> Unit){
 
                     if (response.isSuccessful) {
                         val tokenPossible = response.body()?.token
-                        println("🎉 SUCCES! Token: $tokenPossible")
+                        println("SUCCES! Token: $tokenPossible")
                         TokenManager.token = tokenPossible;
                         onLoginSuccess()
                     } else {
-                        println("❌ Eroare server: ${response.code()}")
+                        println("Eroare server: ${response.code()}")
                     }
                 } catch (e: Exception) {
-                    println("💀 Eroare rețea: ${e.message}")
+                    println("Eroare rețea: ${e.message}")
                 }
             }
         }, modifier = Modifier.fillMaxWidth()
