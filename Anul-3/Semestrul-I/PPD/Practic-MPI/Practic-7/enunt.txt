@@ -1,0 +1,216 @@
+Problemă nouă (alt tip de rezultat, tot asincron)
+
+Enunț:
+
+Se consideră un fișier input.txt care conține pe prima linie un număr întreg N, iar pe următoarele linii N * N numere întregi, câte N pe o linie. Aceste numere reprezintă o matrice cu N linii și N coloane, stocată linie cu linie.
+
+Se cere să se determine linia cu suma maximă a valorilor în modul și valoarea acestei sume.
+
+Formal, pentru fiecare linie i (0 ≤ i < N) calculăm:
+
+𝑆
+𝑖
+=
+∑
+𝑗
+=
+0
+𝑁
+−
+1
+∣
+𝑎
+𝑖
+,
+𝑗
+∣
+S
+i
+	​
+
+=
+j=0
+∑
+N−1
+	​
+
+∣a
+i,j
+	​
+
+∣
+
+Se cere să se găsească:
+
+indicele liniei k pentru care S_k este maxim,
+
+valoarea S_k.
+
+Dacă există mai multe linii cu aceeași sumă maximă, se va alege linia cu indicele cel mai mic.
+
+Rezultatul va fi salvat în fișierul output.txt și va conține două valori:
+
+k S_k
+
+
+(adică indicele liniei și suma maximă).
+
+Cerințe MPI și structură de comunicare
+
+Se folosește un program MPI cu p procese, unde p > 1.
+
+Procesul 0 (master)
+
+Deschide fișierul input.txt și citește N.
+
+Pornește un ciclu în care:
+
+citește linia i (0-based) din matrice – adică N numere întregi;
+
+imediat după citirea liniei i, o trimite asincron către un proces worker, calculat astfel:
+
+𝑑
+𝑒
+𝑠
+𝑡
+=
+𝑖
+ 
+m
+o
+d
+ 
+(
+𝑝
+−
+1
+)
++
+1
+dest=imod(p−1)+1
+
+împreună cu linia, trimite și indicele liniei i, pentru ca procesul worker să știe la ce linie se referă.
+
+Se folosește MPI_Isend (sau un set de MPI_Isend pentru index + linie) pentru a respecta cerința de trimitere asincronă.
+
+În paralel, procesul 0:
+
+primește, în orice ordine, rezultatele de la procesele cu id > 0.
+
+fiecare rezultat conține:
+
+indicele liniei i,
+
+suma în modul S_i calculată pentru linia respectivă.
+
+De fiecare dată când primește un rezultat (i, S_i):
+
+compară S_i cu suma maximă curentă S_max.
+
+dacă S_i > S_max, actualizează:
+
+S_max = S_i,
+
+k = i.
+
+dacă S_i == S_max și i < k, actualizează k = i (pentru tie-break pe indice minim).
+
+După ce au fost trimise toate liniile și au fost primite toate cele N rezultate (câte unul pentru fiecare linie), procesul 0:
+
+scrie în fișierul output.txt:
+
+k S_max
+
+
+În final, procesul 0 trimite către fiecare proces worker un mesaj special de terminare (de exemplu, index de linie -1) ca să știe că nu mai sunt linii de procesat.
+
+Procesele cu id > 0 (workeri)
+
+Fiecare proces worker rulează în buclă:
+
+Primește:
+
+un indice de linie i (tip int);
+
+dacă i == -1, se oprește (a primit semnal de terminare).
+
+altfel, primește apoi N numere întregi – elementele liniei i.
+
+Calculează:
+
+𝑆
+𝑖
+=
+∑
+𝑗
+=
+0
+𝑁
+−
+1
+∣
+𝑎
+𝑖
+,
+𝑗
+∣
+S
+i
+	​
+
+=
+j=0
+∑
+N−1
+	​
+
+∣a
+i,j
+	​
+
+∣
+
+Trimite în mod asincron (cu MPI_Isend) către procesul 0:
+
+indicele i,
+
+suma S_i.
+
+Reia bucla, așteptând următoarea linie sau semnalul de terminare.
+
+Exemplu de test
+
+input.txt
+
+4
+1  2  3  4
+-5  6  0  1
+-2 -2 -2 -2
+10  0 -1  0
+
+
+Calculăm sumele în modul pe linii:
+
+linia 0: |1| + |2| + |3| + |4| = 10
+
+linia 1: |−5| + |6| + |0| + |1| = 12
+
+linia 2: |−2| + |−2| + |−2| + |−2| = 8
+
+linia 3: |10| + |0| + |−1| + |0| = 11
+
+Deci:
+
+S_0 = 10
+
+S_1 = 12 ← maxim
+
+S_2 = 8
+
+S_3 = 11
+
+→ Linia cu suma maximă este linia 1, cu S_1 = 12.
+
+output.txt:
+
+1 12
