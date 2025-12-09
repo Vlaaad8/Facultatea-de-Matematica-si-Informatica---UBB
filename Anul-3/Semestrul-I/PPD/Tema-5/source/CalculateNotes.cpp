@@ -14,12 +14,17 @@ using namespace std;
 
 void CalculateNotes::run() {
     LinkedList list = LinkedList();
-
+    LinkedList sortedList = LinkedList();
     for (int i = 1; i <= 10; i++) {
         string fileName = "Input/project" + to_string(i) + ".txt";
         readNodesFromFile(fileName, list);
     }
-    list.writeToFile("Results/resultS.txt");
+    Node* node = list.getHead();
+    while (node != nullptr) {
+        sortedList.addInOrder(node);
+        node= node->getNextNode();
+    }
+    sortedList.writeToFile("Results/resultS.txt");
 }
 
 
