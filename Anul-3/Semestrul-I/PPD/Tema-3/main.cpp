@@ -61,6 +61,8 @@ int main(int argc, char **argv) {
         GenerateNumber::generateNumber("numbers/secondNumber.txt", N2);
     }
 
+
+
     MPI_Barrier(MPI_COMM_WORLD);
 
     SequentialCalculation calculatorS(N1, N2);
