@@ -44,6 +44,7 @@ int main(int argc, char *argv[]) {
         for (int i = 1; i < P; i++) {
             MPI_Isend(&n,1,MPI_INT,i,0,MPI_COMM_WORLD,&n_request[i-1]);
         }
+
         int global_sum = -1000;
         for (int i = 0; i < n; i++) {
             int tmp;
