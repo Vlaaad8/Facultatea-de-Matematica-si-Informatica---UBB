@@ -53,13 +53,14 @@ void Node::unlockNode() {
     this->nodeLock.unlock();
 }
 
+
 void LinkedList::addInOrder(Node *node) {
     Node *previousNode = head;
     previousNode->lockNode();
     Node *currentNode = head->getNextNode();
     currentNode->lockNode();
 
-    while (currentNode != tail && currentNode->getNote() < node->getNote()) {
+    while (currentNode != tail && currentNode->getNote() > node->getNote()) {
         Node *tempNode = previousNode;
         previousNode = currentNode;
 
@@ -110,6 +111,25 @@ void LinkedList::addOrUpdateNode(Node *node) {
     }
 }
 
+Node *LinkedList::extractFirstNode() {
+    this->head->lockNode();
+
+    Node* firstReal = this->head->getNextNode();
+    firstReal->lockNode();
+
+    if (firstReal == this->tail) {
+        firstReal->unlockNode();
+        head->unlockNode();
+        return nullptr;
+    }
+    head->setNextNode(firstReal->getNextNode());
+    firstReal->unlockNode();
+    head->unlockNode();
+
+    firstReal->setNextNode(nullptr);
+
+    return firstReal;
+}
 
 Node *LinkedList::getHead() {
     return this->head;

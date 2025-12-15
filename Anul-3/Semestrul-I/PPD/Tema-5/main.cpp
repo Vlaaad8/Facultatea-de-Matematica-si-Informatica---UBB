@@ -23,11 +23,13 @@ int main(int argc, char **argv) {
                 GenerateData::generateData(fileName, 500, 240);
             }
         }
+
         CalculateNotes calculateStatic;
         auto start = high_resolution_clock::now();
         calculateStatic.run();
         auto end = high_resolution_clock::now();
         auto duration = end-start;
+
         cout << duration.count()<<endl;
     } else {
         CalculateNotesParallel calculateParallel(readerP, P,50);
@@ -35,6 +37,7 @@ int main(int argc, char **argv) {
         calculateParallel.run();
         auto end = high_resolution_clock::now();
         auto duration = end-start;
+
         cout << duration.count() << endl;
     }
 }
