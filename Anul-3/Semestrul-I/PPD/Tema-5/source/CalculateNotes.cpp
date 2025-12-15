@@ -15,15 +15,20 @@ using namespace std;
 void CalculateNotes::run() {
     LinkedList list = LinkedList();
     LinkedList sortedList = LinkedList();
+
     for (int i = 1; i <= 10; i++) {
         string fileName = "Input/project" + to_string(i) + ".txt";
         readNodesFromFile(fileName, list);
     }
-    Node* node = list.getHead();
-    while (node != nullptr) {
+
+    while (true) {
+        Node* node = list.extractFirstNode();
+        if (node == nullptr) {
+            break;
+        }
         sortedList.addInOrder(node);
-        node= node->getNextNode();
     }
+
     sortedList.writeToFile("Results/resultS.txt");
 }
 

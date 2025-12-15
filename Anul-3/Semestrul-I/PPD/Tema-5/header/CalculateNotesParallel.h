@@ -1,5 +1,6 @@
 #ifndef TEMA_4_CALCULATENOTESPARALLEL_H
 #define TEMA_4_CALCULATENOTESPARALLEL_H
+#include <barrier>
 #include <thread>
 
 #include "QueueContainer.h"
@@ -19,7 +20,7 @@ public:
     };
     void run();
 
-    void consumerThread(QueueContainer& queue, LinkedList& list);
+    void consumerThread(QueueContainer& queue, LinkedList& list,LinkedList& sortedList, barrier<> &wait_barrier);
 
     void readNodesFromFile(const string &fileName, QueueContainer &queue);
 };
