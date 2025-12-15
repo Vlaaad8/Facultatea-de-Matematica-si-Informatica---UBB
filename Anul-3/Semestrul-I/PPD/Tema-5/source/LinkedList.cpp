@@ -60,7 +60,9 @@ void LinkedList::addInOrder(Node *node) {
     Node *currentNode = head->getNextNode();
     currentNode->lockNode();
 
-    while (currentNode != tail && currentNode->getNote() > node->getNote()) {
+    while (currentNode != tail &&
+          (currentNode->getNote() > node->getNote() ||
+          (currentNode->getNote() == node->getNote() && currentNode->getId() < node->getId()))) {
         Node *tempNode = previousNode;
         previousNode = currentNode;
 
