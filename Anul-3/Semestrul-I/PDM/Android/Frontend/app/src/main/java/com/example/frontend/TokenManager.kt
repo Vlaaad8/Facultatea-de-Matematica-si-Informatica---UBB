@@ -1,25 +1,40 @@
 package com.example.frontend
 
 import android.content.Context
-import android.content.SharedPreferences
+import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.datastore.preferences.preferencesDataStore
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.runBlocking
+
+
+val Context.dataStore by preferencesDataStore(name = "user_prefs")
 
 object TokenManager {
-    private const val PREFS_NAME = "app_prefs"
-    private const val KEY_TOKEN = "auth_token"
-    private lateinit var preferences: SharedPreferences
+    private val KEY_TOKEN = stringPreferencesKey("auth_token")
 
+    var token: String? = null
+        private set
 
-    fun init(context: Context) {
-        preferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+    fun loadToken(context: Context) {
+        runBlocking {
+            token = context.dataStore.data.map { prefs -> prefs[KEY_TOKEN] }.first()
+        }
     }
 
-    var token: String?
-        get() = preferences.getString(KEY_TOKEN, null)
-        set(value) {
-            preferences.edit().putString(KEY_TOKEN, value).apply()
+    suspend fun saveToken(context: Context, newToken: String) {
+        context.dataStore.edit { preferences ->
+            preferences[KEY_TOKEN] = newToken
         }
+        token = newToken
+    }
 
-    fun clear() {
-        preferences.edit().remove(KEY_TOKEN).apply()
+    suspend fun clear(context: Context) {
+        context.dataStore.edit { preferences ->
+            preferences.remove(KEY_TOKEN)
+        }
+        token = null
     }
 }

@@ -11,7 +11,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.focus.FocusTargetModifierNode
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.example.frontend.utils.NetworkUtils
 import kotlinx.coroutines.launch
 
 
@@ -20,7 +22,8 @@ fun LoginScreen(onLoginSuccess: () -> Unit){
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("")}
 
-    val scope = rememberCoroutineScope();
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
 
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),
@@ -36,15 +39,24 @@ fun LoginScreen(onLoginSuccess: () -> Unit){
         Spacer(modifier = Modifier.height(32.dp))
         Button(onClick = {
             scope.launch {
+                if (!NetworkUtils.isInternetAvailable(context)) {
+                    println("Nu ai internet!")
+                    return@launch
+                }
+
                 try {
                     val request = LoginRequest(username, password)
                     val response = RetrofitClient.userService.login(request)
 
                     if (response.isSuccessful) {
                         val tokenPossible = response.body()?.token
-                        println("SUCCES! Token: $tokenPossible")
-                        TokenManager.token = tokenPossible;
-                        onLoginSuccess()
+                        if (tokenPossible != null) {
+                            println("SUCCES! Token: $tokenPossible")
+
+                            TokenManager.saveToken(context, tokenPossible)
+
+                            onLoginSuccess()
+                        }
                     } else {
                         println("Eroare server: ${response.code()}")
                     }
@@ -52,8 +64,7 @@ fun LoginScreen(onLoginSuccess: () -> Unit){
                     println("Eroare rețea: ${e.message}")
                 }
             }
-        }, modifier = Modifier.fillMaxWidth()
-        ){Text("Login")}
+        }, modifier = Modifier.fillMaxWidth()) { Text("Login") }
 
     }
 

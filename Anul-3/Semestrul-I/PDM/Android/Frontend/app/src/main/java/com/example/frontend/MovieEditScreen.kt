@@ -1,6 +1,5 @@
 package com.example.frontend
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.PressInteraction
 import androidx.compose.foundation.layout.*
@@ -12,50 +11,50 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.example.frontend.data.AppDatabase
+import com.example.frontend.repository.MovieRepository
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
 
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
+    val context = LocalContext.current
     val scope = rememberCoroutineScope()
 
+    // Inițializăm Repository-ul
+    val database = remember { AppDatabase.getDatabase(context) }
+    val repository = remember { MovieRepository(database.movieDao(), context) }
 
+    // State-uri pentru formular
     var name by remember { mutableStateOf("") }
     var rating by remember { mutableStateOf("") }
     var isRunning by remember { mutableStateOf(false) }
-
-
     var selectedDate by remember { mutableStateOf(Date()) }
-    var showDatePicker by remember { mutableStateOf(false) }
 
+    var showDatePicker by remember { mutableStateOf(false) }
     var movieObj by remember { mutableStateOf<Movie?>(null) }
     var isLoading by remember { mutableStateOf(true) }
-    var message by remember { mutableStateOf("") }
-
 
     val dateFormatter = remember { SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()) }
 
+    // Încărcăm datele din BAZA DE DATE LOCALĂ (Room)
+    // Asta permite deschiderea ecranului și editarea chiar și fără internet!
     LaunchedEffect(movieId) {
-        try {
-            val response = RetrofitClient.movieService.getMovieDetail(movieId)
-            if (response.isSuccessful && response.body() != null) {
-                movieObj = response.body()
-                name = movieObj!!.name
-                rating = movieObj!!.rating.toString()
-                isRunning = movieObj!!.running == 1
-                selectedDate = movieObj!!.premierDate
-            } else {
-                message = "Eroare încărcare: ${response.code()}"
-            }
-        } catch (e: Exception) {
-            message = "Eroare rețea: ${e.message}"
-        } finally {
-            isLoading = false
+        val entity = database.movieDao().getMovieById(movieId)
+        if (entity != null) {
+            // Convertim din Entity (DB) în Movie (Model)
+            movieObj = entity.toMovie()
+
+            // Populăm câmpurile formularului
+            name = movieObj!!.name
+            rating = movieObj!!.rating.toString()
+            isRunning = movieObj!!.running == 1
+            selectedDate = movieObj!!.premierDate
         }
+        isLoading = false
     }
 
     Box(modifier = Modifier.fillMaxSize()) {
@@ -101,7 +100,6 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
                             Icon(Icons.Default.DateRange, contentDescription = "Select Date")
                         }
                     },
-
                     interactionSource = remember { MutableInteractionSource() }
                         .also { interactionSource ->
                             LaunchedEffect(interactionSource) {
@@ -121,7 +119,7 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text("Running?", modifier = Modifier.weight(1f))
+                    Text("Rulează în cinema?", modifier = Modifier.weight(1f))
                     Switch(checked = isRunning, onCheckedChange = { isRunning = it })
                 }
 
@@ -131,35 +129,29 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
                     modifier = Modifier.fillMaxWidth(),
                     onClick = {
                         scope.launch {
-                            try {
-                                val updatedMovie = movieObj!!.copy(
-                                    name = name,
-                                    rating = rating.toDoubleOrNull() ?: 0.0,
-                                    running = if (isRunning) 1 else 0,
-                                    premierDate = selectedDate
-                                )
+                            // Creăm obiectul actualizat
+                            val updatedMovie = movieObj!!.copy(
+                                name = name,
+                                rating = rating.toDoubleOrNull() ?: 0.0,
+                                running = if (isRunning) 1 else 0,
+                                premierDate = selectedDate
+                            )
 
-                                val response = RetrofitClient.movieService.editMovie(movieId, updatedMovie)
-                                if (response.isSuccessful) {
-                                    onUpdateSuccess()
-                                } else {
-                                    message = "Eroare server: ${response.code()}"
-                                }
-                            } catch (e: Exception) {
-                                message = "Eroare: ${e.message}"
-                            }
+                            // Apelăm repository-ul pentru salvare (Sync sau Offline fallback)
+                            repository.editMovie(movieId, updatedMovie)
+
+                            // Ne întoarcem la listă
+                            onUpdateSuccess()
                         }
                     }
                 ) {
-                    Text("Save")
+                    Text("Salvează Modificările")
                 }
-            }
-
-            if (message.isNotEmpty()) {
-                Text(message, color = MaterialTheme.colorScheme.error)
+            } else {
+                // Caz rar: Filmul nu a fost găsit în DB local
+                Text("Eroare: Filmul nu a fost găsit local.")
             }
         }
-
 
         if (showDatePicker) {
             val datePickerState = rememberDatePickerState(
@@ -171,20 +163,15 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
                 confirmButton = {
                     TextButton(
                         onClick = {
-
                             if (datePickerState.selectedDateMillis != null) {
                                 selectedDate = Date(datePickerState.selectedDateMillis!!)
                             }
                             showDatePicker = false
                         }
-                    ) {
-                        Text("OK")
-                    }
+                    ) { Text("OK") }
                 },
                 dismissButton = {
-                    TextButton(onClick = { showDatePicker = false }) {
-                        Text("Cancel")
-                    }
+                    TextButton(onClick = { showDatePicker = false }) { Text("Cancel") }
                 }
             ) {
                 DatePicker(state = datePickerState)
