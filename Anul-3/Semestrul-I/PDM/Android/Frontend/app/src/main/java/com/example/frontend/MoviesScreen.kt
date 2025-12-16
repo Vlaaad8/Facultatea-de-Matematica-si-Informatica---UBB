@@ -1,127 +1,116 @@
 package com.example.frontend
 
+import android.app.Activity
+import android.content.Intent
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ExitToApp
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FloatingActionButton
-import androidx.compose.material3.Icon
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
+import androidx.compose.material.icons.filled.ExitToApp
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.work.OneTimeWorkRequest
+import androidx.work.WorkManager
+import com.example.frontend.data.AppDatabase
+import com.example.frontend.repository.MovieRepository
 import com.example.frontend.service.SocketManager
-import com.google.gson.GsonBuilder
-import kotlinx.coroutines.flow.collectLatest
+import com.example.frontend.utils.NetworkUtils
+import com.example.frontend.worker.SyncWorker
+import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
-    var movies by remember { mutableStateOf(emptyList<Movie>()) }
-    var isLoading by remember { mutableStateOf(true) }
+    val context = LocalContext.current
+
+    // 1. Inițializăm Baza de Date și Repository-ul
+    // Folosim 'remember' pentru a nu le recrea la fiecare recompoziție
+    val database = remember { AppDatabase.getDatabase(context) }
+    val repository = remember { MovieRepository(database.movieDao(), context) }
+
+    // 2. COLECTĂM datele din Room (Flow -> State)
+    // Acesta este "secretul": UI-ul afișează DOAR ce e în baza de date.
+    // Orice modificare în DB se reflectă instant aici.
+    val movies by repository.movies.collectAsState(initial = emptyList())
+
+    // Stare pentru a ști dacă avem net (pentru titlu)
+    val isOnline by NetworkUtils.observeConnectivity(context).collectAsState(initial = NetworkUtils.isInternetAvailable(context))
+    val scope = rememberCoroutineScope()
+    // 3. La intrarea pe ecran, pornim WebSocket-ul și cerem un Refresh de la server
+    LaunchedEffect(Unit) {
+        SocketManager.connect()
+
+        // Această funcție ia datele de pe server și le scrie în Room.
+        // Odată scrise în Room, variabila `movies` de mai sus se actualizează singură.
+        repository.refreshMovies()
+    }
 
 
-    LaunchedEffect(true) {
+    LaunchedEffect(Unit) {
+        SocketManager.events.collect {
+            println("WebSocket: Am primit notificare de modificare. Actualizez datele...")
+            repository.refreshMovies()
+        }
+    }
+    LaunchedEffect(isOnline) {
+        if (isOnline) {
+            println("NETUL A REVENIT! Forțăm sincronizarea datelor către server...")
 
-        kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
             SocketManager.connect()
-            try {
-                val response = RetrofitClient.movieService.getMovies(page = 0, size = 100)
-                if (response.isSuccessful) {
 
-                    kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
-                        movies = response.body() ?: emptyList()
-                        println("Lista de filme: $movies")
-                    }
-                } else {
-                    println("Eroare server: ${response.code()}")
-                }
-            } catch (e: Exception) {
-                println("Eroare server: ${e.message}")
-            } finally {
+            repository.refreshMovies()
 
-                kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
-                    isLoading = false
-                }
-            }
+
+            val syncRequest = OneTimeWorkRequest.Builder(SyncWorker::class.java).build()
+            WorkManager.getInstance(context).enqueue(syncRequest)
         }
     }
-
-
-    LaunchedEffect(key1 = true) {
-        SocketManager.events.collect { jsonString ->
-            kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
-                println("DEBUG: Am primit un nou eveniment de la WebSocket: $jsonString")
-                try {
-
-                    val idMatch = "\"id\":(\\d+)".toRegex().find(jsonString)
-                    val nameMatch = "\"name\":\"([^\"]+)\"".toRegex().find(jsonString)
-                    val ownerMatch = "\"owner_id\":(\\d+)".toRegex().find(jsonString)
-                    val ratingMatch = "\"rating\":(\\d+)".toRegex().find(jsonString)
-                    val runningMatch = "\"running\":(\\d+)".toRegex().find(jsonString)
-
-                    val id = idMatch?.groupValues?.get(1)?.toIntOrNull()
-                    val name = nameMatch?.groupValues?.get(1)
-                    val ownerId = ownerMatch?.groupValues?.get(1)?.toIntOrNull()
-                    val rating = ratingMatch?.groupValues?.get(1)?.toDoubleOrNull()
-
-                    val isRunning = runningMatch?.groupValues?.get(1)?.toIntOrNull() == 1
-
-                    if (id != null && name != null && ownerId != null && rating != null) {
-                        val newMovie = Movie(
-                            id = id,
-                            name = name,
-                            owner_id = ownerId,
-                            premierDate = java.util.Date(),
-                            rating = rating,
-                            running = 1
-                        )
-
-                        println("DEBUG: Obiectul Movie creat manual: $newMovie")
-
-                        kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
-                            val movieExists = movies.any { it.id == newMovie.id }
-                            if (!movieExists) {
-                                println("DEBUG: Adaug filmul în listă: ${newMovie.name}")
-                                movies = movies + newMovie
-                            } else {
-                                println("DEBUG: Filmul '${newMovie.name}' (ID: ${newMovie.id}) deja există.")
-                            }
-                        }
-                    } else {
-                        println("EROARE PARSARE MANUALĂ: Nu s-au putut extrage toate datele.")
-                    }
-                } catch (e: Exception) {
-                    println("EROARE CRITICĂ în blocul collect: ${e.message}")
-                }
-            }
-        }
-    }
-
-
-
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Lista Filme") },
+                title = {
+                    val statusText = if (isOnline) "Online" else "Offline Mode"
+                    val textColor = if (isOnline) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.error
+                    Text("Lista Filme ($statusText)", color = textColor)
+                },
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.primary
-                )
+                    containerColor = MaterialTheme.colorScheme.primaryContainer
+                ),
+
+                actions = {
+                    IconButton(onClick = {
+
+                        scope.launch {
+
+                            try { SocketManager.close()} catch (e: Exception) { e.printStackTrace() }
+
+
+                            TokenManager.clear(context)
+
+                            val intent = Intent(context, Class.forName("com.example.frontend.LoginActivity")).apply {
+                                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                            }
+                            context.startActivity(intent)
+
+                            // Închidem activitatea curentă dacă contextul permite
+                            (context as? Activity)?.finish()
+                        }
+                    }) {
+
+                        Icon(
+                            imageVector = Icons.Default.ExitToApp, // Verifică dacă ai importat-o
+                            contentDescription = "Deconectare",
+                            tint = MaterialTheme.colorScheme.onPrimaryContainer
+                        )
+                    }
+                }
             )
         },
         floatingActionButton = {
@@ -129,18 +118,22 @@ fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
                 Icon(Icons.Default.Add, contentDescription = "Adaugă Film")
             }
         }
-
     ) { innerPadding ->
         Box(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
-            if (isLoading) {
-                CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+            // Afișăm lista (chiar dacă e goală inițial)
+            if (movies.isEmpty()) {
+                // Mesaj doar dacă nu avem nimic în baza de date
+                Text(
+                    text = "Nu există filme local. Verifică conexiunea.",
+                    modifier = Modifier.align(Alignment.Center)
+                )
             } else {
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
-                    // Adaugăm `key` pentru a ajuta Compose să optimizeze lista
+                    // Folosim 'key' pentru performanță în Compose
                     items(items = movies, key = { movie -> movie.id }) { movie ->
                         MovieRow(movie = movie, onClick = { onMovieClick(movie.id) })
                     }

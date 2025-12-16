@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose.compiler)
+    id("kotlin-kapt")
 }
 
 android {
@@ -60,4 +61,9 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     implementation("androidx.navigation:navigation-compose:2.8.5")
     implementation("androidx.compose.material:material-icons-extended")
+    implementation ("androidx.room:room-runtime:2.7.0-alpha04")
+    implementation ("androidx.room:room-ktx:2.7.0-alpha04")
+    kapt ("androidx.room:room-compiler:2.7.0-alpha04")
+    implementation ("androidx.datastore:datastore-preferences:1.0.0")
+    implementation ("androidx.work:work-runtime-ktx:2.9.0")
 }

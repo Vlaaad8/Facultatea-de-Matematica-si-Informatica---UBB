@@ -10,6 +10,7 @@ public:
     void run();
 private:
     void readNodesFromFile(const string &fileName, LinkedList &list);
+    void readNodesFromDataBase(const string &table,LinkedList &list);
 };
 
 

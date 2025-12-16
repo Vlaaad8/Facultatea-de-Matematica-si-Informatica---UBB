@@ -23,6 +23,8 @@ public:
     void consumerThread(QueueContainer& queue, LinkedList& list,LinkedList& sortedList, barrier<> &wait_barrier);
 
     void readNodesFromFile(const string &fileName, QueueContainer &queue);
+
+    void readNodesFromDataBase(QueueContainer &queue,const string& tableName);
 };
 
 

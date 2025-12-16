@@ -10,7 +10,10 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.example.frontend.data.AppDatabase
+import com.example.frontend.repository.MovieRepository
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -22,15 +25,20 @@ fun MovieAddScreen(
     onAddSuccess: () -> Unit,
     onBackClick: () -> Unit
 ) {
+    val context = LocalContext.current
     val scope = rememberCoroutineScope()
 
+    // Inițializăm Repository-ul
+    val database = remember { AppDatabase.getDatabase(context) }
+    val repository = remember { MovieRepository(database.movieDao(), context) }
+
+    // State-uri pentru formular
     var name by remember { mutableStateOf("") }
     var rating by remember { mutableStateOf("") }
     var isRunning by remember { mutableStateOf(false) }
     var selectedDate by remember { mutableStateOf(Date()) }
 
     var showDatePicker by remember { mutableStateOf(false) }
-    var message by remember { mutableStateOf("") }
 
     val dateFormatter = remember { SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()) }
 
@@ -55,7 +63,6 @@ fun MovieAddScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
 
-
                 OutlinedTextField(
                     value = name,
                     onValueChange = { name = it },
@@ -68,7 +75,7 @@ fun MovieAddScreen(
                 OutlinedTextField(
                     value = rating,
                     onValueChange = { rating = it },
-                    label = { Text("Rating") },
+                    label = { Text("Rating (ex: 8.5)") },
                     modifier = Modifier.fillMaxWidth()
                 )
 
@@ -108,34 +115,24 @@ fun MovieAddScreen(
                     modifier = Modifier.fillMaxWidth(),
                     onClick = {
                         scope.launch {
-                            try {
-                                val newMovie = Movie(
-                                    id = 0,
-                                    owner_id = 0,
-                                    name = name,
-                                    rating = rating.toDoubleOrNull() ?: 0.0,
-                                    running = if (isRunning) 1 else 0,
-                                    premierDate = selectedDate
-                                )
+                            val newMovie = Movie(
+                                id = 0, // ID 0 indică un film nou
+                                owner_id = 0,
+                                name = name,
+                                rating = rating.toDoubleOrNull() ?: 0.0,
+                                running = if (isRunning) 1 else 0,
+                                premierDate = selectedDate
+                            )
 
-                                val response = RetrofitClient.movieService.addMovie(newMovie)
+                            // Apelăm repository-ul (se ocupă el de online/offline)
+                            repository.addMovie(newMovie)
 
-                                if (response.isSuccessful) {
-                                    onAddSuccess()
-                                } else {
-                                    message = "Eroare: ${response.code()}"
-                                }
-                            } catch (e: Exception) {
-                                message = "Eroare: ${e.message}"
-                            }
+                            // Ieșim din ecran
+                            onAddSuccess()
                         }
                     }
                 ) {
                     Text("Adaugă Filmul")
-                }
-
-                if (message.isNotEmpty()) {
-                    Text(message, color = MaterialTheme.colorScheme.error)
                 }
             }
 

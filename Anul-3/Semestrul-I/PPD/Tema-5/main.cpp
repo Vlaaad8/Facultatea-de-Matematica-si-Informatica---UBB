@@ -17,12 +17,24 @@ int main(int argc, char **argv) {
     }
     if (version == 0) {
         if (run == 1) {
-            const string path = "Input/project";
-            for (int i = 1; i <= 10; i++) {
-                const string fileName = path + to_string(i) + ".txt";
-                GenerateData::generateData(fileName, 500, 240);
+            //File Version
+
+            // const string path = "Input/project";
+            // for (int i = 1; i <= 10; i++) {
+            //     const string fileName = path + to_string(i) + ".txt";
+            //     GenerateData::generateData(fileName, 500, 240);
+
+
+            //DataBase Version
+
+            const string tableName= "project";
+                for (int i = 1 ; i <=10 ;i++) {
+                    const string table =  tableName+ to_string(i);
+                    GenerateData::generateDataBase(table, 500, 240);
+                }
+
             }
-        }
+
 
         CalculateNotes calculateStatic;
         auto start = high_resolution_clock::now();

@@ -15,3 +15,5 @@ add_executable(Tema_5 main.cpp
         source/CalculateNotesParallel.cpp
         header/CalculateNotesParallel.h
         header/ThreadPool.h)
+
+target_link_libraries(Tema_5 sqlite3)

@@ -5,7 +5,7 @@
 #include "../header/CalculateNotesParallel.h"
 
 #include <barrier>
-
+#include <sqlite3.h>
 #include "../header/ThreadPool.h"
 #include <iostream>
 #include <fstream>
@@ -33,12 +33,22 @@ void CalculateNotesParallel::run() {
     {
         ThreadPool readPool(readerThreads);
         for (int i = 1; i <= numberOfFiles; i++) {
-            string fileName = "Input/project" + to_string(i) + ".txt";
-            readPool.enqueue([this, fileName, &queue]() {
-                this->readNodesFromFile(fileName, queue);
+            //File Version
+
+            // string fileName = "Input/project" + to_string(i) + ".txt";
+            // readPool.enqueue([this, fileName, &queue]() {
+            //     this->readNodesFromFile(fileName, queue);
+            // });
+
+            //DataBase Version
+
+            string table = "project"+ to_string(i);
+            readPool.enqueue([this,table,&queue]() {
+                this->readNodesFromDataBase(queue,table);
             });
         }
     }
+
     for (int i = 0; i < readerThreads; i++) {
         queue.doneProducing();
     }
@@ -92,3 +102,30 @@ void CalculateNotesParallel::readNodesFromFile(const string &fileName, QueueCont
 
     in.close();
 }
+void CalculateNotesParallel::readNodesFromDataBase(QueueContainer &queue,const string &tableName) {
+    sqlite3* dataBase;
+    sqlite3_stmt *statement;
+
+    const string databaseName = "Laborator-5.sqlite";
+    if ( sqlite3_open(databaseName.c_str(), &dataBase) != SQLITE_OK ) {
+        return;
+    }
+    string sql = "SELECT id , nota FROM "+tableName;
+
+    if (sqlite3_prepare_v2(dataBase, sql.c_str(), -1, &statement, nullptr) != SQLITE_OK) {
+        sqlite3_close(dataBase);
+        return;
+    }
+    while (sqlite3_step(statement) == SQLITE_ROW) {
+        int id = sqlite3_column_int(statement, 0);
+        int nota = sqlite3_column_int(statement, 1);
+
+        Node *node = new Node(id, nota);
+        queue.addNode(node);
+    }
+
+    sqlite3_finalize(statement);
+    sqlite3_close(dataBase);
+}
+
+
