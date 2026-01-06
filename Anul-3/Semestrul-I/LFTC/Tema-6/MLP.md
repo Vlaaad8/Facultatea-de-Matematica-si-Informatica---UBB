@@ -14,27 +14,28 @@
 <numarFloat> ::= <numar> . <numar>
 <const> ::= <numar> | <numarFloat> | <cuvant>
 
-<operator> ::= + | - | / | * | %
-<operatorRelational> ::= == | < | > 
+<operator> ::= + | -  
+<operatorPrioritar> ::= * 
 ````
 ### Specificare sintaxa
 
 ````
-<program> ::= #include <iostream> using namespace std ; int main ( ) { <declVar\> <intrComp\> }
+<program> ::= #include <iostream> using namespace std ; int main ( ) { <declVar> <intrComp> }
 <declVar> ::= <tip> <listaVar> | <tip> <listaVar> <declVar>
 <listaVar> ::= <ID> ; | <ID> , <listaVar>
 
 <tip> ::=  int | float 
 
 <intrComp> ::= <intr> | <intr> <intrComp>
-<intr> ::= <atribuire> | <intrIf> | <intrWhile> | <intrCitire> | <intrAfisare>
-<atribuire> ::= <ID> = <operand> ; | <ID> = <expresie> ;
-<expresie> ::= <operand> <operator> <operand> | <operand> <operator> <expresie>
-<operand> ::= <const> | <ID>
-<intrIf> ::= if ( <conditie> ) { <intrComp> }
-                | if ( <conditie> ) { <intrComp> } else  { <intrComp> }
-<intrWhile> ::= while ( <conditie> ) {" <intrComp> }
-<conditie> ::= <operand> | <operand> <operatorRelational> <operand>
+<intr> ::= <atribuire> | <intrCitire> | <intrAfisare>
+
+<atribuire> ::= <ID> = <expresie> ;
+
+<expresie> ::= <expresie> <operator> <termen> | <termen>
+
+<termen> ::= <factor> | <termen> <operatorPrioritar> <factor> 
+<factor> ::= <const> | <ID> | ( <expresie> ) 
+
 <intrCitire> ::= cin >> <ID> ;
-<intrAfisare> ::= cout << <ID> ; | cout << <const> ;
+<intrAfisare> ::= cout << <ID> ;
 ````
