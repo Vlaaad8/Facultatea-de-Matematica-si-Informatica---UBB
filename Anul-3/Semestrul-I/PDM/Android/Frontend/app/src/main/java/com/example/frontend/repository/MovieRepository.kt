@@ -30,7 +30,7 @@ class MovieRepository(private val movieDao: MovieDao, private val context: Conte
         } catch (e: Exception) { Log.e("Repo", "Error refresh", e) }
     }
 
-    // --- MODIFICARE MAJORĂ AICI ---
+
     suspend fun addMovie(movie: Movie) {
         if (NetworkUtils.isInternetAvailable(context)) {
             try {
@@ -45,14 +45,13 @@ class MovieRepository(private val movieDao: MovieDao, private val context: Conte
                         syncStatus = 0
                     )
                     movieDao.insert(entity)
-                    return // Ieșim din funcție, totul e gata
+                    return
                 }
             } catch (e: Exception) {
                 Log.e("Repo", "Eroare server: ${e.message}")
             }
         }
 
-        // Fallback Offline
         Log.d("Repo", "Salvam OFFLINE...")
         val tempId = if (movie.id == 0) Random.nextInt(100000, 999999) else movie.id
 
@@ -68,7 +67,6 @@ class MovieRepository(private val movieDao: MovieDao, private val context: Conte
         movieDao.insert(offlineEntity)
     }
 
-    // SCHIMBARE: Am scos ": Boolean"
     suspend fun editMovie(movieId: Int, movie: Movie) {
         if (NetworkUtils.isInternetAvailable(context)) {
             try {
@@ -80,14 +78,14 @@ class MovieRepository(private val movieDao: MovieDao, private val context: Conte
                         syncStatus = 0
                     )
                     movieDao.insert(entity)
-                    return // Ieșim, gata
+                    return
                 }
             } catch (e: Exception) {
                 Log.e("Repo", "Eroare editare server: ${e.message}")
             }
         }
 
-        // Fallback Offline
+
         Log.d("Repo", "Editare OFFLINE...")
         val offlineEntity = MovieEntity(
             id = movieId,

@@ -28,11 +28,9 @@ fun MovieAddScreen(
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
 
-    // Inițializăm Repository-ul
     val database = remember { AppDatabase.getDatabase(context) }
     val repository = remember { MovieRepository(database.movieDao(), context) }
 
-    // State-uri pentru formular
     var name by remember { mutableStateOf("") }
     var rating by remember { mutableStateOf("") }
     var isRunning by remember { mutableStateOf(false) }
@@ -116,7 +114,7 @@ fun MovieAddScreen(
                     onClick = {
                         scope.launch {
                             val newMovie = Movie(
-                                id = 0, // ID 0 indică un film nou
+                                id = 0,
                                 owner_id = 0,
                                 name = name,
                                 rating = rating.toDoubleOrNull() ?: 0.0,
@@ -124,10 +122,8 @@ fun MovieAddScreen(
                                 premierDate = selectedDate
                             )
 
-                            // Apelăm repository-ul (se ocupă el de online/offline)
                             repository.addMovie(newMovie)
 
-                            // Ieșim din ecran
                             onAddSuccess()
                         }
                     }
@@ -136,7 +132,6 @@ fun MovieAddScreen(
                 }
             }
 
-            // Dialogul Calendarului
             if (showDatePicker) {
                 val datePickerState = rememberDatePickerState()
                 DatePickerDialog(

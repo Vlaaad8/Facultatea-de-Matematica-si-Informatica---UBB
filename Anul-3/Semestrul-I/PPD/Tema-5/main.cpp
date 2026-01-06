@@ -23,7 +23,7 @@ int main(int argc, char **argv) {
             // for (int i = 1; i <= 10; i++) {
             //     const string fileName = path + to_string(i) + ".txt";
             //     GenerateData::generateData(fileName, 500, 240);
-
+            // }
 
             //DataBase Version
 

@@ -25,19 +25,17 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // 1. Încărcăm token-ul din DataStore la pornire
+
         TokenManager.loadToken(applicationContext)
 
-        // 2. Creăm canalul de notificări (pentru Android 8+)
         NotificationUtils.createNotificationChannel(applicationContext)
 
-        // 3. Pornim sincronizarea în fundal
         setupPeriodicSync()
 
         setContent {
             val navController = rememberNavController()
 
-            // 4. Cerem permisiunea de notificări (Doar pentru Android 13+)
+
             val permissionLauncher = rememberLauncherForActivityResult(
                 contract = ActivityResultContracts.RequestPermission(),
                 onResult = { isGranted ->
@@ -53,7 +51,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
 
-            // Logica de navigare: Dacă avem token, mergem direct la filme
             val startDestination = if (TokenManager.token != null) "movies" else "login"
 
             NavHost(navController = navController, startDestination = startDestination) {
@@ -95,17 +92,16 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun setupPeriodicSync() {
-        // Constrângeri: Worker-ul rulează doar dacă avem internet
         val constraints = Constraints.Builder()
             .setRequiredNetworkType(NetworkType.CONNECTED)
             .build()
 
-        // Setăm intervalul la 15 minute (minimul permis de Android)
+
         val syncRequest = PeriodicWorkRequestBuilder<SyncWorker>(15, TimeUnit.MINUTES)
             .setConstraints(constraints)
             .build()
 
-        // Enqueue Unique: Ne asigurăm că nu avem 10 workeri identici, ci doar unul
+
         WorkManager.getInstance(this).enqueueUniquePeriodicWork(
             "MovieSyncWork",
             ExistingPeriodicWorkPolicy.KEEP,

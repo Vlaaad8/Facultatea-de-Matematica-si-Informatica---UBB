@@ -15,7 +15,7 @@ data class MovieEntity(
     val running: Int,
     val owner_id: Int,
 
-    // 0 = Synced, 1 = Created Offline, 2 = Edited Offline
+
     val syncStatus: Int = 0
 ) {
     fun toMovie(): Movie {
@@ -30,7 +30,7 @@ data class MovieEntity(
     }
 }
 
-// Convertorul Date rămâne la fel...
+
 class DateConverter {
     @TypeConverter
     fun fromTimestamp(value: Long?): Date? = value?.let { Date(it) }

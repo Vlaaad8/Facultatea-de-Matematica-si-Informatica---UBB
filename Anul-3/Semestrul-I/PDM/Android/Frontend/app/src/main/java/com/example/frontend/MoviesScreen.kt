@@ -30,25 +30,20 @@ import kotlinx.coroutines.launch
 fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
     val context = LocalContext.current
 
-    // 1. Inițializăm Baza de Date și Repository-ul
-    // Folosim 'remember' pentru a nu le recrea la fiecare recompoziție
+
     val database = remember { AppDatabase.getDatabase(context) }
     val repository = remember { MovieRepository(database.movieDao(), context) }
 
-    // 2. COLECTĂM datele din Room (Flow -> State)
-    // Acesta este "secretul": UI-ul afișează DOAR ce e în baza de date.
-    // Orice modificare în DB se reflectă instant aici.
+
     val movies by repository.movies.collectAsState(initial = emptyList())
 
-    // Stare pentru a ști dacă avem net (pentru titlu)
+
     val isOnline by NetworkUtils.observeConnectivity(context).collectAsState(initial = NetworkUtils.isInternetAvailable(context))
     val scope = rememberCoroutineScope()
-    // 3. La intrarea pe ecran, pornim WebSocket-ul și cerem un Refresh de la server
+
     LaunchedEffect(Unit) {
         SocketManager.connect()
 
-        // Această funcție ia datele de pe server și le scrie în Room.
-        // Odată scrise în Room, variabila `movies` de mai sus se actualizează singură.
         repository.refreshMovies()
     }
 
@@ -99,13 +94,12 @@ fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
                             }
                             context.startActivity(intent)
 
-                            // Închidem activitatea curentă dacă contextul permite
                             (context as? Activity)?.finish()
                         }
                     }) {
 
                         Icon(
-                            imageVector = Icons.Default.ExitToApp, // Verifică dacă ai importat-o
+                            imageVector = Icons.Default.ExitToApp,
                             contentDescription = "Deconectare",
                             tint = MaterialTheme.colorScheme.onPrimaryContainer
                         )
@@ -124,16 +118,15 @@ fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
-            // Afișăm lista (chiar dacă e goală inițial)
+
             if (movies.isEmpty()) {
-                // Mesaj doar dacă nu avem nimic în baza de date
+
                 Text(
                     text = "Nu există filme local. Verifică conexiunea.",
                     modifier = Modifier.align(Alignment.Center)
                 )
             } else {
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
-                    // Folosim 'key' pentru performanță în Compose
                     items(items = movies, key = { movie -> movie.id }) { movie ->
                         MovieRow(movie = movie, onClick = { onMovieClick(movie.id) })
                     }
