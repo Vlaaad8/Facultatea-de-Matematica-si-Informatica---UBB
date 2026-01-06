@@ -26,11 +26,11 @@ object NetworkUtils {
 
         val callback = object : ConnectivityManager.NetworkCallback() {
             override fun onAvailable(network: Network) {
-                trySend(true) // Avem net
+                trySend(true)
             }
 
             override fun onLost(network: Network) {
-                trySend(false) // Am pierdut netul
+                trySend(false)
             }
         }
 
@@ -40,10 +40,10 @@ object NetworkUtils {
 
         connectivityManager.registerNetworkCallback(request, callback)
 
-        // Trimitem starea inițială imediat, ca să nu așteptăm prima schimbare
+
         trySend(isInternetAvailable(context))
 
-        // Curățenie când ecranul nu mai este activ
+
         awaitClose {
             connectivityManager.unregisterNetworkCallback(callback)
         }

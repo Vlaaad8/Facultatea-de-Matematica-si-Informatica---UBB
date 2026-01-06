@@ -72,7 +72,8 @@ void CalculateNotesParallel::consumerThread(QueueContainer &queue, LinkedList &l
     }
     wait_barrier.arrive_and_wait();
 
-    // acum e momentul sa facem lista sortata;
+    // acum e momentul sa facem lista sortata
+
     while (true) {
         Node* node = list.extractFirstNode();
         if (node == nullptr) {
@@ -80,9 +81,6 @@ void CalculateNotesParallel::consumerThread(QueueContainer &queue, LinkedList &l
         }
         sortedList.addInOrder(node);
     }
-
-
-
 
 }
 

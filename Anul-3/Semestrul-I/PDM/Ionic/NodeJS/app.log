@@ -6327,3 +6327,283 @@ sql: UPDATE movies
 [2025-12-16T13:25:26.142] [INFO] default - Entered getMovies method
 [2025-12-16T13:25:26.143] [INFO] default - Size: 0 0
 [2025-12-16T15:17:33.152] [INFO] default - WebSocket closed for user 1
+[2025-12-17T10:39:51.323] [INFO] default - Server started on port 8081
+[2025-12-17T10:40:19.074] [INFO] default - Client attempting WS connection
+[2025-12-17T10:40:19.077] [ERROR] default - Invalid or expired token
+[2025-12-17T10:40:36.194] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-17T10:40:36.195] [INFO] default - A login request with username= a and passoword= a
+[2025-12-17T10:40:36.543] [INFO] default - Client attempting WS connection
+[2025-12-17T10:40:36.545] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T10:40:36.561] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:40:36.561] [INFO] default - Entered getMovies method
+[2025-12-17T10:40:36.563] [INFO] default - Size: 0 0
+[2025-12-17T10:40:36.589] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:40:36.589] [INFO] default - Entered getMovies method
+[2025-12-17T10:40:36.591] [INFO] default - Size: 0 0
+[2025-12-17T10:41:04.150] [INFO] default - Updating movie 1
+[2025-12-17T10:41:04.265] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:41:04.266] [INFO] default - Entered getMovies method
+[2025-12-17T10:41:04.267] [INFO] default - Size: 0 0
+[2025-12-17T10:41:04.277] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:41:04.280] [INFO] default - Entered getMovies method
+[2025-12-17T10:41:04.281] [INFO] default - Size: 0 0
+[2025-12-17T10:43:28.093] [INFO] default - Updating movie 1
+[2025-12-17T10:43:28.170] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:43:28.170] [INFO] default - Entered getMovies method
+[2025-12-17T10:43:28.171] [INFO] default - Size: 0 0
+[2025-12-17T10:43:28.180] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:43:28.180] [INFO] default - Entered getMovies method
+[2025-12-17T10:43:28.182] [INFO] default - Size: 0 0
+[2025-12-17T10:43:52.097] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:43:52.097] [INFO] default - Entered getMovies method
+[2025-12-17T10:43:52.099] [INFO] default - Size: 0 0
+[2025-12-17T10:44:25.413] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:44:25.414] [INFO] default - Entered getMovies method
+[2025-12-17T10:44:25.416] [INFO] default - Size: 0 0
+[2025-12-17T10:44:36.114] [INFO] default - Adding a new resource
+[2025-12-17T10:44:36.115] [DEBUG] default - Adding a new resource 333 0 Dec 17, 2025 10:44:28 AM 1.3
+[2025-12-17T10:44:36.123] [INFO] default - Added movie with id 93
+[2025-12-17T10:44:36.124] [DEBUG] default - Starting to send notifications
+[2025-12-17T10:44:36.124] [DEBUG] default - 1
+[2025-12-17T10:44:36.125] [INFO] default - Sent new movie to user 1: {"id":93,"name":"333","owner_id":1,"premierDate":"Dec 17, 2025 10:44:28 AM","rating":1.3,"running":0}
+[2025-12-17T10:44:36.127] [INFO] default - WebSocket closed for user 1
+[2025-12-17T10:44:36.207] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:44:36.207] [INFO] default - Entered getMovies method
+[2025-12-17T10:44:36.208] [INFO] default - Size: 0 0
+[2025-12-17T10:44:36.217] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:44:36.218] [INFO] default - Entered getMovies method
+[2025-12-17T10:44:36.219] [INFO] default - Size: 0 0
+[2025-12-17T10:45:14.246] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:45:14.246] [INFO] default - Entered getMovies method
+[2025-12-17T10:45:14.247] [INFO] default - Size: 0 0
+[2025-12-17T10:45:14.365] [INFO] default - Adding a new resource
+[2025-12-17T10:45:14.366] [DEBUG] default - Adding a new resource 1111111 0 Dec 17, 2025 10:45:00 AM 1
+[2025-12-17T10:45:14.368] [INFO] default - Added movie with id 94
+[2025-12-17T10:45:48.919] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:45:48.919] [INFO] default - Entered getMovies method
+[2025-12-17T10:45:48.920] [INFO] default - Size: 0 0
+[2025-12-17T10:55:11.814] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-17T10:55:11.815] [INFO] default - A login request with username= a and passoword= a
+[2025-12-17T10:55:12.114] [INFO] default - Client attempting WS connection
+[2025-12-17T10:55:12.117] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T10:55:12.134] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:55:12.135] [INFO] default - Entered getMovies method
+[2025-12-17T10:55:12.138] [INFO] default - Size: 0 0
+[2025-12-17T10:55:12.154] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:55:12.154] [INFO] default - Entered getMovies method
+[2025-12-17T10:55:12.155] [INFO] default - Size: 0 0
+[2025-12-17T10:55:42.421] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:55:42.421] [INFO] default - Entered getMovies method
+[2025-12-17T10:55:42.422] [INFO] default - Size: 0 0
+[2025-12-17T10:55:42.657] [INFO] default - Adding a new resource
+[2025-12-17T10:55:42.658] [DEBUG] default - Adding a new resource 111 0 Dec 17, 2025 10:55:23 AM 1.3
+[2025-12-17T10:55:42.660] [INFO] default - Added movie with id 95
+[2025-12-17T10:55:42.660] [DEBUG] default - Starting to send notifications
+[2025-12-17T10:55:42.661] [DEBUG] default - 1
+[2025-12-17T10:55:42.661] [INFO] default - Sent new movie to user 1: {"id":95,"name":"111","owner_id":1,"premierDate":"Dec 17, 2025 10:55:23 AM","rating":1.3,"running":0}
+[2025-12-17T10:55:47.041] [INFO] default - WebSocket closed for user 1
+[2025-12-17T10:56:16.864] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T10:56:16.865] [INFO] default - Entered getMovies method
+[2025-12-17T10:56:16.866] [INFO] default - Size: 0 0
+[2025-12-17T12:43:01.893] [INFO] default - Server started on port 8081
+[2025-12-17T12:43:08.172] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-17T12:43:08.176] [INFO] default - A login request with username= a and passoword= a
+[2025-12-17T12:43:08.655] [INFO] default - Client attempting WS connection
+[2025-12-17T12:43:08.662] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T12:43:08.680] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:43:08.684] [INFO] default - Entered getMovies method
+[2025-12-17T12:43:08.685] [INFO] default - Size: 0 0
+[2025-12-17T12:43:08.714] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:43:08.714] [INFO] default - Entered getMovies method
+[2025-12-17T12:43:08.717] [INFO] default - Size: 0 0
+[2025-12-17T12:43:56.805] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:43:56.806] [INFO] default - Entered getMovies method
+[2025-12-17T12:43:56.810] [INFO] default - Size: 0 0
+[2025-12-17T12:43:57.548] [INFO] default - Adding a new resource
+[2025-12-17T12:43:57.550] [DEBUG] default - Adding a new resource 22222 0 Dec 17, 2025 12:43:31 PM 9.1
+[2025-12-17T12:43:57.572] [INFO] default - Added movie with id 96
+[2025-12-17T12:43:57.572] [DEBUG] default - Starting to send notifications
+[2025-12-17T12:43:57.573] [DEBUG] default - 1
+[2025-12-17T12:43:57.574] [INFO] default - Sent new movie to user 1: {"id":96,"name":"22222","owner_id":1,"premierDate":"Dec 17, 2025 12:43:31 PM","rating":9.1,"running":0}
+[2025-12-17T12:43:57.619] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:43:57.620] [INFO] default - Entered getMovies method
+[2025-12-17T12:43:57.622] [INFO] default - Size: 0 0
+[2025-12-17T12:44:04.421] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:44:04.421] [INFO] default - Entered getMovies method
+[2025-12-17T12:44:04.422] [INFO] default - Size: 0 0
+[2025-12-17T12:44:38.122] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:44:38.123] [INFO] default - Entered getMovies method
+[2025-12-17T12:44:38.127] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:44:38.127] [INFO] default - Entered getMovies method
+[2025-12-17T12:44:38.130] [INFO] default - Size: 0 0
+[2025-12-17T12:44:38.132] [INFO] default - Size: 0 0
+[2025-12-17T12:44:38.151] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:44:38.152] [INFO] default - Entered getMovies method
+[2025-12-17T12:44:38.153] [INFO] default - Size: 0 0
+[2025-12-17T12:45:13.676] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:45:13.676] [INFO] default - Entered getMovies method
+[2025-12-17T12:45:13.677] [INFO] default - Size: 0 0
+[2025-12-17T12:45:13.993] [INFO] default - Adding a new resource
+[2025-12-17T12:45:13.994] [DEBUG] default - Adding a new resource 33333 0 Dec 17, 2025 12:44:46 PM 2.4
+[2025-12-17T12:45:13.997] [INFO] default - Added movie with id 97
+[2025-12-17T12:45:13.997] [DEBUG] default - Starting to send notifications
+[2025-12-17T12:45:13.998] [DEBUG] default - 1
+[2025-12-17T12:45:13.998] [INFO] default - Sent new movie to user 1: {"id":97,"name":"33333","owner_id":1,"premierDate":"Dec 17, 2025 12:44:46 PM","rating":2.4,"running":0}
+[2025-12-17T12:45:14.049] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:45:14.050] [INFO] default - Entered getMovies method
+[2025-12-17T12:45:14.051] [INFO] default - Size: 0 0
+[2025-12-17T12:45:21.502] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:45:21.503] [INFO] default - Entered getMovies method
+[2025-12-17T12:45:21.504] [INFO] default - Size: 0 0
+[2025-12-17T12:46:05.982] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:46:05.982] [INFO] default - Entered getMovies method
+[2025-12-17T12:46:05.983] [INFO] default - Size: 0 0
+[2025-12-17T12:46:05.986] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:46:05.987] [INFO] default - Entered getMovies method
+[2025-12-17T12:46:05.993] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:46:05.994] [INFO] default - Entered getMovies method
+[2025-12-17T12:46:05.995] [INFO] default - Size: 0 0
+[2025-12-17T12:46:05.996] [INFO] default - Size: 0 0
+[2025-12-17T12:46:40.118] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:46:40.121] [INFO] default - Entered getMovies method
+[2025-12-17T12:46:40.123] [INFO] default - Size: 0 0
+[2025-12-17T12:46:40.522] [INFO] default - Adding a new resource
+[2025-12-17T12:46:40.525] [DEBUG] default - Adding a new resource zzz 0 Dec 17, 2025 12:46:19 PM 1.1
+[2025-12-17T12:46:40.535] [INFO] default - Added movie with id 98
+[2025-12-17T12:46:40.535] [DEBUG] default - Starting to send notifications
+[2025-12-17T12:46:40.538] [DEBUG] default - 1
+[2025-12-17T12:46:40.539] [INFO] default - Sent new movie to user 1: {"id":98,"name":"zzz","owner_id":1,"premierDate":"Dec 17, 2025 12:46:19 PM","rating":1.1,"running":0}
+[2025-12-17T12:46:40.606] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:46:40.606] [INFO] default - Entered getMovies method
+[2025-12-17T12:46:40.608] [INFO] default - Size: 0 0
+[2025-12-17T12:46:47.985] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T12:46:47.986] [INFO] default - Entered getMovies method
+[2025-12-17T12:46:47.987] [INFO] default - Size: 0 0
+[2025-12-17T12:54:26.277] [INFO] default - WebSocket closed for user 1
+[2025-12-17T13:07:11.478] [INFO] default - Client attempting WS connection
+[2025-12-17T13:07:11.482] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T13:07:11.515] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:07:11.516] [INFO] default - Entered getMovies method
+[2025-12-17T13:07:11.521] [INFO] default - Size: 0 0
+[2025-12-17T13:07:11.525] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:07:11.525] [INFO] default - Entered getMovies method
+[2025-12-17T13:07:11.535] [INFO] default - Size: 0 0
+[2025-12-17T13:07:16.765] [INFO] default - WebSocket closed for user 1
+[2025-12-17T13:09:03.882] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-17T13:09:03.884] [INFO] default - A login request with username= a and passoword= a
+[2025-12-17T13:09:04.204] [INFO] default - Client attempting WS connection
+[2025-12-17T13:09:04.206] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T13:09:04.211] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:09:04.213] [INFO] default - Entered getMovies method
+[2025-12-17T13:09:04.217] [INFO] default - Size: 0 0
+[2025-12-17T13:09:04.255] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:09:04.256] [INFO] default - Entered getMovies method
+[2025-12-17T13:09:04.257] [INFO] default - Size: 0 0
+[2025-12-17T13:09:27.309] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:09:27.309] [INFO] default - Entered getMovies method
+[2025-12-17T13:09:27.310] [INFO] default - Size: 0 0
+[2025-12-17T13:10:35.108] [INFO] default - WebSocket closed for user 1
+[2025-12-17T13:11:05.713] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-17T13:11:05.715] [INFO] default - A login request with username= a and passoword= a
+[2025-12-17T13:11:06.415] [INFO] default - Client attempting WS connection
+[2025-12-17T13:11:06.418] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T13:11:06.434] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:11:06.435] [INFO] default - Entered getMovies method
+[2025-12-17T13:11:06.437] [INFO] default - Size: 0 0
+[2025-12-17T13:11:06.448] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:11:06.448] [INFO] default - Entered getMovies method
+[2025-12-17T13:11:06.452] [INFO] default - Size: 0 0
+[2025-12-17T13:11:19.447] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:11:19.449] [INFO] default - Entered getMovies method
+[2025-12-17T13:11:19.453] [INFO] default - Size: 0 0
+[2025-12-17T13:11:19.466] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:11:19.469] [INFO] default - Entered getMovies method
+[2025-12-17T13:11:19.480] [INFO] default - Size: 0 0
+[2025-12-17T13:11:54.146] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:11:54.146] [INFO] default - Entered getMovies method
+[2025-12-17T13:11:54.147] [INFO] default - Size: 0 0
+[2025-12-17T13:11:54.385] [INFO] default - Adding a new resource
+[2025-12-17T13:11:54.386] [DEBUG] default - Adding a new resource casa 0 Dec 17, 2025 1:11:26 PM 1.2
+[2025-12-17T13:11:54.398] [INFO] default - Added movie with id 99
+[2025-12-17T13:11:54.399] [DEBUG] default - Starting to send notifications
+[2025-12-17T13:11:54.399] [DEBUG] default - 1
+[2025-12-17T13:11:54.400] [INFO] default - Sent new movie to user 1: {"id":99,"name":"casa","owner_id":1,"premierDate":"Dec 17, 2025 1:11:26 PM","rating":1.2,"running":0}
+[2025-12-17T13:11:58.737] [INFO] default - WebSocket closed for user 1
+[2025-12-17T13:12:28.890] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:12:28.891] [INFO] default - Entered getMovies method
+[2025-12-17T13:12:28.898] [INFO] default - Size: 0 0
+[2025-12-17T13:13:28.314] [INFO] default - Client attempting WS connection
+[2025-12-17T13:13:28.317] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T13:13:28.448] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:13:28.449] [INFO] default - Entered getMovies method
+[2025-12-17T13:13:28.455] [INFO] default - Size: 0 0
+[2025-12-17T13:13:28.534] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:13:28.535] [INFO] default - Entered getMovies method
+[2025-12-17T13:13:28.537] [INFO] default - Size: 0 0
+[2025-12-17T13:16:03.438] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:16:03.439] [INFO] default - Entered getMovies method
+[2025-12-17T13:16:03.440] [INFO] default - Size: 0 0
+[2025-12-17T13:16:05.530] [INFO] default - Adding a new resource
+[2025-12-17T13:16:05.531] [DEBUG] default - Adding a new resource mmmm 0 Dec 17, 2025 1:15:42 PM 4.3
+[2025-12-17T13:16:05.535] [INFO] default - Added movie with id 100
+[2025-12-17T13:16:05.535] [DEBUG] default - Starting to send notifications
+[2025-12-17T13:16:05.536] [DEBUG] default - 1
+[2025-12-17T13:16:05.536] [INFO] default - Sent new movie to user 1: {"id":100,"name":"mmmm","owner_id":1,"premierDate":"Dec 17, 2025 1:15:42 PM","rating":4.3,"running":0}
+[2025-12-17T13:16:06.891] [INFO] default - WebSocket closed for user 1
+[2025-12-17T13:16:38.137] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:16:38.138] [INFO] default - Entered getMovies method
+[2025-12-17T13:16:38.140] [INFO] default - Size: 0 0
+[2025-12-17T13:59:32.038] [INFO] default - Client attempting WS connection
+[2025-12-17T13:59:32.047] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T13:59:32.104] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:59:32.104] [INFO] default - Entered getMovies method
+[2025-12-17T13:59:32.109] [INFO] default - Size: 0 0
+[2025-12-17T13:59:32.258] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T13:59:32.260] [INFO] default - Entered getMovies method
+[2025-12-17T13:59:32.265] [INFO] default - Size: 0 0
+[2025-12-17T14:00:18.808] [INFO] default - WebSocket closed for user 1
+[2025-12-17T14:01:03.564] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-17T14:01:03.566] [INFO] default - A login request with username= a and passoword= a
+[2025-12-17T14:01:04.169] [INFO] default - Client attempting WS connection
+[2025-12-17T14:01:04.172] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T14:01:04.200] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T14:01:04.200] [INFO] default - Entered getMovies method
+[2025-12-17T14:01:04.202] [INFO] default - Size: 0 0
+[2025-12-17T14:01:04.229] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T14:01:04.229] [INFO] default - Entered getMovies method
+[2025-12-17T14:01:04.231] [INFO] default - Size: 0 0
+[2025-12-17T14:03:27.591] [INFO] default - WebSocket closed for user 1
+[2025-12-17T14:04:51.530] [DEBUG] default - { password: '', username: '' }
+[2025-12-17T14:04:51.531] [INFO] default - A login request with username=  and passoword= 
+[2025-12-17T14:07:33.870] [DEBUG] default - { password: 'a', username: 'a' }
+[2025-12-17T14:07:33.870] [INFO] default - A login request with username= a and passoword= a
+[2025-12-17T14:07:35.460] [INFO] default - Client attempting WS connection
+[2025-12-17T14:07:35.463] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T14:07:35.491] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T14:07:35.492] [INFO] default - Entered getMovies method
+[2025-12-17T14:07:35.508] [INFO] default - Size: 0 0
+[2025-12-17T14:07:35.537] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T14:07:35.538] [INFO] default - Entered getMovies method
+[2025-12-17T14:07:35.539] [INFO] default - Size: 0 0
+[2025-12-17T14:07:44.719] [INFO] default - WebSocket closed for user 1
+[2025-12-17T14:07:57.242] [INFO] default - Client attempting WS connection
+[2025-12-17T14:07:57.256] [INFO] default - WebSocket connected and authenticated for user 1
+[2025-12-17T14:07:57.698] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T14:07:57.713] [INFO] default - Entered getMovies method
+[2025-12-17T14:07:57.775] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T14:07:57.790] [INFO] default - Entered getMovies method
+[2025-12-17T14:07:57.807] [INFO] default - Size: 0 0
+[2025-12-17T14:07:57.830] [INFO] default - Size: 0 0
+[2025-12-17T14:08:55.877] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T14:08:55.878] [INFO] default - Entered getMovies method
+[2025-12-17T14:08:55.879] [INFO] default - Size: 0 0
+[2025-12-17T14:08:57.297] [INFO] default - Adding a new resource
+[2025-12-17T14:08:57.298] [DEBUG] default - Adding a new resource mmmmaaa 0 Dec 17, 2025 2:08:07 PM 1.2
+[2025-12-17T14:08:57.302] [INFO] default - Added movie with id 101
+[2025-12-17T14:08:57.303] [DEBUG] default - Starting to send notifications
+[2025-12-17T14:08:57.304] [DEBUG] default - 1
+[2025-12-17T14:08:57.305] [INFO] default - Sent new movie to user 1: {"id":101,"name":"mmmmaaa","owner_id":1,"premierDate":"Dec 17, 2025 2:08:07 PM","rating":1.2,"running":0}
+[2025-12-17T14:09:07.575] [INFO] default - WebSocket closed for user 1
+[2025-12-17T14:09:34.312] [INFO] default - User 1 requested movies with pageNumber=0 and pageSize=100
+[2025-12-17T14:09:34.312] [INFO] default - Entered getMovies method
+[2025-12-17T14:09:34.313] [INFO] default - Size: 0 0

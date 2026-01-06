@@ -16,7 +16,7 @@ object NotificationUtils {
     private const val CHANNEL_NAME = "Sync Notifications"
 
     fun createNotificationChannel(context: Context) {
-        // Această funcție există doar de la API 26 (Oreo) în sus
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
                 CHANNEL_ID,
@@ -31,7 +31,7 @@ object NotificationUtils {
     }
 
     fun showNotification(context: Context, title: String, content: String) {
-        // Verificăm permisiunea pentru Android 13+ (Tiramisu)
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             val hasPermission = ContextCompat.checkSelfPermission(
                 context,
@@ -39,7 +39,7 @@ object NotificationUtils {
             ) == PackageManager.PERMISSION_GRANTED
 
             if (!hasPermission) {
-                // Dacă nu avem permisiune, nu facem nimic (sau am putea cere permisiunea într-o activitate)
+
                 return
             }
         }
@@ -51,10 +51,10 @@ object NotificationUtils {
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setAutoCancel(true)
 
-        // Folosim un try-catch sau verificarea de permisiune de mai sus asigură că nu crăpăm
+
         try {
             with(NotificationManagerCompat.from(context)) {
-                // Dacă IDE-ul se plânge de MissingPermission, știm că am verificat mai sus
+
                 if (ActivityCompat.checkSelfPermission(
                         context,
                         Manifest.permission.POST_NOTIFICATIONS

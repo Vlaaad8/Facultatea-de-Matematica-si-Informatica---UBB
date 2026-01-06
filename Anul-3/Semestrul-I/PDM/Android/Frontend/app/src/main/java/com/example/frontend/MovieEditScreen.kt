@@ -24,11 +24,10 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
 
-    // Inițializăm Repository-ul
+
     val database = remember { AppDatabase.getDatabase(context) }
     val repository = remember { MovieRepository(database.movieDao(), context) }
 
-    // State-uri pentru formular
     var name by remember { mutableStateOf("") }
     var rating by remember { mutableStateOf("") }
     var isRunning by remember { mutableStateOf(false) }
@@ -40,15 +39,13 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
 
     val dateFormatter = remember { SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()) }
 
-    // Încărcăm datele din BAZA DE DATE LOCALĂ (Room)
-    // Asta permite deschiderea ecranului și editarea chiar și fără internet!
+
     LaunchedEffect(movieId) {
         val entity = database.movieDao().getMovieById(movieId)
         if (entity != null) {
-            // Convertim din Entity (DB) în Movie (Model)
+
             movieObj = entity.toMovie()
 
-            // Populăm câmpurile formularului
             name = movieObj!!.name
             rating = movieObj!!.rating.toString()
             isRunning = movieObj!!.running == 1
@@ -129,7 +126,6 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
                     modifier = Modifier.fillMaxWidth(),
                     onClick = {
                         scope.launch {
-                            // Creăm obiectul actualizat
                             val updatedMovie = movieObj!!.copy(
                                 name = name,
                                 rating = rating.toDoubleOrNull() ?: 0.0,
@@ -137,10 +133,10 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
                                 premierDate = selectedDate
                             )
 
-                            // Apelăm repository-ul pentru salvare (Sync sau Offline fallback)
+
                             repository.editMovie(movieId, updatedMovie)
 
-                            // Ne întoarcem la listă
+
                             onUpdateSuccess()
                         }
                     }
@@ -148,7 +144,7 @@ fun MovieEditScreen(movieId: Int, onUpdateSuccess: () -> Unit) {
                     Text("Salvează Modificările")
                 }
             } else {
-                // Caz rar: Filmul nu a fost găsit în DB local
+
                 Text("Eroare: Filmul nu a fost găsit local.")
             }
         }

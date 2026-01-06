@@ -40,7 +40,11 @@ void QueueContainer::addNode(Node *node) {
 Node *QueueContainer::removeNode() {
     unique_lock<std::mutex> lock(mtx);
 
-    hasActiveProducers.wait(lock, [this] { return (this->size != 0) || !stillProducing; });
+    //hasActiveProducers.wait(lock, [this] { return (this->size != 0) || !stillProducing; });
+
+    while ((this->size == 0) && stillProducing) {
+        hasActiveProducers.wait(lock);
+    }
 
     if (this->size == 0) {
         return nullptr;
