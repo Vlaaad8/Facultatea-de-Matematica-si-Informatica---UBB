@@ -11,19 +11,30 @@
 using namespace std;
 
 struct Production {
-    string terminal;
-    vector<string> values;
+    int id;
+    string nonTerminal;
+    vector<string> rightPart;
 };
 
 
 class Gramatic {
 private:
-    string start;
+    string startSymbol;
     set<string> terminals;
     set<string> nonTerminals;
-    map<string,
+    vector<Production> productions;
+public:
+    void loadFromFile(const string& filename);
+    void enrichGramatic();
+    void printGramatic();
 
-}
+    const vector<Production>& getProductions() const;
+    const set<string>& getTerminals() const;
+    const set<string>& getNonTerminals() const;
+    string getStartSymbol();
+    bool isNonTerminal(const string &value) const;
+    bool isTerminal(const string& value) const;
+};
 
 
 #endif //TEMA_5_GRAMATIC_H

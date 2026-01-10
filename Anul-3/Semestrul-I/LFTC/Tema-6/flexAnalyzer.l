@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "parser.tab.h"
+
 extern int yylex();
 extern FILE *errors_file;
 int currentLine = 1;
@@ -37,7 +38,9 @@ struct ConstantTable table[] = {
     {"namespace",NAMESPACE},
     {"iostream", IOSTREAM},
     {"std",      STD},
-    {"using",    USING}
+    {"using",    USING},
+    {"<" , LT},
+    {">" , GT}
 };
 
 int tableSize = sizeof(table) / sizeof(table[0]);
@@ -76,6 +79,7 @@ int code = isConstant(yytext);
     if(code != -1){
         return code;
     } else {
+        strcpy(yylval.varname,yytext);
         return ID;
     }
 }
@@ -91,6 +95,7 @@ int code = isConstant(yytext);
     if(code != -1){
         return code;
     } else {
+        strcpy(yylval.varname,yytext);
         return CT;
     }
 }
@@ -98,6 +103,7 @@ int code = isConstant(yytext);
     if(code != -1){
         return code;
     } else {
+        strcpy(yylval.varname,yytext);
         return CT;
     }
 }
