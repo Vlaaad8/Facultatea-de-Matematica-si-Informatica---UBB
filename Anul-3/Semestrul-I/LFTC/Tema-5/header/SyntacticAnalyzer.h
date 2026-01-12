@@ -40,21 +40,23 @@ private:
     void calculateFirst();
     void calculateFollow();
 
-    set<string> getFirstOfSequence(const vector<string> &sequence);
-
-public:
-    explicit SyntacticAnalyzer(Gramatic gramatic): gramatic(std::move(gramatic)) {}
-
     State closure(State I);
     State goTo(State I, string X);
 
     void buildCanonicalCollection();
     void buildParsingTable();
+    set<string> getFirstOfSequence(const vector<string> &sequence);
+
+public:
+    explicit SyntacticAnalyzer(Gramatic gramatic): gramatic(std::move(gramatic)) {}
+
     bool parse(vector<string> input);
 
-    void runFirstAndFollow() {
+    void initialize() {
         calculateFirst();
         calculateFollow();
+        buildCanonicalCollection();
+        buildParsingTable();
     }
 
 };

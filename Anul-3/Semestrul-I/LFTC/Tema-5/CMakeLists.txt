@@ -7,4 +7,7 @@ add_executable(Tema_5 main.cpp
         source/Gramatic.cpp
         header/Gramatic.h
         source/SyntacticAnalyzer.cpp
-        header/SyntacticAnalyzer.h)
+        header/SyntacticAnalyzer.h
+        source/FipDecoder.cpp
+        header/FipDecoder.h
+)
