@@ -45,6 +45,5 @@ add_executable(constantTable
 
 # Programul identificatorAtom - folosește și funcțiile din createTS.cpp
 add_executable(identificatorAtom
-        Partea-2/identificatorAtom.cpp
         Partea-2/source/createTS.cpp
 )
