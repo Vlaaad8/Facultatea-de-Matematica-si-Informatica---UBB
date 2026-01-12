@@ -35,7 +35,6 @@ void generateFIP() {
             outE << "Declaratii incorecte! ; Verifica MLP!" << endl;
         }
     }
-    outF<<"Cod atom"<<" "<<"Valoare TS"<<endl;
     for (string &atom: atoms) {
         if (constantList.contains(atom)) {
                 outF<<constantList[atom]<<endl;

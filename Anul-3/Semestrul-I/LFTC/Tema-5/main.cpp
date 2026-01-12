@@ -1,10 +1,23 @@
 #include <iostream>
+#include <sstream>
 
 #include "header/FipDecoder.h"
 #include "header/Gramatic.h"
 #include "header/SyntacticAnalyzer.h"
 
 using namespace std;
+
+vector<string> wordSplitter(const string &line) {
+    vector<string> result;
+    stringstream ss(line);
+    string word;
+
+    while (ss >> word) {
+        result.push_back(word);
+    }
+
+    return result;
+}
 
 int main() {
     while (true) {
@@ -22,8 +35,12 @@ int main() {
 
             SyntacticAnalyzer sa(g);
             sa.initialize();
+            cout<<"Introduce a sequence: ";
+            string line;
 
-            std::vector<std::string> input = {"x", "x" , "b"};
+            cin>>line;
+
+           vector<string> input = wordSplitter(line);
             sa.parse(input);
         }
         else if(option==2) {
