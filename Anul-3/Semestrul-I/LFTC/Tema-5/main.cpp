@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sstream>
-
+#include <limits>
 #include "header/FipDecoder.h"
 #include "header/Gramatic.h"
 #include "header/SyntacticAnalyzer.h"
@@ -36,9 +36,10 @@ int main() {
             SyntacticAnalyzer sa(g);
             sa.initialize();
             cout<<"Introduce a sequence: ";
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             string line;
 
-            cin>>line;
+            getline(cin,line);
 
            vector<string> input = wordSplitter(line);
             sa.parse(input);

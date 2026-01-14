@@ -1,6 +1,8 @@
 package com.example.frontend.service
 
 import com.example.frontend.Movie
+import com.example.frontend.model.UploadRequest
+import com.example.frontend.model.UploadResponse
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -10,6 +12,7 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface MovieService {
+
     @GET("movies")
     suspend fun getMovies(
         @Query("pageNumber") page: Int,
@@ -25,8 +28,11 @@ interface MovieService {
         @Body movie: Movie
     ): Response<Movie>
 
+
+    @POST("upload")
+    suspend fun uploadPhoto(@Body request: UploadRequest): Response<UploadResponse>
+
+
     @POST("/")
     suspend fun addMovie(@Body movie: Movie): Response<Movie>
-
-
 }

@@ -4,69 +4,96 @@ import android.content.Context
 import android.util.Log
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
+import com.example.frontend.Movie
 import com.example.frontend.RetrofitClient
-import com.example.frontend.TokenManager
 import com.example.frontend.data.AppDatabase
 import com.example.frontend.data.MovieEntity
-import com.example.frontend.utils.NotificationUtils
+import com.example.frontend.model.UploadRequest
+import com.example.frontend.utils.FileUtils
+import java.io.File
 
-class SyncWorker(context: Context, params: WorkerParameters) : CoroutineWorker(context, params) {
+class SyncWorker(context: Context, workerParams: WorkerParameters) : CoroutineWorker(context, workerParams) {
 
     override suspend fun doWork(): Result {
-        TokenManager.loadToken(applicationContext)
-        if (TokenManager.token == null) return Result.failure()
+        val database = AppDatabase.getDatabase(applicationContext)
+        val movieDao = database.movieDao()
 
-        val db = AppDatabase.getDatabase(applicationContext)
-        val dao = db.movieDao()
+        val unsyncedMovies = movieDao.getUnsyncedMovies()
+        Log.d("SyncWorker", "Found ${unsyncedMovies.size} unsynced movies.")
 
-        try {
-            val unsyncedMovies = dao.getUnsyncedMovies()
+        for (movieEntity in unsyncedMovies) {
+            try {
+                if (movieEntity.syncStatus == 1) {
+                    uploadMovie(movieEntity, movieDao)
+                }
+            } catch (e: Exception) {
+                Log.e("SyncWorker", "Error syncing movie ${movieEntity.name}", e)
+                return Result.retry()
+            }
+        }
+        return Result.success()
+    }
 
-            for (movie in unsyncedMovies) {
-                if (movie.syncStatus == 1) {
+    private suspend fun uploadMovie(entity: MovieEntity, movieDao: com.example.frontend.data.MovieDao) {
+        Log.d("SyncWorker", "Processing movie: ${entity.name}")
+
+        var serverPhotoPath: String? = null
+
+        if (entity.imagePath != null) {
+            val file = File(entity.imagePath)
+            if (file.exists()) {
+                val base64String = FileUtils.fileToBase64(file)
+                if (base64String != null) {
                     try {
-
-                        val movieToSend = movie.toMovie().copy(id = 0)
-                        val response = RetrofitClient.movieService.addMovie(movieToSend)
-
-                        if (response.isSuccessful && response.body() != null) {
-                            val serverMovie = response.body()!!
-
-
-                            dao.deleteById(movie.id)
-
-
-                            val newEntity = MovieEntity(
-                                serverMovie.id, serverMovie.name, serverMovie.premierDate,
-                                serverMovie.rating, serverMovie.running, serverMovie.owner_id,
-                                syncStatus = 0
-                            )
-                            dao.insert(newEntity)
-                            Log.d("SyncWorker", "Synced NEW movie: ${serverMovie.name}")
+                        val uploadReq = UploadRequest(
+                            data = base64String,
+                            fileName = file.name
+                        )
+                        val uploadRes = RetrofitClient.movieService.uploadPhoto(uploadReq)
+                        if (uploadRes.isSuccessful && uploadRes.body() != null) {
+                            serverPhotoPath = uploadRes.body()!!.photoPath
+                            Log.d("SyncWorker", "Photo uploaded via Worker! Path: $serverPhotoPath")
                         }
-                    } catch (e: Exception) { Log.e("SyncWorker", "Fail add", e) }
-
-                } else if (movie.syncStatus == 2) {
-
-                    try {
-                        val response = RetrofitClient.movieService.editMovie(movie.id, movie.toMovie())
-                        if (response.isSuccessful) {
-
-                            val syncedEntity = movie.copy(syncStatus = 0)
-                            dao.insert(syncedEntity)
-                            Log.d("SyncWorker", "Synced EDITED movie: ${movie.name}")
-                        }
-                    } catch (e: Exception) { Log.e("SyncWorker", "Fail edit", e) }
+                    } catch (e: Exception) {
+                        Log.e("SyncWorker", "Photo upload failed, proceeding without photo.", e)
+                    }
                 }
             }
+        }
+        val movieToSend = Movie(
+            id = 0,
+            name = entity.name,
+            premierDate = entity.premierDate,
+            rating = entity.rating,
+            running = entity.running,
+            owner_id = entity.owner_id,
+            imagePath = serverPhotoPath
+        )
 
-            if (unsyncedMovies.isNotEmpty()) {
-                NotificationUtils.showNotification(applicationContext, "Upload complet", "Modificarile offline au fost salvate pe server.")
-            }
 
-            return Result.success()
-        } catch (e: Exception) {
-            return Result.retry()
+        val response = RetrofitClient.movieService.addMovie(movieToSend)
+
+        if (response.isSuccessful && response.body() != null) {
+            val serverMovie = response.body()!!
+
+            movieDao.deleteById(entity.id)
+
+            val syncedEntity = MovieEntity(
+                id = serverMovie.id,
+                name = serverMovie.name,
+                premierDate = serverMovie.premierDate,
+                rating = serverMovie.rating,
+                running = serverMovie.running,
+                owner_id = serverMovie.owner_id,
+                imagePath = serverMovie.imagePath,
+                syncStatus = 0
+            )
+            movieDao.insert(syncedEntity)
+
+            Log.d("SyncWorker", "Synced success: ${entity.name}")
+        } else {
+            Log.e("SyncWorker", "Failed to sync movie: ${response.code()}")
+            throw Exception("Server error ${response.code()}")
         }
     }
 }

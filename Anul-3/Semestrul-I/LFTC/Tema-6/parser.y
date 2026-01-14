@@ -124,6 +124,7 @@ int main(void)
         system("nasm -f obj translation.asm -o translation.obj");
         system("alink -oPE -subsys con translation.obj");
         system("start ollydbg translation.exe");
+
         printf("Correct syntactic program.\n");
 
     } else {

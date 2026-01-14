@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
@@ -18,20 +19,27 @@ import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import com.example.frontend.utils.NotificationUtils
+import com.example.frontend.utils.ShakeDetector
 import com.example.frontend.worker.SyncWorker
 import java.util.concurrent.TimeUnit
 
 class MainActivity : ComponentActivity() {
+
+    private lateinit var shakeDetector: ShakeDetector
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setContentView(R.layout.activity_main)
 
         TokenManager.loadToken(applicationContext)
 
         NotificationUtils.createNotificationChannel(applicationContext)
 
         setupPeriodicSync()
+        shakeDetector = ShakeDetector(this) {
 
+            showShakeMessage()
+        }
         setContent {
             val navController = rememberNavController()
 
@@ -89,6 +97,22 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+    private fun showShakeMessage() {
+        Toast.makeText(this, "Shake detectat!", Toast.LENGTH_SHORT).show()
+
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+        shakeDetector.start()
+    }
+
+
+    override fun onPause() {
+        super.onPause()
+        shakeDetector.stop()
     }
 
     private fun setupPeriodicSync() {

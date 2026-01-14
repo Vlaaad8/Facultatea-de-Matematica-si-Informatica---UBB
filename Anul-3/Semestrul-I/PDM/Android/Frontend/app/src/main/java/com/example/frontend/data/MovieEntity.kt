@@ -2,7 +2,6 @@ package com.example.frontend.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import androidx.room.TypeConverter
 import com.example.frontend.Movie
 import java.util.Date
 
@@ -14,8 +13,7 @@ data class MovieEntity(
     val rating: Double,
     val running: Int,
     val owner_id: Int,
-
-
+    val imagePath: String? = null,
     val syncStatus: Int = 0
 ) {
     fun toMovie(): Movie {
@@ -25,15 +23,8 @@ data class MovieEntity(
             premierDate = premierDate,
             rating = rating,
             running = running,
-            owner_id = owner_id
+            owner_id = owner_id,
+            imagePath = imagePath
         )
     }
-}
-
-
-class DateConverter {
-    @TypeConverter
-    fun fromTimestamp(value: Long?): Date? = value?.let { Date(it) }
-    @TypeConverter
-    fun dateToTimestamp(date: Date?): Long? = date?.time
 }

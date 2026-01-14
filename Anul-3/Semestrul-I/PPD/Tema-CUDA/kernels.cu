@@ -1,25 +1,23 @@
-%%writefile main.cu
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <cuda_runtime.h>
 #include <random>
+#include <chrono>
+#include <cuda_runtime.h>
 
 using namespace std;
 
+int k = 3;
 
-int k = 5;
-
-
-#define blockDimension 32
+#define blockDimension 16
 #define CORNER_AT(buffer, bx, by, gridX, c) buffer[(((by) * (gridX) + (bx)) * 4) + (c)]
 
-void generateKernel(const string &fileName, int rows) {
+void generateKernel(const string &fileName, int k) {
     ofstream outFilter(fileName);
-    outFilter << rows << " " << rows << endl;
-    for (int i = 0; i < rows; i++) {
+    outFilter << k << " " << k << endl;
+    for (int i = 0; i < k; i++) {
         for (int j = 0; j < k; j++) {
-            outFilter << rand() % 20 << " ";
+            outFilter << rand() % 3 - 1 << " ";
         }
         outFilter << endl;
     }
@@ -31,7 +29,7 @@ void generateMatrix(const string &fileName, int rows, int columns) {
     outMatrix << rows << " " << columns << endl;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < columns; j++) {
-            outMatrix << rand() % 100 << " ";
+            outMatrix << rand() % 10 << " ";
         }
         outMatrix << endl;
     }
@@ -134,7 +132,7 @@ __global__ void calculateKernel(int *matrix, int n, int m, int *kernel,int* buff
                 int localRow = threadY + (readRow - row);
                 int localCol = threadX + (readCol - col);
 
-
+                //Decidem de unde luam datele
                 if (localRow >= 0 && localRow < blockDimension && localCol >= 0 && localCol < blockDimension) {
                     val = shared_block[localRow][localCol];
                 }
@@ -166,16 +164,16 @@ __global__ void calculateKernel(int *matrix, int n, int m, int *kernel,int* buff
                         if (by > 0)
                             val = bufferRows[(2 * (by - 1) + 1) * m + readCol];
                     }
-                    else if (localRow >= blockDimension) {
+                    else if (localRow >= blockDimension) { //Jos
                         if (by < gridDim.y - 1)
                             val = bufferRows[(2 * (by + 1)) * m + readCol];
                     }
 
-                    else if (localCol < 0) {
+                    else if (localCol < 0) { //Stanga
                         if (bx > 0)
                             val = bufferColumns[(2 * (bx - 1) + 1) * n + readRow];
                     }
-                    else if (localCol >= blockDimension) {
+                    else if (localCol >= blockDimension) { //Dreapta
                         if (bx < gridDim.x - 1)
                             val = bufferColumns[(2 * (bx + 1)) * n + readRow];
                     }
@@ -202,18 +200,23 @@ __global__ void saveBordersKernel(int* matrix, int* bufferColumns, int* bufferRo
     if (row >= N || col >= M) return;
 
     if (threadY == 0) {
+        //SUS
         bufferRows[(2 * blockIdx.y) * M + col] = matrix[row * M + col];
     }
     if (threadY == blockDim.y - 1 || row == N - 1) {
+        //JOS
         bufferRows[(2 * blockIdx.y + 1) * M + col] = matrix[row * M + col];
     }
     if (threadX == 0) {
+        //STANGA
         bufferColumns[(2 * blockIdx.x) * N + row] = matrix[row * M + col];
     }
 
     if (threadX == blockDim.x - 1 || col == M - 1) {
+        //DREAPTA
         bufferColumns[(2 * blockIdx.x + 1) * N + row] = matrix[row * M + col];
     }
+
     if (threadX == 0 && threadY == 0) {
         int bx = blockIdx.x;
         int by = blockIdx.y;
@@ -257,81 +260,4 @@ bool filesAreEqual(const string &file_name1, const string &file_name2) {
     }
     cout<< "Equal"<<endl;
     return true;
-}
-
-int main() {
-    const int N = 10000;
-    const int M = 10000;
-    srand(time(NULL));
-    generateMatrix("matrix.txt", N, M);
-    generateKernel("kernel.txt", 3);
-
-    int *matrixCPU;
-    int *kernelCPU;
-
-    readMatrix("matrix.txt", matrixCPU);
-    readMatrix("kernel.txt", kernelCPU);
-
-    int *matrixGPU;
-    int *kernelGPU;
-
-    cudaMalloc(&matrixGPU, N * M * sizeof(int));
-    cudaMalloc(&kernelGPU, k * k * sizeof(int));
-
-
-   cudaMemcpy(kernelGPU, kernelCPU, k * k * sizeof(int), cudaMemcpyHostToDevice);
-   cudaMemcpy(matrixGPU, matrixCPU, N * M * sizeof(int), cudaMemcpyHostToDevice);
-
-    dim3 threadsPerBlock(blockDimension, blockDimension);
-    int gridX = (M + threadsPerBlock.x - 1) / threadsPerBlock.x;
-    int gridY = (N + threadsPerBlock.y - 1) / threadsPerBlock.y;
-
-    dim3 gridBlock(gridX, gridY);
-
-
-    int* outputSequential = new int [N*M];
-
-    calculateSequential(matrixCPU, outputSequential, N, M, 3, kernelCPU);
-    writeMatrix("resultSequential.txt",N,M, outputSequential);
-
-    int sizeBufferRows = 2 * gridY * M;
-    int sizeBufferColumns = 2 * gridX * N;
-
-    int* bufferColumns;
-    int* bufferRows;
-    int* bufferCorners;
-
-    cudaMalloc(&bufferCorners, 4 * gridX * gridY * sizeof(int));
-    cudaMalloc(&bufferColumns, sizeBufferColumns * sizeof(int));
-    cudaMalloc(&bufferRows, sizeBufferRows * sizeof(int));
-
-
-    saveBordersKernel<<<gridBlock, threadsPerBlock>>>(matrixGPU, bufferColumns, bufferRows,bufferCorners, N, M, gridX);
-
-    cudaDeviceSynchronize();
-
-    calculateKernel<<<gridBlock, threadsPerBlock>>>(matrixGPU, N, M, kernelGPU,bufferColumns, bufferRows,bufferCorners, gridX);
-
-
-    cudaDeviceSynchronize();
-
-    cudaMemcpy(matrixCPU, matrixGPU, N * M * sizeof(int), cudaMemcpyDeviceToHost);
-
-    writeMatrix("result.txt", N, M, matrixCPU);
-
-    filesAreEqual("resultSequential.txt", "result.txt");
-
-
-
-    cudaFree(matrixGPU);
-    cudaFree(kernelGPU);
-    cudaFree(bufferColumns);
-    cudaFree(bufferRows);
-    cudaFree(bufferCorners);
-
-    delete[] matrixCPU;
-    delete[] kernelCPU;
-    delete[] outputSequential;
-
-    return 0;
 }

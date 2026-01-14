@@ -1,6 +1,5 @@
 package com.example.frontend
 
-import android.graphics.Movie
 import com.example.frontend.service.MovieService
 import com.example.frontend.service.UserService
 import okhttp3.OkHttpClient
