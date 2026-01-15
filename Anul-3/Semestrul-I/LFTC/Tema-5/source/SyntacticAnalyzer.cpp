@@ -254,6 +254,7 @@ void SyntacticAnalyzer::buildParsingTable() {
             if (gramatic.isTerminal(symbol)) {
                 string action = "s" + to_string(nextStateId);
 
+                //Verificam sa nu existe conflicte
                 if (actionTable[i].count(symbol) && actionTable[i][symbol] != action) {
                     cerr << "Conflict in starea " << i << " pe simbolul " << symbol << endl;
                 }
@@ -263,13 +264,16 @@ void SyntacticAnalyzer::buildParsingTable() {
         for (const auto &item: states[i]) {
             const Production &production = allProductions[item.productionIndex];
 
+            //Verificam daca am ajuns la finish
             if (item.pointPosition == production.rightPart.size()) {
                 if (production.nonTerminal == gramatic.getStartSymbol()) {
                     if (item.lookAhead == "$") {
                         actionTable[i]["$"] = "acc";
                     }
                 } else {
+                    // facem reducere folosind regula curenta
                     string action = "r" + to_string(production.id);
+                    // Verificare Conflict
                     if (actionTable[i].count(item.lookAhead) && actionTable[i][item.lookAhead] != action) {
                         cerr << "Conflict detectat in starea " << i << " pe " << item.lookAhead << endl;
                     }
@@ -293,45 +297,44 @@ bool SyntacticAnalyzer::parse(vector<string> input) {
     stateStack.push_back(0);
 
     vector<int> productionSequence;
-    size_t currentTokenIdx = 0;
+    int currentTokenIdx = 0;
 
     while (true) {
         int currentState = stateStack.back();
         string currentSymbol = input[currentTokenIdx];
 
-        // Consultam tabelul ACTION
         if (actionTable[currentState].count(currentSymbol)) {
             string action = actionTable[currentState][currentSymbol];
 
-            if (action == "acc") { // ACCEPT [cite: 426]
+            if (action == "acc") {
                 cout << "Secventa acceptata!" << endl;
                 cout << "Sirul productiilor: ";
                 for (int id : productionSequence) cout << id << " ";
                 cout << endl;
                 return true;
             }
-            else if (action[0] == 's') { // SHIFT [cite: 417]
+            else if (action[0] == 's') {
                 int nextState = stoi(action.substr(1));
-                stateStack.push_back(nextState); // Punem starea pe stiva
-                currentTokenIdx++; // Avansam in input
+                stateStack.push_back(nextState);
+                currentTokenIdx++;
             }
-            else if (action[0] == 'r') { // REDUCE [cite: 418]
+            else if (action[0] == 'r') {
                 int prodId = stoi(action.substr(1));
                 Production p;
 
-                // Gasim productia dupa ID
+
                 for(const auto& prod : gramatic.getProductions()) {
                     if(prod.id == prodId) { p = prod; break; }
                 }
 
-                // Eliminam 2*lungime elemente din stiva (aici doar starile sunt in vector)
-                // Daca ai o stiva de (simbol, stare), elimini p.rhs.size() perechi
+
                 for (size_t i = 0; i < p.rightPart.size(); ++i) {
                     stateStack.pop_back();
                 }
 
-                // GOTO: unde mergem dupa reducere
+
                 int stateAfterPop = stateStack.back();
+                // Verificam unde ne duce nonTerminalul din stanga regulii  din acea stare
                 if (gotoTable[stateAfterPop].count(p.nonTerminal)) {
                     stateStack.push_back(gotoTable[stateAfterPop][p.nonTerminal]);
                     productionSequence.push_back(prodId);

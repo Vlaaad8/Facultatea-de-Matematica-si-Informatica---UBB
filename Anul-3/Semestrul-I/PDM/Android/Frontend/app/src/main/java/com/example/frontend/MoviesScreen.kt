@@ -22,6 +22,7 @@ import com.example.frontend.data.AppDatabase
 import com.example.frontend.repository.MovieRepository
 import com.example.frontend.service.SocketManager
 import com.example.frontend.utils.NetworkUtils
+import com.example.frontend.utils.ShakeDetector
 import com.example.frontend.worker.SyncWorker
 import kotlinx.coroutines.launch
 
@@ -65,6 +66,19 @@ fun MoviesScreen(onMovieClick: (Int) -> Unit, onAddClick: () -> Unit) {
 
             val syncRequest = OneTimeWorkRequest.Builder(SyncWorker::class.java).build()
             WorkManager.getInstance(context).enqueue(syncRequest)
+        }
+    }
+    DisposableEffect(Unit) {
+        val detector = ShakeDetector(context) {
+            println("Shake detectat! Facem refresh...")
+            scope.launch {
+                repository.refreshMovies()
+                // Opțional: Vibrăm telefonul sau arătăm un mesaj
+            }
+        }
+        detector.start()
+        onDispose {
+            detector.stop()
         }
     }
     Scaffold(

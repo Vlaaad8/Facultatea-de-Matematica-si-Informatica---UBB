@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -66,4 +68,9 @@ dependencies {
     kapt ("androidx.room:room-compiler:2.7.0-alpha04")
     implementation ("androidx.datastore:datastore-preferences:1.0.0")
     implementation ("androidx.work:work-runtime-ktx:2.9.0")
+    // Coil sau Glide pentru afișare imagini (opțional, dar recomandat)
+    implementation("io.coil-kt:coil:2.4.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation("io.coil-kt:coil-compose:2.5.0")
+
 }

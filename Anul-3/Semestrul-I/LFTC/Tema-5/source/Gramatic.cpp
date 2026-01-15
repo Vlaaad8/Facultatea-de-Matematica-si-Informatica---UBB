@@ -65,9 +65,9 @@ void Gramatic::enrichGramatic() {
     startSymbol = enrichStart;
 }
 
-//TODO to remove after i finished
+
 void Gramatic::printGramatic() {
-    std::cout << "Simbol Start: " << startSymbol << "\n\nProducii:\n";
+    std::cout << "Simbol Start: " << startSymbol << "\n\nProductii:\n";
     for (const auto &p: productions) {
         cout << p.nonTerminal << " ";
         for (const auto &sym: p.rightPart) {
