@@ -1,0 +1,9 @@
+rootProject.name = 'sample-project'
+include 'day1'
+include 'day2'
+include 'jmh'
+include 'Laborator-1'
+include 'Laborator-2'
+include 'Laborator-3'
+include 'Laborator-4'
+

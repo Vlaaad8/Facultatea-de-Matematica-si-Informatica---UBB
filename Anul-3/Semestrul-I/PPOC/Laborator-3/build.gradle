@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id "me.champeau.jmh" version "0.7.1"
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11) // Adjust if using a different JDK
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://jcenter.bintray.com/" } // Required for some older JMH versions
+}
+
+dependencies {
+    // JUnit for normal tests
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+// https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-core
+    testImplementation("org.openjdk.jmh:jmh-core:1.37")
+// https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-generator-annprocess
+    testImplementation("org.openjdk.jmh:jmh-generator-annprocess:1.37")
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jmh {
+    warmupIterations = 2
+    iterations = 2
+    fork = 1
+    threads = 1
+    timeUnit = 'ns'
+}
