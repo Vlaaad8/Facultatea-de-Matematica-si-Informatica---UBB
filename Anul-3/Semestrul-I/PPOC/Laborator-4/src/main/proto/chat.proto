@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "com.example.proto";
+option java_outer_classname = "Chat";
+
+message ChatMessage {
+  enum MessageType {
+    HELLO = 0;
+    ACK   = 1;
+    CHAT  = 2;
+    BYE   = 3;
+  }
+
+  MessageType type = 1;
+  string sender     = 2;
+  string text       = 3;
+}

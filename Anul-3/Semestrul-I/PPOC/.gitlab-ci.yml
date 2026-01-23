@@ -1,0 +1,29 @@
+stages:
+  - build
+  - test
+
+image: gradle:8.0-jdk17
+
+before_script:
+  - chmod +x ./gradlew
+
+build:
+  stage: build
+  script:
+    - ./gradlew assemble
+  artifacts:
+    paths:
+      - build/libs/*.jar
+
+test:
+  stage: test
+  script:
+    - ./gradlew clean test jacocoTestReport
+    - export CODACY_API_TOKEN=$CODACY_API_TOKEN
+    - export CODACY_ORGANIZATION_PROVIDER=gl
+    - export CODACY_USERNAME=Vlaaad8
+    - export CODACY_PROJECT_NAME=sample-gradle-project
+    - bash <(curl -Ls https://coverage.codacy.com/get.sh)
+  artifacts:
+    paths:
+      - build/reports/jacoco/test/html/
