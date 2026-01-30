@@ -33,7 +33,6 @@ public class OrderManager {
         this.executorService = Executors.newFixedThreadPool(workerThreads);
         this.persistenceManager = persistenceManager;
         this.liquidityManager = liquidityManager;
-        System.out.println("OrderManager initialized with " + workerThreads + " threads");
     }
 
     public void setAuditTask(AuditTask auditTask) {
@@ -95,7 +94,7 @@ public class OrderManager {
                 System.out.println("Order " + order.getId() + " executed IMMEDIATELY");
             } else if (!hasLiquidity) {
                 cancelOrder(order, "Ordin esuat");
-                System.out.println("Order " + order.getId() + " CANCELLED due to insufficient liquidity");
+                System.out.println("Order " + order.getId() + " insufficient liquidity");
             } else {
                 System.out.println("Order " + order.getId() + " remains PENDING (price conditions) " +
                         "(Current: " + String.format("%.2f", currentPrice) +

@@ -4,6 +4,7 @@ import com.example.model.Instrument;
 
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class PriceManager {
 
@@ -14,7 +15,7 @@ public class PriceManager {
 
     private final Random random = new Random();
 
-    private final double dt = 1.7;
+    private final double dt = 1.9;
     public PriceManager() {
         initializeMarket();
     }
@@ -33,27 +34,18 @@ public class PriceManager {
         }
     }
 
-    private double generateEpsilon() {
-        return random.nextGaussian();
-    }
 
 
     private void updatePrince(Instrument instrument) {
-
-        double currentPrice = prices.get(instrument);
-        double epsilon = generateEpsilon();
-
-        double muVal = mu.get(instrument);
-        double sigmaVal = sigma.get(instrument);
-
-        double newPrice = currentPrice + (muVal * dt) + (sigmaVal * Math.sqrt(dt) * epsilon);
-
-
-
-        prices.put(instrument, newPrice);
+        prices.compute(instrument, (k, currentPrice) -> {
+            double muVal = mu.get(k);
+            double sigmaVal = sigma.get(k);
+            double epsilon = ThreadLocalRandom.current().nextGaussian();
+            return currentPrice + (muVal * dt) + (sigmaVal * Math.sqrt(dt) * epsilon);
+        });
     }
 
-    public synchronized void updateAllPrices() {
+    public void updateAllPrices() {
         Instrument[] instruments = Instrument.values();
         for (Instrument instrument : instruments) {
             updatePrince(instrument);
