@@ -41,36 +41,35 @@ int main() {
                 b[i] = rand() % 100;
             }
         }
-#pragma fomp for reduction(+:sum)
+#pragma omp for reduction(+:sum)
         for (int i = 0; i < MAX; i++) {
-            sum += a[i]*b[i];
+            sum += a[i] * b[i];
         }
 #pragma omp sections
         {
 #pragma omp section
             {
                 calculate_sum(a, b, c);
-                std::cout << "Hello din thread-ul " << omp_get_thread_num() <<endl;
+                std::cout << "Hello din thread-ul " << omp_get_thread_num() << endl;
             }
 #pragma omp section
-{
-    for (int i = 0; i < MAX; i++) {
-        sum += a[i]*b[i];
-    }
-    std::cout << "Hello din thread-ul " << omp_get_thread_num() <<endl;
-
-}
+            {
+                for (int i = 0; i < MAX; i++) {
+                    sum += a[i] * b[i];
+                }
+                std::cout << "Hello din thread-ul " << omp_get_thread_num() << endl;
+            }
 #pragma omp section
-{
-    for (int i = 0; i < MAX; i++) {
-        sum += a[i]*b[i];
-    }
-    std::cout << "Hello din thread-ul " << omp_get_thread_num() <<endl;
-}
+            {
+                for (int i = 0; i < MAX; i++) {
+                    sum += a[i] * b[i];
+                }
+                std::cout << "Hello din thread-ul " << omp_get_thread_num() << endl;
+            }
         }
-
     }
 }
+
 int main4() {
     for (int i = 0; i < MAX1; i++) {
         for (int j = 0; j < MAX2; j++) {
@@ -90,21 +89,19 @@ int main4() {
     }
     auto end = omp_get_wtime();
     auto startP = omp_get_wtime();
-    cout<<end-start<<endl;
+    cout << end - start << endl;
 #pragma omp parallel num_threads(8)
-        {
+    {
 #pragma omp for collapse(2)
-    for (int i = 0; i < MAX1; i++) {
-        for (int j = 0; j < MAX2; j++) {
-            mat3[i][j] = mat1[i][j] + mat2[i][j];
+        for (int i = 0; i < MAX1; i++) {
+            for (int j = 0; j < MAX2; j++) {
+                mat3[i][j] = mat1[i][j] + mat2[i][j];
+            }
         }
     }
 }
 
-
-}
-
-int main2(){
+int main2() {
     initialize(a);
     initialize(b);
     long sum_loc = 0;
