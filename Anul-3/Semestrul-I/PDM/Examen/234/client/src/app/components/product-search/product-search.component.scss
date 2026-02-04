@@ -1,0 +1,38 @@
+.search-container {
+  margin: 16px 0;
+}
+
+.searching-indicator {
+  margin: 8px 0;
+}
+
+.search-results {
+  margin-top: 8px;
+
+  ion-list {
+    background: transparent;
+  }
+
+  ion-item {
+    --border-color: var(--ion-color-light);
+    margin-bottom: 4px;
+    border-radius: 8px;
+
+    &:hover {
+      --background: var(--ion-color-light);
+    }
+  }
+}
+
+.no-results {
+  margin-top: 8px;
+
+  ion-item {
+    --background: var(--ion-color-light);
+    text-align: center;
+  }
+}
+
+ion-spinner {
+  --color: var(--ion-color-primary);
+}

@@ -1,0 +1,83 @@
+.zone-setup {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+
+  ion-spinner {
+    transform: scale(2);
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-top: 20px;
+    color: #666;
+  }
+}
+
+.zone-info {
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+
+  p {
+    margin: 0;
+  }
+}
+
+ion-segment {
+  margin: 16px;
+}
+
+ion-list {
+  padding-bottom: 100px;
+}
+
+ion-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  cursor: pointer;
+}
+
+.edit-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  ion-input {
+    max-width: 100px;
+  }
+}
+
+.error-text {
+  color: #eb445a;
+  font-weight: 600;
+}
+
+.success-text {
+  color: #2dd36f;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #eb445a;
+  font-size: 0.85em;
+  margin-top: 4px;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+

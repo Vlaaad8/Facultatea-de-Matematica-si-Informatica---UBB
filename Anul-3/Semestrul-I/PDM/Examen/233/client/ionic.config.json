@@ -1,0 +1,7 @@
+{
+  "name": "inventory-audit-client",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

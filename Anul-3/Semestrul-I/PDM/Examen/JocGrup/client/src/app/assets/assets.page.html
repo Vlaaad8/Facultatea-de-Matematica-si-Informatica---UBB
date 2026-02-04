@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Assets - {{ username }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-segment [(ngModel)]="selectedFilter" (ionChange)="onFilterChange($event)">
+    <ion-segment-button value="all">
+      <ion-label>All</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="red">
+      <ion-label>Red</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="green">
+      <ion-label>Green</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="yellow">
+      <ion-label>Yellow</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="white">
+      <ion-label>White</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div *ngIf="isLoading" class="loading-container">
+    <ion-spinner></ion-spinner>
+    <ion-text>
+      <p>Loading assets...</p>
+    </ion-text>
+  </div>
+
+  <ion-list *ngIf="!isLoading">
+    <ion-item
+      *ngFor="let asset of filteredAssets"
+      [style.background-color]="getBackgroundColor(asset)"
+      (click)="toggleExpand(asset.id)"
+      button>
+      <ion-label>
+        <h2>{{ asset.name }}</h2>
+        <div *ngIf="expandedAssetId === asset.id" class="expanded-content">
+          <p><strong>Desired by:</strong> {{ asset.desiredBy.length > 0 ? asset.desiredBy.join(', ') : 'None' }}</p>
+          <p *ngIf="asset.takenBy"><strong>Taken by:</strong> {{ asset.takenBy }}</p>
+          <ion-button
+            expand="block"
+            (click)="onAssetAction(asset); $event.stopPropagation()"
+            class="action-button">
+            {{ getButtonLabel(asset) }}
+          </ion-button>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-card *ngIf="!isLoading && filteredAssets.length === 0">
+    <ion-card-content>
+      <ion-text color="medium">
+        <p>No assets match the selected filter.</p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

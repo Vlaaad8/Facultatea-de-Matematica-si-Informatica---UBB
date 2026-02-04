@@ -1,0 +1,26 @@
+/* App Global Styles */
+/* Customize the app's main theme here */
+
+:root {
+  --ion-background-color: #f4f5f8;
+  --ion-background-color-rgb: 244, 245, 248;
+
+  --ion-text-color: #2d3748;
+  --ion-text-color-rgb: 45, 55, 72;
+
+  --ion-card-background: #ffffff;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ios {
+  --ion-background-color: #f2f2f7;
+  --ion-background-color-rgb: 242, 242, 247;
+}
+
+.md {
+  --ion-background-color: #fafafa;
+  --ion-background-color-rgb: 250, 250, 250;
+}

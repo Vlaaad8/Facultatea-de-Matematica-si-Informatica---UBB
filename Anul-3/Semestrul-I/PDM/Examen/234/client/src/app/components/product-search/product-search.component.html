@@ -1,0 +1,39 @@
+<div class="search-container">
+  <ion-item>
+    <ion-label position="stacked">Caută produs</ion-label>
+    <ion-input
+      type="text"
+      [(ngModel)]="searchTerm"
+      (ionInput)="onSearchInput($event)"
+      placeholder="Introdu câteva caractere din numele produsului"
+      clearInput="true">
+    </ion-input>
+  </ion-item>
+
+  <div *ngIf="isSearching" class="searching-indicator">
+    <ion-item>
+      <ion-spinner name="crescent"></ion-spinner>
+      <ion-label class="ion-margin-start">Căutare în curs...</ion-label>
+    </ion-item>
+  </div>
+
+  <div *ngIf="searchResults.length > 0 && !isSearching" class="search-results">
+    <ion-list>
+      <ion-item
+        *ngFor="let product of searchResults"
+        button
+        (click)="onProductSelect(product)">
+        <ion-label>
+          <h3>{{ product.name }}</h3>
+          <p>Cod: {{ product.code }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div *ngIf="searchTerm && searchResults.length === 0 && !isSearching" class="no-results">
+    <ion-item>
+      <ion-label color="medium">Niciun produs găsit</ion-label>
+    </ion-item>
+  </div>
+</div>

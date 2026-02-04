@@ -1,0 +1,13 @@
+.username-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}

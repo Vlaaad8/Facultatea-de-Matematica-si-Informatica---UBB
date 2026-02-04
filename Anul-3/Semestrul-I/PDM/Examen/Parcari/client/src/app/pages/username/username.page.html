@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="username-container">
+    <h2>Enter Your Username</h2>
+    <ion-item>
+      <ion-input
+        label="Username"
+        labelPlacement="floating"
+        [(ngModel)]="username"
+        placeholder="Enter your username"
+        type="text"
+      ></ion-input>
+    </ion-item>
+
+    <ion-button
+      expand="block"
+      (click)="onNext()"
+      [disabled]="!username.trim()"
+      class="ion-margin-top"
+    >
+      Next
+    </ion-button>
+  </div>
+</ion-content>

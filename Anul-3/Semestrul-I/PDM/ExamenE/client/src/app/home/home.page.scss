@@ -1,0 +1,107 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+
+  ion-spinner {
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: var(--ion-color-medium);
+  }
+}
+
+.unread-count {
+  color: var(--ion-color-primary);
+  font-weight: bold;
+}
+
+.status-text {
+  font-size: 0.9em;
+  color: var(--ion-color-medium);
+
+  &.sending {
+    color: var(--ion-color-warning);
+  }
+
+  &.error {
+    color: var(--ion-color-danger);
+  }
+
+  &.clickable {
+    color: var(--ion-color-primary);
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--ion-color-primary-shade);
+    }
+  }
+}
+
+.status-indicators {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sending-spinner {
+  --color: var(--ion-color-warning);
+}
+
+.unread-indicator {
+  font-size: 12px;
+}
+
+.task-item {
+  &.unread {
+    --background: var(--ion-color-light);
+  }
+
+  &.sending {
+    opacity: 0.7;
+  }
+
+  &.error {
+    --border-color: var(--ion-color-danger);
+    border-left: 4px solid var(--ion-color-danger);
+  }
+
+  &.conflict {
+    --border-color: var(--ion-color-warning);
+    border-left: 4px solid var(--ion-color-warning);
+  }
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  padding: 32px;
+
+  ion-icon {
+    color: var(--ion-color-medium);
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    color: var(--ion-color-dark);
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: var(--ion-color-medium);
+    margin-bottom: 24px;
+  }
+}
+
+ion-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+}

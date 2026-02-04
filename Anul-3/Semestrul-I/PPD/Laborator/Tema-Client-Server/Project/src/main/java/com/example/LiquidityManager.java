@@ -14,7 +14,7 @@ public class LiquidityManager {
     private void initializeLiquidity(){
         Instrument[] instruments = Instrument.values();
         for(Instrument instrument : instruments){
-            currentLiquidity.put(instrument, 100000.0);
+            currentLiquidity.put(instrument, 100.0);
         }
     }
 
