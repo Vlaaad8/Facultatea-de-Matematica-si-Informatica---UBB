@@ -37,9 +37,6 @@ public class AuditTask implements Runnable {
         }
     }
 
-    public void removePendingOrder(Order order) {
-        pendingOrders.remove(order);
-    }
 
     @Override
     public void run() {
@@ -74,7 +71,7 @@ public class AuditTask implements Runnable {
                     orderManager.cancelOrder(order, "Ordin esuat");
                     pendingOrders.remove(order);
                     expiredCount++;
-                    System.out.println("Order " + order.getId() + " CANCELLED due to insufficient liquidity");
+                    System.out.println("Order " + order.getId() + " insufficient liquidity");
                 }
             }
         }
