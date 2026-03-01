@@ -25,7 +25,7 @@
 1. 📘 **Limbaje Formale și Tehnici de Compilare (LFTC)**
 2. 📱 **Programare pentru Dispozitive Mobile (PDM)**
 3. 🧵 **Programare Paralelă și Distribuită (PPD)**
-4. 🧠 **Principiile Programarii Orientare spre Performanta (PPOC)**
+4. 🧠 **Principiile Programarii Orientate spre Performanta (PPOC)**
 
 ### 🟥 Anul 3 - Semestrul II
 
