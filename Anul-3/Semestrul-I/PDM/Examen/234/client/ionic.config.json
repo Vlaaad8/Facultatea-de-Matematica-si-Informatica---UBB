@@ -1,7 +1,0 @@
-{
-  "name": "inventory-client",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

@@ -1,7 +1,0 @@
-{
-  "name": "task-client",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
