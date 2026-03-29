@@ -7,7 +7,7 @@ import java.util.concurrent.*;
 
 public class Server {
 
-    private static final int SHUTDOWN_MINUTES = 3;
+    private static final int SHUTDOWN_MINUTES = 1;
     private final int port = 8080;
 
     private final ExecutorService clientHandler = Executors.newCachedThreadPool();
