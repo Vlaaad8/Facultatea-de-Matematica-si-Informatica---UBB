@@ -1,6 +1,0 @@
-﻿namespace Networking.json;
-
-public enum ResponseType
-{
-    OK,ERROR,NEW_TICKET,NOT_FOUND,RECEIVE_ORIGIN,RECEIVE_DESTINAITON,RECEIVE_SEARCH,RECEIVE_FLIGHTS
-}
