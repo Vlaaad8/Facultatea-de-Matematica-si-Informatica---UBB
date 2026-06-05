@@ -1,2 +1,0 @@
-rootProject.name = 'MPP-JavaFX'
-include 'Client', 'Model', 'Networking', 'Persistence', 'Server', 'Services'
