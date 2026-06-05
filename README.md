@@ -29,6 +29,7 @@
 
 ### 🟥 Anul 3 - Semestrul II
 
-*În curs de dezvoltare*
+1. 🔢 **Calcul Numeric (CN)**
+2. ✅ **Verificarea și Validarea Sistemelor Software (VVSS)**
 
 ---
